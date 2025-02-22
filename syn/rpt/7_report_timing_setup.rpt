@@ -1,0 +1,1666 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -nworst 50
+        -max_paths 50
+Design : priority_fsm
+Version: U-2022.12-SP7-3
+Date   : Sat Feb 22 17:37:27 2025
+****************************************
+
+Operating Conditions: NCCOM   Library: tcb018gbwp7ttc
+Wire Load Model Mode: segmented
+
+  Startpoint: ch_sel_i[8]
+              (input port)
+  Endpoint: ch_sel_o[15]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  priority_fsm       ZeroWireload          tcb018gbwp7ttc
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 f
+  ch_sel_i[8] (in)                         0.00       0.00 f
+  U72/ZN (OAI21D0BWP7T)                    0.17       0.17 r
+  U73/ZN (CKND2D0BWP7T)                    0.09       0.26 f
+  U74/ZN (AOI221D0BWP7T)                   0.46       0.72 r
+  U75/ZN (IND4D0BWP7T)                     0.18       0.89 f
+  U94/ZN (OAI211D0BWP7T)                   0.14       1.03 r
+  U95/ZN (AOI22D0BWP7T)                    0.08       1.11 f
+  U96/ZN (OAI21D0BWP7T)                    0.10       1.21 r
+  U98/ZN (CKND2D0BWP7T)                    0.06       1.27 f
+  U99/Z (AO21D0BWP7T)                      0.18       1.45 f
+  U100/ZN (NR2XD0BWP7T)                    0.12       1.57 r
+  U116/ZN (CKND2D0BWP7T)                   0.13       1.69 f
+  U133/ZN (NR3D0BWP7T)                     0.11       1.80 r
+  ch_sel_o[15] (out)                       0.00       1.80 r
+  data arrival time                                   1.80
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: ch_sel_i[8]
+              (input port)
+  Endpoint: ch_sel_o[13]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  priority_fsm       ZeroWireload          tcb018gbwp7ttc
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 f
+  ch_sel_i[8] (in)                         0.00       0.00 f
+  U72/ZN (OAI21D0BWP7T)                    0.17       0.17 r
+  U73/ZN (CKND2D0BWP7T)                    0.09       0.26 f
+  U74/ZN (AOI221D0BWP7T)                   0.46       0.72 r
+  U75/ZN (IND4D0BWP7T)                     0.18       0.89 f
+  U94/ZN (OAI211D0BWP7T)                   0.14       1.03 r
+  U95/ZN (AOI22D0BWP7T)                    0.08       1.11 f
+  U96/ZN (OAI21D0BWP7T)                    0.10       1.21 r
+  U98/ZN (CKND2D0BWP7T)                    0.06       1.27 f
+  U99/Z (AO21D0BWP7T)                      0.18       1.45 f
+  U100/ZN (NR2XD0BWP7T)                    0.12       1.57 r
+  U116/ZN (CKND2D0BWP7T)                   0.13       1.69 f
+  U131/ZN (NR3D0BWP7T)                     0.11       1.80 r
+  ch_sel_o[13] (out)                       0.00       1.80 r
+  data arrival time                                   1.80
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: ch_sel_i[8]
+              (input port)
+  Endpoint: ch_sel_o[7]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  priority_fsm       ZeroWireload          tcb018gbwp7ttc
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 f
+  ch_sel_i[8] (in)                         0.00       0.00 f
+  U72/ZN (OAI21D0BWP7T)                    0.17       0.17 r
+  U73/ZN (CKND2D0BWP7T)                    0.09       0.26 f
+  U74/ZN (AOI221D0BWP7T)                   0.46       0.72 r
+  U75/ZN (IND4D0BWP7T)                     0.18       0.89 f
+  U94/ZN (OAI211D0BWP7T)                   0.14       1.03 r
+  U95/ZN (AOI22D0BWP7T)                    0.08       1.11 f
+  U96/ZN (OAI21D0BWP7T)                    0.10       1.21 r
+  U98/ZN (CKND2D0BWP7T)                    0.06       1.27 f
+  U99/Z (AO21D0BWP7T)                      0.18       1.45 f
+  U100/ZN (NR2XD0BWP7T)                    0.12       1.57 r
+  U122/ZN (CKND2D0BWP7T)                   0.12       1.69 f
+  U129/ZN (NR3D0BWP7T)                     0.11       1.80 r
+  ch_sel_o[7] (out)                        0.00       1.80 r
+  data arrival time                                   1.80
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: ch_sel_i[8]
+              (input port)
+  Endpoint: ch_sel_o[5]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  priority_fsm       ZeroWireload          tcb018gbwp7ttc
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 f
+  ch_sel_i[8] (in)                         0.00       0.00 f
+  U72/ZN (OAI21D0BWP7T)                    0.17       0.17 r
+  U73/ZN (CKND2D0BWP7T)                    0.09       0.26 f
+  U74/ZN (AOI221D0BWP7T)                   0.46       0.72 r
+  U75/ZN (IND4D0BWP7T)                     0.18       0.89 f
+  U94/ZN (OAI211D0BWP7T)                   0.14       1.03 r
+  U95/ZN (AOI22D0BWP7T)                    0.08       1.11 f
+  U96/ZN (OAI21D0BWP7T)                    0.10       1.21 r
+  U98/ZN (CKND2D0BWP7T)                    0.06       1.27 f
+  U99/Z (AO21D0BWP7T)                      0.18       1.45 f
+  U100/ZN (NR2XD0BWP7T)                    0.12       1.57 r
+  U122/ZN (CKND2D0BWP7T)                   0.12       1.69 f
+  U127/ZN (NR3D0BWP7T)                     0.11       1.80 r
+  ch_sel_o[5] (out)                        0.00       1.80 r
+  data arrival time                                   1.80
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: ch_sel_i[8]
+              (input port)
+  Endpoint: ch_sel_o[15]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  priority_fsm       ZeroWireload          tcb018gbwp7ttc
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 f
+  ch_sel_i[8] (in)                         0.00       0.00 f
+  U72/ZN (OAI21D0BWP7T)                    0.17       0.17 r
+  U73/ZN (CKND2D0BWP7T)                    0.09       0.26 f
+  U74/ZN (AOI221D0BWP7T)                   0.46       0.72 r
+  U75/ZN (IND4D0BWP7T)                     0.18       0.89 f
+  U94/ZN (OAI211D0BWP7T)                   0.13       1.03 r
+  U95/ZN (AOI22D0BWP7T)                    0.08       1.10 f
+  U96/ZN (OAI21D0BWP7T)                    0.10       1.21 r
+  U98/ZN (CKND2D0BWP7T)                    0.06       1.26 f
+  U99/Z (AO21D0BWP7T)                      0.18       1.44 f
+  U100/ZN (NR2XD0BWP7T)                    0.12       1.56 r
+  U116/ZN (CKND2D0BWP7T)                   0.13       1.69 f
+  U133/ZN (NR3D0BWP7T)                     0.11       1.80 r
+  ch_sel_o[15] (out)                       0.00       1.80 r
+  data arrival time                                   1.80
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: ch_sel_i[8]
+              (input port)
+  Endpoint: ch_sel_o[13]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  priority_fsm       ZeroWireload          tcb018gbwp7ttc
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 f
+  ch_sel_i[8] (in)                         0.00       0.00 f
+  U72/ZN (OAI21D0BWP7T)                    0.17       0.17 r
+  U73/ZN (CKND2D0BWP7T)                    0.09       0.26 f
+  U74/ZN (AOI221D0BWP7T)                   0.46       0.72 r
+  U75/ZN (IND4D0BWP7T)                     0.18       0.89 f
+  U94/ZN (OAI211D0BWP7T)                   0.13       1.03 r
+  U95/ZN (AOI22D0BWP7T)                    0.08       1.10 f
+  U96/ZN (OAI21D0BWP7T)                    0.10       1.21 r
+  U98/ZN (CKND2D0BWP7T)                    0.06       1.26 f
+  U99/Z (AO21D0BWP7T)                      0.18       1.44 f
+  U100/ZN (NR2XD0BWP7T)                    0.12       1.56 r
+  U116/ZN (CKND2D0BWP7T)                   0.13       1.69 f
+  U131/ZN (NR3D0BWP7T)                     0.11       1.80 r
+  ch_sel_o[13] (out)                       0.00       1.80 r
+  data arrival time                                   1.80
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: ch_sel_i[8]
+              (input port)
+  Endpoint: ch_sel_o[15]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  priority_fsm       ZeroWireload          tcb018gbwp7ttc
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 f
+  ch_sel_i[8] (in)                         0.00       0.00 f
+  U72/ZN (OAI21D0BWP7T)                    0.17       0.17 r
+  U73/ZN (CKND2D0BWP7T)                    0.09       0.26 f
+  U74/ZN (AOI221D0BWP7T)                   0.46       0.72 r
+  U75/ZN (IND4D0BWP7T)                     0.18       0.89 f
+  U94/ZN (OAI211D0BWP7T)                   0.13       1.02 r
+  U95/ZN (AOI22D0BWP7T)                    0.08       1.10 f
+  U96/ZN (OAI21D0BWP7T)                    0.10       1.20 r
+  U98/ZN (CKND2D0BWP7T)                    0.06       1.26 f
+  U99/Z (AO21D0BWP7T)                      0.18       1.44 f
+  U100/ZN (NR2XD0BWP7T)                    0.12       1.56 r
+  U116/ZN (CKND2D0BWP7T)                   0.13       1.69 f
+  U133/ZN (NR3D0BWP7T)                     0.11       1.80 r
+  ch_sel_o[15] (out)                       0.00       1.80 r
+  data arrival time                                   1.80
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: ch_sel_i[8]
+              (input port)
+  Endpoint: ch_sel_o[13]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  priority_fsm       ZeroWireload          tcb018gbwp7ttc
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 f
+  ch_sel_i[8] (in)                         0.00       0.00 f
+  U72/ZN (OAI21D0BWP7T)                    0.17       0.17 r
+  U73/ZN (CKND2D0BWP7T)                    0.09       0.26 f
+  U74/ZN (AOI221D0BWP7T)                   0.46       0.72 r
+  U75/ZN (IND4D0BWP7T)                     0.18       0.89 f
+  U94/ZN (OAI211D0BWP7T)                   0.13       1.02 r
+  U95/ZN (AOI22D0BWP7T)                    0.08       1.10 f
+  U96/ZN (OAI21D0BWP7T)                    0.10       1.20 r
+  U98/ZN (CKND2D0BWP7T)                    0.06       1.26 f
+  U99/Z (AO21D0BWP7T)                      0.18       1.44 f
+  U100/ZN (NR2XD0BWP7T)                    0.12       1.56 r
+  U116/ZN (CKND2D0BWP7T)                   0.13       1.69 f
+  U131/ZN (NR3D0BWP7T)                     0.11       1.80 r
+  ch_sel_o[13] (out)                       0.00       1.80 r
+  data arrival time                                   1.80
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: ch_sel_i[8]
+              (input port)
+  Endpoint: ch_sel_o[15]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  priority_fsm       ZeroWireload          tcb018gbwp7ttc
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 f
+  ch_sel_i[8] (in)                         0.00       0.00 f
+  U72/ZN (OAI21D0BWP7T)                    0.17       0.17 r
+  U73/ZN (CKND2D0BWP7T)                    0.09       0.26 f
+  U74/ZN (AOI221D0BWP7T)                   0.46       0.72 r
+  U75/ZN (IND4D0BWP7T)                     0.18       0.89 f
+  U94/ZN (OAI211D0BWP7T)                   0.14       1.03 r
+  U95/ZN (AOI22D0BWP7T)                    0.07       1.10 f
+  U96/ZN (OAI21D0BWP7T)                    0.10       1.20 r
+  U98/ZN (CKND2D0BWP7T)                    0.06       1.26 f
+  U99/Z (AO21D0BWP7T)                      0.18       1.44 f
+  U100/ZN (NR2XD0BWP7T)                    0.12       1.56 r
+  U116/ZN (CKND2D0BWP7T)                   0.13       1.69 f
+  U133/ZN (NR3D0BWP7T)                     0.11       1.79 r
+  ch_sel_o[15] (out)                       0.00       1.79 r
+  data arrival time                                   1.79
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: ch_sel_i[8]
+              (input port)
+  Endpoint: ch_sel_o[13]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  priority_fsm       ZeroWireload          tcb018gbwp7ttc
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 f
+  ch_sel_i[8] (in)                         0.00       0.00 f
+  U72/ZN (OAI21D0BWP7T)                    0.17       0.17 r
+  U73/ZN (CKND2D0BWP7T)                    0.09       0.26 f
+  U74/ZN (AOI221D0BWP7T)                   0.46       0.72 r
+  U75/ZN (IND4D0BWP7T)                     0.18       0.89 f
+  U94/ZN (OAI211D0BWP7T)                   0.14       1.03 r
+  U95/ZN (AOI22D0BWP7T)                    0.07       1.10 f
+  U96/ZN (OAI21D0BWP7T)                    0.10       1.20 r
+  U98/ZN (CKND2D0BWP7T)                    0.06       1.26 f
+  U99/Z (AO21D0BWP7T)                      0.18       1.44 f
+  U100/ZN (NR2XD0BWP7T)                    0.12       1.56 r
+  U116/ZN (CKND2D0BWP7T)                   0.13       1.69 f
+  U131/ZN (NR3D0BWP7T)                     0.11       1.79 r
+  ch_sel_o[13] (out)                       0.00       1.79 r
+  data arrival time                                   1.79
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: ch_sel_i[8]
+              (input port)
+  Endpoint: ch_sel_o[15]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  priority_fsm       ZeroWireload          tcb018gbwp7ttc
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 f
+  ch_sel_i[8] (in)                         0.00       0.00 f
+  U72/ZN (OAI21D0BWP7T)                    0.17       0.17 r
+  U73/ZN (CKND2D0BWP7T)                    0.09       0.26 f
+  U74/ZN (AOI221D0BWP7T)                   0.46       0.72 r
+  U75/ZN (IND4D0BWP7T)                     0.18       0.89 f
+  U94/ZN (OAI211D0BWP7T)                   0.14       1.03 r
+  U95/ZN (AOI22D0BWP7T)                    0.07       1.10 f
+  U96/ZN (OAI21D0BWP7T)                    0.10       1.20 r
+  U98/ZN (CKND2D0BWP7T)                    0.06       1.26 f
+  U99/Z (AO21D0BWP7T)                      0.18       1.44 f
+  U100/ZN (NR2XD0BWP7T)                    0.12       1.56 r
+  U116/ZN (CKND2D0BWP7T)                   0.13       1.68 f
+  U133/ZN (NR3D0BWP7T)                     0.11       1.79 r
+  ch_sel_o[15] (out)                       0.00       1.79 r
+  data arrival time                                   1.79
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: ch_sel_i[8]
+              (input port)
+  Endpoint: ch_sel_o[13]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  priority_fsm       ZeroWireload          tcb018gbwp7ttc
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 f
+  ch_sel_i[8] (in)                         0.00       0.00 f
+  U72/ZN (OAI21D0BWP7T)                    0.17       0.17 r
+  U73/ZN (CKND2D0BWP7T)                    0.09       0.26 f
+  U74/ZN (AOI221D0BWP7T)                   0.46       0.72 r
+  U75/ZN (IND4D0BWP7T)                     0.18       0.89 f
+  U94/ZN (OAI211D0BWP7T)                   0.14       1.03 r
+  U95/ZN (AOI22D0BWP7T)                    0.07       1.10 f
+  U96/ZN (OAI21D0BWP7T)                    0.10       1.20 r
+  U98/ZN (CKND2D0BWP7T)                    0.06       1.26 f
+  U99/Z (AO21D0BWP7T)                      0.18       1.44 f
+  U100/ZN (NR2XD0BWP7T)                    0.12       1.56 r
+  U116/ZN (CKND2D0BWP7T)                   0.13       1.68 f
+  U131/ZN (NR3D0BWP7T)                     0.11       1.79 r
+  ch_sel_o[13] (out)                       0.00       1.79 r
+  data arrival time                                   1.79
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: ch_sel_i[8]
+              (input port)
+  Endpoint: ch_sel_o[7]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  priority_fsm       ZeroWireload          tcb018gbwp7ttc
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 f
+  ch_sel_i[8] (in)                         0.00       0.00 f
+  U72/ZN (OAI21D0BWP7T)                    0.17       0.17 r
+  U73/ZN (CKND2D0BWP7T)                    0.09       0.26 f
+  U74/ZN (AOI221D0BWP7T)                   0.46       0.72 r
+  U75/ZN (IND4D0BWP7T)                     0.18       0.89 f
+  U94/ZN (OAI211D0BWP7T)                   0.13       1.03 r
+  U95/ZN (AOI22D0BWP7T)                    0.08       1.10 f
+  U96/ZN (OAI21D0BWP7T)                    0.10       1.21 r
+  U98/ZN (CKND2D0BWP7T)                    0.06       1.26 f
+  U99/Z (AO21D0BWP7T)                      0.18       1.44 f
+  U100/ZN (NR2XD0BWP7T)                    0.12       1.56 r
+  U122/ZN (CKND2D0BWP7T)                   0.12       1.68 f
+  U129/ZN (NR3D0BWP7T)                     0.11       1.79 r
+  ch_sel_o[7] (out)                        0.00       1.79 r
+  data arrival time                                   1.79
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: ch_sel_i[8]
+              (input port)
+  Endpoint: ch_sel_o[5]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  priority_fsm       ZeroWireload          tcb018gbwp7ttc
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 f
+  ch_sel_i[8] (in)                         0.00       0.00 f
+  U72/ZN (OAI21D0BWP7T)                    0.17       0.17 r
+  U73/ZN (CKND2D0BWP7T)                    0.09       0.26 f
+  U74/ZN (AOI221D0BWP7T)                   0.46       0.72 r
+  U75/ZN (IND4D0BWP7T)                     0.18       0.89 f
+  U94/ZN (OAI211D0BWP7T)                   0.13       1.03 r
+  U95/ZN (AOI22D0BWP7T)                    0.08       1.10 f
+  U96/ZN (OAI21D0BWP7T)                    0.10       1.21 r
+  U98/ZN (CKND2D0BWP7T)                    0.06       1.26 f
+  U99/Z (AO21D0BWP7T)                      0.18       1.44 f
+  U100/ZN (NR2XD0BWP7T)                    0.12       1.56 r
+  U122/ZN (CKND2D0BWP7T)                   0.12       1.68 f
+  U127/ZN (NR3D0BWP7T)                     0.11       1.79 r
+  ch_sel_o[5] (out)                        0.00       1.79 r
+  data arrival time                                   1.79
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: ch_sel_i[8]
+              (input port)
+  Endpoint: ch_sel_o[7]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  priority_fsm       ZeroWireload          tcb018gbwp7ttc
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 f
+  ch_sel_i[8] (in)                         0.00       0.00 f
+  U72/ZN (OAI21D0BWP7T)                    0.17       0.17 r
+  U73/ZN (CKND2D0BWP7T)                    0.09       0.26 f
+  U74/ZN (AOI221D0BWP7T)                   0.46       0.72 r
+  U75/ZN (IND4D0BWP7T)                     0.18       0.89 f
+  U94/ZN (OAI211D0BWP7T)                   0.13       1.02 r
+  U95/ZN (AOI22D0BWP7T)                    0.08       1.10 f
+  U96/ZN (OAI21D0BWP7T)                    0.10       1.20 r
+  U98/ZN (CKND2D0BWP7T)                    0.06       1.26 f
+  U99/Z (AO21D0BWP7T)                      0.18       1.44 f
+  U100/ZN (NR2XD0BWP7T)                    0.12       1.56 r
+  U122/ZN (CKND2D0BWP7T)                   0.12       1.68 f
+  U129/ZN (NR3D0BWP7T)                     0.11       1.79 r
+  ch_sel_o[7] (out)                        0.00       1.79 r
+  data arrival time                                   1.79
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: ch_sel_i[8]
+              (input port)
+  Endpoint: ch_sel_o[5]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  priority_fsm       ZeroWireload          tcb018gbwp7ttc
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 f
+  ch_sel_i[8] (in)                         0.00       0.00 f
+  U72/ZN (OAI21D0BWP7T)                    0.17       0.17 r
+  U73/ZN (CKND2D0BWP7T)                    0.09       0.26 f
+  U74/ZN (AOI221D0BWP7T)                   0.46       0.72 r
+  U75/ZN (IND4D0BWP7T)                     0.18       0.89 f
+  U94/ZN (OAI211D0BWP7T)                   0.13       1.02 r
+  U95/ZN (AOI22D0BWP7T)                    0.08       1.10 f
+  U96/ZN (OAI21D0BWP7T)                    0.10       1.20 r
+  U98/ZN (CKND2D0BWP7T)                    0.06       1.26 f
+  U99/Z (AO21D0BWP7T)                      0.18       1.44 f
+  U100/ZN (NR2XD0BWP7T)                    0.12       1.56 r
+  U122/ZN (CKND2D0BWP7T)                   0.12       1.68 f
+  U127/ZN (NR3D0BWP7T)                     0.11       1.79 r
+  ch_sel_o[5] (out)                        0.00       1.79 r
+  data arrival time                                   1.79
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: ch_sel_i[9]
+              (input port)
+  Endpoint: ch_sel_o[15]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  priority_fsm       ZeroWireload          tcb018gbwp7ttc
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 f
+  ch_sel_i[9] (in)                         0.00       0.00 f
+  U72/ZN (OAI21D0BWP7T)                    0.15       0.15 r
+  U73/ZN (CKND2D0BWP7T)                    0.09       0.25 f
+  U74/ZN (AOI221D0BWP7T)                   0.46       0.70 r
+  U75/ZN (IND4D0BWP7T)                     0.18       0.88 f
+  U94/ZN (OAI211D0BWP7T)                   0.14       1.02 r
+  U95/ZN (AOI22D0BWP7T)                    0.08       1.10 f
+  U96/ZN (OAI21D0BWP7T)                    0.10       1.20 r
+  U98/ZN (CKND2D0BWP7T)                    0.06       1.26 f
+  U99/Z (AO21D0BWP7T)                      0.18       1.44 f
+  U100/ZN (NR2XD0BWP7T)                    0.12       1.56 r
+  U116/ZN (CKND2D0BWP7T)                   0.13       1.68 f
+  U133/ZN (NR3D0BWP7T)                     0.11       1.79 r
+  ch_sel_o[15] (out)                       0.00       1.79 r
+  data arrival time                                   1.79
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: ch_sel_i[9]
+              (input port)
+  Endpoint: ch_sel_o[13]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  priority_fsm       ZeroWireload          tcb018gbwp7ttc
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 f
+  ch_sel_i[9] (in)                         0.00       0.00 f
+  U72/ZN (OAI21D0BWP7T)                    0.15       0.15 r
+  U73/ZN (CKND2D0BWP7T)                    0.09       0.25 f
+  U74/ZN (AOI221D0BWP7T)                   0.46       0.70 r
+  U75/ZN (IND4D0BWP7T)                     0.18       0.88 f
+  U94/ZN (OAI211D0BWP7T)                   0.14       1.02 r
+  U95/ZN (AOI22D0BWP7T)                    0.08       1.10 f
+  U96/ZN (OAI21D0BWP7T)                    0.10       1.20 r
+  U98/ZN (CKND2D0BWP7T)                    0.06       1.26 f
+  U99/Z (AO21D0BWP7T)                      0.18       1.44 f
+  U100/ZN (NR2XD0BWP7T)                    0.12       1.56 r
+  U116/ZN (CKND2D0BWP7T)                   0.13       1.68 f
+  U131/ZN (NR3D0BWP7T)                     0.11       1.79 r
+  ch_sel_o[13] (out)                       0.00       1.79 r
+  data arrival time                                   1.79
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: ch_sel_i[8]
+              (input port)
+  Endpoint: ch_sel_o[7]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  priority_fsm       ZeroWireload          tcb018gbwp7ttc
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 f
+  ch_sel_i[8] (in)                         0.00       0.00 f
+  U72/ZN (OAI21D0BWP7T)                    0.17       0.17 r
+  U73/ZN (CKND2D0BWP7T)                    0.09       0.26 f
+  U74/ZN (AOI221D0BWP7T)                   0.46       0.72 r
+  U75/ZN (IND4D0BWP7T)                     0.18       0.89 f
+  U94/ZN (OAI211D0BWP7T)                   0.14       1.03 r
+  U95/ZN (AOI22D0BWP7T)                    0.07       1.10 f
+  U96/ZN (OAI21D0BWP7T)                    0.10       1.20 r
+  U98/ZN (CKND2D0BWP7T)                    0.06       1.26 f
+  U99/Z (AO21D0BWP7T)                      0.18       1.44 f
+  U100/ZN (NR2XD0BWP7T)                    0.12       1.56 r
+  U122/ZN (CKND2D0BWP7T)                   0.12       1.68 f
+  U129/ZN (NR3D0BWP7T)                     0.11       1.79 r
+  ch_sel_o[7] (out)                        0.00       1.79 r
+  data arrival time                                   1.79
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: ch_sel_i[8]
+              (input port)
+  Endpoint: ch_sel_o[5]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  priority_fsm       ZeroWireload          tcb018gbwp7ttc
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 f
+  ch_sel_i[8] (in)                         0.00       0.00 f
+  U72/ZN (OAI21D0BWP7T)                    0.17       0.17 r
+  U73/ZN (CKND2D0BWP7T)                    0.09       0.26 f
+  U74/ZN (AOI221D0BWP7T)                   0.46       0.72 r
+  U75/ZN (IND4D0BWP7T)                     0.18       0.89 f
+  U94/ZN (OAI211D0BWP7T)                   0.14       1.03 r
+  U95/ZN (AOI22D0BWP7T)                    0.07       1.10 f
+  U96/ZN (OAI21D0BWP7T)                    0.10       1.20 r
+  U98/ZN (CKND2D0BWP7T)                    0.06       1.26 f
+  U99/Z (AO21D0BWP7T)                      0.18       1.44 f
+  U100/ZN (NR2XD0BWP7T)                    0.12       1.56 r
+  U122/ZN (CKND2D0BWP7T)                   0.12       1.68 f
+  U127/ZN (NR3D0BWP7T)                     0.11       1.79 r
+  ch_sel_o[5] (out)                        0.00       1.79 r
+  data arrival time                                   1.79
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: ch_sel_i[8]
+              (input port)
+  Endpoint: ch_sel_o[15]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  priority_fsm       ZeroWireload          tcb018gbwp7ttc
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 f
+  ch_sel_i[8] (in)                         0.00       0.00 f
+  U72/ZN (OAI21D0BWP7T)                    0.17       0.17 r
+  U73/ZN (CKND2D0BWP7T)                    0.09       0.26 f
+  U74/ZN (AOI221D0BWP7T)                   0.46       0.72 r
+  U75/ZN (IND4D0BWP7T)                     0.18       0.89 f
+  U94/ZN (OAI211D0BWP7T)                   0.13       1.03 r
+  U95/ZN (AOI22D0BWP7T)                    0.07       1.10 f
+  U96/ZN (OAI21D0BWP7T)                    0.10       1.20 r
+  U98/ZN (CKND2D0BWP7T)                    0.06       1.25 f
+  U99/Z (AO21D0BWP7T)                      0.18       1.43 f
+  U100/ZN (NR2XD0BWP7T)                    0.12       1.55 r
+  U116/ZN (CKND2D0BWP7T)                   0.13       1.68 f
+  U133/ZN (NR3D0BWP7T)                     0.11       1.79 r
+  ch_sel_o[15] (out)                       0.00       1.79 r
+  data arrival time                                   1.79
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: ch_sel_i[8]
+              (input port)
+  Endpoint: ch_sel_o[13]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  priority_fsm       ZeroWireload          tcb018gbwp7ttc
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 f
+  ch_sel_i[8] (in)                         0.00       0.00 f
+  U72/ZN (OAI21D0BWP7T)                    0.17       0.17 r
+  U73/ZN (CKND2D0BWP7T)                    0.09       0.26 f
+  U74/ZN (AOI221D0BWP7T)                   0.46       0.72 r
+  U75/ZN (IND4D0BWP7T)                     0.18       0.89 f
+  U94/ZN (OAI211D0BWP7T)                   0.13       1.03 r
+  U95/ZN (AOI22D0BWP7T)                    0.07       1.10 f
+  U96/ZN (OAI21D0BWP7T)                    0.10       1.20 r
+  U98/ZN (CKND2D0BWP7T)                    0.06       1.25 f
+  U99/Z (AO21D0BWP7T)                      0.18       1.43 f
+  U100/ZN (NR2XD0BWP7T)                    0.12       1.55 r
+  U116/ZN (CKND2D0BWP7T)                   0.13       1.68 f
+  U131/ZN (NR3D0BWP7T)                     0.11       1.79 r
+  ch_sel_o[13] (out)                       0.00       1.79 r
+  data arrival time                                   1.79
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: ch_sel_i[8]
+              (input port)
+  Endpoint: ch_sel_o[15]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  priority_fsm       ZeroWireload          tcb018gbwp7ttc
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 f
+  ch_sel_i[8] (in)                         0.00       0.00 f
+  U72/ZN (OAI21D0BWP7T)                    0.17       0.17 r
+  U73/ZN (CKND2D0BWP7T)                    0.09       0.26 f
+  U74/ZN (AOI221D0BWP7T)                   0.46       0.72 r
+  U75/ZN (IND4D0BWP7T)                     0.18       0.89 f
+  U94/ZN (OAI211D0BWP7T)                   0.13       1.02 r
+  U95/ZN (AOI22D0BWP7T)                    0.07       1.09 f
+  U96/ZN (OAI21D0BWP7T)                    0.10       1.20 r
+  U98/ZN (CKND2D0BWP7T)                    0.06       1.25 f
+  U99/Z (AO21D0BWP7T)                      0.18       1.43 f
+  U100/ZN (NR2XD0BWP7T)                    0.12       1.55 r
+  U116/ZN (CKND2D0BWP7T)                   0.13       1.68 f
+  U133/ZN (NR3D0BWP7T)                     0.11       1.79 r
+  ch_sel_o[15] (out)                       0.00       1.79 r
+  data arrival time                                   1.79
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: ch_sel_i[8]
+              (input port)
+  Endpoint: ch_sel_o[13]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  priority_fsm       ZeroWireload          tcb018gbwp7ttc
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 f
+  ch_sel_i[8] (in)                         0.00       0.00 f
+  U72/ZN (OAI21D0BWP7T)                    0.17       0.17 r
+  U73/ZN (CKND2D0BWP7T)                    0.09       0.26 f
+  U74/ZN (AOI221D0BWP7T)                   0.46       0.72 r
+  U75/ZN (IND4D0BWP7T)                     0.18       0.89 f
+  U94/ZN (OAI211D0BWP7T)                   0.13       1.02 r
+  U95/ZN (AOI22D0BWP7T)                    0.07       1.09 f
+  U96/ZN (OAI21D0BWP7T)                    0.10       1.20 r
+  U98/ZN (CKND2D0BWP7T)                    0.06       1.25 f
+  U99/Z (AO21D0BWP7T)                      0.18       1.43 f
+  U100/ZN (NR2XD0BWP7T)                    0.12       1.55 r
+  U116/ZN (CKND2D0BWP7T)                   0.13       1.68 f
+  U131/ZN (NR3D0BWP7T)                     0.11       1.79 r
+  ch_sel_o[13] (out)                       0.00       1.79 r
+  data arrival time                                   1.79
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: ch_sel_i[8]
+              (input port)
+  Endpoint: ch_sel_o[7]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  priority_fsm       ZeroWireload          tcb018gbwp7ttc
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 f
+  ch_sel_i[8] (in)                         0.00       0.00 f
+  U72/ZN (OAI21D0BWP7T)                    0.17       0.17 r
+  U73/ZN (CKND2D0BWP7T)                    0.09       0.26 f
+  U74/ZN (AOI221D0BWP7T)                   0.46       0.72 r
+  U75/ZN (IND4D0BWP7T)                     0.18       0.89 f
+  U94/ZN (OAI211D0BWP7T)                   0.14       1.03 r
+  U95/ZN (AOI22D0BWP7T)                    0.07       1.10 f
+  U96/ZN (OAI21D0BWP7T)                    0.10       1.20 r
+  U98/ZN (CKND2D0BWP7T)                    0.06       1.26 f
+  U99/Z (AO21D0BWP7T)                      0.18       1.44 f
+  U100/ZN (NR2XD0BWP7T)                    0.12       1.56 r
+  U122/ZN (CKND2D0BWP7T)                   0.12       1.68 f
+  U129/ZN (NR3D0BWP7T)                     0.11       1.79 r
+  ch_sel_o[7] (out)                        0.00       1.79 r
+  data arrival time                                   1.79
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: ch_sel_i[8]
+              (input port)
+  Endpoint: ch_sel_o[5]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  priority_fsm       ZeroWireload          tcb018gbwp7ttc
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 f
+  ch_sel_i[8] (in)                         0.00       0.00 f
+  U72/ZN (OAI21D0BWP7T)                    0.17       0.17 r
+  U73/ZN (CKND2D0BWP7T)                    0.09       0.26 f
+  U74/ZN (AOI221D0BWP7T)                   0.46       0.72 r
+  U75/ZN (IND4D0BWP7T)                     0.18       0.89 f
+  U94/ZN (OAI211D0BWP7T)                   0.14       1.03 r
+  U95/ZN (AOI22D0BWP7T)                    0.07       1.10 f
+  U96/ZN (OAI21D0BWP7T)                    0.10       1.20 r
+  U98/ZN (CKND2D0BWP7T)                    0.06       1.26 f
+  U99/Z (AO21D0BWP7T)                      0.18       1.44 f
+  U100/ZN (NR2XD0BWP7T)                    0.12       1.56 r
+  U122/ZN (CKND2D0BWP7T)                   0.12       1.68 f
+  U127/ZN (NR3D0BWP7T)                     0.11       1.79 r
+  ch_sel_o[5] (out)                        0.00       1.79 r
+  data arrival time                                   1.79
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: ch_sel_i[8]
+              (input port)
+  Endpoint: ch_sel_o[15]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  priority_fsm       ZeroWireload          tcb018gbwp7ttc
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 f
+  ch_sel_i[8] (in)                         0.00       0.00 f
+  U72/ZN (OAI21D0BWP7T)                    0.17       0.17 r
+  U73/ZN (CKND2D0BWP7T)                    0.09       0.26 f
+  U74/ZN (AOI221D0BWP7T)                   0.46       0.72 r
+  U75/ZN (IND4D0BWP7T)                     0.18       0.89 f
+  U94/ZN (OAI211D0BWP7T)                   0.13       1.03 r
+  U95/ZN (AOI22D0BWP7T)                    0.07       1.09 f
+  U96/ZN (OAI21D0BWP7T)                    0.10       1.20 r
+  U98/ZN (CKND2D0BWP7T)                    0.06       1.25 f
+  U99/Z (AO21D0BWP7T)                      0.18       1.43 f
+  U100/ZN (NR2XD0BWP7T)                    0.12       1.55 r
+  U116/ZN (CKND2D0BWP7T)                   0.13       1.68 f
+  U133/ZN (NR3D0BWP7T)                     0.11       1.79 r
+  ch_sel_o[15] (out)                       0.00       1.79 r
+  data arrival time                                   1.79
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: ch_sel_i[8]
+              (input port)
+  Endpoint: ch_sel_o[13]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  priority_fsm       ZeroWireload          tcb018gbwp7ttc
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 f
+  ch_sel_i[8] (in)                         0.00       0.00 f
+  U72/ZN (OAI21D0BWP7T)                    0.17       0.17 r
+  U73/ZN (CKND2D0BWP7T)                    0.09       0.26 f
+  U74/ZN (AOI221D0BWP7T)                   0.46       0.72 r
+  U75/ZN (IND4D0BWP7T)                     0.18       0.89 f
+  U94/ZN (OAI211D0BWP7T)                   0.13       1.03 r
+  U95/ZN (AOI22D0BWP7T)                    0.07       1.09 f
+  U96/ZN (OAI21D0BWP7T)                    0.10       1.20 r
+  U98/ZN (CKND2D0BWP7T)                    0.06       1.25 f
+  U99/Z (AO21D0BWP7T)                      0.18       1.43 f
+  U100/ZN (NR2XD0BWP7T)                    0.12       1.55 r
+  U116/ZN (CKND2D0BWP7T)                   0.13       1.68 f
+  U131/ZN (NR3D0BWP7T)                     0.11       1.79 r
+  ch_sel_o[13] (out)                       0.00       1.79 r
+  data arrival time                                   1.79
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: ch_sel_i[8]
+              (input port)
+  Endpoint: ch_sel_o[15]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  priority_fsm       ZeroWireload          tcb018gbwp7ttc
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 f
+  ch_sel_i[8] (in)                         0.00       0.00 f
+  U72/ZN (OAI21D0BWP7T)                    0.17       0.17 r
+  U73/ZN (CKND2D0BWP7T)                    0.09       0.26 f
+  U74/ZN (AOI221D0BWP7T)                   0.46       0.72 r
+  U75/ZN (IND4D0BWP7T)                     0.18       0.89 f
+  U94/ZN (OAI211D0BWP7T)                   0.13       1.02 r
+  U95/ZN (AOI22D0BWP7T)                    0.07       1.09 f
+  U96/ZN (OAI21D0BWP7T)                    0.10       1.20 r
+  U98/ZN (CKND2D0BWP7T)                    0.06       1.25 f
+  U99/Z (AO21D0BWP7T)                      0.18       1.43 f
+  U100/ZN (NR2XD0BWP7T)                    0.12       1.55 r
+  U116/ZN (CKND2D0BWP7T)                   0.13       1.68 f
+  U133/ZN (NR3D0BWP7T)                     0.11       1.79 r
+  ch_sel_o[15] (out)                       0.00       1.79 r
+  data arrival time                                   1.79
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: ch_sel_i[8]
+              (input port)
+  Endpoint: ch_sel_o[13]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  priority_fsm       ZeroWireload          tcb018gbwp7ttc
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 f
+  ch_sel_i[8] (in)                         0.00       0.00 f
+  U72/ZN (OAI21D0BWP7T)                    0.17       0.17 r
+  U73/ZN (CKND2D0BWP7T)                    0.09       0.26 f
+  U74/ZN (AOI221D0BWP7T)                   0.46       0.72 r
+  U75/ZN (IND4D0BWP7T)                     0.18       0.89 f
+  U94/ZN (OAI211D0BWP7T)                   0.13       1.02 r
+  U95/ZN (AOI22D0BWP7T)                    0.07       1.09 f
+  U96/ZN (OAI21D0BWP7T)                    0.10       1.20 r
+  U98/ZN (CKND2D0BWP7T)                    0.06       1.25 f
+  U99/Z (AO21D0BWP7T)                      0.18       1.43 f
+  U100/ZN (NR2XD0BWP7T)                    0.12       1.55 r
+  U116/ZN (CKND2D0BWP7T)                   0.13       1.68 f
+  U131/ZN (NR3D0BWP7T)                     0.11       1.79 r
+  ch_sel_o[13] (out)                       0.00       1.79 r
+  data arrival time                                   1.79
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: ch_sel_i[9]
+              (input port)
+  Endpoint: ch_sel_o[7]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  priority_fsm       ZeroWireload          tcb018gbwp7ttc
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 f
+  ch_sel_i[9] (in)                         0.00       0.00 f
+  U72/ZN (OAI21D0BWP7T)                    0.15       0.15 r
+  U73/ZN (CKND2D0BWP7T)                    0.09       0.25 f
+  U74/ZN (AOI221D0BWP7T)                   0.46       0.70 r
+  U75/ZN (IND4D0BWP7T)                     0.18       0.88 f
+  U94/ZN (OAI211D0BWP7T)                   0.14       1.02 r
+  U95/ZN (AOI22D0BWP7T)                    0.08       1.10 f
+  U96/ZN (OAI21D0BWP7T)                    0.10       1.20 r
+  U98/ZN (CKND2D0BWP7T)                    0.06       1.26 f
+  U99/Z (AO21D0BWP7T)                      0.18       1.44 f
+  U100/ZN (NR2XD0BWP7T)                    0.12       1.56 r
+  U122/ZN (CKND2D0BWP7T)                   0.12       1.68 f
+  U129/ZN (NR3D0BWP7T)                     0.11       1.79 r
+  ch_sel_o[7] (out)                        0.00       1.79 r
+  data arrival time                                   1.79
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: ch_sel_i[9]
+              (input port)
+  Endpoint: ch_sel_o[5]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  priority_fsm       ZeroWireload          tcb018gbwp7ttc
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 f
+  ch_sel_i[9] (in)                         0.00       0.00 f
+  U72/ZN (OAI21D0BWP7T)                    0.15       0.15 r
+  U73/ZN (CKND2D0BWP7T)                    0.09       0.25 f
+  U74/ZN (AOI221D0BWP7T)                   0.46       0.70 r
+  U75/ZN (IND4D0BWP7T)                     0.18       0.88 f
+  U94/ZN (OAI211D0BWP7T)                   0.14       1.02 r
+  U95/ZN (AOI22D0BWP7T)                    0.08       1.10 f
+  U96/ZN (OAI21D0BWP7T)                    0.10       1.20 r
+  U98/ZN (CKND2D0BWP7T)                    0.06       1.26 f
+  U99/Z (AO21D0BWP7T)                      0.18       1.44 f
+  U100/ZN (NR2XD0BWP7T)                    0.12       1.56 r
+  U122/ZN (CKND2D0BWP7T)                   0.12       1.68 f
+  U127/ZN (NR3D0BWP7T)                     0.11       1.79 r
+  ch_sel_o[5] (out)                        0.00       1.79 r
+  data arrival time                                   1.79
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: ch_sel_i[9]
+              (input port)
+  Endpoint: ch_sel_o[15]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  priority_fsm       ZeroWireload          tcb018gbwp7ttc
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 f
+  ch_sel_i[9] (in)                         0.00       0.00 f
+  U72/ZN (OAI21D0BWP7T)                    0.15       0.15 r
+  U73/ZN (CKND2D0BWP7T)                    0.09       0.25 f
+  U74/ZN (AOI221D0BWP7T)                   0.46       0.70 r
+  U75/ZN (IND4D0BWP7T)                     0.18       0.88 f
+  U94/ZN (OAI211D0BWP7T)                   0.13       1.01 r
+  U95/ZN (AOI22D0BWP7T)                    0.08       1.09 f
+  U96/ZN (OAI21D0BWP7T)                    0.10       1.19 r
+  U98/ZN (CKND2D0BWP7T)                    0.06       1.25 f
+  U99/Z (AO21D0BWP7T)                      0.18       1.43 f
+  U100/ZN (NR2XD0BWP7T)                    0.12       1.55 r
+  U116/ZN (CKND2D0BWP7T)                   0.13       1.68 f
+  U133/ZN (NR3D0BWP7T)                     0.11       1.79 r
+  ch_sel_o[15] (out)                       0.00       1.79 r
+  data arrival time                                   1.79
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: ch_sel_i[9]
+              (input port)
+  Endpoint: ch_sel_o[13]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  priority_fsm       ZeroWireload          tcb018gbwp7ttc
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 f
+  ch_sel_i[9] (in)                         0.00       0.00 f
+  U72/ZN (OAI21D0BWP7T)                    0.15       0.15 r
+  U73/ZN (CKND2D0BWP7T)                    0.09       0.25 f
+  U74/ZN (AOI221D0BWP7T)                   0.46       0.70 r
+  U75/ZN (IND4D0BWP7T)                     0.18       0.88 f
+  U94/ZN (OAI211D0BWP7T)                   0.13       1.01 r
+  U95/ZN (AOI22D0BWP7T)                    0.08       1.09 f
+  U96/ZN (OAI21D0BWP7T)                    0.10       1.19 r
+  U98/ZN (CKND2D0BWP7T)                    0.06       1.25 f
+  U99/Z (AO21D0BWP7T)                      0.18       1.43 f
+  U100/ZN (NR2XD0BWP7T)                    0.12       1.55 r
+  U116/ZN (CKND2D0BWP7T)                   0.13       1.68 f
+  U131/ZN (NR3D0BWP7T)                     0.11       1.79 r
+  ch_sel_o[13] (out)                       0.00       1.79 r
+  data arrival time                                   1.79
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: ch_sel_i[8]
+              (input port)
+  Endpoint: ch_sel_o[7]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  priority_fsm       ZeroWireload          tcb018gbwp7ttc
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 f
+  ch_sel_i[8] (in)                         0.00       0.00 f
+  U72/ZN (OAI21D0BWP7T)                    0.17       0.17 r
+  U73/ZN (CKND2D0BWP7T)                    0.09       0.26 f
+  U74/ZN (AOI221D0BWP7T)                   0.46       0.72 r
+  U75/ZN (IND4D0BWP7T)                     0.18       0.89 f
+  U94/ZN (OAI211D0BWP7T)                   0.13       1.03 r
+  U95/ZN (AOI22D0BWP7T)                    0.07       1.10 f
+  U96/ZN (OAI21D0BWP7T)                    0.10       1.20 r
+  U98/ZN (CKND2D0BWP7T)                    0.06       1.25 f
+  U99/Z (AO21D0BWP7T)                      0.18       1.43 f
+  U100/ZN (NR2XD0BWP7T)                    0.12       1.55 r
+  U122/ZN (CKND2D0BWP7T)                   0.12       1.68 f
+  U129/ZN (NR3D0BWP7T)                     0.11       1.78 r
+  ch_sel_o[7] (out)                        0.00       1.78 r
+  data arrival time                                   1.78
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: ch_sel_i[8]
+              (input port)
+  Endpoint: ch_sel_o[5]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  priority_fsm       ZeroWireload          tcb018gbwp7ttc
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 f
+  ch_sel_i[8] (in)                         0.00       0.00 f
+  U72/ZN (OAI21D0BWP7T)                    0.17       0.17 r
+  U73/ZN (CKND2D0BWP7T)                    0.09       0.26 f
+  U74/ZN (AOI221D0BWP7T)                   0.46       0.72 r
+  U75/ZN (IND4D0BWP7T)                     0.18       0.89 f
+  U94/ZN (OAI211D0BWP7T)                   0.13       1.03 r
+  U95/ZN (AOI22D0BWP7T)                    0.07       1.10 f
+  U96/ZN (OAI21D0BWP7T)                    0.10       1.20 r
+  U98/ZN (CKND2D0BWP7T)                    0.06       1.25 f
+  U99/Z (AO21D0BWP7T)                      0.18       1.43 f
+  U100/ZN (NR2XD0BWP7T)                    0.12       1.55 r
+  U122/ZN (CKND2D0BWP7T)                   0.12       1.68 f
+  U127/ZN (NR3D0BWP7T)                     0.11       1.78 r
+  ch_sel_o[5] (out)                        0.00       1.78 r
+  data arrival time                                   1.78
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: ch_sel_i[9]
+              (input port)
+  Endpoint: ch_sel_o[15]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  priority_fsm       ZeroWireload          tcb018gbwp7ttc
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 f
+  ch_sel_i[9] (in)                         0.00       0.00 f
+  U72/ZN (OAI21D0BWP7T)                    0.15       0.15 r
+  U73/ZN (CKND2D0BWP7T)                    0.09       0.25 f
+  U74/ZN (AOI221D0BWP7T)                   0.46       0.70 r
+  U75/ZN (IND4D0BWP7T)                     0.18       0.88 f
+  U94/ZN (OAI211D0BWP7T)                   0.13       1.01 r
+  U95/ZN (AOI22D0BWP7T)                    0.08       1.09 f
+  U96/ZN (OAI21D0BWP7T)                    0.10       1.19 r
+  U98/ZN (CKND2D0BWP7T)                    0.06       1.25 f
+  U99/Z (AO21D0BWP7T)                      0.18       1.43 f
+  U100/ZN (NR2XD0BWP7T)                    0.12       1.55 r
+  U116/ZN (CKND2D0BWP7T)                   0.13       1.68 f
+  U133/ZN (NR3D0BWP7T)                     0.11       1.78 r
+  ch_sel_o[15] (out)                       0.00       1.78 r
+  data arrival time                                   1.78
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: ch_sel_i[9]
+              (input port)
+  Endpoint: ch_sel_o[13]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  priority_fsm       ZeroWireload          tcb018gbwp7ttc
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 f
+  ch_sel_i[9] (in)                         0.00       0.00 f
+  U72/ZN (OAI21D0BWP7T)                    0.15       0.15 r
+  U73/ZN (CKND2D0BWP7T)                    0.09       0.25 f
+  U74/ZN (AOI221D0BWP7T)                   0.46       0.70 r
+  U75/ZN (IND4D0BWP7T)                     0.18       0.88 f
+  U94/ZN (OAI211D0BWP7T)                   0.13       1.01 r
+  U95/ZN (AOI22D0BWP7T)                    0.08       1.09 f
+  U96/ZN (OAI21D0BWP7T)                    0.10       1.19 r
+  U98/ZN (CKND2D0BWP7T)                    0.06       1.25 f
+  U99/Z (AO21D0BWP7T)                      0.18       1.43 f
+  U100/ZN (NR2XD0BWP7T)                    0.12       1.55 r
+  U116/ZN (CKND2D0BWP7T)                   0.13       1.68 f
+  U131/ZN (NR3D0BWP7T)                     0.11       1.78 r
+  ch_sel_o[13] (out)                       0.00       1.78 r
+  data arrival time                                   1.78
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: ch_sel_i[8]
+              (input port)
+  Endpoint: ch_sel_o[7]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  priority_fsm       ZeroWireload          tcb018gbwp7ttc
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 f
+  ch_sel_i[8] (in)                         0.00       0.00 f
+  U72/ZN (OAI21D0BWP7T)                    0.17       0.17 r
+  U73/ZN (CKND2D0BWP7T)                    0.09       0.26 f
+  U74/ZN (AOI221D0BWP7T)                   0.46       0.72 r
+  U75/ZN (IND4D0BWP7T)                     0.18       0.89 f
+  U94/ZN (OAI211D0BWP7T)                   0.13       1.02 r
+  U95/ZN (AOI22D0BWP7T)                    0.07       1.09 f
+  U96/ZN (OAI21D0BWP7T)                    0.10       1.20 r
+  U98/ZN (CKND2D0BWP7T)                    0.06       1.25 f
+  U99/Z (AO21D0BWP7T)                      0.18       1.43 f
+  U100/ZN (NR2XD0BWP7T)                    0.12       1.55 r
+  U122/ZN (CKND2D0BWP7T)                   0.12       1.68 f
+  U129/ZN (NR3D0BWP7T)                     0.11       1.78 r
+  ch_sel_o[7] (out)                        0.00       1.78 r
+  data arrival time                                   1.78
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: ch_sel_i[8]
+              (input port)
+  Endpoint: ch_sel_o[5]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  priority_fsm       ZeroWireload          tcb018gbwp7ttc
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 f
+  ch_sel_i[8] (in)                         0.00       0.00 f
+  U72/ZN (OAI21D0BWP7T)                    0.17       0.17 r
+  U73/ZN (CKND2D0BWP7T)                    0.09       0.26 f
+  U74/ZN (AOI221D0BWP7T)                   0.46       0.72 r
+  U75/ZN (IND4D0BWP7T)                     0.18       0.89 f
+  U94/ZN (OAI211D0BWP7T)                   0.13       1.02 r
+  U95/ZN (AOI22D0BWP7T)                    0.07       1.09 f
+  U96/ZN (OAI21D0BWP7T)                    0.10       1.20 r
+  U98/ZN (CKND2D0BWP7T)                    0.06       1.25 f
+  U99/Z (AO21D0BWP7T)                      0.18       1.43 f
+  U100/ZN (NR2XD0BWP7T)                    0.12       1.55 r
+  U122/ZN (CKND2D0BWP7T)                   0.12       1.68 f
+  U127/ZN (NR3D0BWP7T)                     0.11       1.78 r
+  ch_sel_o[5] (out)                        0.00       1.78 r
+  data arrival time                                   1.78
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: ch_sel_i[9]
+              (input port)
+  Endpoint: ch_sel_o[15]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  priority_fsm       ZeroWireload          tcb018gbwp7ttc
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 f
+  ch_sel_i[9] (in)                         0.00       0.00 f
+  U72/ZN (OAI21D0BWP7T)                    0.15       0.15 r
+  U73/ZN (CKND2D0BWP7T)                    0.09       0.25 f
+  U74/ZN (AOI221D0BWP7T)                   0.46       0.70 r
+  U75/ZN (IND4D0BWP7T)                     0.18       0.88 f
+  U94/ZN (OAI211D0BWP7T)                   0.14       1.02 r
+  U95/ZN (AOI22D0BWP7T)                    0.07       1.09 f
+  U96/ZN (OAI21D0BWP7T)                    0.10       1.19 r
+  U98/ZN (CKND2D0BWP7T)                    0.06       1.25 f
+  U99/Z (AO21D0BWP7T)                      0.18       1.43 f
+  U100/ZN (NR2XD0BWP7T)                    0.12       1.55 r
+  U116/ZN (CKND2D0BWP7T)                   0.13       1.67 f
+  U133/ZN (NR3D0BWP7T)                     0.11       1.78 r
+  ch_sel_o[15] (out)                       0.00       1.78 r
+  data arrival time                                   1.78
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: ch_sel_i[9]
+              (input port)
+  Endpoint: ch_sel_o[13]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  priority_fsm       ZeroWireload          tcb018gbwp7ttc
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 f
+  ch_sel_i[9] (in)                         0.00       0.00 f
+  U72/ZN (OAI21D0BWP7T)                    0.15       0.15 r
+  U73/ZN (CKND2D0BWP7T)                    0.09       0.25 f
+  U74/ZN (AOI221D0BWP7T)                   0.46       0.70 r
+  U75/ZN (IND4D0BWP7T)                     0.18       0.88 f
+  U94/ZN (OAI211D0BWP7T)                   0.14       1.02 r
+  U95/ZN (AOI22D0BWP7T)                    0.07       1.09 f
+  U96/ZN (OAI21D0BWP7T)                    0.10       1.19 r
+  U98/ZN (CKND2D0BWP7T)                    0.06       1.25 f
+  U99/Z (AO21D0BWP7T)                      0.18       1.43 f
+  U100/ZN (NR2XD0BWP7T)                    0.12       1.55 r
+  U116/ZN (CKND2D0BWP7T)                   0.13       1.67 f
+  U131/ZN (NR3D0BWP7T)                     0.11       1.78 r
+  ch_sel_o[13] (out)                       0.00       1.78 r
+  data arrival time                                   1.78
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: ch_sel_i[8]
+              (input port)
+  Endpoint: ch_sel_o[7]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  priority_fsm       ZeroWireload          tcb018gbwp7ttc
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 f
+  ch_sel_i[8] (in)                         0.00       0.00 f
+  U72/ZN (OAI21D0BWP7T)                    0.17       0.17 r
+  U73/ZN (CKND2D0BWP7T)                    0.09       0.26 f
+  U74/ZN (AOI221D0BWP7T)                   0.46       0.72 r
+  U75/ZN (IND4D0BWP7T)                     0.18       0.89 f
+  U94/ZN (OAI211D0BWP7T)                   0.13       1.03 r
+  U95/ZN (AOI22D0BWP7T)                    0.07       1.09 f
+  U96/ZN (OAI21D0BWP7T)                    0.10       1.20 r
+  U98/ZN (CKND2D0BWP7T)                    0.06       1.25 f
+  U99/Z (AO21D0BWP7T)                      0.18       1.43 f
+  U100/ZN (NR2XD0BWP7T)                    0.12       1.55 r
+  U122/ZN (CKND2D0BWP7T)                   0.12       1.68 f
+  U129/ZN (NR3D0BWP7T)                     0.11       1.78 r
+  ch_sel_o[7] (out)                        0.00       1.78 r
+  data arrival time                                   1.78
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: ch_sel_i[8]
+              (input port)
+  Endpoint: ch_sel_o[5]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  priority_fsm       ZeroWireload          tcb018gbwp7ttc
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 f
+  ch_sel_i[8] (in)                         0.00       0.00 f
+  U72/ZN (OAI21D0BWP7T)                    0.17       0.17 r
+  U73/ZN (CKND2D0BWP7T)                    0.09       0.26 f
+  U74/ZN (AOI221D0BWP7T)                   0.46       0.72 r
+  U75/ZN (IND4D0BWP7T)                     0.18       0.89 f
+  U94/ZN (OAI211D0BWP7T)                   0.13       1.03 r
+  U95/ZN (AOI22D0BWP7T)                    0.07       1.09 f
+  U96/ZN (OAI21D0BWP7T)                    0.10       1.20 r
+  U98/ZN (CKND2D0BWP7T)                    0.06       1.25 f
+  U99/Z (AO21D0BWP7T)                      0.18       1.43 f
+  U100/ZN (NR2XD0BWP7T)                    0.12       1.55 r
+  U122/ZN (CKND2D0BWP7T)                   0.12       1.68 f
+  U127/ZN (NR3D0BWP7T)                     0.11       1.78 r
+  ch_sel_o[5] (out)                        0.00       1.78 r
+  data arrival time                                   1.78
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: ch_sel_i[8]
+              (input port)
+  Endpoint: ch_sel_o[7]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  priority_fsm       ZeroWireload          tcb018gbwp7ttc
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 f
+  ch_sel_i[8] (in)                         0.00       0.00 f
+  U72/ZN (OAI21D0BWP7T)                    0.17       0.17 r
+  U73/ZN (CKND2D0BWP7T)                    0.09       0.26 f
+  U74/ZN (AOI221D0BWP7T)                   0.46       0.72 r
+  U75/ZN (IND4D0BWP7T)                     0.18       0.89 f
+  U94/ZN (OAI211D0BWP7T)                   0.13       1.02 r
+  U95/ZN (AOI22D0BWP7T)                    0.07       1.09 f
+  U96/ZN (OAI21D0BWP7T)                    0.10       1.20 r
+  U98/ZN (CKND2D0BWP7T)                    0.06       1.25 f
+  U99/Z (AO21D0BWP7T)                      0.18       1.43 f
+  U100/ZN (NR2XD0BWP7T)                    0.12       1.55 r
+  U122/ZN (CKND2D0BWP7T)                   0.12       1.68 f
+  U129/ZN (NR3D0BWP7T)                     0.11       1.78 r
+  ch_sel_o[7] (out)                        0.00       1.78 r
+  data arrival time                                   1.78
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: ch_sel_i[8]
+              (input port)
+  Endpoint: ch_sel_o[5]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  priority_fsm       ZeroWireload          tcb018gbwp7ttc
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 f
+  ch_sel_i[8] (in)                         0.00       0.00 f
+  U72/ZN (OAI21D0BWP7T)                    0.17       0.17 r
+  U73/ZN (CKND2D0BWP7T)                    0.09       0.26 f
+  U74/ZN (AOI221D0BWP7T)                   0.46       0.72 r
+  U75/ZN (IND4D0BWP7T)                     0.18       0.89 f
+  U94/ZN (OAI211D0BWP7T)                   0.13       1.02 r
+  U95/ZN (AOI22D0BWP7T)                    0.07       1.09 f
+  U96/ZN (OAI21D0BWP7T)                    0.10       1.20 r
+  U98/ZN (CKND2D0BWP7T)                    0.06       1.25 f
+  U99/Z (AO21D0BWP7T)                      0.18       1.43 f
+  U100/ZN (NR2XD0BWP7T)                    0.12       1.55 r
+  U122/ZN (CKND2D0BWP7T)                   0.12       1.68 f
+  U127/ZN (NR3D0BWP7T)                     0.11       1.78 r
+  ch_sel_o[5] (out)                        0.00       1.78 r
+  data arrival time                                   1.78
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: ch_sel_i[9]
+              (input port)
+  Endpoint: ch_sel_o[15]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  priority_fsm       ZeroWireload          tcb018gbwp7ttc
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 f
+  ch_sel_i[9] (in)                         0.00       0.00 f
+  U72/ZN (OAI21D0BWP7T)                    0.15       0.15 r
+  U73/ZN (CKND2D0BWP7T)                    0.09       0.25 f
+  U74/ZN (AOI221D0BWP7T)                   0.46       0.70 r
+  U75/ZN (IND4D0BWP7T)                     0.18       0.88 f
+  U94/ZN (OAI211D0BWP7T)                   0.14       1.02 r
+  U95/ZN (AOI22D0BWP7T)                    0.07       1.09 f
+  U96/ZN (OAI21D0BWP7T)                    0.10       1.19 r
+  U98/ZN (CKND2D0BWP7T)                    0.06       1.25 f
+  U99/Z (AO21D0BWP7T)                      0.18       1.43 f
+  U100/ZN (NR2XD0BWP7T)                    0.12       1.55 r
+  U116/ZN (CKND2D0BWP7T)                   0.13       1.67 f
+  U133/ZN (NR3D0BWP7T)                     0.11       1.78 r
+  ch_sel_o[15] (out)                       0.00       1.78 r
+  data arrival time                                   1.78
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: ch_sel_i[9]
+              (input port)
+  Endpoint: ch_sel_o[13]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  priority_fsm       ZeroWireload          tcb018gbwp7ttc
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 f
+  ch_sel_i[9] (in)                         0.00       0.00 f
+  U72/ZN (OAI21D0BWP7T)                    0.15       0.15 r
+  U73/ZN (CKND2D0BWP7T)                    0.09       0.25 f
+  U74/ZN (AOI221D0BWP7T)                   0.46       0.70 r
+  U75/ZN (IND4D0BWP7T)                     0.18       0.88 f
+  U94/ZN (OAI211D0BWP7T)                   0.14       1.02 r
+  U95/ZN (AOI22D0BWP7T)                    0.07       1.09 f
+  U96/ZN (OAI21D0BWP7T)                    0.10       1.19 r
+  U98/ZN (CKND2D0BWP7T)                    0.06       1.25 f
+  U99/Z (AO21D0BWP7T)                      0.18       1.43 f
+  U100/ZN (NR2XD0BWP7T)                    0.12       1.55 r
+  U116/ZN (CKND2D0BWP7T)                   0.13       1.67 f
+  U131/ZN (NR3D0BWP7T)                     0.11       1.78 r
+  ch_sel_o[13] (out)                       0.00       1.78 r
+  data arrival time                                   1.78
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: ch_sel_i[9]
+              (input port)
+  Endpoint: ch_sel_o[7]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  priority_fsm       ZeroWireload          tcb018gbwp7ttc
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 f
+  ch_sel_i[9] (in)                         0.00       0.00 f
+  U72/ZN (OAI21D0BWP7T)                    0.15       0.15 r
+  U73/ZN (CKND2D0BWP7T)                    0.09       0.25 f
+  U74/ZN (AOI221D0BWP7T)                   0.46       0.70 r
+  U75/ZN (IND4D0BWP7T)                     0.18       0.88 f
+  U94/ZN (OAI211D0BWP7T)                   0.13       1.01 r
+  U95/ZN (AOI22D0BWP7T)                    0.08       1.09 f
+  U96/ZN (OAI21D0BWP7T)                    0.10       1.19 r
+  U98/ZN (CKND2D0BWP7T)                    0.06       1.25 f
+  U99/Z (AO21D0BWP7T)                      0.18       1.43 f
+  U100/ZN (NR2XD0BWP7T)                    0.12       1.55 r
+  U122/ZN (CKND2D0BWP7T)                   0.12       1.67 f
+  U129/ZN (NR3D0BWP7T)                     0.11       1.78 r
+  ch_sel_o[7] (out)                        0.00       1.78 r
+  data arrival time                                   1.78
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: ch_sel_i[9]
+              (input port)
+  Endpoint: ch_sel_o[5]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  priority_fsm       ZeroWireload          tcb018gbwp7ttc
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 f
+  ch_sel_i[9] (in)                         0.00       0.00 f
+  U72/ZN (OAI21D0BWP7T)                    0.15       0.15 r
+  U73/ZN (CKND2D0BWP7T)                    0.09       0.25 f
+  U74/ZN (AOI221D0BWP7T)                   0.46       0.70 r
+  U75/ZN (IND4D0BWP7T)                     0.18       0.88 f
+  U94/ZN (OAI211D0BWP7T)                   0.13       1.01 r
+  U95/ZN (AOI22D0BWP7T)                    0.08       1.09 f
+  U96/ZN (OAI21D0BWP7T)                    0.10       1.19 r
+  U98/ZN (CKND2D0BWP7T)                    0.06       1.25 f
+  U99/Z (AO21D0BWP7T)                      0.18       1.43 f
+  U100/ZN (NR2XD0BWP7T)                    0.12       1.55 r
+  U122/ZN (CKND2D0BWP7T)                   0.12       1.67 f
+  U127/ZN (NR3D0BWP7T)                     0.11       1.78 r
+  ch_sel_o[5] (out)                        0.00       1.78 r
+  data arrival time                                   1.78
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+1

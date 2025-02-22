@@ -1,0 +1,20 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : constraint
+        -all_violators
+Design : priority_fsm
+Version: U-2022.12-SP7-3
+Date   : Sat Feb 22 17:37:27 2025
+****************************************
+
+
+   max_leakage_power
+
+                             Required        Actual
+   Design                   Leakage Power  Leakage Power     Slack
+   -----------------------------------------------------------------
+   priority_fsm                 0.00           2.22          -2.22  (VIOLATED)
+
+
+1
