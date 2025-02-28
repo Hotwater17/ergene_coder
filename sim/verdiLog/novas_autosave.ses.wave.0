@@ -2,7 +2,7 @@ Magic 271485
 Revision Verdi_V-2023.12-SP2
 
 ; Window Layout <x> <y> <width> <height> <signalwidth> <valuewidth>
-viewPort 0 25 1457 536 184 65
+viewPort 0 25 1274 455 219 65
 
 ; File list:
 ; openDirFile [-d delimiter] [-s time_offset] [-rf auto_bus_rule_file] path_name file_name
@@ -16,16 +16,16 @@ signalSpacing 5
 
 ; windowTimeUnit is used for zoom, cursor & marker
 ; waveform viewport range
-zoom 0.000000 2727.000000
-cursor 2700.000000
+zoom 0.000000 1111.000000
+cursor 900.000000
 marker 0.000000
 
 ; user define markers
 ; userMarker time_pos marker_name color linestyle
 ; visible top row signal index
-top 8
+top 0
 ; marker line index
-markerPos 27
+markerPos 14
 
 ; event list
 ; addEvent event_name event_expression
@@ -49,31 +49,18 @@ addGroup "G1"
 activeDirFile "" "/home/hotwater/ergene_coder/sim/inter.fsdb"
 addSignal -h 15 /priority_fsm_tb/uut/clk_i
 addSignal -h 15 /priority_fsm_tb/uut/resetn_i
-addSignal -expanded -h 15 -UNSIGNED -HEX /priority_fsm_tb/uut/ch_sel_i[15:0]
-addSignal -h 15 /priority_fsm_tb/uut/ch_sel_i[15]
-addSignal -h 15 /priority_fsm_tb/uut/ch_sel_i[14]
-addSignal -h 15 /priority_fsm_tb/uut/ch_sel_i[13]
-addSignal -h 15 /priority_fsm_tb/uut/ch_sel_i[12]
-addSignal -h 15 /priority_fsm_tb/uut/ch_sel_i[11]
-addSignal -h 15 /priority_fsm_tb/uut/ch_sel_i[10]
-addSignal -h 15 /priority_fsm_tb/uut/ch_sel_i[9]
-addSignal -h 15 /priority_fsm_tb/uut/ch_sel_i[8]
-addSignal -h 15 /priority_fsm_tb/uut/ch_sel_i[7]
-addSignal -h 15 /priority_fsm_tb/uut/ch_sel_i[6]
-addSignal -h 15 /priority_fsm_tb/uut/ch_sel_i[5]
-addSignal -h 15 /priority_fsm_tb/uut/ch_sel_i[4]
-addSignal -h 15 /priority_fsm_tb/uut/ch_sel_i[3]
-addSignal -h 15 /priority_fsm_tb/uut/ch_sel_i[2]
-addSignal -h 15 /priority_fsm_tb/uut/ch_sel_i[1]
-addSignal -h 15 /priority_fsm_tb/uut/ch_sel_i[0]
-addSignal -h 15 /priority_fsm_tb/uut/en_i
+addSignal -h 15 -UNSIGNED -HEX /priority_fsm_tb/uut/ch_sel_i[15:0]
+addSignal -h 15 /priority_fsm_tb/uut/dump_i
+addSignal -h 15 /priority_fsm_tb/uut/arm_i
 addSignal -h 15 -UNSIGNED -HEX /priority_fsm_tb/uut/ch_sel_o[15:0]
 addSignal -h 15 /priority_fsm_tb/uut/zero_o
-addSignal -h 15 -UNSIGNED -UDEC /priority_fsm_tb/uut/N_CH[31:0]
+addSignal -h 15 /priority_fsm_tb/uut/cycle_done_o
 addSignal -h 15 -UNSIGNED -HEX /priority_fsm_tb/uut/state[4:0]
 addSignal -h 15 -UNSIGNED -HEX /priority_fsm_tb/uut/next_state[4:0]
-addSignal -h 15 -UNSIGNED -HEX /priority_fsm_tb/uut/encode[3:0]
+addSignal -h 15 -UNSIGNED -HEX /priority_fsm_tb/uut/encode_ch[3:0]
 addSignal -h 15 /priority_fsm_tb/uut/valid
+addSignal -h 15 -UNSIGNED -HEX /priority_fsm_tb/uut/ch_latch_q[15:0]
+addSignal -h 15 -UNSIGNED -HEX /priority_fsm_tb/uut/ch_latch_res[15:0]
 addGroup "G2"
 
 ; getSignalForm Scope Hierarchy Status

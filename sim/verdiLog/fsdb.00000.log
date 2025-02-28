@@ -10,11 +10,11 @@ Async open disabled.
 [READSCOPE]ReadScopeTree calling time is 1
 [READSCOPE]ReadScope_PartialLoad calling time is 0
 [READSCOPE]Scope read by partial load count is 0
-[READSCOPE]Scope read count is 34
-[READSCOPE]Decompressed blk is 11
+[READSCOPE]Scope read count is 43
+[READSCOPE]Decompressed blk is 14
 [MAXCHAIN]Decompressed cnt 0
 [PERF]VC decompress count : 1
-[PERF]VCChain decompress count : 21
+[PERF]VCChain decompress count : 9
 [FSDBGate Info] start
 [FSDBGate Info] Total fhdb_compute_count = 0
 [FSDBGate Info] end

@@ -1,42 +1,39 @@
 version: (200506)
 
 available memory: 64M bytes
-used memory: 155648 bytes [need 152K bytes if disable swap]
+used memory: 73728 bytes [need 72K bytes if disable swap]
 
-used block: 5 [memory(5) file(0)]
-                 [ 8K(3) 64K(2) { total 152K bytes } ]
-overhead: (9514) bytes for (5) blocks [Average: (1902) bytes/block]
+used block: 2 [memory(2) file(0)]
+                 [ 8K(1) 64K(1) { total 72K bytes } ]
+overhead: (9514) bytes for (2) blocks [Average: (4757) bytes/block]
 
 write  => 0(times) 0K(bytes) [0K bytes to file]
-read   => 2(times) 16K(bytes) [2K bytes compressed data from file]
-access => 88788(times) 702M(bytes)
-          [hit ratio: 99.9977%]
+read   => 1(times) 5K(bytes) [0K bytes compressed data from file]
+access => 31605(times) 250M(bytes)
+          [hit ratio: 99.9968%]
 
 time: write(0) read(0)  unit: second
 
 swap file directory: (/home/hotwater/ergene_coder/sim/verdiLog)
-used swap file number: (3)
+used swap file number: (1)
 
 
 
 swap file manager:
 arrSize: (256)
-idxCnt: (4)
+idxCnt: (3)
 closeHead: (1)
-closeTail: (3)
-openCnt: (3)
-fid(3): fd(1073741825) fileName(/home/hotwater/ergene_coder/sim/simv.daidir/kdb.elab++/work.lib++/priority_fsm.sv.tdc)
-	size(3512) lastModTime(1740551289) curModTime(1740551289)
-	mode(rb)	hot(0) cool(2) pos(0)
-fid(2): fd(27) fileName(/home/hotwater/ergene_coder/sim/verdiLog/_swap_0001#-1465545646#51773)
-	size(0) lastModTime(0) curModTime(1740551307)
-	mode(w+b)	hot(3) cool(1) pos(0)
+closeTail: (2)
+openCnt: (2)
+fid(2): fd(24) fileName(/home/hotwater/ergene_coder/sim/verdiLog/_swap_0001#-1465545646#100515)
+	size(0) lastModTime(0) curModTime(1740753460)
+	mode(w+b)	hot(0) cool(1) pos(0)
 fid(1): fd(1073741824) fileName(/home/hotwater/ergene_coder/sim/simv.daidir/kdb.elab++/work.lib++/priority_fsm_tb.sv.tdc)
-	size(2035) lastModTime(1740551289) curModTime(1740551289)
+	size(2047) lastModTime(1740753433) curModTime(1740753433)
 	mode(rb)	hot(2) cool(0) pos(0)
 fid(0): fd(0) fileName(NULL)
 	mode(NULL)	hot(0) cool(0) pos(0)
 ==================================================
-mySelf(0x20776340) pre(0x20767c70) next((nil))
+mySelf(0x20dd6080) pre(0x20dc79b0) next((nil))
 version(200506)
 date(May 16 2024 02:58:46)

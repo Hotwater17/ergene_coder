@@ -221,6 +221,8 @@ Selection-LineColor = ID_BLUE2
 Selection-LineWidth = 1
 [FSM_Dlg-Print]
 Orientation = Landscape
+[FileBrowser]
+nWaveRestoreRCDirHistory = "\"/home/hotwater/ergene_coder/sim/signal.rc\""
 [Form]
 version = Verdi_V-2023.12-SP2
 [General]
@@ -231,8 +233,9 @@ SyncBrowserDir = TRUE
 ShowWndCtntDuringResizing = FALSE
 ColorTheme = classic
 version = Verdi_V-2023.12-SP2
-recent_commands_Verdi = tbvDebugRunContinue,hbInvokeSignalPane,hbInvokeWave,tbvRunDebugMode
-recent_commands_nWave = zoomAll
+recent_commands_nWave = zoomAll,restoreSignal
+recent_commands_Verdi = schCreateWindowByScopeRMB,tbvDebugRunContinue,hbInvokeWave,tbvRunDebugMode
+recent_commands_nSchema = schLocalNetVis,schInstNameVis,schPortNameVis,schPinNameVis
 prevColorTheme = classic
 SignalCaseInSensitive = FALSE
 [GlobalProp]
@@ -287,7 +290,7 @@ DirectlyImportPath = /home/hotwater/novas_libs
 [InteractiveDebug]
 tbvLocalWatchArrayLimit = 50
 Watch_0 = 150 80 80 0
-Watch_1 = 150 80 80 413
+Watch_1 = 150 80 80 322
 Watch_2 = 150 80 80 200
 Watch_3 = 150 80 80 200
 Watch_4 = 150 80 80 200
@@ -388,7 +391,8 @@ savePropStat = FALSE
 savePropDtl = TRUE
 [QtDialog]
 loadFile = 676,508,595,357
-QwUserAskDlg = 925,486,324,127
+restoreSigDlg = 684,308,551,438
+QwUserAskDlg = 788,396,324,127
 [Relationship]
 hideRecursiceNode = FALSE
 [Safety]
@@ -593,7 +597,7 @@ pdmlMacro = ID_BLACK
 font = COURIER12
 annotFont = FIXED12
 [Text.1]
-viewport = 0 23 2194 1171 45
+viewport = 0 23 1920 1009 45
 [TextPrinter]
 Orientation = Landscape
 Indicator = FALSE
@@ -685,16 +689,16 @@ DefaultLogTimeUnit = "1.000000ns"
 parRuleSets = "/tools/Synopsys/Verdi/V-2023.12-SP2/share/VIA/Apps/PredefinedParRules/par_rule_OVM.rc /tools/Synopsys/Verdi/V-2023.12-SP2/share/VIA/Apps/PredefinedParRules/par_rule_UVM.rc /tools/Synopsys/Verdi/V-2023.12-SP2/share/VIA/Apps/PredefinedParRules/par_rule_LP.r\
 c /tools/Synopsys/Verdi/V-2023.12-SP2/share/VIA/Apps/PredefinedParRules/par_rule_VCS.rc "
 [VIA.interactiveDebug.preference.vgifColumnSettingRC.setting0.column0]
+name = "Message"
+width = 2000
+visualIndex = 6
+isHidden = FALSE
+isUserChangeColumnVisible = FALSE
+[VIA.interactiveDebug.preference.vgifColumnSettingRC.setting0.column1]
 name = "Time"
 width = 60
 visualIndex = 0
 isHidden = FALSE
-isUserChangeColumnVisible = FALSE
-[VIA.interactiveDebug.preference.vgifColumnSettingRC.setting0.column1]
-name = "Block's First Line"
-width = 120
-visualIndex = 1
-isHidden = TRUE
 isUserChangeColumnVisible = FALSE
 [VIA.interactiveDebug.preference.vgifColumnSettingRC.setting0.column2]
 name = "Code"
@@ -709,22 +713,22 @@ visualIndex = 5
 isHidden = TRUE
 isUserChangeColumnVisible = FALSE
 [VIA.interactiveDebug.preference.vgifColumnSettingRC.setting0.column4]
-name = "Message"
-width = 2000
-visualIndex = 6
-isHidden = FALSE
-isUserChangeColumnVisible = FALSE
-[VIA.interactiveDebug.preference.vgifColumnSettingRC.setting0.column5]
 name = "Reporter"
 width = 60
 visualIndex = 3
 isHidden = FALSE
 isUserChangeColumnVisible = FALSE
-[VIA.interactiveDebug.preference.vgifColumnSettingRC.setting0.column6]
+[VIA.interactiveDebug.preference.vgifColumnSettingRC.setting0.column5]
 name = "Severity"
 width = 60
 visualIndex = 2
 isHidden = FALSE
+isUserChangeColumnVisible = FALSE
+[VIA.interactiveDebug.preference.vgifColumnSettingRC.setting0.column6]
+name = "Block's First Line"
+width = 120
+visualIndex = 1
+isHidden = TRUE
 isUserChangeColumnVisible = FALSE
 [VIA.oneSearch.preference]
 DefaultDisplayTimeUnit = "1.000000ns"
@@ -734,39 +738,39 @@ isOneSearchVisible = FALSE
 [VIA.oneSearch.preference.vgifColumnSettingRC.setting0]
 parRuleSets = ""
 [VIA.oneSearch.preference.vgifColumnSettingRC.setting0.column0]
-name = "Message"
-width = 2000
-visualIndex = 5
-isHidden = FALSE
-isUserChangeColumnVisible = FALSE
-[VIA.oneSearch.preference.vgifColumnSettingRC.setting0.column1]
-name = "Time"
-width = 60
-visualIndex = 1
-isHidden = TRUE
-isUserChangeColumnVisible = FALSE
-[VIA.oneSearch.preference.vgifColumnSettingRC.setting0.column2]
-name = "Code"
-width = 60
-visualIndex = 3
-isHidden = TRUE
-isUserChangeColumnVisible = FALSE
-[VIA.oneSearch.preference.vgifColumnSettingRC.setting0.column3]
-name = "Type"
-width = 60
-visualIndex = 4
-isHidden = TRUE
-isUserChangeColumnVisible = FALSE
-[VIA.oneSearch.preference.vgifColumnSettingRC.setting0.column4]
 name = "Block's First Line"
 width = 60
 visualIndex = 0
 isHidden = FALSE
 isUserChangeColumnVisible = FALSE
-[VIA.oneSearch.preference.vgifColumnSettingRC.setting0.column5]
+[VIA.oneSearch.preference.vgifColumnSettingRC.setting0.column1]
 name = "Severity"
 width = 60
 visualIndex = 2
+isHidden = TRUE
+isUserChangeColumnVisible = FALSE
+[VIA.oneSearch.preference.vgifColumnSettingRC.setting0.column2]
+name = "Message"
+width = 2000
+visualIndex = 5
+isHidden = FALSE
+isUserChangeColumnVisible = FALSE
+[VIA.oneSearch.preference.vgifColumnSettingRC.setting0.column3]
+name = "Time"
+width = 60
+visualIndex = 1
+isHidden = TRUE
+isUserChangeColumnVisible = FALSE
+[VIA.oneSearch.preference.vgifColumnSettingRC.setting0.column4]
+name = "Code"
+width = 60
+visualIndex = 3
+isHidden = TRUE
+isUserChangeColumnVisible = FALSE
+[VIA.oneSearch.preference.vgifColumnSettingRC.setting0.column5]
+name = "Type"
+width = 60
+visualIndex = 4
 isHidden = TRUE
 isUserChangeColumnVisible = FALSE
 [VIA.parRule]
@@ -912,7 +916,7 @@ autoSyncHorizontalRange = FALSE
 autoSyncVerticalScroll = FALSE
 waveClickMemberNode = FALSE
 getSignalForm = 0 0 800 479 100 30 100 30
-viewPort = 0 25 1457 534 184 65
+viewPort = 0 25 1274 455 219 65
 legendBackground = -c ID_BLACK
 valueBackground = -c ID_BLACK
 curveBackground = -c ID_BLACK
@@ -1078,6 +1082,8 @@ printBasic = 1 0 0 FALSE FALSE
 printDest = -printer {}
 printSignature = {%f %h %t} {}
 curveWindow_Drag&Drop_Mode = TRUE
+RecentFile1 = "\"/home/hotwater/ergene_coder/sim/signal.rc\""
+RecentFile2 = "\"/home/hotwater/ergene_coder/sim/inter.fsdb\""
 open_file_time_range = FALSE
 legend_window_font = -f COURIER12 -c ID_CYAN5
 value_window_font = -f COURIER12 -c ID_CYAN5
@@ -1292,7 +1298,6 @@ plan_fillColor_subplan = lightGray
 [rtla]
 RtlaDbPath = 
 [schematics]
-viewport = 178 262 638 516
 schBackgroundColor = black lineSolid
 schBackgroundColor_qt = #000000 qt_solidLine 1
 schBodyColor = orange6 lineSolid
@@ -1352,6 +1357,7 @@ schAsmTriColor_qt = #01ffff qt_solidLine
 pre_select = True
 ShowPassThroughNet = False
 ComputedAnnotColor = ID_PURPLE5
+viewport = 0 25 1920 845
 [schematics_print]
 Signature = FALSE
 DesignName = PCU
@@ -1428,7 +1434,7 @@ AddImportArgument = FALSE
 LineBreakWithScope = TRUE
 StopAfterCompileOption = -s
 [wave.0]
-viewPort = 0 25 1457 534 184 65
+viewPort = 0 25 1274 455 219 65
 [wave.1]
 viewPort = 127 219 960 332 100 65
 [wave.2]

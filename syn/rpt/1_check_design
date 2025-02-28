@@ -1,0 +1,17 @@
+ 
+****************************************
+check_design summary:
+Version:     U-2022.12-SP7-3
+Date:        Fri Feb 28 23:42:32 2025
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                      2
+    Unconnected ports (LINT-28)                                     1
+    Constant outputs (LINT-52)                                      1
+--------------------------------------------------------------------------------
+
+Warning: In design 'priority_fsm', port 'cycle_done_o' is not connected to any nets. (LINT-28)
+Warning: In design 'priority_fsm', output port 'zero_o' is connected directly to 'logic 0'. (LINT-52)
+1

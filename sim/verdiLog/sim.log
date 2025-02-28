@@ -1,7 +1,7 @@
 Command: /home/hotwater/ergene_coder/sim/simv -sml=verdi +fsdb+gate=off -ucli2Proc -ucli -l /home/hotwater/ergene_coder/sim/verdiLog/sim.log
 Chronologic VCS simulator copyright 1991-2023
 Contains Synopsys proprietary information.
-Compiler version V-2023.12-SP2_Full64; Runtime version V-2023.12-SP2_Full64;  Feb 26 15:52 2025
+Compiler version V-2023.12-SP2_Full64; Runtime version V-2023.12-SP2_Full64;  Feb 28 23:38 2025
 
 ucli% synUtils::getArch
 linux64
@@ -17,24 +17,24 @@ FSDB Dumper for VCS, Release Verdi_V-2023.12-SP2, Linux x86_64/64bit, 05/26/2024
 ucli% synEnv::hasFataled
 0
 ucli% ucliCore::getToolPID
-68397
+101441
 ucli% sps_interactive
-*Verdi* : Enable RPC Server(68397)
+*Verdi* : Enable RPC Server(101441)
 
 ucli% ucliCore::getToolPID
-68397
+101441
 ucli% ucliCore::getToolPID
-68397
+101441
 ucli% if {[catch {ucliCore::setFocus tool}]} {}
 
 ucli% puts $ucliCore::nativeUcliMode
 0
 
 ucli% ucliCore::getToolTopPID
-68397
+101441
 ucli% pid
-68408
-ucli% synUtils::sendTool -active {_icl_createSharedMemory /tmp/vcs_dve_general.hotwater.68397 }
+101452
+ucli% synUtils::sendTool -active {_icl_createSharedMemory /tmp/vcs_dve_general.hotwater.101441 }
 
 ucli% if { [info vars watch::vcbp_str_len_limit_of_get_value] != ""} {set watch::vcbp_str_len_limit_of_get_value 1024}
 1024
@@ -97,7 +97,7 @@ line: 0
 logFilename: /home/hotwater/ergene_coder/sim/verdiLog/sim.log
 macroIndex: -1
 macroOffset: -1
-pid: 68397
+pid: 101441
 scope: priority_fsm_tb
 startCol: 0
 state: stopped
@@ -117,37 +117,42 @@ ucli% stop
 No stop points are set
 ucli% if {[catch {ucliCore::setFocus tool}]} {}
 
-ucli% fsdbDumpvars 1 "priority_fsm_tb.uut.clk_i"  +all +trace_process;fsdbDumpvars 1 "priority_fsm_tb.uut.resetn_i"  +all +trace_process;fsdbDumpvars 1 "priority_fsm_tb.uut.ch_sel_i"  +all +trace_process;fsdbDumpvars 1 "priority_fsm_tb.uut.en_i"  +all +trace_process;fsdbDumpvars 1 "priority_fsm_tb.uut.ch_sel_o"  +all +trace_process;fsdbDumpvars 1 "priority_fsm_tb.uut.zero_o"  +all +trace_process;fsdbDumpvars 1 "priority_fsm_tb.uut.N_CH"  +all +trace_process;fsdbDumpvars 1 "priority_fsm_tb.uut.state"  +all +trace_process;fsdbDumpvars 1 "priority_fsm_tb.uut.next_state"  +all +trace_process;fsdbDumpvars 1 "priority_fsm_tb.uut.encode"  +all +trace_process;fsdbDumpvars 1 "priority_fsm_tb.uut.valid"  +all +trace_process;fsdbDumpflush 
+ucli% fsdbDumpvars 0 "priority_fsm_tb.uut.clk_i"  +all +trace_process;fsdbDumpvars 0 "priority_fsm_tb.uut.resetn_i"  +all +trace_process;fsdbDumpvars 0 "priority_fsm_tb.uut.ch_sel_i"  +all +trace_process;fsdbDumpvars 0 "priority_fsm_tb.uut.dump_i"  +all +trace_process;fsdbDumpvars 0 "priority_fsm_tb.uut.arm_i"  +all +trace_process;fsdbDumpvars 0 "priority_fsm_tb.uut.ch_sel_o"  +all +trace_process;fsdbDumpvars 0 "priority_fsm_tb.uut.zero_o"  +all +trace_process;fsdbDumpvars 0 "priority_fsm_tb.uut.cycle_done_o"  +all +trace_process;fsdbDumpvars 0 "priority_fsm_tb.uut.state"  +all +trace_process;fsdbDumpvars 0 "priority_fsm_tb.uut.next_state"  +all +trace_process;fsdbDumpvars 0 "priority_fsm_tb.uut.encode_ch"  +all +trace_process;fsdbDumpvars 0 "priority_fsm_tb.uut.valid"  +all +trace_process;fsdbDumpvars 0 "priority_fsm_tb.uut.ch_latch_q"  +all +trace_process;fsdbDumpvars 0 "priority_fsm_tb.uut.ch_latch_res"  +all +trace_process
 *Verdi* : Dumping the signal (priority_fsm_tb.uut.clk_i).
 *Verdi* : Dumping the signal (priority_fsm_tb.uut.resetn_i).
 *Verdi* : Dumping the signal (priority_fsm_tb.uut.ch_sel_i).
-*Verdi* : Dumping the signal (priority_fsm_tb.uut.en_i).
+*Verdi* : Dumping the signal (priority_fsm_tb.uut.dump_i).
+*Verdi* : Dumping the signal (priority_fsm_tb.uut.arm_i).
 *Verdi* : Dumping the signal (priority_fsm_tb.uut.ch_sel_o).
 *Verdi* : Dumping the signal (priority_fsm_tb.uut.zero_o).
-*Verdi* : Dumping the signal (priority_fsm_tb.uut.N_CH).
+*Verdi* : Dumping the signal (priority_fsm_tb.uut.cycle_done_o).
 *Verdi* : Dumping the signal (priority_fsm_tb.uut.state).
 *Verdi* : Dumping the signal (priority_fsm_tb.uut.next_state).
-*Verdi* : Dumping the signal (priority_fsm_tb.uut.encode).
+*Verdi* : Dumping the signal (priority_fsm_tb.uut.encode_ch).
 *Verdi* : Dumping the signal (priority_fsm_tb.uut.valid).
+*Verdi* : Dumping the signal (priority_fsm_tb.uut.ch_latch_q).
+*Verdi* : Dumping the signal (priority_fsm_tb.uut.ch_latch_res).
+
+ucli% fsdbDumpflush 
 *Verdi* : Flush all FSDB Files at 0 ns.
 
 ucli% if {[catch {ucliCore::setFocus tool}]} {}
 
 ucli% run
-$finish called from file "./tb/priority_fsm_tb.sv", line 67.
-$finish at simulation time                 2700
-Simulation complete, time is 2700 ns.
+$finish called from file "./tb/priority_fsm_tb.sv", line 68.
+$finish at simulation time                 1100
+Simulation complete, time is 1100 ns.
 
 ucli% synEnv::hasFataled
 0
 ucli% ucliCore::getToolPID
-68397
+101441
 ucli% save::getUserdefinedProcs
 ::stateVerdiChangeCB ::LoadFSDBDumpCmd
 ucli% if {[catch {ucliCore::setFocus tool}]} {}
 
 ucli% fsdbDumpflush 
-*Verdi* : Flush all FSDB Files at 2,700 ns.
+*Verdi* : Flush all FSDB Files at 1,100 ns.
 
 ucli% senv
 activeDomain: Verilog
@@ -167,12 +172,12 @@ line: 0
 logFilename: /home/hotwater/ergene_coder/sim/verdiLog/sim.log
 macroIndex: -1
 macroOffset: -1
-pid: 68397
+pid: 101441
 scope: priority_fsm_tb
 startCol: 0
 state: stopped
 thread: 
-time: 2700
+time: 1100
 timePrecision: 1 ns
 vcdFilename: 
 vpdFilename:
@@ -191,9 +196,9 @@ ucli% if {[catch {ucliCore::setFocus tool}]} {}
 
 ucli% finish; quit
            V C S   S i m u l a t i o n   R e p o r t 
-Time: 2700 ns
-CPU Time:      0.380 seconds;       Data structure size:   0.0Mb
-Thu Feb 27 20:04:55 2025
+Time: 1100 ns
+CPU Time:      0.210 seconds;       Data structure size:   0.0Mb
+Fri Feb 28 23:45:30 2025
 
 <VERDI_Terminated>
 

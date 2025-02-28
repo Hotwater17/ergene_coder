@@ -1,9 +1,8 @@
 Warning: The value of variable 'compile_preserve_subdesign_interfaces' has been changed to true because '-no_boundary_optimization' is used. (OPT-133)
 Information: Starting from 2013.12 release, constant propagation is enabled even when boundary optimization is disabled. (OPT-1318)
 Information: Performing leakage power optimization. (PWR-850)
-CPU Load: 0%, Ram Free: 220 GB, Swap Free: 3 GB, Work Disk Free: 2898 GB, Tmp Disk Free: 160 GB
-Analyzing: "/technology/TSMC_180nm_BCD/STD/tcb018gbwp7t_290a/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcb018gbwp7t_270a/tcb018gbwp7ttc.db"
-Library analysis succeeded.
+CPU Load: 0%, Ram Free: 219 GB, Swap Free: 3 GB, Work Disk Free: 2895 GB, Tmp Disk Free: 160 GB
+Alib files are up-to-date.
 Information: Evaluating DesignWare library utilization. (UISN-27)
 
 ============================================================================
@@ -22,31 +21,33 @@ Information: Evaluating DesignWare library utilization. (UISN-27)
 | Design Information                                      | Value                                  |
 ====================================================================================================
 | Number of Scenarios                                     | 0                                      |
-| Leaf Cell Count                                         | 274                                    |
+| Leaf Cell Count                                         | 458                                    |
 | Number of User Hierarchies                              | 0                                      |
-| Sequential Cell Count                                   | 5                                      |
+| Sequential Cell Count                                   | 21                                     |
 | Macro Count                                             | 0                                      |
 | Number of Power Domains                                 | 0                                      |
 | Number of Path Groups                                   | 1                                      |
 | Number of VT Class                                      | 0                                      |
 | Number of Clocks                                        | 0                                      |
-| Number of Dont Touch Cells                              | 86                                     |
+| Number of Dont Touch Cells                              | 166                                    |
 | Number of Dont Touch Nets                               | 0                                      |
 | Number of Size Only Cells                               | 0                                      |
 | Design with UPF Data                                    | false                                  |
 ====================================================================================================
 Information: Sequential output inversion is enabled.  SVF file must be used for formal verification. (OPT-1208)
+
+Information: There are 2 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
   Simplifying Design 'priority_fsm'
 
 Loaded alib file './alib-52/tcb018gbwp7ttc.db.alib'
-CPU Load: 1%, Ram Free: 220 GB, Swap Free: 3 GB, Work Disk Free: 2898 GB, Tmp Disk Free: 160 GB
+CPU Load: 0%, Ram Free: 219 GB, Swap Free: 3 GB, Work Disk Free: 2895 GB, Tmp Disk Free: 160 GB
 Information: State dependent leakage is now switched from on to off.
 
   Beginning Pass 1 Mapping
   ------------------------
   Processing 'priority_fsm'
-Information: The register 'state_reg[4]' is a constant and will be removed. (OPT-1206)
-CPU Load: 1%, Ram Free: 220 GB, Swap Free: 3 GB, Work Disk Free: 2898 GB, Tmp Disk Free: 160 GB
+CPU Load: 0%, Ram Free: 219 GB, Swap Free: 3 GB, Work Disk Free: 2895 GB, Tmp Disk Free: 160 GB
 
   Updating timing information
 Information: Updating design information... (UID-85)
@@ -62,8 +63,8 @@ Information: Command 'do_operand_isolation' is obsolete and is being ignored.  P
    ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
     TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
   --------- --------- --------- --------- --------- ------------------------- ---------
-    0:00:03     845.2      0.00       0.0       0.0                              2.1298
-    0:00:03     845.2      0.00       0.0       0.0                              2.1298
+    0:00:03    2019.6      0.00       0.0       0.0                              5.3780
+    0:00:03    2019.6      0.00       0.0       0.0                              5.3780
 
   Beginning Constant Register Removal
   -----------------------------------
@@ -106,39 +107,39 @@ Information: Command 'do_operand_isolation' is obsolete and is being ignored.  P
 
   Beginning Delay Optimization
   ----------------------------
-    0:00:04     845.2      0.00       0.0       0.0                              2.2076
-    0:00:04     845.2      0.00       0.0       0.0                              2.2076
-    0:00:04     845.2      0.00       0.0       0.0                              2.2076
-    0:00:04     845.2      0.00       0.0       0.0                              2.2076
-    0:00:04     838.6      0.00       0.0       0.0                              2.1936
-    0:00:04     838.6      0.00       0.0       0.0                              2.1936
+    0:00:04    2019.6      0.00       0.0       0.0                              5.6102
+    0:00:04    2019.6      0.00       0.0       0.0                              5.6102
+    0:00:04    2019.6      0.00       0.0       0.0                              5.6102
+    0:00:04    2019.6      0.00       0.0       0.0                              5.6102
+    0:00:04    2013.0      0.00       0.0       0.0                              5.6102
+    0:00:04    2013.0      0.00       0.0       0.0                              5.6102
 
   Beginning WLM Backend Optimization
   --------------------------------------
-    0:00:04     838.6      0.00       0.0       0.0                              2.1936
-    0:00:04     838.6      0.00       0.0       0.0                              2.1936
-    0:00:04     838.6      0.00       0.0       0.0                              2.1936
-    0:00:04     838.6      0.00       0.0       0.0                              2.1936
-    0:00:05     838.6      0.00       0.0       0.0                              2.1936
-    0:00:05     838.6      0.00       0.0       0.0                              2.1936
-    0:00:05     838.6      0.00       0.0       0.0                              2.1936
-    0:00:05     838.6      0.00       0.0       0.0                              2.1936
-    0:00:05     838.6      0.00       0.0       0.0                              2.1936
-    0:00:05     838.6      0.00       0.0       0.0                              2.1936
-    0:00:05     838.6      0.00       0.0       0.0                              2.1936
-    0:00:05     838.6      0.00       0.0       0.0                              2.1936
-    0:00:05     838.6      0.00       0.0       0.0                              2.1936
-    0:00:05     838.6      0.00       0.0       0.0                              2.1936
-    0:00:05     838.6      0.00       0.0       0.0                              2.1936
-    0:00:05     838.6      0.00       0.0       0.0                              2.1936
-    0:00:05     838.6      0.00       0.0       0.0                              2.1936
-    0:00:05     838.6      0.00       0.0       0.0                              2.1936
-    0:00:05     838.6      0.00       0.0       0.0                              2.1936
-    0:00:05     838.6      0.00       0.0       0.0                              2.1936
-    0:00:05     838.6      0.00       0.0       0.0                              2.1936
-    0:00:05     838.6      0.00       0.0       0.0                              2.1936
-    0:00:05     838.6      0.00       0.0       0.0                              2.1936
-    0:00:05     838.6      0.00       0.0       0.0                              2.1936
+    0:00:04    2019.6      0.00       0.0       0.0                              5.6102
+    0:00:04    2019.6      0.00       0.0       0.0                              5.6102
+    0:00:04    2019.6      0.00       0.0       0.0                              5.6102
+    0:00:04    2019.6      0.00       0.0       0.0                              5.6102
+    0:00:04    2019.6      0.00       0.0       0.0                              5.6102
+    0:00:04    2019.6      0.00       0.0       0.0                              5.6102
+    0:00:04    2019.6      0.00       0.0       0.0                              5.6102
+    0:00:04    2019.6      0.00       0.0       0.0                              5.6102
+    0:00:04    2019.6      0.00       0.0       0.0                              5.6102
+    0:00:04    2019.6      0.00       0.0       0.0                              5.6102
+    0:00:04    2019.6      0.00       0.0       0.0                              5.6102
+    0:00:04    2019.6      0.00       0.0       0.0                              5.6102
+    0:00:04    2019.6      0.00       0.0       0.0                              5.6102
+    0:00:04    2019.6      0.00       0.0       0.0                              5.6102
+    0:00:04    2019.6      0.00       0.0       0.0                              5.6102
+    0:00:04    2019.6      0.00       0.0       0.0                              5.6102
+    0:00:04    2019.6      0.00       0.0       0.0                              5.6102
+    0:00:04    2019.6      0.00       0.0       0.0                              5.6102
+    0:00:04    2019.6      0.00       0.0       0.0                              5.6102
+    0:00:04    2019.6      0.00       0.0       0.0                              5.6102
+    0:00:05    2019.6      0.00       0.0       0.0                              5.6102
+    0:00:05    2019.6      0.00       0.0       0.0                              5.6102
+    0:00:05    2019.6      0.00       0.0       0.0                              5.6102
+    0:00:05    2019.6      0.00       0.0       0.0                              5.6102
 
 
   Beginning Leakage Power Optimization  (max_leakage_power 0)
@@ -148,46 +149,46 @@ Information: Command 'do_operand_isolation' is obsolete and is being ignored.  P
    ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
     TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
   --------- --------- --------- --------- --------- ------------------------- ---------
-    0:00:05     838.6      0.00       0.0       0.0                              2.1936
-    0:00:05     838.6      0.00       0.0       0.0                              2.1936
-    0:00:05     838.6      0.00       0.0       0.0                              2.1936
-    0:00:05     838.6      0.00       0.0       0.0                              2.1936
-    0:00:05     838.6      0.00       0.0       0.0                              2.0630
-    0:00:05     838.6      0.00       0.0       0.0                              2.0630
-    0:00:05     838.6      0.00       0.0       0.0                              2.0630
-    0:00:05     838.6      0.00       0.0       0.0                              2.0630
-    0:00:05     838.6      0.00       0.0       0.0                              2.0630
-    0:00:05     838.6      0.00       0.0       0.0                              2.0630
-    0:00:05     838.6      0.00       0.0       0.0                              2.0630
-    0:00:05     838.6      0.00       0.0       0.0                              2.0630
-    0:00:05     838.6      0.00       0.0       0.0                              2.0630
-    0:00:05     838.6      0.00       0.0       0.0                              2.0630
-    0:00:05     838.6      0.00       0.0       0.0                              2.0630
-    0:00:05     838.6      0.00       0.0       0.0                              2.0630
-    0:00:05     838.6      0.00       0.0       0.0                              2.0630
-    0:00:05     838.6      0.00       0.0       0.0                              2.0630
-    0:00:05     838.6      0.00       0.0       0.0                              2.0630
-    0:00:05     838.6      0.00       0.0       0.0                              2.0630
-    0:00:05     838.6      0.00       0.0       0.0                              2.0630
-    0:00:05     838.6      0.00       0.0       0.0                              2.0630
-    0:00:05     838.6      0.00       0.0       0.0                              2.0630
+    0:00:05    2019.6      0.00       0.0       0.0                              5.6102
+    0:00:05    2019.6      0.00       0.0       0.0                              5.6102
+    0:00:05    2019.6      0.00       0.0       0.0                              5.6102
+    0:00:05    2019.6      0.00       0.0       0.0                              5.6102
+    0:00:05    2019.6      0.00       0.0       0.0                              5.2996
+    0:00:05    2019.6      0.00       0.0       0.0                              5.2996
+    0:00:05    2019.6      0.00       0.0       0.0                              5.2996
+    0:00:05    2019.6      0.00       0.0       0.0                              5.2996
+    0:00:05    2019.6      0.00       0.0       0.0                              5.2996
+    0:00:05    2019.6      0.00       0.0       0.0                              5.2996
+    0:00:05    2019.6      0.00       0.0       0.0                              5.2996
+    0:00:05    2019.6      0.00       0.0       0.0                              5.2996
+    0:00:05    2019.6      0.00       0.0       0.0                              5.2996
+    0:00:05    2019.6      0.00       0.0       0.0                              5.2996
+    0:00:05    2019.6      0.00       0.0       0.0                              5.2996
+    0:00:05    2019.6      0.00       0.0       0.0                              5.2996
+    0:00:05    2019.6      0.00       0.0       0.0                              5.2996
+    0:00:05    2019.6      0.00       0.0       0.0                              5.2996
+    0:00:05    2019.6      0.00       0.0       0.0                              5.2996
+    0:00:05    2019.6      0.00       0.0       0.0                              5.2996
+    0:00:05    2019.6      0.00       0.0       0.0                              5.2996
+    0:00:05    2019.6      0.00       0.0       0.0                              5.2996
+    0:00:05    2019.6      0.00       0.0       0.0                              5.2996
 
                                   TOTAL                                                
    ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
     TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
   --------- --------- --------- --------- --------- ------------------------- ---------
-    0:00:05     838.6      0.00       0.0       0.0                              2.0630
-    0:00:05     838.6      0.00       0.0       0.0                              2.0630
-    0:00:05     838.6      0.00       0.0       0.0                              2.0630
-    0:00:05     838.6      0.00       0.0       0.0                              2.0630
-    0:00:05     838.6      0.00       0.0       0.0                              2.0630
-    0:00:05     838.6      0.00       0.0       0.0                              2.0630
-    0:00:05     838.6      0.00       0.0       0.0                              2.0630
-    0:00:05     838.6      0.00       0.0       0.0                              2.0630
-    0:00:05     838.6      0.00       0.0       0.0                              2.0630
-    0:00:06     838.6      0.00       0.0       0.0                              2.0630
-    0:00:06     838.6      0.00       0.0       0.0                              2.0630
-CPU Load: 1%, Ram Free: 220 GB, Swap Free: 3 GB, Work Disk Free: 2898 GB, Tmp Disk Free: 160 GB
+    0:00:05    2019.6      0.00       0.0       0.0                              5.2996
+    0:00:05    2019.6      0.00       0.0       0.0                              5.2996
+    0:00:05    2019.6      0.00       0.0       0.0                              5.2996
+    0:00:05    2019.6      0.00       0.0       0.0                              5.2996
+    0:00:05    2019.6      0.00       0.0       0.0                              5.2996
+    0:00:05    2019.6      0.00       0.0       0.0                              5.2996
+    0:00:05    2019.6      0.00       0.0       0.0                              5.2996
+    0:00:05    2019.6      0.00       0.0       0.0                              5.2996
+    0:00:05    2019.6      0.00       0.0       0.0                              5.2996
+    0:00:05    2019.6      0.00       0.0       0.0                              5.2996
+    0:00:05    2019.6      0.00       0.0       0.0                              5.2996
+CPU Load: 0%, Ram Free: 219 GB, Swap Free: 3 GB, Work Disk Free: 2895 GB, Tmp Disk Free: 160 GB
 Loading db file '/technology/TSMC_180nm_BCD/STD/tcb018gbwp7t_290a/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcb018gbwp7t_270a/tcb018gbwp7ttc.db'
 
 
@@ -199,7 +200,7 @@ Note: Symbol # after min delay cost means estimated hold TNS across all active s
 Information: State dependent leakage is now switched from off to on.
 Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
 Warning: There is no defined clock in the design. (PWR-80)
-CPU Load: 1%, Ram Free: 220 GB, Swap Free: 3 GB, Work Disk Free: 2898 GB, Tmp Disk Free: 160 GB
+CPU Load: 0%, Ram Free: 219 GB, Swap Free: 3 GB, Work Disk Free: 2895 GB, Tmp Disk Free: 160 GB
 Information: Total number of MV cells in the design.
 ----------------------------------------------------------------------------------------------------
  MV Cells                                           Total Number                                   

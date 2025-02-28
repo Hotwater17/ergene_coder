@@ -1,0 +1,2 @@
+../rtl/priority_fsm.sv
+./tb/priority_fsm_tb.sv

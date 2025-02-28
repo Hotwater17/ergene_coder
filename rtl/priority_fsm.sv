@@ -33,7 +33,7 @@ int i_ch;
 /* -------------------------------------------------------------------------- */
 
 always_latch begin : CHANNEL_LATCH
-    for(i_ch=0; i_ch<N_CH; i_ch=i+1) begin
+    for(i_ch=0; i_ch<N_CH; i_ch=i_ch+1) begin
         if(!resetn_i || ch_latch_res[i_ch]) begin
             ch_latch_q[i_ch] = 1'b0;
         end else if (arm_i) begin
@@ -91,10 +91,17 @@ always_comb begin : STATE_LOGIC
     if(state == IDLE) begin
         next_state = arm_i ? ARMED : IDLE;
     end else if(state == ARMED) begin
-        next_state = (zero_o && dump_i) ? {1'b0, encode_ch[($clog2(N_CH)-1):0]} : ARMED;
+        next_state = dump_i ? {1'b0, encode_ch[($clog2(N_CH)-1):0]} : ARMED;
     end
     else begin
-        next_state = dump_i ? {1'b0, encode_ch[($clog2(N_CH)-1):0]} : state;
+        next_state = dump_i ? (zero_o ? IDLE : {1'b0, encode_ch[($clog2(N_CH)-1):0]} ) : state;
+    end
+end
+
+int i_res;
+always_comb begin : LATCH_RESET
+    for(i_res=0; i_res<N_CH; i_res=i_res+1) begin
+        ch_latch_res[i_res] = (state == {1'b0,i_res[$clog2(N_CH)-1:0]}) && dump_i;
     end
 end
 
