@@ -1,0 +1,61 @@
+Command Line: /tools/Synopsys/Verdi/V-2023.12-SP2/platform/LINUXAMD64/bin/Novas -dbdir ./simv.daidir
+uname(Linux seed-c01 3.10.0-1160.15.2.el7.x86_64 #1 SMP Wed Feb 3 15:06:38 UTC 2021 x86_64)
+type= DS_SIGNAL element= 11 field= 2
+VERILOG priority_fsm_tb
+VERILOG uut
+VERILOG clk_i
+-----
+second field= signal
+VERILOG priority_fsm_tb
+VERILOG uut
+VERILOG resetn_i
+-----
+second field= signal
+VERILOG priority_fsm_tb
+VERILOG uut
+VERILOG ch_sel_i[15:0]
+-----
+second field= signal
+VERILOG priority_fsm_tb
+VERILOG uut
+VERILOG en_i
+-----
+second field= signal
+VERILOG priority_fsm_tb
+VERILOG uut
+VERILOG ch_sel_o[15:0]
+-----
+second field= signal
+VERILOG priority_fsm_tb
+VERILOG uut
+VERILOG zero_o
+-----
+second field= signal
+VERILOG priority_fsm_tb
+VERILOG uut
+VERILOG N_CH
+-----
+second field= signal
+VERILOG priority_fsm_tb
+VERILOG uut
+VERILOG state[4:0]
+-----
+second field= signal
+VERILOG priority_fsm_tb
+VERILOG uut
+VERILOG next_state[4:0]
+-----
+second field= signal
+VERILOG priority_fsm_tb
+VERILOG uut
+VERILOG encode[3:0]
+-----
+second field= signal
+VERILOG priority_fsm_tb
+VERILOG uut
+VERILOG valid
+-----
+second field= signal
+type= DS_STRING
+clk_i resetn_i ch_sel_i[15:0] en_i ch_sel_o[15:0] zero_o N_CH state[4:0] next_state[4:0] encode[3:0] valid
+au time 103002.113525 2429.911692 928.273494 delta 248471552 248471552 total 920862720 920862720

@@ -1,0 +1,37 @@
+Invoking simulator...
+Verdi>./simv -sml=verdi +fsdb+gate=off -ucli2Proc -ucli
+*Verdi* Loading libsscore_vcs202312.so
+FSDB Dumper for VCS, Release Verdi_V-2023.12-SP2, Linux x86_64/64bit, 05/26/2024
+(C) 1996 - 2024 by Synopsys, Inc.
+*Verdi* : Create FSDB file '/home/hotwater/ergene_coder/sim/inter.fsdb'
+*Verdi* : Flush all FSDB Files at 0 ns.
+*Verdi* : Enable RPC Server(68397)
+Info: [VCS_SAVE_RESTORE_INFO] ASLR (Address Space Layout Randomization) is detected on the machine. To enable $save functionality, ASLR will be switched off and simv re-executed.
+Please use '-no_save' simv switch to avoid re-execution or '-suppress=ASLR_DETECTED_INFO' to suppress this message.
+Chronologic VCS simulator copyright 1991-2023
+Contains Synopsys proprietary information.
+Compiler version V-2023.12-SP2_Full64; Runtime version V-2023.12-SP2_Full64;  Feb 26 15:52 2025
+Verdi>fsdbDumpvars 1 "priority_fsm_tb.uut.clk_i"  +all +trace_process;fsdbDumpvars 1 "priority_fsm_tb.uut.resetn_i"  +all +trace_process;fsdbDumpvars 1 "priority_fsm_tb.uut.ch_sel_i"  +all +trace_process;fsdbDumpvars 1 "priority_fsm_tb.uut.en_i"  +all +trace_process;fsdbDumpvars 1 "priority_fsm_tb.uut.ch_sel_o"  +all +trace_process;fsdbDumpvars 1 "priority_fsm_tb.uut.zero_o"  +all +trace_process;fsdbDumpvars 1 "priority_fsm_tb.uut.N_CH"  +all +trace_process;fsdbDumpvars 1 "priority_fsm_tb.uut.state"  +all +trace_process;fsdbDumpvars 1 "priority_fsm_tb.uut.next_state"  +all +trace_process;fsdbDumpvars 1 "priority_fsm_tb.uut.encode"  +all +trace_process;fsdbDumpvars 1 "priority_fsm_tb.uut.valid"  +all +trace_process;fsdbDumpflush 
+
+*Verdi* : Dumping the signal (priority_fsm_tb.uut.clk_i).
+*Verdi* : Dumping the signal (priority_fsm_tb.uut.resetn_i).
+*Verdi* : Dumping the signal (priority_fsm_tb.uut.ch_sel_i).
+*Verdi* : Dumping the signal (priority_fsm_tb.uut.en_i).
+*Verdi* : Dumping the signal (priority_fsm_tb.uut.ch_sel_o).
+*Verdi* : Dumping the signal (priority_fsm_tb.uut.zero_o).
+*Verdi* : Dumping the signal (priority_fsm_tb.uut.N_CH).
+*Verdi* : Dumping the signal (priority_fsm_tb.uut.state).
+*Verdi* : Dumping the signal (priority_fsm_tb.uut.next_state).
+*Verdi* : Dumping the signal (priority_fsm_tb.uut.encode).
+*Verdi* : Dumping the signal (priority_fsm_tb.uut.valid).
+*Verdi* : Flush all FSDB Files at 0 ns.
+
+Verdi>run
+$finish called from file "./tb/priority_fsm_tb.sv", line 67.
+$finish at simulation time                 2700
+Simulation complete, time is 2700 ns.
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 2700 ns
+CPU Time:      0.380 seconds;       Data structure size:   0.0Mb
+Thu Feb 27 20:04:55 2025
+debExit
