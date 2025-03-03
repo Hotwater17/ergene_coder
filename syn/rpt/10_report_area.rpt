@@ -3,7 +3,7 @@
 Report : area
 Design : priority_fsm
 Version: U-2022.12-SP7-3
-Date   : Fri Feb 28 23:42:46 2025
+Date   : Mon Mar  3 20:47:00 2025
 ****************************************
 
 Library(s) Used:
@@ -11,20 +11,20 @@ Library(s) Used:
     tcb018gbwp7ttc (File: /technology/TSMC_180nm_BCD/STD/tcb018gbwp7t_290a/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcb018gbwp7t_270a/tcb018gbwp7ttc.db)
 
 Number of ports:                           38
-Number of nets:                           163
-Number of cells:                          143
-Number of combinational cells:            122
+Number of nets:                           166
+Number of cells:                          146
+Number of combinational cells:            125
 Number of sequential cells:                21
 Number of macros/black boxes:               0
-Number of buf/inv:                         13
-Number of references:                      21
+Number of buf/inv:                         12
+Number of references:                      25
 
-Combinational area:               1286.387180
-Buf/Inv area:                       85.612799
-Noncombinational area:             733.196789
+Combinational area:               1266.630381
+Buf/Inv area:                       79.027199
+Noncombinational area:             735.391991
 Macro/Black Box area:                0.000000
 Net Interconnect area:      undefined  (Wire load has zero net area)
 
-Total cell area:                  2019.583969
+Total cell area:                  2002.022371
 Total area:                 undefined
 1

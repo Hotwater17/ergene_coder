@@ -4,7 +4,7 @@ Report : port
         -verbose
 Design : priority_fsm
 Version: U-2022.12-SP7-3
-Date   : Fri Feb 28 23:42:32 2025
+Date   : Mon Mar  3 20:46:47 2025
 ****************************************
 
 
@@ -29,6 +29,7 @@ ch_sel_i[13]   in      0.0000   0.0000   --      --      --
 ch_sel_i[14]   in      0.0000   0.0000   --      --      --         
 ch_sel_i[15]   in      0.0000   0.0000   --      --      --         
 clk_i          in      0.0000   0.0000   --      --      --         
+disable_i      in      0.0000   0.0000   --      --      --         
 dump_i         in      0.0000   0.0000   --      --      --         
 resetn_i       in      0.0000   0.0000   --      --      --         
 ch_sel_o[0]    out     0.0000   0.0000   --      --      --         
@@ -47,8 +48,7 @@ ch_sel_o[12]   out     0.0000   0.0000   --      --      --
 ch_sel_o[13]   out     0.0000   0.0000   --      --      --         
 ch_sel_o[14]   out     0.0000   0.0000   --      --      --         
 ch_sel_o[15]   out     0.0000   0.0000   --      --      --         
-cycle_done_o   out     0.0000   0.0000   --      --      --         
-zero_o         out     0.0000   0.0000   --      --      --         
+last_o         out     0.0000   0.0000   --      --      --         
 
 
               External  Max             Min                Min       Min
@@ -73,6 +73,7 @@ ch_sel_i[13]       1      --              --              --        --
 ch_sel_i[14]       1      --              --              --        -- 
 ch_sel_i[15]       1      --              --              --        -- 
 clk_i              1      --              --              --        -- 
+disable_i          1      --              --              --        -- 
 dump_i             1      --              --              --        -- 
 resetn_i           1      --              --              --        -- 
 ch_sel_o[0]        1      --              --              --        -- 
@@ -91,8 +92,7 @@ ch_sel_o[12]       1      --              --              --        --
 ch_sel_o[13]       1      --              --              --        -- 
 ch_sel_o[14]       1      --              --              --        -- 
 ch_sel_o[15]       1      --              --              --        -- 
-cycle_done_o       1      --              --              --        -- 
-zero_o             1      --              --              --        -- 
+last_o             1      --              --              --        -- 
 
                     Input Delay
                   Min             Max       Related   Max
@@ -122,6 +122,7 @@ ch_sel_i[14]
 ch_sel_i[15]
               --      --      --      --      --      -- 
 clk_i         --      --      --      --      --      -- 
+disable_i     --      --      --      --      --      -- 
 dump_i        --      --      --      --      --      -- 
 resetn_i      --      --      --      --      --      -- 
 
@@ -153,6 +154,7 @@ ch_sel_i[14]
 ch_sel_i[15]
               --      --     --      --     --      --     --     --        -- 
 clk_i         --      --     --      --     --      --     --     --        -- 
+disable_i     --      --     --      --     --      --     --     --        -- 
 dump_i        --      --     --      --     --      --     --     --        -- 
 resetn_i      --      --     --      --     --      --     --     --        -- 
 
@@ -184,6 +186,7 @@ ch_sel_i[14]
 ch_sel_i[15]
               --      --      --      -- 
 clk_i         --      --      --      -- 
+disable_i     --      --      --      -- 
 dump_i        --      --      --      -- 
 resetn_i      --      --      --      -- 
 
@@ -214,8 +217,6 @@ ch_sel_o[14]
               --      --      --      --      --      0.00
 ch_sel_o[15]
               --      --      --      --      --      0.00
-cycle_done_o
-              --      --      --      --      --      0.00
-zero_o        --      --      --      --      --      0.00
+last_o        --      --      --      --      --      0.00
 
 1

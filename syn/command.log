@@ -1,6 +1,6 @@
 #@ # 
 #@ # Running dc_shell Version U-2022.12-SP7-3 for linux64 -- Mar 12, 2024
-#@ # Date:   Fri Feb 28 23:42:26 2025
+#@ # Date:   Mon Mar  3 20:46:42 2025
 #@ # Run by: hotwater@seed-c01
 #@ 
 
@@ -8958,13 +8958,4 @@ source -echo -verbose /home/hotwater/ergene_coder/syn/script/script_dc.tcl
 
 #@ # -- End source /home/hotwater/ergene_coder/syn/script/script_dc.tcl
 
-change_selection [get_cells priority_fsm]
-gui_set_setting -window [gui_get_current_window -types Schematic -mru] -setting schematic:background_color -value black
-gui_set_setting -window [gui_get_current_window -types Schematic -mru] -setting zoomFitFactor -value 0.0
-change_selection [get_cells priority_fsm]
-change_selection [get_cells priority_fsm]
-change_selection [get_cells priority_fsm]
-change_selection [get_nets n135]
-report_area
-report_area -physical
 exit

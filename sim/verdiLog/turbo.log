@@ -1,3 +1,0 @@
-Command Line: /tools/Synopsys/Verdi/V-2023.12-SP2/platform/LINUXAMD64/bin/Novas -dbdir ./simv.daidir
-uname(Linux seed-c01 3.10.0-1160.15.2.el7.x86_64 #1 SMP Wed Feb 3 15:06:38 UTC 2021 x86_64)
-au time 507.890068 21.617243 5.334649 delta 295800832 295800832 total 968187904 968187904

@@ -7,10 +7,10 @@ module priority_fsm #(
     input   wire    [N_CH-1:0]  ch_sel_i,
     input   wire                dump_i,
     input   wire                arm_i,
+    input   wire                disable_i,  
     
     output  logic   [N_CH-1:0]  ch_sel_o,
-    output  logic               zero_o,
-    output  logic               cycle_done_o
+    output  logic               last_o
 );
 
 
@@ -23,8 +23,10 @@ logic                       valid;
 logic   [N_CH-1:0]          ch_latch_q;
 logic   [N_CH-1:0]          ch_latch_res;
 
-localparam unsigned IDLE = 5'b00000;
-localparam unsigned ARMED = 5'b10000;
+localparam unsigned IDLE = 5'b10000;
+localparam unsigned ARMED = 5'b10001;
+
+//typedef enum logic [$clog2(N_CH):0]   {  } name;
 int i;
 int i_ch;
 
@@ -46,9 +48,10 @@ end
 /* -------------------------------------------------------------------------- */
 always_comb begin : OUTPUT_LOGIC
     ch_sel_o = '0;
-    if(!zero_o) begin
-        ch_sel_o[encode_ch] = 1'b1;
-    end
+    //if(!disable_i) begin
+        //ch_sel_o[encode_ch] = 1'b1;
+    ch_sel_o[state[($clog2(N_CH)-1):0]] = ((state != IDLE) && (state != ARMED));
+    //end
 end
 /* -------------------------------------------------------------------------- */
 /*                              Priority encoding                             */
@@ -57,19 +60,20 @@ end
 always_comb begin : PRIORITY_ENC
     encode_ch = '0;
     valid = 1'b0;
-    zero_o = 1'b0;
     for(i=0; i<N_CH; i=i+1) begin
         if (ch_latch_q[i]) begin
             encode_ch = i[($clog2(N_CH)-1):0];
             valid = 1'b1;
             break;
             /* -------------------------------------------------------------------------- */
-            /*                    Set zero high if no inputs are active                   */
+            /*                    Set zero high if no channels left are active                   */
             /* -------------------------------------------------------------------------- */
-            zero_o = 1'b1;
+            
         end
     end
 end
+
+assign last_o = (ch_latch_q == '0);
 
 /* -------------------------------------------------------------------------- */
 /*                            Finite state machine                            */
@@ -94,7 +98,7 @@ always_comb begin : STATE_LOGIC
         next_state = dump_i ? {1'b0, encode_ch[($clog2(N_CH)-1):0]} : ARMED;
     end
     else begin
-        next_state = dump_i ? (zero_o ? IDLE : {1'b0, encode_ch[($clog2(N_CH)-1):0]} ) : state;
+        next_state = dump_i ? (last_o ? IDLE : {1'b0, encode_ch[($clog2(N_CH)-1):0]} ) : state;
     end
 end
 

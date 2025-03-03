@@ -7,15 +7,15 @@ Report : timing
         -max_paths 50
 Design : priority_fsm
 Version: U-2022.12-SP7-3
-Date   : Fri Feb 28 23:42:41 2025
+Date   : Mon Mar  3 20:46:56 2025
 ****************************************
 
 Operating Conditions: NCCOM   Library: tcb018gbwp7ttc
 Wire Load Model Mode: segmented
 
-  Startpoint: ch_latch_q_reg[11]
-              (positive level-sensitive latch)
-  Endpoint: ch_sel_o[8]
+  Startpoint: state_reg[3]
+              (rising edge-triggered flip-flop)
+  Endpoint: ch_sel_o[13]
             (output port)
   Path Group: (none)
   Path Type: max
@@ -26,539 +26,22 @@ Wire Load Model Mode: segmented
 
   Point                                    Incr       Path
   -----------------------------------------------------------
-  ch_latch_q_reg[11]/E (LHQD1BWP7T)        0.00       0.00 r
-  ch_latch_q_reg[11]/Q (LHQD1BWP7T)        0.22       0.22 f
-  U194/ZN (NR4D0BWP7T)                     0.23       0.45 r
-  U195/ZN (INR2XD0BWP7T)                   0.15       0.61 r
-  U196/ZN (IND2D0BWP7T)                    0.07       0.68 f
-  U197/ZN (INR2XD0BWP7T)                   0.09       0.76 r
-  U209/Z (AO21D0BWP7T)                     0.11       0.87 r
-  U210/ZN (AOI211XD0BWP7T)                 0.07       0.94 f
-  U211/ZN (IAO21D0BWP7T)                   0.19       1.13 f
-  U212/ZN (IAO21D0BWP7T)                   0.19       1.32 f
-  U213/ZN (AOI221D0BWP7T)                  0.25       1.57 r
-  U214/ZN (IAO21D0BWP7T)                   0.34       1.91 r
-  U215/ZN (INVD0BWP7T)                     0.14       2.05 f
-  U216/ZN (CKND2D0BWP7T)                   0.15       2.20 r
-  U235/ZN (NR3D0BWP7T)                     0.06       2.27 f
-  ch_sel_o[8] (out)                        0.00       2.27 f
-  data arrival time                                   2.27
+  state_reg[3]/CP (DFCNQD1BWP7T)           0.00       0.00 r
+  state_reg[3]/Q (DFCNQD1BWP7T)            0.24       0.24 f
+  U138/ZN (INVD0BWP7T)                     0.11       0.35 r
+  U139/ZN (CKND2D0BWP7T)                   0.13       0.48 f
+  U140/ZN (INVD0BWP7T)                     0.14       0.62 r
+  U197/ZN (ND3D0BWP7T)                     0.13       0.75 f
+  U222/ZN (ND3D0BWP7T)                     0.18       0.93 r
+  U238/ZN (NR2XD0BWP7T)                    0.06       0.98 f
+  ch_sel_o[13] (out)                       0.00       0.98 f
+  data arrival time                                   0.98
   -----------------------------------------------------------
   (Path is unconstrained)
 
 
-  Startpoint: ch_latch_q_reg[11]
-              (positive level-sensitive latch)
-  Endpoint: ch_sel_o[8]
-            (output port)
-  Path Group: (none)
-  Path Type: max
-
-  Des/Clust/Port     Wire Load Model       Library
-  ------------------------------------------------
-  priority_fsm       ZeroWireload          tcb018gbwp7ttc
-
-  Point                                    Incr       Path
-  -----------------------------------------------------------
-  ch_latch_q_reg[11]/E (LHQD1BWP7T)        0.00       0.00 r
-  ch_latch_q_reg[11]/Q (LHQD1BWP7T)        0.22       0.22 f
-  U194/ZN (NR4D0BWP7T)                     0.23       0.45 r
-  U195/ZN (INR2XD0BWP7T)                   0.15       0.61 r
-  U196/ZN (IND2D0BWP7T)                    0.07       0.68 f
-  U197/ZN (INR2XD0BWP7T)                   0.09       0.76 r
-  U209/Z (AO21D0BWP7T)                     0.11       0.87 r
-  U210/ZN (AOI211XD0BWP7T)                 0.07       0.94 f
-  U211/ZN (IAO21D0BWP7T)                   0.19       1.13 f
-  U212/ZN (IAO21D0BWP7T)                   0.19       1.31 f
-  U213/ZN (AOI221D0BWP7T)                  0.25       1.57 r
-  U214/ZN (IAO21D0BWP7T)                   0.34       1.91 r
-  U215/ZN (INVD0BWP7T)                     0.14       2.05 f
-  U216/ZN (CKND2D0BWP7T)                   0.15       2.20 r
-  U235/ZN (NR3D0BWP7T)                     0.06       2.26 f
-  ch_sel_o[8] (out)                        0.00       2.26 f
-  data arrival time                                   2.26
-  -----------------------------------------------------------
-  (Path is unconstrained)
-
-
-  Startpoint: ch_latch_q_reg[11]
-              (positive level-sensitive latch)
-  Endpoint: ch_sel_o[8]
-            (output port)
-  Path Group: (none)
-  Path Type: max
-
-  Des/Clust/Port     Wire Load Model       Library
-  ------------------------------------------------
-  priority_fsm       ZeroWireload          tcb018gbwp7ttc
-
-  Point                                    Incr       Path
-  -----------------------------------------------------------
-  ch_latch_q_reg[11]/E (LHQD1BWP7T)        0.00       0.00 r
-  ch_latch_q_reg[11]/Q (LHQD1BWP7T)        0.22       0.22 f
-  U194/ZN (NR4D0BWP7T)                     0.23       0.45 r
-  U195/ZN (INR2XD0BWP7T)                   0.15       0.61 r
-  U196/ZN (IND2D0BWP7T)                    0.07       0.68 f
-  U197/ZN (INR2XD0BWP7T)                   0.09       0.76 r
-  U209/Z (AO21D0BWP7T)                     0.11       0.87 r
-  U210/ZN (AOI211XD0BWP7T)                 0.07       0.94 f
-  U211/ZN (IAO21D0BWP7T)                   0.19       1.12 f
-  U212/ZN (IAO21D0BWP7T)                   0.19       1.31 f
-  U213/ZN (AOI221D0BWP7T)                  0.25       1.56 r
-  U214/ZN (IAO21D0BWP7T)                   0.34       1.91 r
-  U215/ZN (INVD0BWP7T)                     0.14       2.04 f
-  U216/ZN (CKND2D0BWP7T)                   0.15       2.20 r
-  U235/ZN (NR3D0BWP7T)                     0.06       2.26 f
-  ch_sel_o[8] (out)                        0.00       2.26 f
-  data arrival time                                   2.26
-  -----------------------------------------------------------
-  (Path is unconstrained)
-
-
-  Startpoint: ch_latch_q_reg[8]
-              (positive level-sensitive latch)
-  Endpoint: ch_sel_o[8]
-            (output port)
-  Path Group: (none)
-  Path Type: max
-
-  Des/Clust/Port     Wire Load Model       Library
-  ------------------------------------------------
-  priority_fsm       ZeroWireload          tcb018gbwp7ttc
-
-  Point                                    Incr       Path
-  -----------------------------------------------------------
-  ch_latch_q_reg[8]/E (LHQD1BWP7T)         0.00       0.00 r
-  ch_latch_q_reg[8]/Q (LHQD1BWP7T)         0.22       0.22 f
-  U194/ZN (NR4D0BWP7T)                     0.22       0.45 r
-  U195/ZN (INR2XD0BWP7T)                   0.15       0.60 r
-  U196/ZN (IND2D0BWP7T)                    0.07       0.67 f
-  U197/ZN (INR2XD0BWP7T)                   0.09       0.75 r
-  U209/Z (AO21D0BWP7T)                     0.11       0.86 r
-  U210/ZN (AOI211XD0BWP7T)                 0.07       0.93 f
-  U211/ZN (IAO21D0BWP7T)                   0.19       1.12 f
-  U212/ZN (IAO21D0BWP7T)                   0.19       1.31 f
-  U213/ZN (AOI221D0BWP7T)                  0.25       1.56 r
-  U214/ZN (IAO21D0BWP7T)                   0.34       1.90 r
-  U215/ZN (INVD0BWP7T)                     0.14       2.04 f
-  U216/ZN (CKND2D0BWP7T)                   0.15       2.19 r
-  U235/ZN (NR3D0BWP7T)                     0.06       2.26 f
-  ch_sel_o[8] (out)                        0.00       2.26 f
-  data arrival time                                   2.26
-  -----------------------------------------------------------
-  (Path is unconstrained)
-
-
-  Startpoint: ch_latch_q_reg[8]
-              (positive level-sensitive latch)
-  Endpoint: ch_sel_o[8]
-            (output port)
-  Path Group: (none)
-  Path Type: max
-
-  Des/Clust/Port     Wire Load Model       Library
-  ------------------------------------------------
-  priority_fsm       ZeroWireload          tcb018gbwp7ttc
-
-  Point                                    Incr       Path
-  -----------------------------------------------------------
-  ch_latch_q_reg[8]/E (LHQD1BWP7T)         0.00       0.00 r
-  ch_latch_q_reg[8]/Q (LHQD1BWP7T)         0.22       0.22 f
-  U194/ZN (NR4D0BWP7T)                     0.22       0.45 r
-  U195/ZN (INR2XD0BWP7T)                   0.15       0.60 r
-  U196/ZN (IND2D0BWP7T)                    0.07       0.67 f
-  U197/ZN (INR2XD0BWP7T)                   0.09       0.75 r
-  U209/Z (AO21D0BWP7T)                     0.11       0.86 r
-  U210/ZN (AOI211XD0BWP7T)                 0.07       0.93 f
-  U211/ZN (IAO21D0BWP7T)                   0.19       1.12 f
-  U212/ZN (IAO21D0BWP7T)                   0.19       1.31 f
-  U213/ZN (AOI221D0BWP7T)                  0.25       1.56 r
-  U214/ZN (IAO21D0BWP7T)                   0.34       1.90 r
-  U215/ZN (INVD0BWP7T)                     0.14       2.04 f
-  U216/ZN (CKND2D0BWP7T)                   0.15       2.19 r
-  U235/ZN (NR3D0BWP7T)                     0.06       2.26 f
-  ch_sel_o[8] (out)                        0.00       2.26 f
-  data arrival time                                   2.26
-  -----------------------------------------------------------
-  (Path is unconstrained)
-
-
-  Startpoint: ch_latch_q_reg[11]
-              (positive level-sensitive latch)
-  Endpoint: ch_sel_o[8]
-            (output port)
-  Path Group: (none)
-  Path Type: max
-
-  Des/Clust/Port     Wire Load Model       Library
-  ------------------------------------------------
-  priority_fsm       ZeroWireload          tcb018gbwp7ttc
-
-  Point                                    Incr       Path
-  -----------------------------------------------------------
-  ch_latch_q_reg[11]/E (LHQD1BWP7T)        0.00       0.00 r
-  ch_latch_q_reg[11]/Q (LHQD1BWP7T)        0.22       0.22 f
-  U194/ZN (NR4D0BWP7T)                     0.23       0.45 r
-  U195/ZN (INR2XD0BWP7T)                   0.15       0.61 r
-  U196/ZN (IND2D0BWP7T)                    0.07       0.68 f
-  U197/ZN (INR2XD0BWP7T)                   0.09       0.76 r
-  U209/Z (AO21D0BWP7T)                     0.11       0.87 r
-  U210/ZN (AOI211XD0BWP7T)                 0.06       0.93 f
-  U211/ZN (IAO21D0BWP7T)                   0.19       1.12 f
-  U212/ZN (IAO21D0BWP7T)                   0.19       1.31 f
-  U213/ZN (AOI221D0BWP7T)                  0.25       1.56 r
-  U214/ZN (IAO21D0BWP7T)                   0.34       1.90 r
-  U215/ZN (INVD0BWP7T)                     0.14       2.04 f
-  U216/ZN (CKND2D0BWP7T)                   0.15       2.19 r
-  U235/ZN (NR3D0BWP7T)                     0.06       2.26 f
-  ch_sel_o[8] (out)                        0.00       2.26 f
-  data arrival time                                   2.26
-  -----------------------------------------------------------
-  (Path is unconstrained)
-
-
-  Startpoint: ch_latch_q_reg[11]
-              (positive level-sensitive latch)
-  Endpoint: ch_sel_o[8]
-            (output port)
-  Path Group: (none)
-  Path Type: max
-
-  Des/Clust/Port     Wire Load Model       Library
-  ------------------------------------------------
-  priority_fsm       ZeroWireload          tcb018gbwp7ttc
-
-  Point                                    Incr       Path
-  -----------------------------------------------------------
-  ch_latch_q_reg[11]/E (LHQD1BWP7T)        0.00       0.00 r
-  ch_latch_q_reg[11]/Q (LHQD1BWP7T)        0.22       0.22 f
-  U194/ZN (NR4D0BWP7T)                     0.23       0.45 r
-  U195/ZN (INR2XD0BWP7T)                   0.15       0.61 r
-  U196/ZN (IND2D0BWP7T)                    0.07       0.68 f
-  U197/ZN (INR2XD0BWP7T)                   0.09       0.76 r
-  U209/Z (AO21D0BWP7T)                     0.11       0.87 r
-  U210/ZN (AOI211XD0BWP7T)                 0.06       0.93 f
-  U211/ZN (IAO21D0BWP7T)                   0.19       1.12 f
-  U212/ZN (IAO21D0BWP7T)                   0.19       1.30 f
-  U213/ZN (AOI221D0BWP7T)                  0.25       1.56 r
-  U214/ZN (IAO21D0BWP7T)                   0.34       1.90 r
-  U215/ZN (INVD0BWP7T)                     0.14       2.04 f
-  U216/ZN (CKND2D0BWP7T)                   0.15       2.19 r
-  U235/ZN (NR3D0BWP7T)                     0.06       2.25 f
-  ch_sel_o[8] (out)                        0.00       2.25 f
-  data arrival time                                   2.25
-  -----------------------------------------------------------
-  (Path is unconstrained)
-
-
-  Startpoint: ch_latch_q_reg[11]
-              (positive level-sensitive latch)
-  Endpoint: ch_sel_o[8]
-            (output port)
-  Path Group: (none)
-  Path Type: max
-
-  Des/Clust/Port     Wire Load Model       Library
-  ------------------------------------------------
-  priority_fsm       ZeroWireload          tcb018gbwp7ttc
-
-  Point                                    Incr       Path
-  -----------------------------------------------------------
-  ch_latch_q_reg[11]/E (LHQD1BWP7T)        0.00       0.00 r
-  ch_latch_q_reg[11]/Q (LHQD1BWP7T)        0.22       0.22 f
-  U194/ZN (NR4D0BWP7T)                     0.23       0.45 r
-  U195/ZN (INR2XD0BWP7T)                   0.15       0.61 r
-  U196/ZN (IND2D0BWP7T)                    0.07       0.68 f
-  U197/ZN (INR2XD0BWP7T)                   0.09       0.76 r
-  U209/Z (AO21D0BWP7T)                     0.11       0.87 r
-  U210/ZN (AOI211XD0BWP7T)                 0.06       0.93 f
-  U211/ZN (IAO21D0BWP7T)                   0.19       1.12 f
-  U212/ZN (IAO21D0BWP7T)                   0.19       1.30 f
-  U213/ZN (AOI221D0BWP7T)                  0.25       1.56 r
-  U214/ZN (IAO21D0BWP7T)                   0.34       1.90 r
-  U215/ZN (INVD0BWP7T)                     0.14       2.04 f
-  U216/ZN (CKND2D0BWP7T)                   0.15       2.19 r
-  U235/ZN (NR3D0BWP7T)                     0.06       2.25 f
-  ch_sel_o[8] (out)                        0.00       2.25 f
-  data arrival time                                   2.25
-  -----------------------------------------------------------
-  (Path is unconstrained)
-
-
-  Startpoint: ch_latch_q_reg[11]
-              (positive level-sensitive latch)
-  Endpoint: ch_sel_o[8]
-            (output port)
-  Path Group: (none)
-  Path Type: max
-
-  Des/Clust/Port     Wire Load Model       Library
-  ------------------------------------------------
-  priority_fsm       ZeroWireload          tcb018gbwp7ttc
-
-  Point                                    Incr       Path
-  -----------------------------------------------------------
-  ch_latch_q_reg[11]/E (LHQD1BWP7T)        0.00       0.00 r
-  ch_latch_q_reg[11]/Q (LHQD1BWP7T)        0.22       0.22 f
-  U194/ZN (NR4D0BWP7T)                     0.23       0.45 r
-  U195/ZN (INR2XD0BWP7T)                   0.15       0.61 r
-  U196/ZN (IND2D0BWP7T)                    0.07       0.68 f
-  U197/ZN (INR2XD0BWP7T)                   0.09       0.76 r
-  U209/Z (AO21D0BWP7T)                     0.11       0.87 r
-  U210/ZN (AOI211XD0BWP7T)                 0.06       0.93 f
-  U211/ZN (IAO21D0BWP7T)                   0.19       1.12 f
-  U212/ZN (IAO21D0BWP7T)                   0.19       1.30 f
-  U213/ZN (AOI221D0BWP7T)                  0.25       1.56 r
-  U214/ZN (IAO21D0BWP7T)                   0.34       1.90 r
-  U215/ZN (INVD0BWP7T)                     0.14       2.04 f
-  U216/ZN (CKND2D0BWP7T)                   0.15       2.19 r
-  U235/ZN (NR3D0BWP7T)                     0.06       2.25 f
-  ch_sel_o[8] (out)                        0.00       2.25 f
-  data arrival time                                   2.25
-  -----------------------------------------------------------
-  (Path is unconstrained)
-
-
-  Startpoint: ch_latch_q_reg[8]
-              (positive level-sensitive latch)
-  Endpoint: ch_sel_o[8]
-            (output port)
-  Path Group: (none)
-  Path Type: max
-
-  Des/Clust/Port     Wire Load Model       Library
-  ------------------------------------------------
-  priority_fsm       ZeroWireload          tcb018gbwp7ttc
-
-  Point                                    Incr       Path
-  -----------------------------------------------------------
-  ch_latch_q_reg[8]/E (LHQD1BWP7T)         0.00       0.00 r
-  ch_latch_q_reg[8]/Q (LHQD1BWP7T)         0.22       0.22 f
-  U194/ZN (NR4D0BWP7T)                     0.22       0.45 r
-  U195/ZN (INR2XD0BWP7T)                   0.15       0.60 r
-  U196/ZN (IND2D0BWP7T)                    0.07       0.67 f
-  U197/ZN (INR2XD0BWP7T)                   0.09       0.75 r
-  U209/Z (AO21D0BWP7T)                     0.11       0.86 r
-  U210/ZN (AOI211XD0BWP7T)                 0.07       0.93 f
-  U211/ZN (IAO21D0BWP7T)                   0.19       1.11 f
-  U212/ZN (IAO21D0BWP7T)                   0.19       1.30 f
-  U213/ZN (AOI221D0BWP7T)                  0.25       1.55 r
-  U214/ZN (IAO21D0BWP7T)                   0.34       1.90 r
-  U215/ZN (INVD0BWP7T)                     0.14       2.04 f
-  U216/ZN (CKND2D0BWP7T)                   0.15       2.19 r
-  U235/ZN (NR3D0BWP7T)                     0.06       2.25 f
-  ch_sel_o[8] (out)                        0.00       2.25 f
-  data arrival time                                   2.25
-  -----------------------------------------------------------
-  (Path is unconstrained)
-
-
-  Startpoint: ch_latch_q_reg[11]
-              (positive level-sensitive latch)
-  Endpoint: ch_sel_o[8]
-            (output port)
-  Path Group: (none)
-  Path Type: max
-
-  Des/Clust/Port     Wire Load Model       Library
-  ------------------------------------------------
-  priority_fsm       ZeroWireload          tcb018gbwp7ttc
-
-  Point                                    Incr       Path
-  -----------------------------------------------------------
-  ch_latch_q_reg[11]/E (LHQD1BWP7T)        0.00       0.00 r
-  ch_latch_q_reg[11]/Q (LHQD1BWP7T)        0.22       0.22 f
-  U194/ZN (NR4D0BWP7T)                     0.23       0.45 r
-  U195/ZN (INR2XD0BWP7T)                   0.15       0.61 r
-  U196/ZN (IND2D0BWP7T)                    0.07       0.68 f
-  U197/ZN (INR2XD0BWP7T)                   0.09       0.76 r
-  U209/Z (AO21D0BWP7T)                     0.11       0.87 r
-  U210/ZN (AOI211XD0BWP7T)                 0.06       0.93 f
-  U211/ZN (IAO21D0BWP7T)                   0.19       1.11 f
-  U212/ZN (IAO21D0BWP7T)                   0.19       1.30 f
-  U213/ZN (AOI221D0BWP7T)                  0.25       1.55 r
-  U214/ZN (IAO21D0BWP7T)                   0.34       1.90 r
-  U215/ZN (INVD0BWP7T)                     0.14       2.03 f
-  U216/ZN (CKND2D0BWP7T)                   0.15       2.19 r
-  U235/ZN (NR3D0BWP7T)                     0.06       2.25 f
-  ch_sel_o[8] (out)                        0.00       2.25 f
-  data arrival time                                   2.25
-  -----------------------------------------------------------
-  (Path is unconstrained)
-
-
-  Startpoint: ch_latch_q_reg[11]
-              (positive level-sensitive latch)
-  Endpoint: ch_sel_o[8]
-            (output port)
-  Path Group: (none)
-  Path Type: max
-
-  Des/Clust/Port     Wire Load Model       Library
-  ------------------------------------------------
-  priority_fsm       ZeroWireload          tcb018gbwp7ttc
-
-  Point                                    Incr       Path
-  -----------------------------------------------------------
-  ch_latch_q_reg[11]/E (LHQD1BWP7T)        0.00       0.00 r
-  ch_latch_q_reg[11]/Q (LHQD1BWP7T)        0.22       0.22 f
-  U194/ZN (NR4D0BWP7T)                     0.23       0.45 r
-  U195/ZN (INR2XD0BWP7T)                   0.15       0.61 r
-  U196/ZN (IND2D0BWP7T)                    0.07       0.68 f
-  U197/ZN (INR2XD0BWP7T)                   0.09       0.76 r
-  U209/Z (AO21D0BWP7T)                     0.11       0.87 r
-  U210/ZN (AOI211XD0BWP7T)                 0.06       0.93 f
-  U211/ZN (IAO21D0BWP7T)                   0.19       1.11 f
-  U212/ZN (IAO21D0BWP7T)                   0.19       1.30 f
-  U213/ZN (AOI221D0BWP7T)                  0.25       1.55 r
-  U214/ZN (IAO21D0BWP7T)                   0.34       1.89 r
-  U215/ZN (INVD0BWP7T)                     0.14       2.03 f
-  U216/ZN (CKND2D0BWP7T)                   0.15       2.18 r
-  U235/ZN (NR3D0BWP7T)                     0.06       2.25 f
-  ch_sel_o[8] (out)                        0.00       2.25 f
-  data arrival time                                   2.25
-  -----------------------------------------------------------
-  (Path is unconstrained)
-
-
-  Startpoint: ch_latch_q_reg[8]
-              (positive level-sensitive latch)
-  Endpoint: ch_sel_o[8]
-            (output port)
-  Path Group: (none)
-  Path Type: max
-
-  Des/Clust/Port     Wire Load Model       Library
-  ------------------------------------------------
-  priority_fsm       ZeroWireload          tcb018gbwp7ttc
-
-  Point                                    Incr       Path
-  -----------------------------------------------------------
-  ch_latch_q_reg[8]/E (LHQD1BWP7T)         0.00       0.00 r
-  ch_latch_q_reg[8]/Q (LHQD1BWP7T)         0.22       0.22 f
-  U194/ZN (NR4D0BWP7T)                     0.22       0.45 r
-  U195/ZN (INR2XD0BWP7T)                   0.15       0.60 r
-  U196/ZN (IND2D0BWP7T)                    0.07       0.67 f
-  U197/ZN (INR2XD0BWP7T)                   0.09       0.75 r
-  U209/Z (AO21D0BWP7T)                     0.11       0.86 r
-  U210/ZN (AOI211XD0BWP7T)                 0.06       0.92 f
-  U211/ZN (IAO21D0BWP7T)                   0.19       1.11 f
-  U212/ZN (IAO21D0BWP7T)                   0.19       1.30 f
-  U213/ZN (AOI221D0BWP7T)                  0.25       1.55 r
-  U214/ZN (IAO21D0BWP7T)                   0.34       1.89 r
-  U215/ZN (INVD0BWP7T)                     0.14       2.03 f
-  U216/ZN (CKND2D0BWP7T)                   0.15       2.18 r
-  U235/ZN (NR3D0BWP7T)                     0.06       2.25 f
-  ch_sel_o[8] (out)                        0.00       2.25 f
-  data arrival time                                   2.25
-  -----------------------------------------------------------
-  (Path is unconstrained)
-
-
-  Startpoint: ch_latch_q_reg[8]
-              (positive level-sensitive latch)
-  Endpoint: ch_sel_o[8]
-            (output port)
-  Path Group: (none)
-  Path Type: max
-
-  Des/Clust/Port     Wire Load Model       Library
-  ------------------------------------------------
-  priority_fsm       ZeroWireload          tcb018gbwp7ttc
-
-  Point                                    Incr       Path
-  -----------------------------------------------------------
-  ch_latch_q_reg[8]/E (LHQD1BWP7T)         0.00       0.00 r
-  ch_latch_q_reg[8]/Q (LHQD1BWP7T)         0.22       0.22 f
-  U194/ZN (NR4D0BWP7T)                     0.22       0.45 r
-  U195/ZN (INR2XD0BWP7T)                   0.15       0.60 r
-  U196/ZN (IND2D0BWP7T)                    0.07       0.67 f
-  U197/ZN (INR2XD0BWP7T)                   0.09       0.75 r
-  U209/Z (AO21D0BWP7T)                     0.11       0.86 r
-  U210/ZN (AOI211XD0BWP7T)                 0.06       0.92 f
-  U211/ZN (IAO21D0BWP7T)                   0.19       1.11 f
-  U212/ZN (IAO21D0BWP7T)                   0.19       1.30 f
-  U213/ZN (AOI221D0BWP7T)                  0.25       1.55 r
-  U214/ZN (IAO21D0BWP7T)                   0.34       1.89 r
-  U215/ZN (INVD0BWP7T)                     0.14       2.03 f
-  U216/ZN (CKND2D0BWP7T)                   0.15       2.18 r
-  U235/ZN (NR3D0BWP7T)                     0.06       2.25 f
-  ch_sel_o[8] (out)                        0.00       2.25 f
-  data arrival time                                   2.25
-  -----------------------------------------------------------
-  (Path is unconstrained)
-
-
-  Startpoint: ch_latch_q_reg[8]
-              (positive level-sensitive latch)
-  Endpoint: ch_sel_o[8]
-            (output port)
-  Path Group: (none)
-  Path Type: max
-
-  Des/Clust/Port     Wire Load Model       Library
-  ------------------------------------------------
-  priority_fsm       ZeroWireload          tcb018gbwp7ttc
-
-  Point                                    Incr       Path
-  -----------------------------------------------------------
-  ch_latch_q_reg[8]/E (LHQD1BWP7T)         0.00       0.00 r
-  ch_latch_q_reg[8]/Q (LHQD1BWP7T)         0.22       0.22 f
-  U194/ZN (NR4D0BWP7T)                     0.22       0.45 r
-  U195/ZN (INR2XD0BWP7T)                   0.15       0.60 r
-  U196/ZN (IND2D0BWP7T)                    0.07       0.67 f
-  U197/ZN (INR2XD0BWP7T)                   0.09       0.75 r
-  U209/Z (AO21D0BWP7T)                     0.11       0.86 r
-  U210/ZN (AOI211XD0BWP7T)                 0.06       0.92 f
-  U211/ZN (IAO21D0BWP7T)                   0.19       1.11 f
-  U212/ZN (IAO21D0BWP7T)                   0.19       1.30 f
-  U213/ZN (AOI221D0BWP7T)                  0.25       1.55 r
-  U214/ZN (IAO21D0BWP7T)                   0.34       1.89 r
-  U215/ZN (INVD0BWP7T)                     0.14       2.03 f
-  U216/ZN (CKND2D0BWP7T)                   0.15       2.18 r
-  U235/ZN (NR3D0BWP7T)                     0.06       2.25 f
-  ch_sel_o[8] (out)                        0.00       2.25 f
-  data arrival time                                   2.25
-  -----------------------------------------------------------
-  (Path is unconstrained)
-
-
-  Startpoint: ch_latch_q_reg[8]
-              (positive level-sensitive latch)
-  Endpoint: ch_sel_o[8]
-            (output port)
-  Path Group: (none)
-  Path Type: max
-
-  Des/Clust/Port     Wire Load Model       Library
-  ------------------------------------------------
-  priority_fsm       ZeroWireload          tcb018gbwp7ttc
-
-  Point                                    Incr       Path
-  -----------------------------------------------------------
-  ch_latch_q_reg[8]/E (LHQD1BWP7T)         0.00       0.00 r
-  ch_latch_q_reg[8]/Q (LHQD1BWP7T)         0.22       0.22 f
-  U194/ZN (NR4D0BWP7T)                     0.22       0.45 r
-  U195/ZN (INR2XD0BWP7T)                   0.15       0.60 r
-  U196/ZN (IND2D0BWP7T)                    0.07       0.67 f
-  U197/ZN (INR2XD0BWP7T)                   0.09       0.75 r
-  U209/Z (AO21D0BWP7T)                     0.11       0.86 r
-  U210/ZN (AOI211XD0BWP7T)                 0.06       0.92 f
-  U211/ZN (IAO21D0BWP7T)                   0.19       1.11 f
-  U212/ZN (IAO21D0BWP7T)                   0.19       1.29 f
-  U213/ZN (AOI221D0BWP7T)                  0.25       1.55 r
-  U214/ZN (IAO21D0BWP7T)                   0.34       1.89 r
-  U215/ZN (INVD0BWP7T)                     0.14       2.03 f
-  U216/ZN (CKND2D0BWP7T)                   0.15       2.18 r
-  U235/ZN (NR3D0BWP7T)                     0.06       2.24 f
-  ch_sel_o[8] (out)                        0.00       2.24 f
-  data arrival time                                   2.24
-  -----------------------------------------------------------
-  (Path is unconstrained)
-
-
-  Startpoint: ch_latch_q_reg[11]
-              (positive level-sensitive latch)
+  Startpoint: state_reg[3]
+              (rising edge-triggered flip-flop)
   Endpoint: ch_sel_o[12]
             (output port)
   Path Group: (none)
@@ -570,30 +53,23 @@ Wire Load Model Mode: segmented
 
   Point                                    Incr       Path
   -----------------------------------------------------------
-  ch_latch_q_reg[11]/E (LHQD1BWP7T)        0.00       0.00 r
-  ch_latch_q_reg[11]/Q (LHQD1BWP7T)        0.22       0.22 f
-  U194/ZN (NR4D0BWP7T)                     0.23       0.45 r
-  U195/ZN (INR2XD0BWP7T)                   0.15       0.61 r
-  U196/ZN (IND2D0BWP7T)                    0.07       0.68 f
-  U197/ZN (INR2XD0BWP7T)                   0.09       0.76 r
-  U209/Z (AO21D0BWP7T)                     0.11       0.87 r
-  U210/ZN (AOI211XD0BWP7T)                 0.07       0.94 f
-  U211/ZN (IAO21D0BWP7T)                   0.19       1.13 f
-  U212/ZN (IAO21D0BWP7T)                   0.19       1.32 f
-  U213/ZN (AOI221D0BWP7T)                  0.25       1.57 r
-  U214/ZN (IAO21D0BWP7T)                   0.34       1.91 r
-  U215/ZN (INVD0BWP7T)                     0.14       2.05 f
-  U216/ZN (CKND2D0BWP7T)                   0.15       2.20 r
-  U239/ZN (NR3D0BWP7T)                     0.04       2.24 f
-  ch_sel_o[12] (out)                       0.00       2.24 f
-  data arrival time                                   2.24
+  state_reg[3]/CP (DFCNQD1BWP7T)           0.00       0.00 r
+  state_reg[3]/Q (DFCNQD1BWP7T)            0.24       0.24 f
+  U138/ZN (INVD0BWP7T)                     0.11       0.35 r
+  U139/ZN (CKND2D0BWP7T)                   0.13       0.48 f
+  U140/ZN (INVD0BWP7T)                     0.14       0.62 r
+  U197/ZN (ND3D0BWP7T)                     0.13       0.75 f
+  U220/ZN (ND3D0BWP7T)                     0.18       0.93 r
+  U237/ZN (NR2XD0BWP7T)                    0.06       0.98 f
+  ch_sel_o[12] (out)                       0.00       0.98 f
+  data arrival time                                   0.98
   -----------------------------------------------------------
   (Path is unconstrained)
 
 
-  Startpoint: ch_latch_q_reg[11]
-              (positive level-sensitive latch)
-  Endpoint: ch_sel_o[12]
+  Startpoint: state_reg[3]
+              (rising edge-triggered flip-flop)
+  Endpoint: ch_sel_o[1]
             (output port)
   Path Group: (none)
   Path Type: max
@@ -604,131 +80,22 @@ Wire Load Model Mode: segmented
 
   Point                                    Incr       Path
   -----------------------------------------------------------
-  ch_latch_q_reg[11]/E (LHQD1BWP7T)        0.00       0.00 r
-  ch_latch_q_reg[11]/Q (LHQD1BWP7T)        0.22       0.22 f
-  U194/ZN (NR4D0BWP7T)                     0.23       0.45 r
-  U195/ZN (INR2XD0BWP7T)                   0.15       0.61 r
-  U196/ZN (IND2D0BWP7T)                    0.07       0.68 f
-  U197/ZN (INR2XD0BWP7T)                   0.09       0.76 r
-  U209/Z (AO21D0BWP7T)                     0.11       0.87 r
-  U210/ZN (AOI211XD0BWP7T)                 0.07       0.94 f
-  U211/ZN (IAO21D0BWP7T)                   0.19       1.13 f
-  U212/ZN (IAO21D0BWP7T)                   0.19       1.31 f
-  U213/ZN (AOI221D0BWP7T)                  0.25       1.57 r
-  U214/ZN (IAO21D0BWP7T)                   0.34       1.91 r
-  U215/ZN (INVD0BWP7T)                     0.14       2.05 f
-  U216/ZN (CKND2D0BWP7T)                   0.15       2.20 r
-  U239/ZN (NR3D0BWP7T)                     0.04       2.24 f
-  ch_sel_o[12] (out)                       0.00       2.24 f
-  data arrival time                                   2.24
+  state_reg[3]/CP (DFCNQD1BWP7T)           0.00       0.00 r
+  state_reg[3]/Q (DFCNQD1BWP7T)            0.24       0.24 f
+  U138/ZN (INVD0BWP7T)                     0.11       0.35 r
+  U139/ZN (CKND2D0BWP7T)                   0.13       0.48 f
+  U140/ZN (INVD0BWP7T)                     0.14       0.62 r
+  U197/ZN (ND3D0BWP7T)                     0.13       0.75 f
+  U222/ZN (ND3D0BWP7T)                     0.18       0.93 r
+  U223/ZN (NR2XD0BWP7T)                    0.06       0.98 f
+  ch_sel_o[1] (out)                        0.00       0.98 f
+  data arrival time                                   0.98
   -----------------------------------------------------------
   (Path is unconstrained)
 
 
-  Startpoint: ch_latch_q_reg[8]
-              (positive level-sensitive latch)
-  Endpoint: ch_sel_o[8]
-            (output port)
-  Path Group: (none)
-  Path Type: max
-
-  Des/Clust/Port     Wire Load Model       Library
-  ------------------------------------------------
-  priority_fsm       ZeroWireload          tcb018gbwp7ttc
-
-  Point                                    Incr       Path
-  -----------------------------------------------------------
-  ch_latch_q_reg[8]/E (LHQD1BWP7T)         0.00       0.00 r
-  ch_latch_q_reg[8]/Q (LHQD1BWP7T)         0.22       0.22 f
-  U194/ZN (NR4D0BWP7T)                     0.22       0.45 r
-  U195/ZN (INR2XD0BWP7T)                   0.15       0.60 r
-  U196/ZN (IND2D0BWP7T)                    0.07       0.67 f
-  U197/ZN (INR2XD0BWP7T)                   0.09       0.75 r
-  U209/Z (AO21D0BWP7T)                     0.11       0.86 r
-  U210/ZN (AOI211XD0BWP7T)                 0.06       0.92 f
-  U211/ZN (IAO21D0BWP7T)                   0.19       1.10 f
-  U212/ZN (IAO21D0BWP7T)                   0.19       1.29 f
-  U213/ZN (AOI221D0BWP7T)                  0.25       1.54 r
-  U214/ZN (IAO21D0BWP7T)                   0.34       1.89 r
-  U215/ZN (INVD0BWP7T)                     0.14       2.03 f
-  U216/ZN (CKND2D0BWP7T)                   0.15       2.18 r
-  U235/ZN (NR3D0BWP7T)                     0.06       2.24 f
-  ch_sel_o[8] (out)                        0.00       2.24 f
-  data arrival time                                   2.24
-  -----------------------------------------------------------
-  (Path is unconstrained)
-
-
-  Startpoint: ch_latch_q_reg[8]
-              (positive level-sensitive latch)
-  Endpoint: ch_sel_o[8]
-            (output port)
-  Path Group: (none)
-  Path Type: max
-
-  Des/Clust/Port     Wire Load Model       Library
-  ------------------------------------------------
-  priority_fsm       ZeroWireload          tcb018gbwp7ttc
-
-  Point                                    Incr       Path
-  -----------------------------------------------------------
-  ch_latch_q_reg[8]/E (LHQD1BWP7T)         0.00       0.00 r
-  ch_latch_q_reg[8]/Q (LHQD1BWP7T)         0.22       0.22 f
-  U194/ZN (NR4D0BWP7T)                     0.22       0.45 r
-  U195/ZN (INR2XD0BWP7T)                   0.15       0.60 r
-  U196/ZN (IND2D0BWP7T)                    0.07       0.67 f
-  U197/ZN (INR2XD0BWP7T)                   0.09       0.75 r
-  U209/Z (AO21D0BWP7T)                     0.11       0.86 r
-  U210/ZN (AOI211XD0BWP7T)                 0.06       0.92 f
-  U211/ZN (IAO21D0BWP7T)                   0.19       1.10 f
-  U212/ZN (IAO21D0BWP7T)                   0.19       1.29 f
-  U213/ZN (AOI221D0BWP7T)                  0.25       1.54 r
-  U214/ZN (IAO21D0BWP7T)                   0.34       1.89 r
-  U215/ZN (INVD0BWP7T)                     0.14       2.02 f
-  U216/ZN (CKND2D0BWP7T)                   0.15       2.18 r
-  U235/ZN (NR3D0BWP7T)                     0.06       2.24 f
-  ch_sel_o[8] (out)                        0.00       2.24 f
-  data arrival time                                   2.24
-  -----------------------------------------------------------
-  (Path is unconstrained)
-
-
-  Startpoint: ch_latch_q_reg[11]
-              (positive level-sensitive latch)
-  Endpoint: ch_sel_o[4]
-            (output port)
-  Path Group: (none)
-  Path Type: max
-
-  Des/Clust/Port     Wire Load Model       Library
-  ------------------------------------------------
-  priority_fsm       ZeroWireload          tcb018gbwp7ttc
-
-  Point                                    Incr       Path
-  -----------------------------------------------------------
-  ch_latch_q_reg[11]/E (LHQD1BWP7T)        0.00       0.00 r
-  ch_latch_q_reg[11]/Q (LHQD1BWP7T)        0.22       0.22 f
-  U194/ZN (NR4D0BWP7T)                     0.23       0.45 r
-  U195/ZN (INR2XD0BWP7T)                   0.15       0.61 r
-  U196/ZN (IND2D0BWP7T)                    0.07       0.68 f
-  U197/ZN (INR2XD0BWP7T)                   0.09       0.76 r
-  U209/Z (AO21D0BWP7T)                     0.11       0.87 r
-  U210/ZN (AOI211XD0BWP7T)                 0.07       0.94 f
-  U211/ZN (IAO21D0BWP7T)                   0.19       1.13 f
-  U212/ZN (IAO21D0BWP7T)                   0.19       1.32 f
-  U213/ZN (AOI221D0BWP7T)                  0.25       1.57 r
-  U214/ZN (IAO21D0BWP7T)                   0.34       1.91 r
-  U215/ZN (INVD0BWP7T)                     0.14       2.05 f
-  U216/ZN (CKND2D0BWP7T)                   0.15       2.20 r
-  U229/ZN (NR2XD0BWP7T)                    0.04       2.24 f
-  ch_sel_o[4] (out)                        0.00       2.24 f
-  data arrival time                                   2.24
-  -----------------------------------------------------------
-  (Path is unconstrained)
-
-
-  Startpoint: ch_latch_q_reg[11]
-              (positive level-sensitive latch)
+  Startpoint: state_reg[3]
+              (rising edge-triggered flip-flop)
   Endpoint: ch_sel_o[0]
             (output port)
   Path Group: (none)
@@ -740,29 +107,49 @@ Wire Load Model Mode: segmented
 
   Point                                    Incr       Path
   -----------------------------------------------------------
-  ch_latch_q_reg[11]/E (LHQD1BWP7T)        0.00       0.00 r
-  ch_latch_q_reg[11]/Q (LHQD1BWP7T)        0.22       0.22 f
-  U194/ZN (NR4D0BWP7T)                     0.23       0.45 r
-  U195/ZN (INR2XD0BWP7T)                   0.15       0.61 r
-  U196/ZN (IND2D0BWP7T)                    0.07       0.68 f
-  U197/ZN (INR2XD0BWP7T)                   0.09       0.76 r
-  U209/Z (AO21D0BWP7T)                     0.11       0.87 r
-  U210/ZN (AOI211XD0BWP7T)                 0.07       0.94 f
-  U211/ZN (IAO21D0BWP7T)                   0.19       1.13 f
-  U212/ZN (IAO21D0BWP7T)                   0.19       1.32 f
-  U213/ZN (AOI221D0BWP7T)                  0.25       1.57 r
-  U214/ZN (IAO21D0BWP7T)                   0.34       1.91 r
-  U215/ZN (INVD0BWP7T)                     0.14       2.05 f
-  U216/ZN (CKND2D0BWP7T)                   0.15       2.20 r
-  U225/ZN (NR2XD0BWP7T)                    0.04       2.24 f
-  ch_sel_o[0] (out)                        0.00       2.24 f
-  data arrival time                                   2.24
+  state_reg[3]/CP (DFCNQD1BWP7T)           0.00       0.00 r
+  state_reg[3]/Q (DFCNQD1BWP7T)            0.24       0.24 f
+  U138/ZN (INVD0BWP7T)                     0.11       0.35 r
+  U139/ZN (CKND2D0BWP7T)                   0.13       0.48 f
+  U140/ZN (INVD0BWP7T)                     0.14       0.62 r
+  U197/ZN (ND3D0BWP7T)                     0.13       0.75 f
+  U220/ZN (ND3D0BWP7T)                     0.18       0.93 r
+  U221/ZN (NR2XD0BWP7T)                    0.06       0.98 f
+  ch_sel_o[0] (out)                        0.00       0.98 f
+  data arrival time                                   0.98
   -----------------------------------------------------------
   (Path is unconstrained)
 
 
-  Startpoint: ch_latch_q_reg[11]
-              (positive level-sensitive latch)
+  Startpoint: state_reg[2]
+              (rising edge-triggered flip-flop)
+  Endpoint: ch_sel_o[13]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  priority_fsm       ZeroWireload          tcb018gbwp7ttc
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  state_reg[2]/CP (DFCNQD1BWP7T)           0.00       0.00 r
+  state_reg[2]/Q (DFCNQD1BWP7T)            0.24       0.24 f
+  U137/ZN (INVD0BWP7T)                     0.10       0.35 r
+  U139/ZN (CKND2D0BWP7T)                   0.13       0.47 f
+  U140/ZN (INVD0BWP7T)                     0.14       0.62 r
+  U197/ZN (ND3D0BWP7T)                     0.13       0.75 f
+  U222/ZN (ND3D0BWP7T)                     0.18       0.92 r
+  U238/ZN (NR2XD0BWP7T)                    0.06       0.98 f
+  ch_sel_o[13] (out)                       0.00       0.98 f
+  data arrival time                                   0.98
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: state_reg[2]
+              (rising edge-triggered flip-flop)
   Endpoint: ch_sel_o[12]
             (output port)
   Path Group: (none)
@@ -774,30 +161,23 @@ Wire Load Model Mode: segmented
 
   Point                                    Incr       Path
   -----------------------------------------------------------
-  ch_latch_q_reg[11]/E (LHQD1BWP7T)        0.00       0.00 r
-  ch_latch_q_reg[11]/Q (LHQD1BWP7T)        0.22       0.22 f
-  U194/ZN (NR4D0BWP7T)                     0.23       0.45 r
-  U195/ZN (INR2XD0BWP7T)                   0.15       0.61 r
-  U196/ZN (IND2D0BWP7T)                    0.07       0.68 f
-  U197/ZN (INR2XD0BWP7T)                   0.09       0.76 r
-  U209/Z (AO21D0BWP7T)                     0.11       0.87 r
-  U210/ZN (AOI211XD0BWP7T)                 0.07       0.94 f
-  U211/ZN (IAO21D0BWP7T)                   0.19       1.12 f
-  U212/ZN (IAO21D0BWP7T)                   0.19       1.31 f
-  U213/ZN (AOI221D0BWP7T)                  0.25       1.56 r
-  U214/ZN (IAO21D0BWP7T)                   0.34       1.91 r
-  U215/ZN (INVD0BWP7T)                     0.14       2.04 f
-  U216/ZN (CKND2D0BWP7T)                   0.15       2.20 r
-  U239/ZN (NR3D0BWP7T)                     0.04       2.24 f
-  ch_sel_o[12] (out)                       0.00       2.24 f
-  data arrival time                                   2.24
+  state_reg[2]/CP (DFCNQD1BWP7T)           0.00       0.00 r
+  state_reg[2]/Q (DFCNQD1BWP7T)            0.24       0.24 f
+  U137/ZN (INVD0BWP7T)                     0.10       0.35 r
+  U139/ZN (CKND2D0BWP7T)                   0.13       0.47 f
+  U140/ZN (INVD0BWP7T)                     0.14       0.62 r
+  U197/ZN (ND3D0BWP7T)                     0.13       0.75 f
+  U220/ZN (ND3D0BWP7T)                     0.18       0.92 r
+  U237/ZN (NR2XD0BWP7T)                    0.06       0.98 f
+  ch_sel_o[12] (out)                       0.00       0.98 f
+  data arrival time                                   0.98
   -----------------------------------------------------------
   (Path is unconstrained)
 
 
-  Startpoint: ch_latch_q_reg[11]
-              (positive level-sensitive latch)
-  Endpoint: ch_sel_o[4]
+  Startpoint: state_reg[2]
+              (rising edge-triggered flip-flop)
+  Endpoint: ch_sel_o[1]
             (output port)
   Path Group: (none)
   Path Type: max
@@ -808,29 +188,22 @@ Wire Load Model Mode: segmented
 
   Point                                    Incr       Path
   -----------------------------------------------------------
-  ch_latch_q_reg[11]/E (LHQD1BWP7T)        0.00       0.00 r
-  ch_latch_q_reg[11]/Q (LHQD1BWP7T)        0.22       0.22 f
-  U194/ZN (NR4D0BWP7T)                     0.23       0.45 r
-  U195/ZN (INR2XD0BWP7T)                   0.15       0.61 r
-  U196/ZN (IND2D0BWP7T)                    0.07       0.68 f
-  U197/ZN (INR2XD0BWP7T)                   0.09       0.76 r
-  U209/Z (AO21D0BWP7T)                     0.11       0.87 r
-  U210/ZN (AOI211XD0BWP7T)                 0.07       0.94 f
-  U211/ZN (IAO21D0BWP7T)                   0.19       1.13 f
-  U212/ZN (IAO21D0BWP7T)                   0.19       1.31 f
-  U213/ZN (AOI221D0BWP7T)                  0.25       1.57 r
-  U214/ZN (IAO21D0BWP7T)                   0.34       1.91 r
-  U215/ZN (INVD0BWP7T)                     0.14       2.05 f
-  U216/ZN (CKND2D0BWP7T)                   0.15       2.20 r
-  U229/ZN (NR2XD0BWP7T)                    0.04       2.24 f
-  ch_sel_o[4] (out)                        0.00       2.24 f
-  data arrival time                                   2.24
+  state_reg[2]/CP (DFCNQD1BWP7T)           0.00       0.00 r
+  state_reg[2]/Q (DFCNQD1BWP7T)            0.24       0.24 f
+  U137/ZN (INVD0BWP7T)                     0.10       0.35 r
+  U139/ZN (CKND2D0BWP7T)                   0.13       0.47 f
+  U140/ZN (INVD0BWP7T)                     0.14       0.62 r
+  U197/ZN (ND3D0BWP7T)                     0.13       0.75 f
+  U222/ZN (ND3D0BWP7T)                     0.18       0.92 r
+  U223/ZN (NR2XD0BWP7T)                    0.06       0.98 f
+  ch_sel_o[1] (out)                        0.00       0.98 f
+  data arrival time                                   0.98
   -----------------------------------------------------------
   (Path is unconstrained)
 
 
-  Startpoint: ch_latch_q_reg[11]
-              (positive level-sensitive latch)
+  Startpoint: state_reg[2]
+              (rising edge-triggered flip-flop)
   Endpoint: ch_sel_o[0]
             (output port)
   Path Group: (none)
@@ -842,30 +215,23 @@ Wire Load Model Mode: segmented
 
   Point                                    Incr       Path
   -----------------------------------------------------------
-  ch_latch_q_reg[11]/E (LHQD1BWP7T)        0.00       0.00 r
-  ch_latch_q_reg[11]/Q (LHQD1BWP7T)        0.22       0.22 f
-  U194/ZN (NR4D0BWP7T)                     0.23       0.45 r
-  U195/ZN (INR2XD0BWP7T)                   0.15       0.61 r
-  U196/ZN (IND2D0BWP7T)                    0.07       0.68 f
-  U197/ZN (INR2XD0BWP7T)                   0.09       0.76 r
-  U209/Z (AO21D0BWP7T)                     0.11       0.87 r
-  U210/ZN (AOI211XD0BWP7T)                 0.07       0.94 f
-  U211/ZN (IAO21D0BWP7T)                   0.19       1.13 f
-  U212/ZN (IAO21D0BWP7T)                   0.19       1.31 f
-  U213/ZN (AOI221D0BWP7T)                  0.25       1.57 r
-  U214/ZN (IAO21D0BWP7T)                   0.34       1.91 r
-  U215/ZN (INVD0BWP7T)                     0.14       2.05 f
-  U216/ZN (CKND2D0BWP7T)                   0.15       2.20 r
-  U225/ZN (NR2XD0BWP7T)                    0.04       2.24 f
-  ch_sel_o[0] (out)                        0.00       2.24 f
-  data arrival time                                   2.24
+  state_reg[2]/CP (DFCNQD1BWP7T)           0.00       0.00 r
+  state_reg[2]/Q (DFCNQD1BWP7T)            0.24       0.24 f
+  U137/ZN (INVD0BWP7T)                     0.10       0.35 r
+  U139/ZN (CKND2D0BWP7T)                   0.13       0.47 f
+  U140/ZN (INVD0BWP7T)                     0.14       0.62 r
+  U197/ZN (ND3D0BWP7T)                     0.13       0.75 f
+  U220/ZN (ND3D0BWP7T)                     0.18       0.92 r
+  U221/ZN (NR2XD0BWP7T)                    0.06       0.98 f
+  ch_sel_o[0] (out)                        0.00       0.98 f
+  data arrival time                                   0.98
   -----------------------------------------------------------
   (Path is unconstrained)
 
 
-  Startpoint: ch_latch_q_reg[8]
-              (positive level-sensitive latch)
-  Endpoint: ch_sel_o[12]
+  Startpoint: state_reg[3]
+              (rising edge-triggered flip-flop)
+  Endpoint: ch_sel_o[9]
             (output port)
   Path Group: (none)
   Path Type: max
@@ -876,29 +242,22 @@ Wire Load Model Mode: segmented
 
   Point                                    Incr       Path
   -----------------------------------------------------------
-  ch_latch_q_reg[8]/E (LHQD1BWP7T)         0.00       0.00 r
-  ch_latch_q_reg[8]/Q (LHQD1BWP7T)         0.22       0.22 f
-  U194/ZN (NR4D0BWP7T)                     0.22       0.45 r
-  U195/ZN (INR2XD0BWP7T)                   0.15       0.60 r
-  U196/ZN (IND2D0BWP7T)                    0.07       0.67 f
-  U197/ZN (INR2XD0BWP7T)                   0.09       0.75 r
-  U209/Z (AO21D0BWP7T)                     0.11       0.86 r
-  U210/ZN (AOI211XD0BWP7T)                 0.07       0.93 f
-  U211/ZN (IAO21D0BWP7T)                   0.19       1.12 f
-  U212/ZN (IAO21D0BWP7T)                   0.19       1.31 f
-  U213/ZN (AOI221D0BWP7T)                  0.25       1.56 r
-  U214/ZN (IAO21D0BWP7T)                   0.34       1.90 r
-  U215/ZN (INVD0BWP7T)                     0.14       2.04 f
-  U216/ZN (CKND2D0BWP7T)                   0.15       2.19 r
-  U239/ZN (NR3D0BWP7T)                     0.04       2.23 f
-  ch_sel_o[12] (out)                       0.00       2.23 f
-  data arrival time                                   2.23
+  state_reg[3]/CP (DFCNQD1BWP7T)           0.00       0.00 r
+  state_reg[3]/Q (DFCNQD1BWP7T)            0.24       0.24 f
+  U138/ZN (INVD0BWP7T)                     0.11       0.35 r
+  U139/ZN (CKND2D0BWP7T)                   0.13       0.48 f
+  U140/ZN (INVD0BWP7T)                     0.14       0.62 r
+  U197/ZN (ND3D0BWP7T)                     0.13       0.75 f
+  U222/ZN (ND3D0BWP7T)                     0.18       0.93 r
+  U233/ZN (NR2XD0BWP7T)                    0.04       0.96 f
+  ch_sel_o[9] (out)                        0.00       0.96 f
+  data arrival time                                   0.96
   -----------------------------------------------------------
   (Path is unconstrained)
 
 
-  Startpoint: ch_latch_q_reg[11]
-              (positive level-sensitive latch)
+  Startpoint: state_reg[3]
+              (rising edge-triggered flip-flop)
   Endpoint: ch_sel_o[8]
             (output port)
   Path Group: (none)
@@ -910,30 +269,23 @@ Wire Load Model Mode: segmented
 
   Point                                    Incr       Path
   -----------------------------------------------------------
-  ch_latch_q_reg[11]/E (LHQD1BWP7T)        0.00       0.00 r
-  ch_latch_q_reg[11]/Q (LHQD1BWP7T)        0.22       0.22 f
-  U194/ZN (NR4D0BWP7T)                     0.23       0.45 r
-  U195/ZN (INR2XD0BWP7T)                   0.15       0.61 r
-  U196/ZN (IND2D0BWP7T)                    0.07       0.68 f
-  U197/ZN (INR2XD0BWP7T)                   0.09       0.76 r
-  U209/Z (AO21D0BWP7T)                     0.11       0.87 r
-  U210/ZN (AOI211XD0BWP7T)                 0.07       0.94 f
-  U211/ZN (IAO21D0BWP7T)                   0.19       1.13 f
-  U212/ZN (IAO21D0BWP7T)                   0.19       1.32 f
-  U213/ZN (AOI221D0BWP7T)                  0.22       1.54 r
-  U214/ZN (IAO21D0BWP7T)                   0.34       1.88 r
-  U215/ZN (INVD0BWP7T)                     0.14       2.02 f
-  U216/ZN (CKND2D0BWP7T)                   0.15       2.17 r
-  U235/ZN (NR3D0BWP7T)                     0.06       2.23 f
-  ch_sel_o[8] (out)                        0.00       2.23 f
-  data arrival time                                   2.23
+  state_reg[3]/CP (DFCNQD1BWP7T)           0.00       0.00 r
+  state_reg[3]/Q (DFCNQD1BWP7T)            0.24       0.24 f
+  U138/ZN (INVD0BWP7T)                     0.11       0.35 r
+  U139/ZN (CKND2D0BWP7T)                   0.13       0.48 f
+  U140/ZN (INVD0BWP7T)                     0.14       0.62 r
+  U197/ZN (ND3D0BWP7T)                     0.13       0.75 f
+  U220/ZN (ND3D0BWP7T)                     0.18       0.93 r
+  U232/ZN (NR2XD0BWP7T)                    0.04       0.96 f
+  ch_sel_o[8] (out)                        0.00       0.96 f
+  data arrival time                                   0.96
   -----------------------------------------------------------
   (Path is unconstrained)
 
 
-  Startpoint: ch_latch_q_reg[8]
-              (positive level-sensitive latch)
-  Endpoint: ch_sel_o[12]
+  Startpoint: state_reg[3]
+              (rising edge-triggered flip-flop)
+  Endpoint: ch_sel_o[5]
             (output port)
   Path Group: (none)
   Path Type: max
@@ -944,30 +296,23 @@ Wire Load Model Mode: segmented
 
   Point                                    Incr       Path
   -----------------------------------------------------------
-  ch_latch_q_reg[8]/E (LHQD1BWP7T)         0.00       0.00 r
-  ch_latch_q_reg[8]/Q (LHQD1BWP7T)         0.22       0.22 f
-  U194/ZN (NR4D0BWP7T)                     0.22       0.45 r
-  U195/ZN (INR2XD0BWP7T)                   0.15       0.60 r
-  U196/ZN (IND2D0BWP7T)                    0.07       0.67 f
-  U197/ZN (INR2XD0BWP7T)                   0.09       0.75 r
-  U209/Z (AO21D0BWP7T)                     0.11       0.86 r
-  U210/ZN (AOI211XD0BWP7T)                 0.07       0.93 f
-  U211/ZN (IAO21D0BWP7T)                   0.19       1.12 f
-  U212/ZN (IAO21D0BWP7T)                   0.19       1.31 f
-  U213/ZN (AOI221D0BWP7T)                  0.25       1.56 r
-  U214/ZN (IAO21D0BWP7T)                   0.34       1.90 r
-  U215/ZN (INVD0BWP7T)                     0.14       2.04 f
-  U216/ZN (CKND2D0BWP7T)                   0.15       2.19 r
-  U239/ZN (NR3D0BWP7T)                     0.04       2.23 f
-  ch_sel_o[12] (out)                       0.00       2.23 f
-  data arrival time                                   2.23
+  state_reg[3]/CP (DFCNQD1BWP7T)           0.00       0.00 r
+  state_reg[3]/Q (DFCNQD1BWP7T)            0.24       0.24 f
+  U138/ZN (INVD0BWP7T)                     0.11       0.35 r
+  U139/ZN (CKND2D0BWP7T)                   0.13       0.48 f
+  U140/ZN (INVD0BWP7T)                     0.14       0.62 r
+  U197/ZN (ND3D0BWP7T)                     0.13       0.75 f
+  U222/ZN (ND3D0BWP7T)                     0.18       0.93 r
+  U228/ZN (NR2XD0BWP7T)                    0.04       0.96 f
+  ch_sel_o[5] (out)                        0.00       0.96 f
+  data arrival time                                   0.96
   -----------------------------------------------------------
   (Path is unconstrained)
 
 
-  Startpoint: ch_latch_q_reg[11]
-              (positive level-sensitive latch)
-  Endpoint: ch_sel_o[12]
+  Startpoint: state_reg[3]
+              (rising edge-triggered flip-flop)
+  Endpoint: ch_sel_o[4]
             (output port)
   Path Group: (none)
   Path Type: max
@@ -978,29 +323,49 @@ Wire Load Model Mode: segmented
 
   Point                                    Incr       Path
   -----------------------------------------------------------
-  ch_latch_q_reg[11]/E (LHQD1BWP7T)        0.00       0.00 r
-  ch_latch_q_reg[11]/Q (LHQD1BWP7T)        0.22       0.22 f
-  U194/ZN (NR4D0BWP7T)                     0.23       0.45 r
-  U195/ZN (INR2XD0BWP7T)                   0.15       0.61 r
-  U196/ZN (IND2D0BWP7T)                    0.07       0.68 f
-  U197/ZN (INR2XD0BWP7T)                   0.09       0.76 r
-  U209/Z (AO21D0BWP7T)                     0.11       0.87 r
-  U210/ZN (AOI211XD0BWP7T)                 0.06       0.93 f
-  U211/ZN (IAO21D0BWP7T)                   0.19       1.12 f
-  U212/ZN (IAO21D0BWP7T)                   0.19       1.31 f
-  U213/ZN (AOI221D0BWP7T)                  0.25       1.56 r
-  U214/ZN (IAO21D0BWP7T)                   0.34       1.90 r
-  U215/ZN (INVD0BWP7T)                     0.14       2.04 f
-  U216/ZN (CKND2D0BWP7T)                   0.15       2.19 r
-  U239/ZN (NR3D0BWP7T)                     0.04       2.23 f
-  ch_sel_o[12] (out)                       0.00       2.23 f
-  data arrival time                                   2.23
+  state_reg[3]/CP (DFCNQD1BWP7T)           0.00       0.00 r
+  state_reg[3]/Q (DFCNQD1BWP7T)            0.24       0.24 f
+  U138/ZN (INVD0BWP7T)                     0.11       0.35 r
+  U139/ZN (CKND2D0BWP7T)                   0.13       0.48 f
+  U140/ZN (INVD0BWP7T)                     0.14       0.62 r
+  U197/ZN (ND3D0BWP7T)                     0.13       0.75 f
+  U220/ZN (ND3D0BWP7T)                     0.18       0.93 r
+  U227/ZN (NR2XD0BWP7T)                    0.04       0.96 f
+  ch_sel_o[4] (out)                        0.00       0.96 f
+  data arrival time                                   0.96
   -----------------------------------------------------------
   (Path is unconstrained)
 
 
-  Startpoint: ch_latch_q_reg[11]
-              (positive level-sensitive latch)
+  Startpoint: state_reg[2]
+              (rising edge-triggered flip-flop)
+  Endpoint: ch_sel_o[9]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  priority_fsm       ZeroWireload          tcb018gbwp7ttc
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  state_reg[2]/CP (DFCNQD1BWP7T)           0.00       0.00 r
+  state_reg[2]/Q (DFCNQD1BWP7T)            0.24       0.24 f
+  U137/ZN (INVD0BWP7T)                     0.10       0.35 r
+  U139/ZN (CKND2D0BWP7T)                   0.13       0.47 f
+  U140/ZN (INVD0BWP7T)                     0.14       0.62 r
+  U197/ZN (ND3D0BWP7T)                     0.13       0.75 f
+  U222/ZN (ND3D0BWP7T)                     0.18       0.92 r
+  U233/ZN (NR2XD0BWP7T)                    0.04       0.96 f
+  ch_sel_o[9] (out)                        0.00       0.96 f
+  data arrival time                                   0.96
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: state_reg[2]
+              (rising edge-triggered flip-flop)
   Endpoint: ch_sel_o[8]
             (output port)
   Path Group: (none)
@@ -1012,29 +377,49 @@ Wire Load Model Mode: segmented
 
   Point                                    Incr       Path
   -----------------------------------------------------------
-  ch_latch_q_reg[11]/E (LHQD1BWP7T)        0.00       0.00 r
-  ch_latch_q_reg[11]/Q (LHQD1BWP7T)        0.22       0.22 f
-  U194/ZN (NR4D0BWP7T)                     0.23       0.45 r
-  U195/ZN (INR2XD0BWP7T)                   0.15       0.61 r
-  U196/ZN (IND2D0BWP7T)                    0.07       0.68 f
-  U197/ZN (INR2XD0BWP7T)                   0.09       0.76 r
-  U209/Z (AO21D0BWP7T)                     0.11       0.87 r
-  U210/ZN (AOI211XD0BWP7T)                 0.07       0.94 f
-  U211/ZN (IAO21D0BWP7T)                   0.19       1.13 f
-  U212/ZN (IAO21D0BWP7T)                   0.19       1.31 f
-  U213/ZN (AOI221D0BWP7T)                  0.22       1.54 r
-  U214/ZN (IAO21D0BWP7T)                   0.34       1.88 r
-  U215/ZN (INVD0BWP7T)                     0.14       2.02 f
-  U216/ZN (CKND2D0BWP7T)                   0.15       2.17 r
-  U235/ZN (NR3D0BWP7T)                     0.06       2.23 f
-  ch_sel_o[8] (out)                        0.00       2.23 f
-  data arrival time                                   2.23
+  state_reg[2]/CP (DFCNQD1BWP7T)           0.00       0.00 r
+  state_reg[2]/Q (DFCNQD1BWP7T)            0.24       0.24 f
+  U137/ZN (INVD0BWP7T)                     0.10       0.35 r
+  U139/ZN (CKND2D0BWP7T)                   0.13       0.47 f
+  U140/ZN (INVD0BWP7T)                     0.14       0.62 r
+  U197/ZN (ND3D0BWP7T)                     0.13       0.75 f
+  U220/ZN (ND3D0BWP7T)                     0.18       0.92 r
+  U232/ZN (NR2XD0BWP7T)                    0.04       0.96 f
+  ch_sel_o[8] (out)                        0.00       0.96 f
+  data arrival time                                   0.96
   -----------------------------------------------------------
   (Path is unconstrained)
 
 
-  Startpoint: ch_latch_q_reg[11]
-              (positive level-sensitive latch)
+  Startpoint: state_reg[2]
+              (rising edge-triggered flip-flop)
+  Endpoint: ch_sel_o[5]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  priority_fsm       ZeroWireload          tcb018gbwp7ttc
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  state_reg[2]/CP (DFCNQD1BWP7T)           0.00       0.00 r
+  state_reg[2]/Q (DFCNQD1BWP7T)            0.24       0.24 f
+  U137/ZN (INVD0BWP7T)                     0.10       0.35 r
+  U139/ZN (CKND2D0BWP7T)                   0.13       0.47 f
+  U140/ZN (INVD0BWP7T)                     0.14       0.62 r
+  U197/ZN (ND3D0BWP7T)                     0.13       0.75 f
+  U222/ZN (ND3D0BWP7T)                     0.18       0.92 r
+  U228/ZN (NR2XD0BWP7T)                    0.04       0.96 f
+  ch_sel_o[5] (out)                        0.00       0.96 f
+  data arrival time                                   0.96
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: state_reg[2]
+              (rising edge-triggered flip-flop)
   Endpoint: ch_sel_o[4]
             (output port)
   Path Group: (none)
@@ -1046,29 +431,103 @@ Wire Load Model Mode: segmented
 
   Point                                    Incr       Path
   -----------------------------------------------------------
-  ch_latch_q_reg[11]/E (LHQD1BWP7T)        0.00       0.00 r
-  ch_latch_q_reg[11]/Q (LHQD1BWP7T)        0.22       0.22 f
-  U194/ZN (NR4D0BWP7T)                     0.23       0.45 r
-  U195/ZN (INR2XD0BWP7T)                   0.15       0.61 r
-  U196/ZN (IND2D0BWP7T)                    0.07       0.68 f
-  U197/ZN (INR2XD0BWP7T)                   0.09       0.76 r
-  U209/Z (AO21D0BWP7T)                     0.11       0.87 r
-  U210/ZN (AOI211XD0BWP7T)                 0.07       0.94 f
-  U211/ZN (IAO21D0BWP7T)                   0.19       1.12 f
-  U212/ZN (IAO21D0BWP7T)                   0.19       1.31 f
-  U213/ZN (AOI221D0BWP7T)                  0.25       1.56 r
-  U214/ZN (IAO21D0BWP7T)                   0.34       1.91 r
-  U215/ZN (INVD0BWP7T)                     0.14       2.04 f
-  U216/ZN (CKND2D0BWP7T)                   0.15       2.20 r
-  U229/ZN (NR2XD0BWP7T)                    0.04       2.23 f
-  ch_sel_o[4] (out)                        0.00       2.23 f
-  data arrival time                                   2.23
+  state_reg[2]/CP (DFCNQD1BWP7T)           0.00       0.00 r
+  state_reg[2]/Q (DFCNQD1BWP7T)            0.24       0.24 f
+  U137/ZN (INVD0BWP7T)                     0.10       0.35 r
+  U139/ZN (CKND2D0BWP7T)                   0.13       0.47 f
+  U140/ZN (INVD0BWP7T)                     0.14       0.62 r
+  U197/ZN (ND3D0BWP7T)                     0.13       0.75 f
+  U220/ZN (ND3D0BWP7T)                     0.18       0.92 r
+  U227/ZN (NR2XD0BWP7T)                    0.04       0.96 f
+  ch_sel_o[4] (out)                        0.00       0.96 f
+  data arrival time                                   0.96
   -----------------------------------------------------------
   (Path is unconstrained)
 
 
-  Startpoint: ch_latch_q_reg[11]
-              (positive level-sensitive latch)
+  Startpoint: state_reg[3]
+              (rising edge-triggered flip-flop)
+  Endpoint: ch_sel_o[13]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  priority_fsm       ZeroWireload          tcb018gbwp7ttc
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  state_reg[3]/CP (DFCNQD1BWP7T)           0.00       0.00 r
+  state_reg[3]/Q (DFCNQD1BWP7T)            0.27       0.27 r
+  U138/ZN (INVD0BWP7T)                     0.06       0.34 f
+  U139/ZN (CKND2D0BWP7T)                   0.13       0.47 r
+  U140/ZN (INVD0BWP7T)                     0.09       0.56 f
+  U197/ZN (ND3D0BWP7T)                     0.13       0.69 r
+  U222/ZN (ND3D0BWP7T)                     0.14       0.83 f
+  U238/ZN (NR2XD0BWP7T)                    0.07       0.90 r
+  ch_sel_o[13] (out)                       0.00       0.90 r
+  data arrival time                                   0.90
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: state_reg[3]
+              (rising edge-triggered flip-flop)
+  Endpoint: ch_sel_o[12]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  priority_fsm       ZeroWireload          tcb018gbwp7ttc
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  state_reg[3]/CP (DFCNQD1BWP7T)           0.00       0.00 r
+  state_reg[3]/Q (DFCNQD1BWP7T)            0.27       0.27 r
+  U138/ZN (INVD0BWP7T)                     0.06       0.34 f
+  U139/ZN (CKND2D0BWP7T)                   0.13       0.47 r
+  U140/ZN (INVD0BWP7T)                     0.09       0.56 f
+  U197/ZN (ND3D0BWP7T)                     0.13       0.69 r
+  U220/ZN (ND3D0BWP7T)                     0.14       0.83 f
+  U237/ZN (NR2XD0BWP7T)                    0.07       0.90 r
+  ch_sel_o[12] (out)                       0.00       0.90 r
+  data arrival time                                   0.90
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: state_reg[3]
+              (rising edge-triggered flip-flop)
+  Endpoint: ch_sel_o[1]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  priority_fsm       ZeroWireload          tcb018gbwp7ttc
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  state_reg[3]/CP (DFCNQD1BWP7T)           0.00       0.00 r
+  state_reg[3]/Q (DFCNQD1BWP7T)            0.27       0.27 r
+  U138/ZN (INVD0BWP7T)                     0.06       0.34 f
+  U139/ZN (CKND2D0BWP7T)                   0.13       0.47 r
+  U140/ZN (INVD0BWP7T)                     0.09       0.56 f
+  U197/ZN (ND3D0BWP7T)                     0.13       0.69 r
+  U222/ZN (ND3D0BWP7T)                     0.14       0.83 f
+  U223/ZN (NR2XD0BWP7T)                    0.07       0.90 r
+  ch_sel_o[1] (out)                        0.00       0.90 r
+  data arrival time                                   0.90
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: state_reg[3]
+              (rising edge-triggered flip-flop)
   Endpoint: ch_sel_o[0]
             (output port)
   Path Group: (none)
@@ -1080,30 +539,23 @@ Wire Load Model Mode: segmented
 
   Point                                    Incr       Path
   -----------------------------------------------------------
-  ch_latch_q_reg[11]/E (LHQD1BWP7T)        0.00       0.00 r
-  ch_latch_q_reg[11]/Q (LHQD1BWP7T)        0.22       0.22 f
-  U194/ZN (NR4D0BWP7T)                     0.23       0.45 r
-  U195/ZN (INR2XD0BWP7T)                   0.15       0.61 r
-  U196/ZN (IND2D0BWP7T)                    0.07       0.68 f
-  U197/ZN (INR2XD0BWP7T)                   0.09       0.76 r
-  U209/Z (AO21D0BWP7T)                     0.11       0.87 r
-  U210/ZN (AOI211XD0BWP7T)                 0.07       0.94 f
-  U211/ZN (IAO21D0BWP7T)                   0.19       1.12 f
-  U212/ZN (IAO21D0BWP7T)                   0.19       1.31 f
-  U213/ZN (AOI221D0BWP7T)                  0.25       1.56 r
-  U214/ZN (IAO21D0BWP7T)                   0.34       1.91 r
-  U215/ZN (INVD0BWP7T)                     0.14       2.04 f
-  U216/ZN (CKND2D0BWP7T)                   0.15       2.20 r
-  U225/ZN (NR2XD0BWP7T)                    0.04       2.23 f
-  ch_sel_o[0] (out)                        0.00       2.23 f
-  data arrival time                                   2.23
+  state_reg[3]/CP (DFCNQD1BWP7T)           0.00       0.00 r
+  state_reg[3]/Q (DFCNQD1BWP7T)            0.27       0.27 r
+  U138/ZN (INVD0BWP7T)                     0.06       0.34 f
+  U139/ZN (CKND2D0BWP7T)                   0.13       0.47 r
+  U140/ZN (INVD0BWP7T)                     0.09       0.56 f
+  U197/ZN (ND3D0BWP7T)                     0.13       0.69 r
+  U220/ZN (ND3D0BWP7T)                     0.14       0.83 f
+  U221/ZN (NR2XD0BWP7T)                    0.07       0.90 r
+  ch_sel_o[0] (out)                        0.00       0.90 r
+  data arrival time                                   0.90
   -----------------------------------------------------------
   (Path is unconstrained)
 
 
-  Startpoint: ch_latch_q_reg[11]
-              (positive level-sensitive latch)
-  Endpoint: ch_sel_o[12]
+  Startpoint: state_reg[3]
+              (rising edge-triggered flip-flop)
+  Endpoint: ch_sel_o[9]
             (output port)
   Path Group: (none)
   Path Type: max
@@ -1114,267 +566,22 @@ Wire Load Model Mode: segmented
 
   Point                                    Incr       Path
   -----------------------------------------------------------
-  ch_latch_q_reg[11]/E (LHQD1BWP7T)        0.00       0.00 r
-  ch_latch_q_reg[11]/Q (LHQD1BWP7T)        0.22       0.22 f
-  U194/ZN (NR4D0BWP7T)                     0.23       0.45 r
-  U195/ZN (INR2XD0BWP7T)                   0.15       0.61 r
-  U196/ZN (IND2D0BWP7T)                    0.07       0.68 f
-  U197/ZN (INR2XD0BWP7T)                   0.09       0.76 r
-  U209/Z (AO21D0BWP7T)                     0.11       0.87 r
-  U210/ZN (AOI211XD0BWP7T)                 0.06       0.93 f
-  U211/ZN (IAO21D0BWP7T)                   0.19       1.12 f
-  U212/ZN (IAO21D0BWP7T)                   0.19       1.30 f
-  U213/ZN (AOI221D0BWP7T)                  0.25       1.56 r
-  U214/ZN (IAO21D0BWP7T)                   0.34       1.90 r
-  U215/ZN (INVD0BWP7T)                     0.14       2.04 f
-  U216/ZN (CKND2D0BWP7T)                   0.15       2.19 r
-  U239/ZN (NR3D0BWP7T)                     0.04       2.23 f
-  ch_sel_o[12] (out)                       0.00       2.23 f
-  data arrival time                                   2.23
+  state_reg[3]/CP (DFCNQD1BWP7T)           0.00       0.00 r
+  state_reg[3]/Q (DFCNQD1BWP7T)            0.27       0.27 r
+  U138/ZN (INVD0BWP7T)                     0.06       0.34 f
+  U139/ZN (CKND2D0BWP7T)                   0.13       0.47 r
+  U140/ZN (INVD0BWP7T)                     0.09       0.56 f
+  U197/ZN (ND3D0BWP7T)                     0.13       0.69 r
+  U222/ZN (ND3D0BWP7T)                     0.14       0.83 f
+  U233/ZN (NR2XD0BWP7T)                    0.07       0.90 r
+  ch_sel_o[9] (out)                        0.00       0.90 r
+  data arrival time                                   0.90
   -----------------------------------------------------------
   (Path is unconstrained)
 
 
-  Startpoint: ch_latch_q_reg[11]
-              (positive level-sensitive latch)
-  Endpoint: ch_sel_o[12]
-            (output port)
-  Path Group: (none)
-  Path Type: max
-
-  Des/Clust/Port     Wire Load Model       Library
-  ------------------------------------------------
-  priority_fsm       ZeroWireload          tcb018gbwp7ttc
-
-  Point                                    Incr       Path
-  -----------------------------------------------------------
-  ch_latch_q_reg[11]/E (LHQD1BWP7T)        0.00       0.00 r
-  ch_latch_q_reg[11]/Q (LHQD1BWP7T)        0.22       0.22 f
-  U194/ZN (NR4D0BWP7T)                     0.23       0.45 r
-  U195/ZN (INR2XD0BWP7T)                   0.15       0.61 r
-  U196/ZN (IND2D0BWP7T)                    0.07       0.68 f
-  U197/ZN (INR2XD0BWP7T)                   0.09       0.76 r
-  U209/Z (AO21D0BWP7T)                     0.11       0.87 r
-  U210/ZN (AOI211XD0BWP7T)                 0.06       0.93 f
-  U211/ZN (IAO21D0BWP7T)                   0.19       1.12 f
-  U212/ZN (IAO21D0BWP7T)                   0.19       1.30 f
-  U213/ZN (AOI221D0BWP7T)                  0.25       1.56 r
-  U214/ZN (IAO21D0BWP7T)                   0.34       1.90 r
-  U215/ZN (INVD0BWP7T)                     0.14       2.04 f
-  U216/ZN (CKND2D0BWP7T)                   0.15       2.19 r
-  U239/ZN (NR3D0BWP7T)                     0.04       2.23 f
-  ch_sel_o[12] (out)                       0.00       2.23 f
-  data arrival time                                   2.23
-  -----------------------------------------------------------
-  (Path is unconstrained)
-
-
-  Startpoint: ch_latch_q_reg[11]
-              (positive level-sensitive latch)
-  Endpoint: ch_sel_o[12]
-            (output port)
-  Path Group: (none)
-  Path Type: max
-
-  Des/Clust/Port     Wire Load Model       Library
-  ------------------------------------------------
-  priority_fsm       ZeroWireload          tcb018gbwp7ttc
-
-  Point                                    Incr       Path
-  -----------------------------------------------------------
-  ch_latch_q_reg[11]/E (LHQD1BWP7T)        0.00       0.00 r
-  ch_latch_q_reg[11]/Q (LHQD1BWP7T)        0.22       0.22 f
-  U194/ZN (NR4D0BWP7T)                     0.23       0.45 r
-  U195/ZN (INR2XD0BWP7T)                   0.15       0.61 r
-  U196/ZN (IND2D0BWP7T)                    0.07       0.68 f
-  U197/ZN (INR2XD0BWP7T)                   0.09       0.76 r
-  U209/Z (AO21D0BWP7T)                     0.11       0.87 r
-  U210/ZN (AOI211XD0BWP7T)                 0.06       0.93 f
-  U211/ZN (IAO21D0BWP7T)                   0.19       1.12 f
-  U212/ZN (IAO21D0BWP7T)                   0.19       1.30 f
-  U213/ZN (AOI221D0BWP7T)                  0.25       1.56 r
-  U214/ZN (IAO21D0BWP7T)                   0.34       1.90 r
-  U215/ZN (INVD0BWP7T)                     0.14       2.04 f
-  U216/ZN (CKND2D0BWP7T)                   0.15       2.19 r
-  U239/ZN (NR3D0BWP7T)                     0.04       2.23 f
-  ch_sel_o[12] (out)                       0.00       2.23 f
-  data arrival time                                   2.23
-  -----------------------------------------------------------
-  (Path is unconstrained)
-
-
-  Startpoint: ch_latch_q_reg[8]
-              (positive level-sensitive latch)
-  Endpoint: ch_sel_o[4]
-            (output port)
-  Path Group: (none)
-  Path Type: max
-
-  Des/Clust/Port     Wire Load Model       Library
-  ------------------------------------------------
-  priority_fsm       ZeroWireload          tcb018gbwp7ttc
-
-  Point                                    Incr       Path
-  -----------------------------------------------------------
-  ch_latch_q_reg[8]/E (LHQD1BWP7T)         0.00       0.00 r
-  ch_latch_q_reg[8]/Q (LHQD1BWP7T)         0.22       0.22 f
-  U194/ZN (NR4D0BWP7T)                     0.22       0.45 r
-  U195/ZN (INR2XD0BWP7T)                   0.15       0.60 r
-  U196/ZN (IND2D0BWP7T)                    0.07       0.67 f
-  U197/ZN (INR2XD0BWP7T)                   0.09       0.75 r
-  U209/Z (AO21D0BWP7T)                     0.11       0.86 r
-  U210/ZN (AOI211XD0BWP7T)                 0.07       0.93 f
-  U211/ZN (IAO21D0BWP7T)                   0.19       1.12 f
-  U212/ZN (IAO21D0BWP7T)                   0.19       1.31 f
-  U213/ZN (AOI221D0BWP7T)                  0.25       1.56 r
-  U214/ZN (IAO21D0BWP7T)                   0.34       1.90 r
-  U215/ZN (INVD0BWP7T)                     0.14       2.04 f
-  U216/ZN (CKND2D0BWP7T)                   0.15       2.19 r
-  U229/ZN (NR2XD0BWP7T)                    0.04       2.23 f
-  ch_sel_o[4] (out)                        0.00       2.23 f
-  data arrival time                                   2.23
-  -----------------------------------------------------------
-  (Path is unconstrained)
-
-
-  Startpoint: ch_latch_q_reg[8]
-              (positive level-sensitive latch)
-  Endpoint: ch_sel_o[0]
-            (output port)
-  Path Group: (none)
-  Path Type: max
-
-  Des/Clust/Port     Wire Load Model       Library
-  ------------------------------------------------
-  priority_fsm       ZeroWireload          tcb018gbwp7ttc
-
-  Point                                    Incr       Path
-  -----------------------------------------------------------
-  ch_latch_q_reg[8]/E (LHQD1BWP7T)         0.00       0.00 r
-  ch_latch_q_reg[8]/Q (LHQD1BWP7T)         0.22       0.22 f
-  U194/ZN (NR4D0BWP7T)                     0.22       0.45 r
-  U195/ZN (INR2XD0BWP7T)                   0.15       0.60 r
-  U196/ZN (IND2D0BWP7T)                    0.07       0.67 f
-  U197/ZN (INR2XD0BWP7T)                   0.09       0.75 r
-  U209/Z (AO21D0BWP7T)                     0.11       0.86 r
-  U210/ZN (AOI211XD0BWP7T)                 0.07       0.93 f
-  U211/ZN (IAO21D0BWP7T)                   0.19       1.12 f
-  U212/ZN (IAO21D0BWP7T)                   0.19       1.31 f
-  U213/ZN (AOI221D0BWP7T)                  0.25       1.56 r
-  U214/ZN (IAO21D0BWP7T)                   0.34       1.90 r
-  U215/ZN (INVD0BWP7T)                     0.14       2.04 f
-  U216/ZN (CKND2D0BWP7T)                   0.15       2.19 r
-  U225/ZN (NR2XD0BWP7T)                    0.04       2.23 f
-  ch_sel_o[0] (out)                        0.00       2.23 f
-  data arrival time                                   2.23
-  -----------------------------------------------------------
-  (Path is unconstrained)
-
-
-  Startpoint: ch_latch_q_reg[8]
-              (positive level-sensitive latch)
-  Endpoint: ch_sel_o[12]
-            (output port)
-  Path Group: (none)
-  Path Type: max
-
-  Des/Clust/Port     Wire Load Model       Library
-  ------------------------------------------------
-  priority_fsm       ZeroWireload          tcb018gbwp7ttc
-
-  Point                                    Incr       Path
-  -----------------------------------------------------------
-  ch_latch_q_reg[8]/E (LHQD1BWP7T)         0.00       0.00 r
-  ch_latch_q_reg[8]/Q (LHQD1BWP7T)         0.22       0.22 f
-  U194/ZN (NR4D0BWP7T)                     0.22       0.45 r
-  U195/ZN (INR2XD0BWP7T)                   0.15       0.60 r
-  U196/ZN (IND2D0BWP7T)                    0.07       0.67 f
-  U197/ZN (INR2XD0BWP7T)                   0.09       0.75 r
-  U209/Z (AO21D0BWP7T)                     0.11       0.86 r
-  U210/ZN (AOI211XD0BWP7T)                 0.07       0.93 f
-  U211/ZN (IAO21D0BWP7T)                   0.19       1.11 f
-  U212/ZN (IAO21D0BWP7T)                   0.19       1.30 f
-  U213/ZN (AOI221D0BWP7T)                  0.25       1.55 r
-  U214/ZN (IAO21D0BWP7T)                   0.34       1.90 r
-  U215/ZN (INVD0BWP7T)                     0.14       2.04 f
-  U216/ZN (CKND2D0BWP7T)                   0.15       2.19 r
-  U239/ZN (NR3D0BWP7T)                     0.04       2.23 f
-  ch_sel_o[12] (out)                       0.00       2.23 f
-  data arrival time                                   2.23
-  -----------------------------------------------------------
-  (Path is unconstrained)
-
-
-  Startpoint: ch_latch_q_reg[8]
-              (positive level-sensitive latch)
-  Endpoint: ch_sel_o[4]
-            (output port)
-  Path Group: (none)
-  Path Type: max
-
-  Des/Clust/Port     Wire Load Model       Library
-  ------------------------------------------------
-  priority_fsm       ZeroWireload          tcb018gbwp7ttc
-
-  Point                                    Incr       Path
-  -----------------------------------------------------------
-  ch_latch_q_reg[8]/E (LHQD1BWP7T)         0.00       0.00 r
-  ch_latch_q_reg[8]/Q (LHQD1BWP7T)         0.22       0.22 f
-  U194/ZN (NR4D0BWP7T)                     0.22       0.45 r
-  U195/ZN (INR2XD0BWP7T)                   0.15       0.60 r
-  U196/ZN (IND2D0BWP7T)                    0.07       0.67 f
-  U197/ZN (INR2XD0BWP7T)                   0.09       0.75 r
-  U209/Z (AO21D0BWP7T)                     0.11       0.86 r
-  U210/ZN (AOI211XD0BWP7T)                 0.07       0.93 f
-  U211/ZN (IAO21D0BWP7T)                   0.19       1.12 f
-  U212/ZN (IAO21D0BWP7T)                   0.19       1.31 f
-  U213/ZN (AOI221D0BWP7T)                  0.25       1.56 r
-  U214/ZN (IAO21D0BWP7T)                   0.34       1.90 r
-  U215/ZN (INVD0BWP7T)                     0.14       2.04 f
-  U216/ZN (CKND2D0BWP7T)                   0.15       2.19 r
-  U229/ZN (NR2XD0BWP7T)                    0.04       2.23 f
-  ch_sel_o[4] (out)                        0.00       2.23 f
-  data arrival time                                   2.23
-  -----------------------------------------------------------
-  (Path is unconstrained)
-
-
-  Startpoint: ch_latch_q_reg[8]
-              (positive level-sensitive latch)
-  Endpoint: ch_sel_o[0]
-            (output port)
-  Path Group: (none)
-  Path Type: max
-
-  Des/Clust/Port     Wire Load Model       Library
-  ------------------------------------------------
-  priority_fsm       ZeroWireload          tcb018gbwp7ttc
-
-  Point                                    Incr       Path
-  -----------------------------------------------------------
-  ch_latch_q_reg[8]/E (LHQD1BWP7T)         0.00       0.00 r
-  ch_latch_q_reg[8]/Q (LHQD1BWP7T)         0.22       0.22 f
-  U194/ZN (NR4D0BWP7T)                     0.22       0.45 r
-  U195/ZN (INR2XD0BWP7T)                   0.15       0.60 r
-  U196/ZN (IND2D0BWP7T)                    0.07       0.67 f
-  U197/ZN (INR2XD0BWP7T)                   0.09       0.75 r
-  U209/Z (AO21D0BWP7T)                     0.11       0.86 r
-  U210/ZN (AOI211XD0BWP7T)                 0.07       0.93 f
-  U211/ZN (IAO21D0BWP7T)                   0.19       1.12 f
-  U212/ZN (IAO21D0BWP7T)                   0.19       1.31 f
-  U213/ZN (AOI221D0BWP7T)                  0.25       1.56 r
-  U214/ZN (IAO21D0BWP7T)                   0.34       1.90 r
-  U215/ZN (INVD0BWP7T)                     0.14       2.04 f
-  U216/ZN (CKND2D0BWP7T)                   0.15       2.19 r
-  U225/ZN (NR2XD0BWP7T)                    0.04       2.23 f
-  ch_sel_o[0] (out)                        0.00       2.23 f
-  data arrival time                                   2.23
-  -----------------------------------------------------------
-  (Path is unconstrained)
-
-
-  Startpoint: ch_latch_q_reg[11]
-              (positive level-sensitive latch)
+  Startpoint: state_reg[3]
+              (rising edge-triggered flip-flop)
   Endpoint: ch_sel_o[8]
             (output port)
   Path Group: (none)
@@ -1386,29 +593,49 @@ Wire Load Model Mode: segmented
 
   Point                                    Incr       Path
   -----------------------------------------------------------
-  ch_latch_q_reg[11]/E (LHQD1BWP7T)        0.00       0.00 r
-  ch_latch_q_reg[11]/Q (LHQD1BWP7T)        0.22       0.22 f
-  U194/ZN (NR4D0BWP7T)                     0.23       0.45 r
-  U195/ZN (INR2XD0BWP7T)                   0.15       0.61 r
-  U196/ZN (IND2D0BWP7T)                    0.07       0.68 f
-  U197/ZN (INR2XD0BWP7T)                   0.09       0.76 r
-  U209/Z (AO21D0BWP7T)                     0.11       0.87 r
-  U210/ZN (AOI211XD0BWP7T)                 0.07       0.94 f
-  U211/ZN (IAO21D0BWP7T)                   0.19       1.12 f
-  U212/ZN (IAO21D0BWP7T)                   0.19       1.31 f
-  U213/ZN (AOI221D0BWP7T)                  0.22       1.53 r
-  U214/ZN (IAO21D0BWP7T)                   0.34       1.87 r
-  U215/ZN (INVD0BWP7T)                     0.14       2.01 f
-  U216/ZN (CKND2D0BWP7T)                   0.15       2.16 r
-  U235/ZN (NR3D0BWP7T)                     0.06       2.23 f
-  ch_sel_o[8] (out)                        0.00       2.23 f
-  data arrival time                                   2.23
+  state_reg[3]/CP (DFCNQD1BWP7T)           0.00       0.00 r
+  state_reg[3]/Q (DFCNQD1BWP7T)            0.27       0.27 r
+  U138/ZN (INVD0BWP7T)                     0.06       0.34 f
+  U139/ZN (CKND2D0BWP7T)                   0.13       0.47 r
+  U140/ZN (INVD0BWP7T)                     0.09       0.56 f
+  U197/ZN (ND3D0BWP7T)                     0.13       0.69 r
+  U220/ZN (ND3D0BWP7T)                     0.14       0.83 f
+  U232/ZN (NR2XD0BWP7T)                    0.07       0.90 r
+  ch_sel_o[8] (out)                        0.00       0.90 r
+  data arrival time                                   0.90
   -----------------------------------------------------------
   (Path is unconstrained)
 
 
-  Startpoint: ch_latch_q_reg[11]
-              (positive level-sensitive latch)
+  Startpoint: state_reg[3]
+              (rising edge-triggered flip-flop)
+  Endpoint: ch_sel_o[5]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  priority_fsm       ZeroWireload          tcb018gbwp7ttc
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  state_reg[3]/CP (DFCNQD1BWP7T)           0.00       0.00 r
+  state_reg[3]/Q (DFCNQD1BWP7T)            0.27       0.27 r
+  U138/ZN (INVD0BWP7T)                     0.06       0.34 f
+  U139/ZN (CKND2D0BWP7T)                   0.13       0.47 r
+  U140/ZN (INVD0BWP7T)                     0.09       0.56 f
+  U197/ZN (ND3D0BWP7T)                     0.13       0.69 r
+  U222/ZN (ND3D0BWP7T)                     0.14       0.83 f
+  U228/ZN (NR2XD0BWP7T)                    0.07       0.90 r
+  ch_sel_o[5] (out)                        0.00       0.90 r
+  data arrival time                                   0.90
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: state_reg[3]
+              (rising edge-triggered flip-flop)
   Endpoint: ch_sel_o[4]
             (output port)
   Path Group: (none)
@@ -1420,29 +647,103 @@ Wire Load Model Mode: segmented
 
   Point                                    Incr       Path
   -----------------------------------------------------------
-  ch_latch_q_reg[11]/E (LHQD1BWP7T)        0.00       0.00 r
-  ch_latch_q_reg[11]/Q (LHQD1BWP7T)        0.22       0.22 f
-  U194/ZN (NR4D0BWP7T)                     0.23       0.45 r
-  U195/ZN (INR2XD0BWP7T)                   0.15       0.61 r
-  U196/ZN (IND2D0BWP7T)                    0.07       0.68 f
-  U197/ZN (INR2XD0BWP7T)                   0.09       0.76 r
-  U209/Z (AO21D0BWP7T)                     0.11       0.87 r
-  U210/ZN (AOI211XD0BWP7T)                 0.06       0.93 f
-  U211/ZN (IAO21D0BWP7T)                   0.19       1.12 f
-  U212/ZN (IAO21D0BWP7T)                   0.19       1.31 f
-  U213/ZN (AOI221D0BWP7T)                  0.25       1.56 r
-  U214/ZN (IAO21D0BWP7T)                   0.34       1.90 r
-  U215/ZN (INVD0BWP7T)                     0.14       2.04 f
-  U216/ZN (CKND2D0BWP7T)                   0.15       2.19 r
-  U229/ZN (NR2XD0BWP7T)                    0.04       2.23 f
-  ch_sel_o[4] (out)                        0.00       2.23 f
-  data arrival time                                   2.23
+  state_reg[3]/CP (DFCNQD1BWP7T)           0.00       0.00 r
+  state_reg[3]/Q (DFCNQD1BWP7T)            0.27       0.27 r
+  U138/ZN (INVD0BWP7T)                     0.06       0.34 f
+  U139/ZN (CKND2D0BWP7T)                   0.13       0.47 r
+  U140/ZN (INVD0BWP7T)                     0.09       0.56 f
+  U197/ZN (ND3D0BWP7T)                     0.13       0.69 r
+  U220/ZN (ND3D0BWP7T)                     0.14       0.83 f
+  U227/ZN (NR2XD0BWP7T)                    0.07       0.90 r
+  ch_sel_o[4] (out)                        0.00       0.90 r
+  data arrival time                                   0.90
   -----------------------------------------------------------
   (Path is unconstrained)
 
 
-  Startpoint: ch_latch_q_reg[11]
-              (positive level-sensitive latch)
+  Startpoint: state_reg[2]
+              (rising edge-triggered flip-flop)
+  Endpoint: ch_sel_o[13]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  priority_fsm       ZeroWireload          tcb018gbwp7ttc
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  state_reg[2]/CP (DFCNQD1BWP7T)           0.00       0.00 r
+  state_reg[2]/Q (DFCNQD1BWP7T)            0.27       0.27 r
+  U137/ZN (INVD0BWP7T)                     0.06       0.33 f
+  U139/ZN (CKND2D0BWP7T)                   0.13       0.46 r
+  U140/ZN (INVD0BWP7T)                     0.09       0.55 f
+  U197/ZN (ND3D0BWP7T)                     0.13       0.68 r
+  U222/ZN (ND3D0BWP7T)                     0.14       0.82 f
+  U238/ZN (NR2XD0BWP7T)                    0.07       0.89 r
+  ch_sel_o[13] (out)                       0.00       0.89 r
+  data arrival time                                   0.89
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: state_reg[2]
+              (rising edge-triggered flip-flop)
+  Endpoint: ch_sel_o[12]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  priority_fsm       ZeroWireload          tcb018gbwp7ttc
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  state_reg[2]/CP (DFCNQD1BWP7T)           0.00       0.00 r
+  state_reg[2]/Q (DFCNQD1BWP7T)            0.27       0.27 r
+  U137/ZN (INVD0BWP7T)                     0.06       0.33 f
+  U139/ZN (CKND2D0BWP7T)                   0.13       0.46 r
+  U140/ZN (INVD0BWP7T)                     0.09       0.55 f
+  U197/ZN (ND3D0BWP7T)                     0.13       0.68 r
+  U220/ZN (ND3D0BWP7T)                     0.14       0.82 f
+  U237/ZN (NR2XD0BWP7T)                    0.07       0.89 r
+  ch_sel_o[12] (out)                       0.00       0.89 r
+  data arrival time                                   0.89
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: state_reg[2]
+              (rising edge-triggered flip-flop)
+  Endpoint: ch_sel_o[1]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  priority_fsm       ZeroWireload          tcb018gbwp7ttc
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  state_reg[2]/CP (DFCNQD1BWP7T)           0.00       0.00 r
+  state_reg[2]/Q (DFCNQD1BWP7T)            0.27       0.27 r
+  U137/ZN (INVD0BWP7T)                     0.06       0.33 f
+  U139/ZN (CKND2D0BWP7T)                   0.13       0.46 r
+  U140/ZN (INVD0BWP7T)                     0.09       0.55 f
+  U197/ZN (ND3D0BWP7T)                     0.13       0.68 r
+  U222/ZN (ND3D0BWP7T)                     0.14       0.82 f
+  U223/ZN (NR2XD0BWP7T)                    0.07       0.89 r
+  ch_sel_o[1] (out)                        0.00       0.89 r
+  data arrival time                                   0.89
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: state_reg[2]
+              (rising edge-triggered flip-flop)
   Endpoint: ch_sel_o[0]
             (output port)
   Path Group: (none)
@@ -1454,31 +755,250 @@ Wire Load Model Mode: segmented
 
   Point                                    Incr       Path
   -----------------------------------------------------------
+  state_reg[2]/CP (DFCNQD1BWP7T)           0.00       0.00 r
+  state_reg[2]/Q (DFCNQD1BWP7T)            0.27       0.27 r
+  U137/ZN (INVD0BWP7T)                     0.06       0.33 f
+  U139/ZN (CKND2D0BWP7T)                   0.13       0.46 r
+  U140/ZN (INVD0BWP7T)                     0.09       0.55 f
+  U197/ZN (ND3D0BWP7T)                     0.13       0.68 r
+  U220/ZN (ND3D0BWP7T)                     0.14       0.82 f
+  U221/ZN (NR2XD0BWP7T)                    0.07       0.89 r
+  ch_sel_o[0] (out)                        0.00       0.89 r
+  data arrival time                                   0.89
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: state_reg[2]
+              (rising edge-triggered flip-flop)
+  Endpoint: ch_sel_o[9]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  priority_fsm       ZeroWireload          tcb018gbwp7ttc
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  state_reg[2]/CP (DFCNQD1BWP7T)           0.00       0.00 r
+  state_reg[2]/Q (DFCNQD1BWP7T)            0.27       0.27 r
+  U137/ZN (INVD0BWP7T)                     0.06       0.33 f
+  U139/ZN (CKND2D0BWP7T)                   0.13       0.46 r
+  U140/ZN (INVD0BWP7T)                     0.09       0.55 f
+  U197/ZN (ND3D0BWP7T)                     0.13       0.68 r
+  U222/ZN (ND3D0BWP7T)                     0.14       0.82 f
+  U233/ZN (NR2XD0BWP7T)                    0.07       0.89 r
+  ch_sel_o[9] (out)                        0.00       0.89 r
+  data arrival time                                   0.89
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: state_reg[2]
+              (rising edge-triggered flip-flop)
+  Endpoint: ch_sel_o[8]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  priority_fsm       ZeroWireload          tcb018gbwp7ttc
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  state_reg[2]/CP (DFCNQD1BWP7T)           0.00       0.00 r
+  state_reg[2]/Q (DFCNQD1BWP7T)            0.27       0.27 r
+  U137/ZN (INVD0BWP7T)                     0.06       0.33 f
+  U139/ZN (CKND2D0BWP7T)                   0.13       0.46 r
+  U140/ZN (INVD0BWP7T)                     0.09       0.55 f
+  U197/ZN (ND3D0BWP7T)                     0.13       0.68 r
+  U220/ZN (ND3D0BWP7T)                     0.14       0.82 f
+  U232/ZN (NR2XD0BWP7T)                    0.07       0.89 r
+  ch_sel_o[8] (out)                        0.00       0.89 r
+  data arrival time                                   0.89
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: state_reg[2]
+              (rising edge-triggered flip-flop)
+  Endpoint: ch_sel_o[5]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  priority_fsm       ZeroWireload          tcb018gbwp7ttc
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  state_reg[2]/CP (DFCNQD1BWP7T)           0.00       0.00 r
+  state_reg[2]/Q (DFCNQD1BWP7T)            0.27       0.27 r
+  U137/ZN (INVD0BWP7T)                     0.06       0.33 f
+  U139/ZN (CKND2D0BWP7T)                   0.13       0.46 r
+  U140/ZN (INVD0BWP7T)                     0.09       0.55 f
+  U197/ZN (ND3D0BWP7T)                     0.13       0.68 r
+  U222/ZN (ND3D0BWP7T)                     0.14       0.82 f
+  U228/ZN (NR2XD0BWP7T)                    0.07       0.89 r
+  ch_sel_o[5] (out)                        0.00       0.89 r
+  data arrival time                                   0.89
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: state_reg[2]
+              (rising edge-triggered flip-flop)
+  Endpoint: ch_sel_o[4]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  priority_fsm       ZeroWireload          tcb018gbwp7ttc
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  state_reg[2]/CP (DFCNQD1BWP7T)           0.00       0.00 r
+  state_reg[2]/Q (DFCNQD1BWP7T)            0.27       0.27 r
+  U137/ZN (INVD0BWP7T)                     0.06       0.33 f
+  U139/ZN (CKND2D0BWP7T)                   0.13       0.46 r
+  U140/ZN (INVD0BWP7T)                     0.09       0.55 f
+  U197/ZN (ND3D0BWP7T)                     0.13       0.68 r
+  U220/ZN (ND3D0BWP7T)                     0.14       0.82 f
+  U227/ZN (NR2XD0BWP7T)                    0.07       0.89 r
+  ch_sel_o[4] (out)                        0.00       0.89 r
+  data arrival time                                   0.89
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: ch_latch_q_reg[10]
+              (positive level-sensitive latch)
+  Endpoint: last_o (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  priority_fsm       ZeroWireload          tcb018gbwp7ttc
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  ch_latch_q_reg[10]/E (LHQD1BWP7T)        0.00       0.00 r
+  ch_latch_q_reg[10]/Q (LHQD1BWP7T)        0.22       0.22 f
+  U188/ZN (NR3D0BWP7T)                     0.12       0.35 r
+  U133/ZN (CKND2D0BWP7T)                   0.08       0.42 f
+  U189/ZN (NR3D0BWP7T)                     0.18       0.61 r
+  U131/ZN (CKND2D0BWP7T)                   0.09       0.70 f
+  U130/ZN (NR2XD0BWP7T)                    0.08       0.77 r
+  last_o (out)                             0.00       0.77 r
+  data arrival time                                   0.77
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: ch_latch_q_reg[2]
+              (positive level-sensitive latch)
+  Endpoint: last_o (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  priority_fsm       ZeroWireload          tcb018gbwp7ttc
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  ch_latch_q_reg[2]/E (LHQD1BWP7T)         0.00       0.00 r
+  ch_latch_q_reg[2]/Q (LHQD1BWP7T)         0.21       0.21 f
+  U184/ZN (NR4D0BWP7T)                     0.33       0.54 r
+  U132/ZN (CKND2D0BWP7T)                   0.14       0.69 f
+  U130/ZN (NR2XD0BWP7T)                    0.09       0.77 r
+  last_o (out)                             0.00       0.77 r
+  data arrival time                                   0.77
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: ch_latch_q_reg[3]
+              (positive level-sensitive latch)
+  Endpoint: last_o (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  priority_fsm       ZeroWireload          tcb018gbwp7ttc
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  ch_latch_q_reg[3]/E (LHQD1BWP7T)         0.00       0.00 r
+  ch_latch_q_reg[3]/Q (LHQD1BWP7T)         0.20       0.20 f
+  U184/ZN (NR4D0BWP7T)                     0.34       0.54 r
+  U132/ZN (CKND2D0BWP7T)                   0.14       0.69 f
+  U130/ZN (NR2XD0BWP7T)                    0.09       0.77 r
+  last_o (out)                             0.00       0.77 r
+  data arrival time                                   0.77
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: ch_latch_q_reg[11]
+              (positive level-sensitive latch)
+  Endpoint: last_o (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  priority_fsm       ZeroWireload          tcb018gbwp7ttc
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
   ch_latch_q_reg[11]/E (LHQD1BWP7T)        0.00       0.00 r
   ch_latch_q_reg[11]/Q (LHQD1BWP7T)        0.22       0.22 f
-  U194/ZN (NR4D0BWP7T)                     0.23       0.45 r
-  U195/ZN (INR2XD0BWP7T)                   0.15       0.61 r
-  U196/ZN (IND2D0BWP7T)                    0.07       0.68 f
-  U197/ZN (INR2XD0BWP7T)                   0.09       0.76 r
-  U209/Z (AO21D0BWP7T)                     0.11       0.87 r
-  U210/ZN (AOI211XD0BWP7T)                 0.06       0.93 f
-  U211/ZN (IAO21D0BWP7T)                   0.19       1.12 f
-  U212/ZN (IAO21D0BWP7T)                   0.19       1.31 f
-  U213/ZN (AOI221D0BWP7T)                  0.25       1.56 r
-  U214/ZN (IAO21D0BWP7T)                   0.34       1.90 r
-  U215/ZN (INVD0BWP7T)                     0.14       2.04 f
-  U216/ZN (CKND2D0BWP7T)                   0.15       2.19 r
-  U225/ZN (NR2XD0BWP7T)                    0.04       2.23 f
-  ch_sel_o[0] (out)                        0.00       2.23 f
-  data arrival time                                   2.23
+  U188/ZN (NR3D0BWP7T)                     0.11       0.34 r
+  U133/ZN (CKND2D0BWP7T)                   0.08       0.41 f
+  U189/ZN (NR3D0BWP7T)                     0.18       0.59 r
+  U131/ZN (CKND2D0BWP7T)                   0.09       0.68 f
+  U130/ZN (NR2XD0BWP7T)                    0.08       0.76 r
+  last_o (out)                             0.00       0.76 r
+  data arrival time                                   0.76
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: ch_latch_q_reg[1]
+              (positive level-sensitive latch)
+  Endpoint: last_o (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  priority_fsm       ZeroWireload          tcb018gbwp7ttc
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  ch_latch_q_reg[1]/E (LHQD1BWP7T)         0.00       0.00 r
+  ch_latch_q_reg[1]/Q (LHQD1BWP7T)         0.22       0.22 f
+  U184/ZN (NR4D0BWP7T)                     0.30       0.53 r
+  U132/ZN (CKND2D0BWP7T)                   0.14       0.67 f
+  U130/ZN (NR2XD0BWP7T)                    0.09       0.75 r
+  last_o (out)                             0.00       0.75 r
+  data arrival time                                   0.75
   -----------------------------------------------------------
   (Path is unconstrained)
 
 
   Startpoint: ch_latch_q_reg[9]
               (positive level-sensitive latch)
-  Endpoint: ch_sel_o[8]
-            (output port)
+  Endpoint: last_o (output port)
   Path Group: (none)
   Path Type: max
 
@@ -1490,27 +1010,44 @@ Wire Load Model Mode: segmented
   -----------------------------------------------------------
   ch_latch_q_reg[9]/E (LHQD1BWP7T)         0.00       0.00 r
   ch_latch_q_reg[9]/Q (LHQD1BWP7T)         0.22       0.22 f
-  U194/ZN (NR4D0BWP7T)                     0.19       0.42 r
-  U195/ZN (INR2XD0BWP7T)                   0.15       0.57 r
-  U196/ZN (IND2D0BWP7T)                    0.07       0.64 f
-  U197/ZN (INR2XD0BWP7T)                   0.09       0.72 r
-  U209/Z (AO21D0BWP7T)                     0.11       0.83 r
-  U210/ZN (AOI211XD0BWP7T)                 0.07       0.90 f
-  U211/ZN (IAO21D0BWP7T)                   0.19       1.09 f
-  U212/ZN (IAO21D0BWP7T)                   0.19       1.28 f
-  U213/ZN (AOI221D0BWP7T)                  0.25       1.53 r
-  U214/ZN (IAO21D0BWP7T)                   0.34       1.87 r
-  U215/ZN (INVD0BWP7T)                     0.14       2.01 f
-  U216/ZN (CKND2D0BWP7T)                   0.15       2.16 r
-  U235/ZN (NR3D0BWP7T)                     0.06       2.23 f
-  ch_sel_o[8] (out)                        0.00       2.23 f
-  data arrival time                                   2.23
+  U188/ZN (NR3D0BWP7T)                     0.08       0.30 r
+  U133/ZN (CKND2D0BWP7T)                   0.08       0.38 f
+  U189/ZN (NR3D0BWP7T)                     0.18       0.56 r
+  U131/ZN (CKND2D0BWP7T)                   0.09       0.65 f
+  U130/ZN (NR2XD0BWP7T)                    0.08       0.73 r
+  last_o (out)                             0.00       0.73 r
+  data arrival time                                   0.73
   -----------------------------------------------------------
   (Path is unconstrained)
 
 
-  Startpoint: ch_latch_q_reg[11]
-              (positive level-sensitive latch)
+  Startpoint: state_reg[1]
+              (rising edge-triggered flip-flop)
+  Endpoint: ch_sel_o[13]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  priority_fsm       ZeroWireload          tcb018gbwp7ttc
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  state_reg[1]/CP (DFCNQD1BWP7T)           0.00       0.00 r
+  state_reg[1]/Q (DFCNQD1BWP7T)            0.30       0.30 r
+  U196/ZN (INVD0BWP7T)                     0.06       0.37 f
+  U197/ZN (ND3D0BWP7T)                     0.14       0.51 r
+  U222/ZN (ND3D0BWP7T)                     0.14       0.65 f
+  U238/ZN (NR2XD0BWP7T)                    0.07       0.72 r
+  ch_sel_o[13] (out)                       0.00       0.72 r
+  data arrival time                                   0.72
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: state_reg[1]
+              (rising edge-triggered flip-flop)
   Endpoint: ch_sel_o[12]
             (output port)
   Path Group: (none)
@@ -1522,30 +1059,21 @@ Wire Load Model Mode: segmented
 
   Point                                    Incr       Path
   -----------------------------------------------------------
-  ch_latch_q_reg[11]/E (LHQD1BWP7T)        0.00       0.00 r
-  ch_latch_q_reg[11]/Q (LHQD1BWP7T)        0.22       0.22 f
-  U194/ZN (NR4D0BWP7T)                     0.23       0.45 r
-  U195/ZN (INR2XD0BWP7T)                   0.15       0.61 r
-  U196/ZN (IND2D0BWP7T)                    0.07       0.68 f
-  U197/ZN (INR2XD0BWP7T)                   0.09       0.76 r
-  U209/Z (AO21D0BWP7T)                     0.11       0.87 r
-  U210/ZN (AOI211XD0BWP7T)                 0.06       0.93 f
-  U211/ZN (IAO21D0BWP7T)                   0.19       1.11 f
-  U212/ZN (IAO21D0BWP7T)                   0.19       1.30 f
-  U213/ZN (AOI221D0BWP7T)                  0.25       1.55 r
-  U214/ZN (IAO21D0BWP7T)                   0.34       1.90 r
-  U215/ZN (INVD0BWP7T)                     0.14       2.03 f
-  U216/ZN (CKND2D0BWP7T)                   0.15       2.19 r
-  U239/ZN (NR3D0BWP7T)                     0.04       2.23 f
-  ch_sel_o[12] (out)                       0.00       2.23 f
-  data arrival time                                   2.23
+  state_reg[1]/CP (DFCNQD1BWP7T)           0.00       0.00 r
+  state_reg[1]/Q (DFCNQD1BWP7T)            0.30       0.30 r
+  U196/ZN (INVD0BWP7T)                     0.06       0.37 f
+  U197/ZN (ND3D0BWP7T)                     0.14       0.51 r
+  U220/ZN (ND3D0BWP7T)                     0.14       0.65 f
+  U237/ZN (NR2XD0BWP7T)                    0.07       0.72 r
+  ch_sel_o[12] (out)                       0.00       0.72 r
+  data arrival time                                   0.72
   -----------------------------------------------------------
   (Path is unconstrained)
 
 
-  Startpoint: ch_latch_q_reg[11]
-              (positive level-sensitive latch)
-  Endpoint: ch_sel_o[4]
+  Startpoint: state_reg[1]
+              (rising edge-triggered flip-flop)
+  Endpoint: ch_sel_o[1]
             (output port)
   Path Group: (none)
   Path Type: max
@@ -1556,29 +1084,20 @@ Wire Load Model Mode: segmented
 
   Point                                    Incr       Path
   -----------------------------------------------------------
-  ch_latch_q_reg[11]/E (LHQD1BWP7T)        0.00       0.00 r
-  ch_latch_q_reg[11]/Q (LHQD1BWP7T)        0.22       0.22 f
-  U194/ZN (NR4D0BWP7T)                     0.23       0.45 r
-  U195/ZN (INR2XD0BWP7T)                   0.15       0.61 r
-  U196/ZN (IND2D0BWP7T)                    0.07       0.68 f
-  U197/ZN (INR2XD0BWP7T)                   0.09       0.76 r
-  U209/Z (AO21D0BWP7T)                     0.11       0.87 r
-  U210/ZN (AOI211XD0BWP7T)                 0.06       0.93 f
-  U211/ZN (IAO21D0BWP7T)                   0.19       1.12 f
-  U212/ZN (IAO21D0BWP7T)                   0.19       1.30 f
-  U213/ZN (AOI221D0BWP7T)                  0.25       1.56 r
-  U214/ZN (IAO21D0BWP7T)                   0.34       1.90 r
-  U215/ZN (INVD0BWP7T)                     0.14       2.04 f
-  U216/ZN (CKND2D0BWP7T)                   0.15       2.19 r
-  U229/ZN (NR2XD0BWP7T)                    0.04       2.23 f
-  ch_sel_o[4] (out)                        0.00       2.23 f
-  data arrival time                                   2.23
+  state_reg[1]/CP (DFCNQD1BWP7T)           0.00       0.00 r
+  state_reg[1]/Q (DFCNQD1BWP7T)            0.30       0.30 r
+  U196/ZN (INVD0BWP7T)                     0.06       0.37 f
+  U197/ZN (ND3D0BWP7T)                     0.14       0.51 r
+  U222/ZN (ND3D0BWP7T)                     0.14       0.65 f
+  U223/ZN (NR2XD0BWP7T)                    0.07       0.72 r
+  ch_sel_o[1] (out)                        0.00       0.72 r
+  data arrival time                                   0.72
   -----------------------------------------------------------
   (Path is unconstrained)
 
 
-  Startpoint: ch_latch_q_reg[11]
-              (positive level-sensitive latch)
+  Startpoint: state_reg[1]
+              (rising edge-triggered flip-flop)
   Endpoint: ch_sel_o[0]
             (output port)
   Path Group: (none)
@@ -1590,30 +1109,21 @@ Wire Load Model Mode: segmented
 
   Point                                    Incr       Path
   -----------------------------------------------------------
-  ch_latch_q_reg[11]/E (LHQD1BWP7T)        0.00       0.00 r
-  ch_latch_q_reg[11]/Q (LHQD1BWP7T)        0.22       0.22 f
-  U194/ZN (NR4D0BWP7T)                     0.23       0.45 r
-  U195/ZN (INR2XD0BWP7T)                   0.15       0.61 r
-  U196/ZN (IND2D0BWP7T)                    0.07       0.68 f
-  U197/ZN (INR2XD0BWP7T)                   0.09       0.76 r
-  U209/Z (AO21D0BWP7T)                     0.11       0.87 r
-  U210/ZN (AOI211XD0BWP7T)                 0.06       0.93 f
-  U211/ZN (IAO21D0BWP7T)                   0.19       1.12 f
-  U212/ZN (IAO21D0BWP7T)                   0.19       1.30 f
-  U213/ZN (AOI221D0BWP7T)                  0.25       1.56 r
-  U214/ZN (IAO21D0BWP7T)                   0.34       1.90 r
-  U215/ZN (INVD0BWP7T)                     0.14       2.04 f
-  U216/ZN (CKND2D0BWP7T)                   0.15       2.19 r
-  U225/ZN (NR2XD0BWP7T)                    0.04       2.23 f
-  ch_sel_o[0] (out)                        0.00       2.23 f
-  data arrival time                                   2.23
+  state_reg[1]/CP (DFCNQD1BWP7T)           0.00       0.00 r
+  state_reg[1]/Q (DFCNQD1BWP7T)            0.30       0.30 r
+  U196/ZN (INVD0BWP7T)                     0.06       0.37 f
+  U197/ZN (ND3D0BWP7T)                     0.14       0.51 r
+  U220/ZN (ND3D0BWP7T)                     0.14       0.65 f
+  U221/ZN (NR2XD0BWP7T)                    0.07       0.72 r
+  ch_sel_o[0] (out)                        0.00       0.72 r
+  data arrival time                                   0.72
   -----------------------------------------------------------
   (Path is unconstrained)
 
 
-  Startpoint: ch_latch_q_reg[11]
-              (positive level-sensitive latch)
-  Endpoint: ch_sel_o[4]
+  Startpoint: state_reg[1]
+              (rising edge-triggered flip-flop)
+  Endpoint: ch_sel_o[13]
             (output port)
   Path Group: (none)
   Path Type: max
@@ -1624,29 +1134,70 @@ Wire Load Model Mode: segmented
 
   Point                                    Incr       Path
   -----------------------------------------------------------
-  ch_latch_q_reg[11]/E (LHQD1BWP7T)        0.00       0.00 r
-  ch_latch_q_reg[11]/Q (LHQD1BWP7T)        0.22       0.22 f
-  U194/ZN (NR4D0BWP7T)                     0.23       0.45 r
-  U195/ZN (INR2XD0BWP7T)                   0.15       0.61 r
-  U196/ZN (IND2D0BWP7T)                    0.07       0.68 f
-  U197/ZN (INR2XD0BWP7T)                   0.09       0.76 r
-  U209/Z (AO21D0BWP7T)                     0.11       0.87 r
-  U210/ZN (AOI211XD0BWP7T)                 0.06       0.93 f
-  U211/ZN (IAO21D0BWP7T)                   0.19       1.12 f
-  U212/ZN (IAO21D0BWP7T)                   0.19       1.30 f
-  U213/ZN (AOI221D0BWP7T)                  0.25       1.56 r
-  U214/ZN (IAO21D0BWP7T)                   0.34       1.90 r
-  U215/ZN (INVD0BWP7T)                     0.14       2.04 f
-  U216/ZN (CKND2D0BWP7T)                   0.15       2.19 r
-  U229/ZN (NR2XD0BWP7T)                    0.04       2.23 f
-  ch_sel_o[4] (out)                        0.00       2.23 f
-  data arrival time                                   2.23
+  state_reg[1]/CP (DFCNQD1BWP7T)           0.00       0.00 r
+  state_reg[1]/Q (DFCNQD1BWP7T)            0.26       0.26 f
+  U196/ZN (INVD0BWP7T)                     0.10       0.36 r
+  U197/ZN (ND3D0BWP7T)                     0.12       0.48 f
+  U222/ZN (ND3D0BWP7T)                     0.18       0.66 r
+  U238/ZN (NR2XD0BWP7T)                    0.06       0.72 f
+  ch_sel_o[13] (out)                       0.00       0.72 f
+  data arrival time                                   0.72
   -----------------------------------------------------------
   (Path is unconstrained)
 
 
-  Startpoint: ch_latch_q_reg[11]
-              (positive level-sensitive latch)
+  Startpoint: state_reg[1]
+              (rising edge-triggered flip-flop)
+  Endpoint: ch_sel_o[12]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  priority_fsm       ZeroWireload          tcb018gbwp7ttc
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  state_reg[1]/CP (DFCNQD1BWP7T)           0.00       0.00 r
+  state_reg[1]/Q (DFCNQD1BWP7T)            0.26       0.26 f
+  U196/ZN (INVD0BWP7T)                     0.10       0.36 r
+  U197/ZN (ND3D0BWP7T)                     0.12       0.48 f
+  U220/ZN (ND3D0BWP7T)                     0.18       0.66 r
+  U237/ZN (NR2XD0BWP7T)                    0.06       0.72 f
+  ch_sel_o[12] (out)                       0.00       0.72 f
+  data arrival time                                   0.72
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: state_reg[1]
+              (rising edge-triggered flip-flop)
+  Endpoint: ch_sel_o[1]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  priority_fsm       ZeroWireload          tcb018gbwp7ttc
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  state_reg[1]/CP (DFCNQD1BWP7T)           0.00       0.00 r
+  state_reg[1]/Q (DFCNQD1BWP7T)            0.26       0.26 f
+  U196/ZN (INVD0BWP7T)                     0.10       0.36 r
+  U197/ZN (ND3D0BWP7T)                     0.12       0.48 f
+  U222/ZN (ND3D0BWP7T)                     0.18       0.66 r
+  U223/ZN (NR2XD0BWP7T)                    0.06       0.72 f
+  ch_sel_o[1] (out)                        0.00       0.72 f
+  data arrival time                                   0.72
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: state_reg[1]
+              (rising edge-triggered flip-flop)
   Endpoint: ch_sel_o[0]
             (output port)
   Path Group: (none)
@@ -1658,29 +1209,45 @@ Wire Load Model Mode: segmented
 
   Point                                    Incr       Path
   -----------------------------------------------------------
-  ch_latch_q_reg[11]/E (LHQD1BWP7T)        0.00       0.00 r
-  ch_latch_q_reg[11]/Q (LHQD1BWP7T)        0.22       0.22 f
-  U194/ZN (NR4D0BWP7T)                     0.23       0.45 r
-  U195/ZN (INR2XD0BWP7T)                   0.15       0.61 r
-  U196/ZN (IND2D0BWP7T)                    0.07       0.68 f
-  U197/ZN (INR2XD0BWP7T)                   0.09       0.76 r
-  U209/Z (AO21D0BWP7T)                     0.11       0.87 r
-  U210/ZN (AOI211XD0BWP7T)                 0.06       0.93 f
-  U211/ZN (IAO21D0BWP7T)                   0.19       1.12 f
-  U212/ZN (IAO21D0BWP7T)                   0.19       1.30 f
-  U213/ZN (AOI221D0BWP7T)                  0.25       1.56 r
-  U214/ZN (IAO21D0BWP7T)                   0.34       1.90 r
-  U215/ZN (INVD0BWP7T)                     0.14       2.04 f
-  U216/ZN (CKND2D0BWP7T)                   0.15       2.19 r
-  U225/ZN (NR2XD0BWP7T)                    0.04       2.23 f
-  ch_sel_o[0] (out)                        0.00       2.23 f
-  data arrival time                                   2.23
+  state_reg[1]/CP (DFCNQD1BWP7T)           0.00       0.00 r
+  state_reg[1]/Q (DFCNQD1BWP7T)            0.26       0.26 f
+  U196/ZN (INVD0BWP7T)                     0.10       0.36 r
+  U197/ZN (ND3D0BWP7T)                     0.12       0.48 f
+  U220/ZN (ND3D0BWP7T)                     0.18       0.66 r
+  U221/ZN (NR2XD0BWP7T)                    0.06       0.72 f
+  ch_sel_o[0] (out)                        0.00       0.72 f
+  data arrival time                                   0.72
   -----------------------------------------------------------
   (Path is unconstrained)
 
 
-  Startpoint: ch_latch_q_reg[9]
-              (positive level-sensitive latch)
+  Startpoint: state_reg[1]
+              (rising edge-triggered flip-flop)
+  Endpoint: ch_sel_o[9]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  priority_fsm       ZeroWireload          tcb018gbwp7ttc
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  state_reg[1]/CP (DFCNQD1BWP7T)           0.00       0.00 r
+  state_reg[1]/Q (DFCNQD1BWP7T)            0.30       0.30 r
+  U196/ZN (INVD0BWP7T)                     0.06       0.37 f
+  U197/ZN (ND3D0BWP7T)                     0.14       0.51 r
+  U222/ZN (ND3D0BWP7T)                     0.14       0.65 f
+  U233/ZN (NR2XD0BWP7T)                    0.07       0.72 r
+  ch_sel_o[9] (out)                        0.00       0.72 r
+  data arrival time                                   0.72
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: state_reg[1]
+              (rising edge-triggered flip-flop)
   Endpoint: ch_sel_o[8]
             (output port)
   Path Group: (none)
@@ -1692,23 +1259,64 @@ Wire Load Model Mode: segmented
 
   Point                                    Incr       Path
   -----------------------------------------------------------
-  ch_latch_q_reg[9]/E (LHQD1BWP7T)         0.00       0.00 r
-  ch_latch_q_reg[9]/Q (LHQD1BWP7T)         0.22       0.22 f
-  U194/ZN (NR4D0BWP7T)                     0.19       0.42 r
-  U195/ZN (INR2XD0BWP7T)                   0.15       0.57 r
-  U196/ZN (IND2D0BWP7T)                    0.07       0.64 f
-  U197/ZN (INR2XD0BWP7T)                   0.09       0.72 r
-  U209/Z (AO21D0BWP7T)                     0.11       0.83 r
-  U210/ZN (AOI211XD0BWP7T)                 0.07       0.90 f
-  U211/ZN (IAO21D0BWP7T)                   0.19       1.09 f
-  U212/ZN (IAO21D0BWP7T)                   0.19       1.28 f
-  U213/ZN (AOI221D0BWP7T)                  0.25       1.53 r
-  U214/ZN (IAO21D0BWP7T)                   0.34       1.87 r
-  U215/ZN (INVD0BWP7T)                     0.14       2.01 f
-  U216/ZN (CKND2D0BWP7T)                   0.15       2.16 r
-  U235/ZN (NR3D0BWP7T)                     0.06       2.23 f
-  ch_sel_o[8] (out)                        0.00       2.23 f
-  data arrival time                                   2.23
+  state_reg[1]/CP (DFCNQD1BWP7T)           0.00       0.00 r
+  state_reg[1]/Q (DFCNQD1BWP7T)            0.30       0.30 r
+  U196/ZN (INVD0BWP7T)                     0.06       0.37 f
+  U197/ZN (ND3D0BWP7T)                     0.14       0.51 r
+  U220/ZN (ND3D0BWP7T)                     0.14       0.65 f
+  U232/ZN (NR2XD0BWP7T)                    0.07       0.72 r
+  ch_sel_o[8] (out)                        0.00       0.72 r
+  data arrival time                                   0.72
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: state_reg[1]
+              (rising edge-triggered flip-flop)
+  Endpoint: ch_sel_o[5]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  priority_fsm       ZeroWireload          tcb018gbwp7ttc
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  state_reg[1]/CP (DFCNQD1BWP7T)           0.00       0.00 r
+  state_reg[1]/Q (DFCNQD1BWP7T)            0.30       0.30 r
+  U196/ZN (INVD0BWP7T)                     0.06       0.37 f
+  U197/ZN (ND3D0BWP7T)                     0.14       0.51 r
+  U222/ZN (ND3D0BWP7T)                     0.14       0.65 f
+  U228/ZN (NR2XD0BWP7T)                    0.07       0.72 r
+  ch_sel_o[5] (out)                        0.00       0.72 r
+  data arrival time                                   0.72
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: state_reg[1]
+              (rising edge-triggered flip-flop)
+  Endpoint: ch_sel_o[4]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  priority_fsm       ZeroWireload          tcb018gbwp7ttc
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  state_reg[1]/CP (DFCNQD1BWP7T)           0.00       0.00 r
+  state_reg[1]/Q (DFCNQD1BWP7T)            0.30       0.30 r
+  U196/ZN (INVD0BWP7T)                     0.06       0.37 f
+  U197/ZN (ND3D0BWP7T)                     0.14       0.51 r
+  U220/ZN (ND3D0BWP7T)                     0.14       0.65 f
+  U227/ZN (NR2XD0BWP7T)                    0.07       0.72 r
+  ch_sel_o[4] (out)                        0.00       0.72 r
+  data arrival time                                   0.72
   -----------------------------------------------------------
   (Path is unconstrained)
 

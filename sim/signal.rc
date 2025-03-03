@@ -16,8 +16,8 @@ signalSpacing 5
 
 ; windowTimeUnit is used for zoom, cursor & marker
 ; waveform viewport range
-zoom 0.000000 101.000000
-cursor 100.000000
+zoom 0.000000 1111.000000
+cursor 700.000000
 marker 0.000000
 
 ; user define markers
@@ -25,7 +25,7 @@ marker 0.000000
 ; visible top row signal index
 top 0
 ; marker line index
-markerPos 14
+markerPos 7
 
 ; event list
 ; addEvent event_name event_expression
@@ -52,9 +52,9 @@ addSignal -h 15 /priority_fsm_tb/uut/resetn_i
 addSignal -h 15 -UNSIGNED -HEX /priority_fsm_tb/uut/ch_sel_i[15:0]
 addSignal -h 15 /priority_fsm_tb/uut/dump_i
 addSignal -h 15 /priority_fsm_tb/uut/arm_i
+addSignal -h 15 /priority_fsm_tb/disable_i
+addSignal -h 15 /priority_fsm_tb/uut/last_o
 addSignal -h 15 -UNSIGNED -HEX /priority_fsm_tb/uut/ch_sel_o[15:0]
-addSignal -h 15 /priority_fsm_tb/uut/zero_o
-addSignal -h 15 /priority_fsm_tb/uut/cycle_done_o
 addSignal -h 15 -UNSIGNED -HEX /priority_fsm_tb/uut/state[4:0]
 addSignal -h 15 -UNSIGNED -HEX /priority_fsm_tb/uut/next_state[4:0]
 addSignal -h 15 -UNSIGNED -HEX /priority_fsm_tb/uut/encode_ch[3:0]

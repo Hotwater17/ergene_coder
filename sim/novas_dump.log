@@ -155,7 +155,7 @@ SEED_G01=143.248.152.24
 PVSHOME=/tools/Cadence/PVS201
 MANPATH=/opt/rh/devtoolset-9/root/usr/share/man:
 SYNOPSYS_LC_ROOT=/tools/Synopsys/LibraryCompiler/U-2022.12-SP2
-XDG_SESSION_ID=7710
+XDG_SESSION_ID=8263
 HOSTNAME=seed-c01
 NOVAS_SYNC_MOTIF_DISP=
 SEED_C01=143.248.152.54
@@ -166,7 +166,7 @@ SHELL=/bin/bash
 SEED_C02=143.248.142.15
 HISTSIZE=1000
 ANSYSLMD_LICENSE_FILE=1055@143.248.174.50
-SSH_CLIENT=172.25.16.188 59696 1222
+SSH_CLIENT=172.25.15.12 56512 1222
 CONDA_SHLVL=1
 SPS_FONT_PATH=/tools/Synopsys/Verdi/V-2023.12-SP2/font
 CONDA_PROMPT_MODIFIER=(base) 
@@ -176,7 +176,7 @@ SPS_XFONT_PATH=/tools/Synopsys/Verdi/V-2023.12-SP2/XFont
 QTDIR=/usr/lib64/qt-3.3
 QTINC=/usr/lib64/qt-3.3/include
 MC2_INSTALL_DIR=/technology/TSMC_28nm_HPC_RF/SRAM/tsmc_n28hpcpmc_20120200_110a/TSMCHOME/sram/Compiler/tsmc_n28hpcpmc_20120200_110a/MC2_2012.02.00.d
-SSH_TTY=/dev/pts/12
+SSH_TTY=/dev/pts/5
 LC_ALL=C
 MilkyWay=/tools/Synopsys/Milkyway/S-2021.06-SP1
 DC=/tools/Synopsys/DC/U-2022.12-SP7-3
@@ -249,7 +249,7 @@ Prime=/tools/Synopsys/Prime/V-2023.12-SP5
 CONFORMAL=/tools/Cadence/CONFRML241
 SPECTREHOME=/tools/Cadence/SPECTRE201
 XDG_DATA_DIRS=/usr/local/share:/usr/share:/var/lib/snapd/desktop
-SSH_CONNECTION=172.25.16.188 59696 143.248.152.54 1222
+SSH_CONNECTION=172.25.15.12 56512 143.248.152.54 1222
 NOVASHLPPATH=/tools/Synopsys/Verdi/V-2023.12-SP2/doc
 SPS_RGB_PATH=/tools/Synopsys/Verdi/V-2023.12-SP2/etc/rgb
 MPI_HOME=/tools/OpenMPI
@@ -263,7 +263,7 @@ LD_NOVERSION=1
 CUSTOMCOMPILER=/tools/Synopsys/CustomCompiler/Q-2020.03-SP1-3
 XCELIUMHOME=/tools/Cadence/XCELIUM2303
 XDG_RUNTIME_DIR=/run/user/1011
-DISPLAY=localhost:18.0
+DISPLAY=localhost:17.0
 QT_PLUGIN_PATH=/tools/Synopsys/Verdi/V-2023.12-SP2/platform/LINUXAMD64/lib/Qt/plugins
 ICC=/tools/Synopsys/ICCompiler/U-2022.12-SP7-3
 SKILLCAD_PATH=/tools/Cadence/skillcad_v4.2S
@@ -320,8 +320,8 @@ argv[4]=-ucli
 argv[5]=-l
 argv[6]=/home/hotwater/ergene_coder/sim/verdiLog/sim.log
 320 profile - 100
-          CPU/Mem usage: 0.020 sys,  0.070 user,  267.16M mem
-321 Elapsed time:    0:00:04    Fri Feb 28 23:38:25 2025
+          CPU/Mem usage: 0.030 sys,  0.060 user,  267.17M mem
+321 Elapsed time:    0:00:03    Mon Mar  3 20:39:09 2025
 322 User CPU time used: 0 seconds
 323 System CPU time used: 0 seconds
 324 pliAppInit
@@ -358,7 +358,7 @@ argv[6]=/home/hotwater/ergene_coder/sim/verdiLog/sim.log
 355 argv[3]: +trace_process
 356 *Verdi* : Dumping the signal (priority_fsm_tb.uut.clk_i).
 357 pliAppHDL_DumpVarComplete traverse var: profile - 
-          CPU/Mem usage: 0.060 sys,  0.100 user,  365.17M mem
+          CPU/Mem usage: 0.050 sys,  0.090 user,  365.20M mem
                    incr: 0.000 sys,  0.000 user,  2.20M mem
                    accu: 0.000 sys,  0.000 user,  2.20M mem
               accu incr: 0.000 sys,  0.000 user,  2.20M mem
@@ -367,11 +367,11 @@ argv[6]=/home/hotwater/ergene_coder/sim/verdiLog/sim.log
                  incr: 0 var,  1 idcode,  1 callback
                  accu: 0 var,  1 idcode,  1 callback
             accu incr: 0 var,  1 idcode,  1 callback
-358 Elapsed time:    0:01:20    Fri Feb 28 23:39:41 2025
+358 Elapsed time:    0:02:05    Mon Mar  3 20:41:11 2025
 359 User CPU time used: 0 seconds
 360 System CPU time used: 0 seconds
 361 pliAppHDL_DumpVarComplete: profile - 
-          CPU/Mem usage: 0.060 sys,  0.100 user,  366.22M mem
+          CPU/Mem usage: 0.050 sys,  0.090 user,  366.25M mem
                    incr: 0.000 sys,  0.000 user,  1.05M mem
                    accu: 0.000 sys,  0.000 user,  3.25M mem
               accu incr: 0.000 sys,  0.000 user,  1.05M mem
@@ -380,7 +380,7 @@ argv[6]=/home/hotwater/ergene_coder/sim/verdiLog/sim.log
                  incr: 0 var,  0 idcode,  0 callback
                  accu: 0 var,  1 idcode,  1 callback
             accu incr: 0 var,  0 idcode,  0 callback
-362 Elapsed time:    0:01:20    Fri Feb 28 23:39:41 2025
+362 Elapsed time:    0:02:05    Mon Mar  3 20:41:11 2025
 363 User CPU time used: 0 seconds
 364 System CPU time used: 0 seconds
 365 sps_tcl_fsdbDumpvars_vd_main
@@ -390,7 +390,7 @@ argv[6]=/home/hotwater/ergene_coder/sim/verdiLog/sim.log
 369 argv[3]: +trace_process
 370 *Verdi* : Dumping the signal (priority_fsm_tb.uut.resetn_i).
 371 pliAppHDL_DumpVarComplete traverse var: profile - 
-          CPU/Mem usage: 0.060 sys,  0.100 user,  366.22M mem
+          CPU/Mem usage: 0.050 sys,  0.090 user,  366.25M mem
                    incr: 0.000 sys,  0.000 user,  0.00M mem
                    accu: 0.000 sys,  0.000 user,  0.00M mem
               accu incr: 0.000 sys,  0.000 user,  0.00M mem
@@ -399,11 +399,11 @@ argv[6]=/home/hotwater/ergene_coder/sim/verdiLog/sim.log
                  incr: 0 var,  1 idcode,  1 callback
                  accu: 0 var,  1 idcode,  1 callback
             accu incr: 0 var,  1 idcode,  1 callback
-372 Elapsed time:    0:01:20    Fri Feb 28 23:39:41 2025
+372 Elapsed time:    0:02:05    Mon Mar  3 20:41:11 2025
 373 User CPU time used: 0 seconds
 374 System CPU time used: 0 seconds
 375 pliAppHDL_DumpVarComplete: profile - 
-          CPU/Mem usage: 0.060 sys,  0.100 user,  366.22M mem
+          CPU/Mem usage: 0.050 sys,  0.090 user,  366.25M mem
                    incr: 0.000 sys,  0.000 user,  0.00M mem
                    accu: 0.000 sys,  0.000 user,  0.00M mem
               accu incr: 0.000 sys,  0.000 user,  0.00M mem
@@ -412,7 +412,7 @@ argv[6]=/home/hotwater/ergene_coder/sim/verdiLog/sim.log
                  incr: 0 var,  0 idcode,  0 callback
                  accu: 0 var,  1 idcode,  1 callback
             accu incr: 0 var,  0 idcode,  0 callback
-376 Elapsed time:    0:01:20    Fri Feb 28 23:39:41 2025
+376 Elapsed time:    0:02:05    Mon Mar  3 20:41:11 2025
 377 User CPU time used: 0 seconds
 378 System CPU time used: 0 seconds
 379 sps_tcl_fsdbDumpvars_vd_main
@@ -422,7 +422,7 @@ argv[6]=/home/hotwater/ergene_coder/sim/verdiLog/sim.log
 383 argv[3]: +trace_process
 384 *Verdi* : Dumping the signal (priority_fsm_tb.uut.ch_sel_i).
 385 pliAppHDL_DumpVarComplete traverse var: profile - 
-          CPU/Mem usage: 0.060 sys,  0.100 user,  367.27M mem
+          CPU/Mem usage: 0.050 sys,  0.090 user,  367.30M mem
                    incr: 0.000 sys,  0.000 user,  1.05M mem
                    accu: 0.000 sys,  0.000 user,  1.05M mem
               accu incr: 0.000 sys,  0.000 user,  1.05M mem
@@ -431,11 +431,11 @@ argv[6]=/home/hotwater/ergene_coder/sim/verdiLog/sim.log
                  incr: 0 var,  1 idcode,  1 callback
                  accu: 0 var,  1 idcode,  1 callback
             accu incr: 0 var,  1 idcode,  1 callback
-386 Elapsed time:    0:01:20    Fri Feb 28 23:39:41 2025
+386 Elapsed time:    0:02:05    Mon Mar  3 20:41:11 2025
 387 User CPU time used: 0 seconds
 388 System CPU time used: 0 seconds
 389 pliAppHDL_DumpVarComplete: profile - 
-          CPU/Mem usage: 0.060 sys,  0.100 user,  367.27M mem
+          CPU/Mem usage: 0.050 sys,  0.090 user,  367.30M mem
                    incr: 0.000 sys,  0.000 user,  0.00M mem
                    accu: 0.000 sys,  0.000 user,  1.05M mem
               accu incr: 0.000 sys,  0.000 user,  0.00M mem
@@ -444,7 +444,7 @@ argv[6]=/home/hotwater/ergene_coder/sim/verdiLog/sim.log
                  incr: 0 var,  0 idcode,  0 callback
                  accu: 0 var,  1 idcode,  1 callback
             accu incr: 0 var,  0 idcode,  0 callback
-390 Elapsed time:    0:01:20    Fri Feb 28 23:39:41 2025
+390 Elapsed time:    0:02:05    Mon Mar  3 20:41:11 2025
 391 User CPU time used: 0 seconds
 392 System CPU time used: 0 seconds
 393 sps_tcl_fsdbDumpvars_vd_main
@@ -454,7 +454,7 @@ argv[6]=/home/hotwater/ergene_coder/sim/verdiLog/sim.log
 397 argv[3]: +trace_process
 398 *Verdi* : Dumping the signal (priority_fsm_tb.uut.dump_i).
 399 pliAppHDL_DumpVarComplete traverse var: profile - 
-          CPU/Mem usage: 0.060 sys,  0.100 user,  367.27M mem
+          CPU/Mem usage: 0.050 sys,  0.090 user,  367.30M mem
                    incr: 0.000 sys,  0.000 user,  0.00M mem
                    accu: 0.000 sys,  0.000 user,  0.00M mem
               accu incr: 0.000 sys,  0.000 user,  0.00M mem
@@ -463,11 +463,11 @@ argv[6]=/home/hotwater/ergene_coder/sim/verdiLog/sim.log
                  incr: 0 var,  1 idcode,  1 callback
                  accu: 0 var,  1 idcode,  1 callback
             accu incr: 0 var,  1 idcode,  1 callback
-400 Elapsed time:    0:01:20    Fri Feb 28 23:39:41 2025
+400 Elapsed time:    0:02:05    Mon Mar  3 20:41:11 2025
 401 User CPU time used: 0 seconds
 402 System CPU time used: 0 seconds
 403 pliAppHDL_DumpVarComplete: profile - 
-          CPU/Mem usage: 0.060 sys,  0.100 user,  367.27M mem
+          CPU/Mem usage: 0.050 sys,  0.090 user,  367.30M mem
                    incr: 0.000 sys,  0.000 user,  0.00M mem
                    accu: 0.000 sys,  0.000 user,  0.00M mem
               accu incr: 0.000 sys,  0.000 user,  0.00M mem
@@ -476,7 +476,7 @@ argv[6]=/home/hotwater/ergene_coder/sim/verdiLog/sim.log
                  incr: 0 var,  0 idcode,  0 callback
                  accu: 0 var,  1 idcode,  1 callback
             accu incr: 0 var,  0 idcode,  0 callback
-404 Elapsed time:    0:01:20    Fri Feb 28 23:39:41 2025
+404 Elapsed time:    0:02:05    Mon Mar  3 20:41:11 2025
 405 User CPU time used: 0 seconds
 406 System CPU time used: 0 seconds
 407 sps_tcl_fsdbDumpvars_vd_main
@@ -486,7 +486,7 @@ argv[6]=/home/hotwater/ergene_coder/sim/verdiLog/sim.log
 411 argv[3]: +trace_process
 412 *Verdi* : Dumping the signal (priority_fsm_tb.uut.arm_i).
 413 pliAppHDL_DumpVarComplete traverse var: profile - 
-          CPU/Mem usage: 0.060 sys,  0.110 user,  367.27M mem
+          CPU/Mem usage: 0.050 sys,  0.100 user,  367.30M mem
                    incr: 0.000 sys,  0.010 user,  0.00M mem
                    accu: 0.000 sys,  0.010 user,  0.00M mem
               accu incr: 0.000 sys,  0.010 user,  0.00M mem
@@ -495,11 +495,11 @@ argv[6]=/home/hotwater/ergene_coder/sim/verdiLog/sim.log
                  incr: 0 var,  1 idcode,  1 callback
                  accu: 0 var,  1 idcode,  1 callback
             accu incr: 0 var,  1 idcode,  1 callback
-414 Elapsed time:    0:01:20    Fri Feb 28 23:39:41 2025
+414 Elapsed time:    0:02:05    Mon Mar  3 20:41:11 2025
 415 User CPU time used: 0 seconds
 416 System CPU time used: 0 seconds
 417 pliAppHDL_DumpVarComplete: profile - 
-          CPU/Mem usage: 0.060 sys,  0.110 user,  367.27M mem
+          CPU/Mem usage: 0.050 sys,  0.100 user,  367.30M mem
                    incr: 0.000 sys,  0.000 user,  0.00M mem
                    accu: 0.000 sys,  0.010 user,  0.00M mem
               accu incr: 0.000 sys,  0.000 user,  0.00M mem
@@ -508,17 +508,17 @@ argv[6]=/home/hotwater/ergene_coder/sim/verdiLog/sim.log
                  incr: 0 var,  0 idcode,  0 callback
                  accu: 0 var,  1 idcode,  1 callback
             accu incr: 0 var,  0 idcode,  0 callback
-418 Elapsed time:    0:01:20    Fri Feb 28 23:39:41 2025
+418 Elapsed time:    0:02:05    Mon Mar  3 20:41:11 2025
 419 User CPU time used: 0 seconds
 420 System CPU time used: 0 seconds
 421 sps_tcl_fsdbDumpvars_vd_main
 422 argv[0]: 0
-423 argv[1]: priority_fsm_tb.uut.ch_sel_o
+423 argv[1]: priority_fsm_tb.disable_i
 424 argv[2]: +all
 425 argv[3]: +trace_process
-426 *Verdi* : Dumping the signal (priority_fsm_tb.uut.ch_sel_o).
+426 *Verdi* : Dumping the signal (priority_fsm_tb.disable_i).
 427 pliAppHDL_DumpVarComplete traverse var: profile - 
-          CPU/Mem usage: 0.060 sys,  0.110 user,  367.27M mem
+          CPU/Mem usage: 0.050 sys,  0.100 user,  367.30M mem
                    incr: 0.000 sys,  0.000 user,  0.00M mem
                    accu: 0.000 sys,  0.000 user,  0.00M mem
               accu incr: 0.000 sys,  0.000 user,  0.00M mem
@@ -527,11 +527,11 @@ argv[6]=/home/hotwater/ergene_coder/sim/verdiLog/sim.log
                  incr: 0 var,  1 idcode,  1 callback
                  accu: 0 var,  1 idcode,  1 callback
             accu incr: 0 var,  1 idcode,  1 callback
-428 Elapsed time:    0:01:20    Fri Feb 28 23:39:41 2025
+428 Elapsed time:    0:02:05    Mon Mar  3 20:41:11 2025
 429 User CPU time used: 0 seconds
 430 System CPU time used: 0 seconds
 431 pliAppHDL_DumpVarComplete: profile - 
-          CPU/Mem usage: 0.060 sys,  0.110 user,  367.27M mem
+          CPU/Mem usage: 0.050 sys,  0.100 user,  367.30M mem
                    incr: 0.000 sys,  0.000 user,  0.00M mem
                    accu: 0.000 sys,  0.000 user,  0.00M mem
               accu incr: 0.000 sys,  0.000 user,  0.00M mem
@@ -540,17 +540,17 @@ argv[6]=/home/hotwater/ergene_coder/sim/verdiLog/sim.log
                  incr: 0 var,  0 idcode,  0 callback
                  accu: 0 var,  1 idcode,  1 callback
             accu incr: 0 var,  0 idcode,  0 callback
-432 Elapsed time:    0:01:20    Fri Feb 28 23:39:41 2025
+432 Elapsed time:    0:02:05    Mon Mar  3 20:41:11 2025
 433 User CPU time used: 0 seconds
 434 System CPU time used: 0 seconds
 435 sps_tcl_fsdbDumpvars_vd_main
 436 argv[0]: 0
-437 argv[1]: priority_fsm_tb.uut.zero_o
+437 argv[1]: priority_fsm_tb.uut.last_o
 438 argv[2]: +all
 439 argv[3]: +trace_process
-440 *Verdi* : Dumping the signal (priority_fsm_tb.uut.zero_o).
+440 *Verdi* : Dumping the signal (priority_fsm_tb.uut.last_o).
 441 pliAppHDL_DumpVarComplete traverse var: profile - 
-          CPU/Mem usage: 0.060 sys,  0.110 user,  367.27M mem
+          CPU/Mem usage: 0.050 sys,  0.100 user,  367.30M mem
                    incr: 0.000 sys,  0.000 user,  0.00M mem
                    accu: 0.000 sys,  0.000 user,  0.00M mem
               accu incr: 0.000 sys,  0.000 user,  0.00M mem
@@ -559,11 +559,11 @@ argv[6]=/home/hotwater/ergene_coder/sim/verdiLog/sim.log
                  incr: 0 var,  1 idcode,  1 callback
                  accu: 0 var,  1 idcode,  1 callback
             accu incr: 0 var,  1 idcode,  1 callback
-442 Elapsed time:    0:01:20    Fri Feb 28 23:39:41 2025
+442 Elapsed time:    0:02:05    Mon Mar  3 20:41:11 2025
 443 User CPU time used: 0 seconds
 444 System CPU time used: 0 seconds
 445 pliAppHDL_DumpVarComplete: profile - 
-          CPU/Mem usage: 0.060 sys,  0.110 user,  367.27M mem
+          CPU/Mem usage: 0.050 sys,  0.100 user,  367.30M mem
                    incr: 0.000 sys,  0.000 user,  0.00M mem
                    accu: 0.000 sys,  0.000 user,  0.00M mem
               accu incr: 0.000 sys,  0.000 user,  0.00M mem
@@ -572,39 +572,39 @@ argv[6]=/home/hotwater/ergene_coder/sim/verdiLog/sim.log
                  incr: 0 var,  0 idcode,  0 callback
                  accu: 0 var,  1 idcode,  1 callback
             accu incr: 0 var,  0 idcode,  0 callback
-446 Elapsed time:    0:01:20    Fri Feb 28 23:39:41 2025
+446 Elapsed time:    0:02:05    Mon Mar  3 20:41:11 2025
 447 User CPU time used: 0 seconds
 448 System CPU time used: 0 seconds
 449 sps_tcl_fsdbDumpvars_vd_main
 450 argv[0]: 0
-451 argv[1]: priority_fsm_tb.uut.cycle_done_o
+451 argv[1]: priority_fsm_tb.uut.ch_sel_o
 452 argv[2]: +all
 453 argv[3]: +trace_process
-454 *Verdi* : Dumping the signal (priority_fsm_tb.uut.cycle_done_o).
+454 *Verdi* : Dumping the signal (priority_fsm_tb.uut.ch_sel_o).
 455 pliAppHDL_DumpVarComplete traverse var: profile - 
-          CPU/Mem usage: 0.060 sys,  0.110 user,  367.27M mem
+          CPU/Mem usage: 0.050 sys,  0.100 user,  367.30M mem
                    incr: 0.000 sys,  0.000 user,  0.00M mem
                    accu: 0.000 sys,  0.000 user,  0.00M mem
               accu incr: 0.000 sys,  0.000 user,  0.00M mem
 
-          Count usage: 0 var,  8 idcode,  7 callback
-                 incr: 0 var,  1 idcode,  0 callback
-                 accu: 0 var,  1 idcode,  0 callback
-            accu incr: 0 var,  1 idcode,  0 callback
-456 Elapsed time:    0:01:20    Fri Feb 28 23:39:41 2025
+          Count usage: 0 var,  8 idcode,  8 callback
+                 incr: 0 var,  1 idcode,  1 callback
+                 accu: 0 var,  1 idcode,  1 callback
+            accu incr: 0 var,  1 idcode,  1 callback
+456 Elapsed time:    0:02:05    Mon Mar  3 20:41:11 2025
 457 User CPU time used: 0 seconds
 458 System CPU time used: 0 seconds
 459 pliAppHDL_DumpVarComplete: profile - 
-          CPU/Mem usage: 0.060 sys,  0.110 user,  367.27M mem
-                   incr: 0.000 sys,  0.000 user,  0.00M mem
-                   accu: 0.000 sys,  0.000 user,  0.00M mem
-              accu incr: 0.000 sys,  0.000 user,  0.00M mem
+          CPU/Mem usage: 0.060 sys,  0.100 user,  367.30M mem
+                   incr: 0.010 sys,  0.000 user,  0.00M mem
+                   accu: 0.010 sys,  0.000 user,  0.00M mem
+              accu incr: 0.010 sys,  0.000 user,  0.00M mem
 
-          Count usage: 0 var,  8 idcode,  7 callback
+          Count usage: 0 var,  8 idcode,  8 callback
                  incr: 0 var,  0 idcode,  0 callback
-                 accu: 0 var,  1 idcode,  0 callback
+                 accu: 0 var,  1 idcode,  1 callback
             accu incr: 0 var,  0 idcode,  0 callback
-460 Elapsed time:    0:01:20    Fri Feb 28 23:39:41 2025
+460 Elapsed time:    0:02:05    Mon Mar  3 20:41:11 2025
 461 User CPU time used: 0 seconds
 462 System CPU time used: 0 seconds
 463 sps_tcl_fsdbDumpvars_vd_main
@@ -614,29 +614,29 @@ argv[6]=/home/hotwater/ergene_coder/sim/verdiLog/sim.log
 467 argv[3]: +trace_process
 468 *Verdi* : Dumping the signal (priority_fsm_tb.uut.state).
 469 pliAppHDL_DumpVarComplete traverse var: profile - 
-          CPU/Mem usage: 0.060 sys,  0.110 user,  367.27M mem
+          CPU/Mem usage: 0.060 sys,  0.100 user,  367.30M mem
                    incr: 0.000 sys,  0.000 user,  0.00M mem
                    accu: 0.000 sys,  0.000 user,  0.00M mem
               accu incr: 0.000 sys,  0.000 user,  0.00M mem
 
-          Count usage: 0 var,  9 idcode,  8 callback
+          Count usage: 0 var,  9 idcode,  9 callback
                  incr: 0 var,  1 idcode,  1 callback
                  accu: 0 var,  1 idcode,  1 callback
             accu incr: 0 var,  1 idcode,  1 callback
-470 Elapsed time:    0:01:20    Fri Feb 28 23:39:41 2025
+470 Elapsed time:    0:02:05    Mon Mar  3 20:41:11 2025
 471 User CPU time used: 0 seconds
 472 System CPU time used: 0 seconds
 473 pliAppHDL_DumpVarComplete: profile - 
-          CPU/Mem usage: 0.060 sys,  0.110 user,  367.27M mem
+          CPU/Mem usage: 0.060 sys,  0.100 user,  367.30M mem
                    incr: 0.000 sys,  0.000 user,  0.00M mem
                    accu: 0.000 sys,  0.000 user,  0.00M mem
               accu incr: 0.000 sys,  0.000 user,  0.00M mem
 
-          Count usage: 0 var,  9 idcode,  8 callback
+          Count usage: 0 var,  9 idcode,  9 callback
                  incr: 0 var,  0 idcode,  0 callback
                  accu: 0 var,  1 idcode,  1 callback
             accu incr: 0 var,  0 idcode,  0 callback
-474 Elapsed time:    0:01:20    Fri Feb 28 23:39:41 2025
+474 Elapsed time:    0:02:05    Mon Mar  3 20:41:11 2025
 475 User CPU time used: 0 seconds
 476 System CPU time used: 0 seconds
 477 sps_tcl_fsdbDumpvars_vd_main
@@ -646,29 +646,29 @@ argv[6]=/home/hotwater/ergene_coder/sim/verdiLog/sim.log
 481 argv[3]: +trace_process
 482 *Verdi* : Dumping the signal (priority_fsm_tb.uut.next_state).
 483 pliAppHDL_DumpVarComplete traverse var: profile - 
-          CPU/Mem usage: 0.060 sys,  0.110 user,  367.27M mem
+          CPU/Mem usage: 0.060 sys,  0.100 user,  367.30M mem
                    incr: 0.000 sys,  0.000 user,  0.00M mem
                    accu: 0.000 sys,  0.000 user,  0.00M mem
               accu incr: 0.000 sys,  0.000 user,  0.00M mem
 
-          Count usage: 0 var,  10 idcode,  9 callback
+          Count usage: 0 var,  10 idcode,  10 callback
                  incr: 0 var,  1 idcode,  1 callback
                  accu: 0 var,  1 idcode,  1 callback
             accu incr: 0 var,  1 idcode,  1 callback
-484 Elapsed time:    0:01:20    Fri Feb 28 23:39:41 2025
+484 Elapsed time:    0:02:05    Mon Mar  3 20:41:11 2025
 485 User CPU time used: 0 seconds
 486 System CPU time used: 0 seconds
 487 pliAppHDL_DumpVarComplete: profile - 
-          CPU/Mem usage: 0.060 sys,  0.110 user,  367.27M mem
+          CPU/Mem usage: 0.060 sys,  0.100 user,  367.30M mem
                    incr: 0.000 sys,  0.000 user,  0.00M mem
                    accu: 0.000 sys,  0.000 user,  0.00M mem
               accu incr: 0.000 sys,  0.000 user,  0.00M mem
 
-          Count usage: 0 var,  10 idcode,  9 callback
+          Count usage: 0 var,  10 idcode,  10 callback
                  incr: 0 var,  0 idcode,  0 callback
                  accu: 0 var,  1 idcode,  1 callback
             accu incr: 0 var,  0 idcode,  0 callback
-488 Elapsed time:    0:01:20    Fri Feb 28 23:39:41 2025
+488 Elapsed time:    0:02:05    Mon Mar  3 20:41:11 2025
 489 User CPU time used: 0 seconds
 490 System CPU time used: 0 seconds
 491 sps_tcl_fsdbDumpvars_vd_main
@@ -678,29 +678,29 @@ argv[6]=/home/hotwater/ergene_coder/sim/verdiLog/sim.log
 495 argv[3]: +trace_process
 496 *Verdi* : Dumping the signal (priority_fsm_tb.uut.encode_ch).
 497 pliAppHDL_DumpVarComplete traverse var: profile - 
-          CPU/Mem usage: 0.070 sys,  0.110 user,  367.27M mem
-                   incr: 0.010 sys,  0.000 user,  0.00M mem
-                   accu: 0.010 sys,  0.000 user,  0.00M mem
-              accu incr: 0.010 sys,  0.000 user,  0.00M mem
+          CPU/Mem usage: 0.060 sys,  0.100 user,  367.30M mem
+                   incr: 0.000 sys,  0.000 user,  0.00M mem
+                   accu: 0.000 sys,  0.000 user,  0.00M mem
+              accu incr: 0.000 sys,  0.000 user,  0.00M mem
 
-          Count usage: 0 var,  11 idcode,  10 callback
+          Count usage: 0 var,  11 idcode,  11 callback
                  incr: 0 var,  1 idcode,  1 callback
                  accu: 0 var,  1 idcode,  1 callback
             accu incr: 0 var,  1 idcode,  1 callback
-498 Elapsed time:    0:01:20    Fri Feb 28 23:39:41 2025
+498 Elapsed time:    0:02:05    Mon Mar  3 20:41:11 2025
 499 User CPU time used: 0 seconds
 500 System CPU time used: 0 seconds
 501 pliAppHDL_DumpVarComplete: profile - 
-          CPU/Mem usage: 0.070 sys,  0.110 user,  367.27M mem
+          CPU/Mem usage: 0.060 sys,  0.100 user,  367.30M mem
                    incr: 0.000 sys,  0.000 user,  0.00M mem
-                   accu: 0.010 sys,  0.000 user,  0.00M mem
+                   accu: 0.000 sys,  0.000 user,  0.00M mem
               accu incr: 0.000 sys,  0.000 user,  0.00M mem
 
-          Count usage: 0 var,  11 idcode,  10 callback
+          Count usage: 0 var,  11 idcode,  11 callback
                  incr: 0 var,  0 idcode,  0 callback
                  accu: 0 var,  1 idcode,  1 callback
             accu incr: 0 var,  0 idcode,  0 callback
-502 Elapsed time:    0:01:20    Fri Feb 28 23:39:41 2025
+502 Elapsed time:    0:02:05    Mon Mar  3 20:41:11 2025
 503 User CPU time used: 0 seconds
 504 System CPU time used: 0 seconds
 505 sps_tcl_fsdbDumpvars_vd_main
@@ -710,29 +710,29 @@ argv[6]=/home/hotwater/ergene_coder/sim/verdiLog/sim.log
 509 argv[3]: +trace_process
 510 *Verdi* : Dumping the signal (priority_fsm_tb.uut.valid).
 511 pliAppHDL_DumpVarComplete traverse var: profile - 
-          CPU/Mem usage: 0.070 sys,  0.110 user,  367.27M mem
+          CPU/Mem usage: 0.060 sys,  0.100 user,  367.30M mem
                    incr: 0.000 sys,  0.000 user,  0.00M mem
                    accu: 0.000 sys,  0.000 user,  0.00M mem
               accu incr: 0.000 sys,  0.000 user,  0.00M mem
 
-          Count usage: 0 var,  12 idcode,  11 callback
+          Count usage: 0 var,  12 idcode,  12 callback
                  incr: 0 var,  1 idcode,  1 callback
                  accu: 0 var,  1 idcode,  1 callback
             accu incr: 0 var,  1 idcode,  1 callback
-512 Elapsed time:    0:01:20    Fri Feb 28 23:39:41 2025
+512 Elapsed time:    0:02:05    Mon Mar  3 20:41:11 2025
 513 User CPU time used: 0 seconds
 514 System CPU time used: 0 seconds
 515 pliAppHDL_DumpVarComplete: profile - 
-          CPU/Mem usage: 0.070 sys,  0.110 user,  367.27M mem
+          CPU/Mem usage: 0.060 sys,  0.100 user,  367.30M mem
                    incr: 0.000 sys,  0.000 user,  0.00M mem
                    accu: 0.000 sys,  0.000 user,  0.00M mem
               accu incr: 0.000 sys,  0.000 user,  0.00M mem
 
-          Count usage: 0 var,  12 idcode,  11 callback
+          Count usage: 0 var,  12 idcode,  12 callback
                  incr: 0 var,  0 idcode,  0 callback
                  accu: 0 var,  1 idcode,  1 callback
             accu incr: 0 var,  0 idcode,  0 callback
-516 Elapsed time:    0:01:20    Fri Feb 28 23:39:41 2025
+516 Elapsed time:    0:02:05    Mon Mar  3 20:41:11 2025
 517 User CPU time used: 0 seconds
 518 System CPU time used: 0 seconds
 519 sps_tcl_fsdbDumpvars_vd_main
@@ -742,29 +742,29 @@ argv[6]=/home/hotwater/ergene_coder/sim/verdiLog/sim.log
 523 argv[3]: +trace_process
 524 *Verdi* : Dumping the signal (priority_fsm_tb.uut.ch_latch_q).
 525 pliAppHDL_DumpVarComplete traverse var: profile - 
-          CPU/Mem usage: 0.070 sys,  0.110 user,  367.27M mem
+          CPU/Mem usage: 0.060 sys,  0.100 user,  367.30M mem
                    incr: 0.000 sys,  0.000 user,  0.00M mem
                    accu: 0.000 sys,  0.000 user,  0.00M mem
               accu incr: 0.000 sys,  0.000 user,  0.00M mem
 
-          Count usage: 0 var,  13 idcode,  12 callback
+          Count usage: 0 var,  13 idcode,  13 callback
                  incr: 0 var,  1 idcode,  1 callback
                  accu: 0 var,  1 idcode,  1 callback
             accu incr: 0 var,  1 idcode,  1 callback
-526 Elapsed time:    0:01:20    Fri Feb 28 23:39:41 2025
+526 Elapsed time:    0:02:05    Mon Mar  3 20:41:11 2025
 527 User CPU time used: 0 seconds
 528 System CPU time used: 0 seconds
 529 pliAppHDL_DumpVarComplete: profile - 
-          CPU/Mem usage: 0.070 sys,  0.110 user,  367.27M mem
+          CPU/Mem usage: 0.060 sys,  0.100 user,  367.30M mem
                    incr: 0.000 sys,  0.000 user,  0.00M mem
                    accu: 0.000 sys,  0.000 user,  0.00M mem
               accu incr: 0.000 sys,  0.000 user,  0.00M mem
 
-          Count usage: 0 var,  13 idcode,  12 callback
+          Count usage: 0 var,  13 idcode,  13 callback
                  incr: 0 var,  0 idcode,  0 callback
                  accu: 0 var,  1 idcode,  1 callback
             accu incr: 0 var,  0 idcode,  0 callback
-530 Elapsed time:    0:01:20    Fri Feb 28 23:39:41 2025
+530 Elapsed time:    0:02:05    Mon Mar  3 20:41:11 2025
 531 User CPU time used: 0 seconds
 532 System CPU time used: 0 seconds
 533 sps_tcl_fsdbDumpvars_vd_main
@@ -774,59 +774,32 @@ argv[6]=/home/hotwater/ergene_coder/sim/verdiLog/sim.log
 537 argv[3]: +trace_process
 538 *Verdi* : Dumping the signal (priority_fsm_tb.uut.ch_latch_res).
 539 pliAppHDL_DumpVarComplete traverse var: profile - 
-          CPU/Mem usage: 0.070 sys,  0.110 user,  367.27M mem
+          CPU/Mem usage: 0.060 sys,  0.100 user,  367.30M mem
                    incr: 0.000 sys,  0.000 user,  0.00M mem
                    accu: 0.000 sys,  0.000 user,  0.00M mem
               accu incr: 0.000 sys,  0.000 user,  0.00M mem
 
-          Count usage: 0 var,  14 idcode,  13 callback
+          Count usage: 0 var,  14 idcode,  14 callback
                  incr: 0 var,  1 idcode,  1 callback
                  accu: 0 var,  1 idcode,  1 callback
             accu incr: 0 var,  1 idcode,  1 callback
-540 Elapsed time:    0:01:20    Fri Feb 28 23:39:41 2025
+540 Elapsed time:    0:02:05    Mon Mar  3 20:41:11 2025
 541 User CPU time used: 0 seconds
 542 System CPU time used: 0 seconds
 543 pliAppHDL_DumpVarComplete: profile - 
-          CPU/Mem usage: 0.070 sys,  0.110 user,  367.27M mem
+          CPU/Mem usage: 0.060 sys,  0.100 user,  367.30M mem
                    incr: 0.000 sys,  0.000 user,  0.00M mem
                    accu: 0.000 sys,  0.000 user,  0.00M mem
               accu incr: 0.000 sys,  0.000 user,  0.00M mem
 
-          Count usage: 0 var,  14 idcode,  13 callback
+          Count usage: 0 var,  14 idcode,  14 callback
                  incr: 0 var,  0 idcode,  0 callback
                  accu: 0 var,  1 idcode,  1 callback
             accu incr: 0 var,  0 idcode,  0 callback
-544 Elapsed time:    0:01:20    Fri Feb 28 23:39:41 2025
+544 Elapsed time:    0:02:05    Mon Mar  3 20:41:11 2025
 545 User CPU time used: 0 seconds
 546 System CPU time used: 0 seconds
 547 sps_tcl_fsdbDumpflush_vd_main at 0 : N/A(0)
 548 *Verdi* : Flush all FSDB Files at 0 ns.
-549 sps_tcl_fsdbDumpflush_vd_main at 1100 : N/A(0)
-550 *Verdi* : Flush all FSDB Files at 1,100 ns.
-551 End of simulation at 1100
-552 Memory usage: 369.177 M
-553 Maximum resident set size: 146 MB
-554 Hard page faults: 2
-555 Soft page faults: 7790
-556 Elapsed time:    0:07:09    Fri Feb 28 23:45:30 2025
-557 User CPU time used: 0 seconds
-558 System CPU time used: 0 seconds
-559 Begin FSDB profile info:
-560 FSDB Writer : bc1(46) bcn(45) mtf/stf(0/4)
-FSDB Writer elapsed time : flush(0.058099) io wait(0.000000) theadpool wait(0.000000)
-FSDB Writer cpu time : MT Compression : 0
-561 End FSDB profile info
-562 FSDB closed. Name: /home/hotwater/ergene_coder/sim/inter.fsdb Size: 11074
-563 Parallel profile     - ProducerThread:1 ConsumerThread:1 Buffer:64MB
-564                      - BlockUsed:1 Acquire:0 BufferUsed:1410
-565                      - Flush:20 Expand:0 ProducerWait:0 ConsumerWait:0
-566                      - MainProducerTime:0.218449568 TotalConsumerTime:0.000000000
-567                      - ElapsedTime:424.838155000
-568 Producer   0 profile - BlockUsed:3 Acquire:0 BufferUsed:1410
-569 Consumer   0 profile - Affinity:-1 CPUTime:0.000000000 LifeTime:0.000000000 (-nan%)
-570                      - BlockUsed:3 Acquire:0 BufferUsed:1410
-571 SimExit
-572 Elapsed time:    0:07:09    Fri Feb 28 23:45:30 2025
-573 User CPU time used: 0 seconds
-574 System CPU time used: 0 seconds
-575 Sim process exit
+549 sps_tcl_fsdbDumpflush_vd_main at 3000 : N/A(0)
+550 *Verdi* : Flush all FSDB Files at 3,000 ns.

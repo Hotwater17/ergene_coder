@@ -8,7 +8,7 @@ Report : power
         -analysis_effort medium
 Design : priority_fsm
 Version: U-2022.12-SP7-3
-Date   : Fri Feb 28 23:42:46 2025
+Date   : Mon Mar  3 20:47:00 2025
 ****************************************
 
 
@@ -39,12 +39,12 @@ Attributes
 i - Including register clock pin internal power
 
 
-  Cell Internal Power  = 262.4289 uW   (74%)
-  Net Switching Power  =  94.4604 uW   (26%)
+  Cell Internal Power  = 237.7434 uW   (78%)
+  Net Switching Power  =  67.4965 uW   (22%)
                          ---------
-Total Dynamic Power    = 356.8892 uW  (100%)
+Total Dynamic Power    = 305.2399 uW  (100%)
 
-Cell Leakage Power     =   5.3635 nW
+Cell Leakage Power     =   5.1785 nW
 
 Information: report_power power group summary does not include estimated clock tree power. (PWR-789)
 
@@ -56,8 +56,8 @@ memory             0.0000            0.0000            0.0000            0.0000 
 black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
 clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)  i
 register           0.0000            0.0000            0.0000            0.0000  (   0.00%)
-sequential         0.1446        1.5531e-02            2.3389            0.1601  (  44.87%)
-combinational      0.1178        7.8929e-02            3.0246            0.1968  (  55.13%)
+sequential         0.1467        1.4643e-02            2.3420            0.1613  (  52.85%)
+combinational  9.1069e-02        5.2854e-02            2.8365            0.1439  (  47.15%)
 --------------------------------------------------------------------------------------------------
-Total              0.2624 mW     9.4460e-02 mW         5.3635 nW         0.3569 mW
+Total              0.2377 mW     6.7496e-02 mW         5.1785 nW         0.3052 mW
 1
