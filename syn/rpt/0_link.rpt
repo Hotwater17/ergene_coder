@@ -1,8 +1,8 @@
 
-  Linking design 'priority_fsm'
+  Linking design 'encoder'
   Using the following designs and libraries:
   --------------------------------------------------------------------------
-  priority_fsm                /home/hotwater/ergene_coder/syn/priority_fsm.db
+  encoder                     /home/hotwater/ergene_coder/syn/encoder.db
   tcb018gbwp7ttc (library)    /technology/TSMC_180nm_BCD/STD/tcb018gbwp7t_290a/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcb018gbwp7t_270a/tcb018gbwp7ttc.db
   dw_foundation.sldb (library) /tools/Synopsys/DC/U-2022.12-SP7-3/libraries/syn/dw_foundation.sldb
 

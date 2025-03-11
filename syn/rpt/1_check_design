@@ -1,15 +1,1 @@
- 
-****************************************
-check_design summary:
-Version:     U-2022.12-SP7-3
-Date:        Mon Mar  3 20:46:47 2025
-****************************************
-
-                   Name                                            Total
---------------------------------------------------------------------------------
-Inputs/Outputs                                                      1
-    Unconnected ports (LINT-28)                                     1
---------------------------------------------------------------------------------
-
-Warning: In design 'priority_fsm', port 'disable_i' is not connected to any nets. (LINT-28)
 1

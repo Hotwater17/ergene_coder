@@ -8,11 +8,12 @@ source ./script/dc_setup.tcl
 
 
 #Set the RTL (SystemVerilog) files
-set rtl 	 [list	../rtl/priority_fsm.sv ]
-
+#set rtl 	 [list	../rtl/priority_fsm.sv ]
+set rtl 	 [list	../rtl/encoder.sv ]
 
 #Set the top module name 
-set top_design priority_fsm
+#set top_design priority_fsm
+set top_design encoder
 
 analyze -format sverilog $rtl 
 elaborate -architecture verilog $top_design  

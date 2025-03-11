@@ -1,0 +1,11 @@
+*.log
+*.fdsb.*
+*.fsdb
+*.svf
+./sim/csrc
+./sim/verdiLog
+./sim/simv
+./sim/simv.daidir
+*.key
+./syn/work
+./syn/alib-52

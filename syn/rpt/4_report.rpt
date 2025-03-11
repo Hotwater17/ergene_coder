@@ -2,16 +2,15 @@
 ****************************************
 Report : port
         -verbose
-Design : priority_fsm
+Design : encoder
 Version: U-2022.12-SP7-3
-Date   : Mon Mar  3 20:46:47 2025
+Date   : Tue Mar 11 19:29:21 2025
 ****************************************
 
 
                        Pin      Wire     Max     Max     Connection
 Port           Dir     Load     Load     Trans   Cap     Class      Attrs
 --------------------------------------------------------------------------------
-arm_i          in      0.0000   0.0000   --      --      --         
 ch_sel_i[0]    in      0.0000   0.0000   --      --      --         
 ch_sel_i[1]    in      0.0000   0.0000   --      --      --         
 ch_sel_i[2]    in      0.0000   0.0000   --      --      --         
@@ -28,34 +27,30 @@ ch_sel_i[12]   in      0.0000   0.0000   --      --      --
 ch_sel_i[13]   in      0.0000   0.0000   --      --      --         
 ch_sel_i[14]   in      0.0000   0.0000   --      --      --         
 ch_sel_i[15]   in      0.0000   0.0000   --      --      --         
-clk_i          in      0.0000   0.0000   --      --      --         
-disable_i      in      0.0000   0.0000   --      --      --         
-dump_i         in      0.0000   0.0000   --      --      --         
-resetn_i       in      0.0000   0.0000   --      --      --         
-ch_sel_o[0]    out     0.0000   0.0000   --      --      --         
-ch_sel_o[1]    out     0.0000   0.0000   --      --      --         
-ch_sel_o[2]    out     0.0000   0.0000   --      --      --         
-ch_sel_o[3]    out     0.0000   0.0000   --      --      --         
-ch_sel_o[4]    out     0.0000   0.0000   --      --      --         
-ch_sel_o[5]    out     0.0000   0.0000   --      --      --         
-ch_sel_o[6]    out     0.0000   0.0000   --      --      --         
-ch_sel_o[7]    out     0.0000   0.0000   --      --      --         
-ch_sel_o[8]    out     0.0000   0.0000   --      --      --         
-ch_sel_o[9]    out     0.0000   0.0000   --      --      --         
-ch_sel_o[10]   out     0.0000   0.0000   --      --      --         
-ch_sel_o[11]   out     0.0000   0.0000   --      --      --         
-ch_sel_o[12]   out     0.0000   0.0000   --      --      --         
-ch_sel_o[13]   out     0.0000   0.0000   --      --      --         
-ch_sel_o[14]   out     0.0000   0.0000   --      --      --         
-ch_sel_o[15]   out     0.0000   0.0000   --      --      --         
-last_o         out     0.0000   0.0000   --      --      --         
+enable_i       in      0.0000   0.0000   --      --      --         
+hot_one_o[0]   out     0.0000   0.0000   --      --      --         
+hot_one_o[1]   out     0.0000   0.0000   --      --      --         
+hot_one_o[2]   out     0.0000   0.0000   --      --      --         
+hot_one_o[3]   out     0.0000   0.0000   --      --      --         
+hot_one_o[4]   out     0.0000   0.0000   --      --      --         
+hot_one_o[5]   out     0.0000   0.0000   --      --      --         
+hot_one_o[6]   out     0.0000   0.0000   --      --      --         
+hot_one_o[7]   out     0.0000   0.0000   --      --      --         
+hot_one_o[8]   out     0.0000   0.0000   --      --      --         
+hot_one_o[9]   out     0.0000   0.0000   --      --      --         
+hot_one_o[10]  out     0.0000   0.0000   --      --      --         
+hot_one_o[11]  out     0.0000   0.0000   --      --      --         
+hot_one_o[12]  out     0.0000   0.0000   --      --      --         
+hot_one_o[13]  out     0.0000   0.0000   --      --      --         
+hot_one_o[14]  out     0.0000   0.0000   --      --      --         
+hot_one_o[15]  out     0.0000   0.0000   --      --      --         
+valid_o        out     0.0000   0.0000   --      --      --         
 
 
               External  Max             Min                Min       Min
               Number    Wireload        Wireload           Pin       Wire
 Port          Points    Model           Model              Load      Load
 --------------------------------------------------------------------------------
-arm_i              1      --              --              --        -- 
 ch_sel_i[0]        1      --              --              --        -- 
 ch_sel_i[1]        1      --              --              --        -- 
 ch_sel_i[2]        1      --              --              --        -- 
@@ -72,33 +67,29 @@ ch_sel_i[12]       1      --              --              --        --
 ch_sel_i[13]       1      --              --              --        -- 
 ch_sel_i[14]       1      --              --              --        -- 
 ch_sel_i[15]       1      --              --              --        -- 
-clk_i              1      --              --              --        -- 
-disable_i          1      --              --              --        -- 
-dump_i             1      --              --              --        -- 
-resetn_i           1      --              --              --        -- 
-ch_sel_o[0]        1      --              --              --        -- 
-ch_sel_o[1]        1      --              --              --        -- 
-ch_sel_o[2]        1      --              --              --        -- 
-ch_sel_o[3]        1      --              --              --        -- 
-ch_sel_o[4]        1      --              --              --        -- 
-ch_sel_o[5]        1      --              --              --        -- 
-ch_sel_o[6]        1      --              --              --        -- 
-ch_sel_o[7]        1      --              --              --        -- 
-ch_sel_o[8]        1      --              --              --        -- 
-ch_sel_o[9]        1      --              --              --        -- 
-ch_sel_o[10]       1      --              --              --        -- 
-ch_sel_o[11]       1      --              --              --        -- 
-ch_sel_o[12]       1      --              --              --        -- 
-ch_sel_o[13]       1      --              --              --        -- 
-ch_sel_o[14]       1      --              --              --        -- 
-ch_sel_o[15]       1      --              --              --        -- 
-last_o             1      --              --              --        -- 
+enable_i           1      --              --              --        -- 
+hot_one_o[0]       1      --              --              --        -- 
+hot_one_o[1]       1      --              --              --        -- 
+hot_one_o[2]       1      --              --              --        -- 
+hot_one_o[3]       1      --              --              --        -- 
+hot_one_o[4]       1      --              --              --        -- 
+hot_one_o[5]       1      --              --              --        -- 
+hot_one_o[6]       1      --              --              --        -- 
+hot_one_o[7]       1      --              --              --        -- 
+hot_one_o[8]       1      --              --              --        -- 
+hot_one_o[9]       1      --              --              --        -- 
+hot_one_o[10]      1      --              --              --        -- 
+hot_one_o[11]      1      --              --              --        -- 
+hot_one_o[12]      1      --              --              --        -- 
+hot_one_o[13]      1      --              --              --        -- 
+hot_one_o[14]      1      --              --              --        -- 
+hot_one_o[15]      1      --              --              --        -- 
+valid_o            1      --              --              --        -- 
 
                     Input Delay
                   Min             Max       Related   Max
 Input Port    Rise    Fall    Rise    Fall   Clock  Fanout
 --------------------------------------------------------------------------------
-arm_i         --      --      --      --      --      -- 
 ch_sel_i[0]   --      --      --      --      --      -- 
 ch_sel_i[1]   --      --      --      --      --      -- 
 ch_sel_i[2]   --      --      --      --      --      -- 
@@ -121,16 +112,12 @@ ch_sel_i[14]
               --      --      --      --      --      -- 
 ch_sel_i[15]
               --      --      --      --      --      -- 
-clk_i         --      --      --      --      --      -- 
-disable_i     --      --      --      --      --      -- 
-dump_i        --      --      --      --      --      -- 
-resetn_i      --      --      --      --      --      -- 
+enable_i      --      --      --      --      --      -- 
 
 
                Max Drive      Min Drive      Resistance    Min    Min       Cell
 Input Port    Rise    Fall   Rise    Fall   Max     Min    Cap    Fanout    Deg
 --------------------------------------------------------------------------------
-arm_i         --      --     --      --     --      --     --     --        -- 
 ch_sel_i[0]   --      --     --      --     --      --     --     --        -- 
 ch_sel_i[1]   --      --     --      --     --      --     --     --        -- 
 ch_sel_i[2]   --      --     --      --     --      --     --     --        -- 
@@ -153,16 +140,12 @@ ch_sel_i[14]
               --      --     --      --     --      --     --     --        -- 
 ch_sel_i[15]
               --      --     --      --     --      --     --     --        -- 
-clk_i         --      --     --      --     --      --     --     --        -- 
-disable_i     --      --     --      --     --      --     --     --        -- 
-dump_i        --      --     --      --     --      --     --     --        -- 
-resetn_i      --      --     --      --     --      --     --     --        -- 
+enable_i      --      --     --      --     --      --     --     --        -- 
 
 
                Max Tran        Min Tran
 Input Port    Rise    Fall    Rise    Fall
 --------------------------------------------------------------------------------
-arm_i         --      --      --      -- 
 ch_sel_i[0]   --      --      --      -- 
 ch_sel_i[1]   --      --      --      -- 
 ch_sel_i[2]   --      --      --      -- 
@@ -185,38 +168,45 @@ ch_sel_i[14]
               --      --      --      -- 
 ch_sel_i[15]
               --      --      --      -- 
-clk_i         --      --      --      -- 
-disable_i     --      --      --      -- 
-dump_i        --      --      --      -- 
-resetn_i      --      --      --      -- 
+enable_i      --      --      --      -- 
 
 
                     Output Delay
                   Min             Max      Related  Fanout
 Output Port   Rise    Fall    Rise    Fall  Clock     Load
 --------------------------------------------------------------------------------
-ch_sel_o[0]   --      --      --      --      --      0.00
-ch_sel_o[1]   --      --      --      --      --      0.00
-ch_sel_o[2]   --      --      --      --      --      0.00
-ch_sel_o[3]   --      --      --      --      --      0.00
-ch_sel_o[4]   --      --      --      --      --      0.00
-ch_sel_o[5]   --      --      --      --      --      0.00
-ch_sel_o[6]   --      --      --      --      --      0.00
-ch_sel_o[7]   --      --      --      --      --      0.00
-ch_sel_o[8]   --      --      --      --      --      0.00
-ch_sel_o[9]   --      --      --      --      --      0.00
-ch_sel_o[10]
+hot_one_o[0]
               --      --      --      --      --      0.00
-ch_sel_o[11]
+hot_one_o[1]
               --      --      --      --      --      0.00
-ch_sel_o[12]
+hot_one_o[2]
               --      --      --      --      --      0.00
-ch_sel_o[13]
+hot_one_o[3]
               --      --      --      --      --      0.00
-ch_sel_o[14]
+hot_one_o[4]
               --      --      --      --      --      0.00
-ch_sel_o[15]
+hot_one_o[5]
               --      --      --      --      --      0.00
-last_o        --      --      --      --      --      0.00
+hot_one_o[6]
+              --      --      --      --      --      0.00
+hot_one_o[7]
+              --      --      --      --      --      0.00
+hot_one_o[8]
+              --      --      --      --      --      0.00
+hot_one_o[9]
+              --      --      --      --      --      0.00
+hot_one_o[10]
+              --      --      --      --      --      0.00
+hot_one_o[11]
+              --      --      --      --      --      0.00
+hot_one_o[12]
+              --      --      --      --      --      0.00
+hot_one_o[13]
+              --      --      --      --      --      0.00
+hot_one_o[14]
+              --      --      --      --      --      0.00
+hot_one_o[15]
+              --      --      --      --      --      0.00
+valid_o       --      --      --      --      --      0.00
 
 1

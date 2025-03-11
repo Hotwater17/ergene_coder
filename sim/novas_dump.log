@@ -127,8 +127,8 @@ VCS compile option:
  option[38]: -fsdb
  option[39]: -sverilog
  option[40]: -gen_obj
- option[41]: ../rtl/priority_fsm.sv
- option[42]: ./tb/priority_fsm_tb.sv
+ option[41]: ../rtl/encoder.sv
+ option[42]: ./tb/enc_tb.sv
  option[43]: -load
  option[44]: /tools/Synopsys/Verdi/V-2023.12-SP2/share/PLI/VCS/LINUX64/libnovas.so:FSDBDumpCmd
  option[45]: timescale=10ns/1ns
@@ -151,123 +151,134 @@ maxproc		4096
 (Special)Runtime environment variables:
 
 Runtime environment variables:
-SEED_G01=143.248.152.24
 PVSHOME=/tools/Cadence/PVS201
-MANPATH=/opt/rh/devtoolset-9/root/usr/share/man:
+SEED_G01=143.248.152.24
 SYNOPSYS_LC_ROOT=/tools/Synopsys/LibraryCompiler/U-2022.12-SP2
-XDG_SESSION_ID=8263
+MANPATH=/opt/rh/devtoolset-9/root/usr/share/man:/opt/rh/devtoolset-9/root/usr/share/man:/opt/rh/devtoolset-9/root/usr/share/man:
+XDG_SESSION_ID=9715
+TERM_PROGRAM=vscode
 HOSTNAME=seed-c01
 NOVAS_SYNC_MOTIF_DISP=
 SEED_C01=143.248.152.54
-CHOKIDAR_USEPOLLING=true
-SEED_C03=143.248.152.50
-TERM=xterm
+SSL_CERT_FILE=/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem
+TERM=xterm-256color
 SHELL=/bin/bash
-SEED_C02=143.248.142.15
+SEED_C03=143.248.152.50
+CHOKIDAR_USEPOLLING=true
 HISTSIZE=1000
+SEED_C02=143.248.142.15
+SSH_CLIENT=143.248.152.31 53696 1222
 ANSYSLMD_LICENSE_FILE=1055@143.248.174.50
-SSH_CLIENT=172.25.15.12 56512 1222
 CONDA_SHLVL=1
 SPS_FONT_PATH=/tools/Synopsys/Verdi/V-2023.12-SP2/font
-CONDA_PROMPT_MODIFIER=(base) 
-PRIMESIM=2
+TERM_PROGRAM_VERSION=1.98.0
 SUBSTRATESTORHOME=/tools/Cadence/ASSURA41
+PRIMESIM=2
+CONDA_PROMPT_MODIFIER=(base) 
 SPS_XFONT_PATH=/tools/Synopsys/Verdi/V-2023.12-SP2/XFont
 QTDIR=/usr/lib64/qt-3.3
 QTINC=/usr/lib64/qt-3.3/include
 MC2_INSTALL_DIR=/technology/TSMC_28nm_HPC_RF/SRAM/tsmc_n28hpcpmc_20120200_110a/TSMCHOME/sram/Compiler/tsmc_n28hpcpmc_20120200_110a/MC2_2012.02.00.d
-SSH_TTY=/dev/pts/5
 LC_ALL=C
-MilkyWay=/tools/Synopsys/Milkyway/S-2021.06-SP1
 DC=/tools/Synopsys/DC/U-2022.12-SP7-3
-EXTHOME=/tools/Cadence/EXT191
+MilkyWay=/tools/Synopsys/Milkyway/S-2021.06-SP1
 QT_GRAPHICSSYSTEM_CHECKED=1
-PCP_DIR=/opt/rh/devtoolset-9/root
+EXTHOME=/tools/Cadence/EXT191
 USER=hotwater
-LD_LIBRARY_PATH=/opt/rh/devtoolset-9/root/usr/lib64:/opt/rh/devtoolset-9/root/usr/lib:/opt/rh/devtoolset-9/root/usr/lib64/dyninst:/opt/rh/devtoolset-9/root/usr/lib/dyninst:/opt/rh/devtoolset-9/root/usr/lib64:/opt/rh/devtoolset-9/root/usr/lib:/tools/OpenMPI/lib
+PCP_DIR=/opt/rh/devtoolset-9/root
+LS_COLORS=rs=0:di=38;5;27:ln=38;5;51:mh=44;38;5;15:pi=40;38;5;11:so=38;5;13:do=38;5;5:bd=48;5;232;38;5;11:cd=48;5;232;38;5;3:or=48;5;232;38;5;9:mi=05;48;5;232;38;5;15:su=48;5;196;38;5;15:sg=48;5;11;38;5;16:ca=48;5;196;38;5;226:tw=48;5;10;38;5;16:ow=48;5;10;38;5;21:st=48;5;21;38;5;15:ex=38;5;34:*.tar=38;5;9:*.tgz=38;5;9:*.arc=38;5;9:*.arj=38;5;9:*.taz=38;5;9:*.lha=38;5;9:*.lz4=38;5;9:*.lzh=38;5;9:*.lzma=38;5;9:*.tlz=38;5;9:*.txz=38;5;9:*.tzo=38;5;9:*.t7z=38;5;9:*.zip=38;5;9:*.z=38;5;9:*.Z=38;5;9:*.dz=38;5;9:*.gz=38;5;9:*.lrz=38;5;9:*.lz=38;5;9:*.lzo=38;5;9:*.xz=38;5;9:*.bz2=38;5;9:*.bz=38;5;9:*.tbz=38;5;9:*.tbz2=38;5;9:*.tz=38;5;9:*.deb=38;5;9:*.rpm=38;5;9:*.jar=38;5;9:*.war=38;5;9:*.ear=38;5;9:*.sar=38;5;9:*.rar=38;5;9:*.alz=38;5;9:*.ace=38;5;9:*.zoo=38;5;9:*.cpio=38;5;9:*.7z=38;5;9:*.rz=38;5;9:*.cab=38;5;9:*.jpg=38;5;13:*.jpeg=38;5;13:*.gif=38;5;13:*.bmp=38;5;13:*.pbm=38;5;13:*.pgm=38;5;13:*.ppm=38;5;13:*.tga=38;5;13:*.xbm=38;5;13:*.xpm=38;5;13:*.tif=38;5;13:*.tiff=38;5;13:*.png=38;5;13:*.svg=38;5;13:*.svgz=38;5;13:*.mng=38;5;13:*.pcx=38;5;13:*.mov=38;5;13:*.mpg=38;5;13:*.mpeg=38;5;13:*.m2v=38;5;13:*.mkv=38;5;13:*.webm=38;5;13:*.ogm=38;5;13:*.mp4=38;5;13:*.m4v=38;5;13:*.mp4v=38;5;13:*.vob=38;5;13:*.qt=38;5;13:*.nuv=38;5;13:*.wmv=38;5;13:*.asf=38;5;13:*.rm=38;5;13:*.rmvb=38;5;13:*.flc=38;5;13:*.avi=38;5;13:*.fli=38;5;13:*.flv=38;5;13:*.gl=38;5;13:*.dl=38;5;13:*.xcf=38;5;13:*.xwd=38;5;13:*.yuv=38;5;13:*.cgm=38;5;13:*.emf=38;5;13:*.axv=38;5;13:*.anx=38;5;13:*.ogv=38;5;13:*.ogx=38;5;13:*.aac=38;5;45:*.au=38;5;45:*.flac=38;5;45:*.mid=38;5;45:*.midi=38;5;45:*.mka=38;5;45:*.mp3=38;5;45:*.mpc=38;5;45:*.ogg=38;5;45:*.ra=38;5;45:*.wav=38;5;45:*.axa=38;5;45:*.oga=38;5;45:*.spx=38;5;45:*.xspf=38;5;45:
 ALTOSHOME=/tools/Cadence/LIBERATE217
-LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=01;05;37;41:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=01;36:*.au=01;36:*.flac=01;36:*.mid=01;36:*.midi=01;36:*.mka=01;36:*.mp3=01;36:*.mpc=01;36:*.ogg=01;36:*.ra=01;36:*.wav=01;36:*.axa=01;36:*.oga=01;36:*.spx=01;36:*.xspf=01;36:
+LD_LIBRARY_PATH=/opt/rh/devtoolset-9/root/usr/lib64:/opt/rh/devtoolset-9/root/usr/lib:/opt/rh/devtoolset-9/root/usr/lib64/dyninst:/opt/rh/devtoolset-9/root/usr/lib/dyninst:/opt/rh/devtoolset-9/root/usr/lib64:/opt/rh/devtoolset-9/root/usr/lib:/opt/rh/devtoolset-9/root/usr/lib64:/opt/rh/devtoolset-9/root/usr/lib:/opt/rh/devtoolset-9/root/usr/lib64/dyninst:/opt/rh/devtoolset-9/root/usr/lib/dyninst:/opt/rh/devtoolset-9/root/usr/lib64:/opt/rh/devtoolset-9/root/usr/lib:/opt/rh/devtoolset-9/root/usr/lib64:/opt/rh/devtoolset-9/root/usr/lib:/opt/rh/devtoolset-9/root/usr/lib64/dyninst:/opt/rh/devtoolset-9/root/usr/lib/dyninst:/opt/rh/devtoolset-9/root/usr/lib64:/opt/rh/devtoolset-9/root/usr/lib:/tools/OpenMPI/lib:/tools/OpenMPI/lib:/tools/OpenMPI/lib
 ICC2=/tools/Synopsys/DC/U-2022.12-SP7-3/icc2
 XNLSPATH=/tools/Synopsys/Verdi/V-2023.12-SP2/etc/access/nls
-CONDA_EXE=/home/hotwater/anaconda3/bin/conda
-WAVEVIEW=/tools/Synopsys/WaveView/U-2023.03-3
 W3264_NO_HOST_CHECK=1
+WAVEVIEW=/tools/Synopsys/WaveView/U-2023.03-3
+CONDA_EXE=/home/hotwater/anaconda3/bin/conda
 MALLOC_ARENA_MAX=1
-SNPSLMD_LICENSE_FILE=/tools/licensing/licFiles/synopsys_lic_SEED.dat:27020@143.248.152.54:27020@143.248.96.104:26585@143.248.230.188:27020@inn.postech.ac.kr
 SSV=/tools/Cadence/SSV211
+SNPSLMD_LICENSE_FILE=/tools/licensing/licFiles/synopsys_lic_SEED.dat:27020@143.248.152.54:26585@143.248.230.188:27020@inn.postech.ac.kr
 _CE_CONDA=
+PATH=/tools/OpenMPI/bin:/opt/rh/devtoolset-9/root/usr/bin:/home/hotwater/.vscode-server/cli/servers/Stable-6609ac3d66f4eade5cf376d1cb76f13985724bcb/server/bin/remote-cli:/tools/OpenMPI/bin:/opt/rh/devtoolset-9/root/usr/bin:/home/hotwater/anaconda3/bin:/home/hotwater/anaconda3/condabin:/tools/OpenMPI/bin:/opt/rh/devtoolset-9/root/usr/bin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/var/lib/snapd/snap/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/tools/Cadence/SPECTRE201/tools/bin:/tools/Cadence/SPECTRE201/tools/dfII/bin:/tools/Cadence/PVS201/tools/bin:/tools/Cadence/PVS201/tools/dfII/bin:/tools/Cadence/IC618/tools/dfII/bin:/tools/Cadence/IC618/tools/bin:/tools/Cadence/EXT191/tools/bin:/tools/Cadence/EXT191/tools/dfII/bin:/tools/Cadence/ASSURA41/tools/bin:/tools/Cadence/ASSURA41/tools/dfII/bin:/tools/Cadence/XCELIUM2303/tools/bin:/tools/Cadence/XCELIUM2303/tools/dfII/bin:/tools/Cadence/ULTRASIM181/bin:/tools/Cadence/VDEBUG2209/tools/bin:/tools/Cadence/GENUS211/bin:/tools/Cadence/INNOVUS211/tools/bin:/tools/Cadence/LIBERATE217/tools/bin:/tools/Cadence/INCISIVE152/tools/bin:/tools/Cadence/INCISIVE152/tools/dfII/bin:/tools/Cadence/CONFRML241/bin:/tools/Cadence/SSV211/tools/bin:/tools/Synopsys/VCS/V-2023.12-SP2/linux64/bin:/tools/Synopsys/Verdi/V-2023.12-SP2/bin:/tools/Synopsys/DC/U-2022.12-SP7-3/linux64/syn/bin:/tools/Synopsys/Formality/V-2023.12-SP5/bin:/tools/Synopsys/Prime/V-2023.12-SP5/bin:/tools/Synopsys/DC/U-2022.12-SP7-3/icc2/bin:/tools/Synopsys/ICValidator/V-2023.12-SP5-5/bin:/tools/Synopsys/StarRC/V-2023.12-SP5/bin:/tools/Synopsys/LibraryCompiler/U-2022.12-SP2/linux64/syn/bin:/tools/Synopsys/ICCompiler/U-2022.12-SP7-3/linux64/syn/bin:/tools/Synopsys/Milkyway/S-2021.06-SP1/bin:/tools/Synopsys/CustomCompiler/Q-2020.03-SP1-3/bin:/tools/Synopsys/PrimeSim/U-2023.03-2/bin:/tools/Synopsys/PrimeSim_XA/U-2023.03-SP1/bin:/tools/Synopsys/PrimeSim_HSPICE/U-2023.03-SP1-1/hspice/bin:/tools/Synopsys/PrimeWave/U-2023.03-3/bin:/tools/Synopsys/WaveView/U-2023.03-3/bin:/tools/Synopsys/RTLArchitect/U-2022.12-SP3/bin:/tools/Synopsys/PrimeLib/V-2023.12-SP5/bin:/technology/TSMC_28nm_HPC_RF/SRAM/tsmc_n28hpcpmc_20120200_110a/TSMCHOME/sram/Compiler/tsmc_n28hpcpmc_20120200_110a/MC2_2012.02.00.d/bin:/tools/Mentor/Calibre/aoj_cal_2019.1_52.37/bin:/opt/riscv/bin:/tools/XMODEL/bin:/tools/Ansys/RedHawk_Linux64e7_V2024R2.3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/tools/Cadence/SPECTRE201/tools/bin:/tools/Cadence/SPECTRE201/tools/dfII/bin:/tools/Cadence/PVS201/tools/bin:/tools/Cadence/PVS201/tools/dfII/bin:/tools/Cadence/IC618/tools/dfII/bin:/tools/Cadence/IC618/tools/bin:/tools/Cadence/EXT191/tools/bin:/tools/Cadence/EXT191/tools/dfII/bin:/tools/Cadence/ASSURA41/tools/bin:/tools/Cadence/ASSURA41/tools/dfII/bin:/tools/Cadence/XCELIUM2303/tools/bin:/tools/Cadence/XCELIUM2303/tools/dfII/bin:/tools/Cadence/ULTRASIM181/bin:/tools/Cadence/VDEBUG2209/tools/bin:/tools/Cadence/GENUS211/bin:/tools/Cadence/INNOVUS211/tools/bin:/tools/Cadence/LIBERATE217/tools/bin:/tools/Cadence/INCISIVE152/tools/bin:/tools/Cadence/INCISIVE152/tools/dfII/bin:/tools/Cadence/CONFRML241/bin:/tools/Cadence/SSV211/tools/bin:/tools/Synopsys/VCS/V-2023.12-SP2/linux64/bin:/tools/Synopsys/Verdi/V-2023.12-SP2/bin:/tools/Synopsys/DC/U-2022.12-SP7-3/linux64/syn/bin:/tools/Synopsys/Formality/V-2023.12-SP5/bin:/tools/Synopsys/Prime/V-2023.12-SP5/bin:/tools/Synopsys/DC/U-2022.12-SP7-3/icc2/bin:/tools/Synopsys/ICValidator/V-2023.12-SP5-5/bin:/tools/Synopsys/StarRC/V-2023.12-SP5/bin:/tools/Synopsys/LibraryCompiler/U-2022.12-SP2/linux64/syn/bin:/tools/Synopsys/ICCompiler/U-2022.12-SP7-3/linux64/syn/bin:/tools/Synopsys/Milkyway/S-2021.06-SP1/bin:/tools/Synopsys/CustomCompiler/Q-2020.03-SP1-3/bin:/tools/Synopsys/PrimeSim/U-2023.03-2/bin:/tools/Synopsys/PrimeSim_XA/U-2023.03-SP1/bin:/tools/Synopsys/PrimeSim_HSPICE/U-2023.03-SP1-1/hspice/bin:/tools/Synopsys/PrimeWave/U-2023.03-3/bin:/tools/Synopsys/WaveView/U-2023.03-3/bin:/tools/Synopsys/RTLArchitect/U-2022.12-SP3/bin:/tools/Synopsys/PrimeLib/V-2023.12-SP5/bin:/technology/TSMC_28nm_HPC_RF/SRAM/tsmc_n28hpcpmc_20120200_110a/TSMCHOME/sram/Compiler/tsmc_n28hpcpmc_20120200_110a/MC2_2012.02.00.d/bin:/tools/Mentor/Calibre/aoj_cal_2019.1_52.37/bin:/opt/riscv/bin:/tools/XMODEL/bin:/tools/Ansys/RedHawk_Linux64e7_V2024R2.3/bin:/home/hotwater/.local/bin:/home/hotwater/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/tools/Cadence/SPECTRE201/tools/bin:/tools/Cadence/SPECTRE201/tools/dfII/bin:/tools/Cadence/PVS201/tools/bin:/tools/Cadence/PVS201/tools/dfII/bin:/tools/Cadence/IC618/tools/dfII/bin:/tools/Cadence/IC618/tools/bin:/tools/Cadence/EXT191/tools/bin:/tools/Cadence/EXT191/tools/dfII/bin:/tools/Cadence/ASSURA41/tools/bin:/tools/Cadence/ASSURA41/tools/dfII/bin:/tools/Cadence/XCELIUM2303/tools/bin:/tools/Cadence/XCELIUM2303/tools/dfII/bin:/tools/Cadence/ULTRASIM181/bin:/tools/Cadence/VDEBUG2209/tools/bin:/tools/Cadence/GENUS211/bin:/tools/Cadence/INNOVUS211/tools/bin:/tools/Cadence/LIBERATE217/tools/bin:/tools/Cadence/INCISIVE152/tools/bin:/tools/Cadence/INCISIVE152/tools/dfII/bin:/tools/Cadence/CONFRML241/bin:/tools/Cadence/SSV211/tools/bin:/tools/Synopsys/VCS/V-2023.12-SP2/linux64/bin:/tools/Synopsys/Verdi/V-2023.12-SP2/bin:/tools/Synopsys/DC/U-2022.12-SP7-3/linux64/syn/bin:/tools/Synopsys/Formality/V-2023.12-SP5/bin:/tools/Synopsys/Prime/V-2023.12-SP5/bin:/tools/Synopsys/DC/U-2022.12-SP7-3/icc2/bin:/tools/Synopsys/ICValidator/V-2023.12-SP5-5/bin:/tools/Synopsys/StarRC/V-2023.12-SP5/bin:/tools/Synopsys/LibraryCompiler/U-2022.12-SP2/linux64/syn/bin:/tools/Synopsys/ICCompiler/U-2022.12-SP7-3/linux64/syn/bin:/tools/Synopsys/Milkyway/S-2021.06-SP1/bin:/tools/Synopsys/CustomCompiler/Q-2020.03-SP1-3/bin:/tools/Synopsys/PrimeSim/U-2023.03-2/bin:/tools/Synopsys/PrimeSim_XA/U-2023.03-SP1/bin:/tools/Synopsys/PrimeSim_HSPICE/U-2023.03-SP1-1/hspice/bin:/tools/Synopsys/PrimeWave/U-2023.03-3/bin:/tools/Synopsys/WaveView/U-2023.03-3/bin:/tools/Synopsys/RTLArchitect/U-2022.12-SP3/bin:/tools/Synopsys/PrimeLib/V-2023.12-SP5/bin:/technology/TSMC_28nm_HPC_RF/SRAM/tsmc_n28hpcpmc_20120200_110a/TSMCHOME/sram/Compiler/tsmc_n28hpcpmc_20120200_110a/MC2_2012.02.00.d/bin:/tools/Mentor/Calibre/aoj_cal_2019.1_52.37/bin:/opt/riscv/bin:/tools/XMODEL/bin:/tools/Ansys/RedHawk_Linux64e7_V2024R2.3/bin
 MAIL=/var/spool/mail/hotwater
-PATH=/home/hotwater/anaconda3/bin:/home/hotwater/anaconda3/condabin:/tools/OpenMPI/bin:/opt/rh/devtoolset-9/root/usr/bin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/var/lib/snapd/snap/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/tools/Cadence/SPECTRE201/tools/bin:/tools/Cadence/SPECTRE201/tools/dfII/bin:/tools/Cadence/PVS201/tools/bin:/tools/Cadence/PVS201/tools/dfII/bin:/tools/Cadence/IC618/tools/dfII/bin:/tools/Cadence/IC618/tools/bin:/tools/Cadence/EXT191/tools/bin:/tools/Cadence/EXT191/tools/dfII/bin:/tools/Cadence/ASSURA41/tools/bin:/tools/Cadence/ASSURA41/tools/dfII/bin:/tools/Cadence/XCELIUM2303/tools/bin:/tools/Cadence/XCELIUM2303/tools/dfII/bin:/tools/Cadence/ULTRASIM181/bin:/tools/Cadence/VDEBUG2209/tools/bin:/tools/Cadence/GENUS211/bin:/tools/Cadence/INNOVUS211/tools/bin:/tools/Cadence/LIBERATE217/tools/bin:/tools/Cadence/INCISIVE152/tools/bin:/tools/Cadence/INCISIVE152/tools/dfII/bin:/tools/Cadence/CONFRML241/bin:/tools/Cadence/SSV211/tools/bin:/tools/Synopsys/VCS/V-2023.12-SP2/linux64/bin:/tools/Synopsys/Verdi/V-2023.12-SP2/bin:/tools/Synopsys/DC/U-2022.12-SP7-3/linux64/syn/bin:/tools/Synopsys/Formality/V-2023.12-SP5/bin:/tools/Synopsys/Prime/V-2023.12-SP5/bin:/tools/Synopsys/DC/U-2022.12-SP7-3/icc2/bin:/tools/Synopsys/ICValidator/V-2023.12-SP5-5/bin:/tools/Synopsys/StarRC/V-2023.12-SP5/bin:/tools/Synopsys/LibraryCompiler/U-2022.12-SP2/linux64/syn/bin:/tools/Synopsys/ICCompiler/U-2022.12-SP7-3/linux64/syn/bin:/tools/Synopsys/Milkyway/S-2021.06-SP1/bin:/tools/Synopsys/CustomCompiler/Q-2020.03-SP1-3/bin:/tools/Synopsys/PrimeSim/U-2023.03-2/bin:/tools/Synopsys/PrimeSim_XA/U-2023.03-SP1/bin:/tools/Synopsys/PrimeSim_HSPICE/U-2023.03-SP1-1/hspice/bin:/tools/Synopsys/PrimeWave/U-2023.03-3/bin:/tools/Synopsys/WaveView/U-2023.03-3/bin:/tools/Synopsys/RTLArchitect/U-2022.12-SP3/bin:/tools/Synopsys/PrimeLib/V-2023.12-SP5/bin:/technology/TSMC_28nm_HPC_RF/SRAM/tsmc_n28hpcpmc_20120200_110a/TSMCHOME/sram/Compiler/tsmc_n28hpcpmc_20120200_110a/MC2_2012.02.00.d/bin:/tools/Mentor/Calibre/aoj_cal_2019.1_52.37/bin:/opt/riscv/bin:/tools/XMODEL/bin:/tools/Ansys/RedHawk_Linux64e7_V2024R2.3/bin:/home/hotwater//.local/bin:/home/hotwater//bin
-SAED32_PATH=/technology/SAED32
 GENUS=/tools/Cadence/GENUS211
+SAED32_PATH=/technology/SAED32
 RTLA=/tools/Synopsys/RTLArchitect/U-2022.12-SP3
-CONDA_PREFIX=/home/hotwater/anaconda3
-PRIMESIM_HOME=/tools/Synopsys/PrimeSim/U-2023.03-2
 VERDI_HOME=/tools/Synopsys/Verdi/V-2023.12-SP2
+PRIMESIM_HOME=/tools/Synopsys/PrimeSim/U-2023.03-2
+CONDA_PREFIX=/home/hotwater/anaconda3
 PWD=/home/hotwater/ergene_coder/sim
 XMODIFIERS=@im=none
-PRIMEWAVE=/tools/Synopsys/PrimeWave/U-2023.03-3
 VCS_HOME=/tools/Synopsys/VCS/V-2023.12-SP2
+PRIMEWAVE=/tools/Synopsys/PrimeWave/U-2023.03-3
 PrimeSim_HSPICE=/tools/Synopsys/PrimeSim_HSPICE/U-2023.03-SP1-1/hspice
 SYS_PROG_NAME=verdi
 LANG=C
-VERISIUM_DEBUG_ROOT=/tools/Cadence/VDEBUG2209
 MODULEPATH=/usr/share/Modules/modulefiles:/etc/modulefiles
-OA_HOME=/tools/Cadence/IC618/oa_v22.60.096
+VERISIUM_DEBUG_ROOT=/tools/Cadence/VDEBUG2209
 LOADEDMODULES=
+OA_HOME=/tools/Cadence/IC618/oa_v22.60.096
+VSCODE_GIT_ASKPASS_EXTRA_ARGS=
 INCISIVEHOME=/tools/Cadence/INCISIVE152
 REDHAWK_HOME=/tools/Ansys/RedHawk_Linux64e7_V2024R2.3
 CDSHOME=/tools/Cadence/IC618
 SYS_INST_DIR=/tools/Synopsys/Verdi/V-2023.12-SP2
-CDS_Netlisting_Mode=Analog
-LM_LICENSE_FILE=/tools/licensing/licFiles/cadence_license.dat:5280@143.248.152.54:5280@143.248.96.104:5280@143.248.230.188:5280@143.248.230.169:5280@143.248.230.189:/tools/licensing/licFiles/SRAM_LICENSE_TSMC28nm.dat:/tools/licensing/licFiles/SRAM_LICENSE_TSMC65nm.dat
 INNOVUS=/tools/Cadence/INNOVUS211
-_CE_M=
-XMODEL_HOME=/tools/XMODEL
-ULTRASIM=/tools/Cadence/ULTRASIM181
-SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
+LM_LICENSE_FILE=/tools/licensing/licFiles/cadence_license.dat:5280@143.248.152.54:5280@143.248.230.188:5280@143.248.230.169:5280@143.248.230.189:/tools/licensing/licFiles/SRAM_LICENSE_TSMC28nm.dat:/tools/licensing/licFiles/SRAM_LICENSE_TSMC65nm.dat
+CDS_Netlisting_Mode=Analog
 HISTCONTROL=ignoredups
-RISCV=/opt/riscv
-SHLVL=2
+SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
+ULTRASIM=/tools/Cadence/ULTRASIM181
+XMODEL_HOME=/tools/XMODEL
+_CE_M=
+SSL_CERT_DIR=/usr/local/openssl/certs
 HOME=/home/hotwater/
+SHLVL=6
+RISCV=/opt/riscv
+VSCODE_GIT_ASKPASS_MAIN=/home/hotwater/.vscode-server/cli/servers/Stable-6609ac3d66f4eade5cf376d1cb76f13985724bcb/server/extensions/git/dist/askpass-main.js
 NVVMIR_LIBRARY_DIR=/usr/share/cuda
-MGC_HOME=/tools/Mentor/Calibre/aoj_cal_2019.1_52.37
 Formality=/tools/Synopsys/Formality/V-2023.12-SP5
-VERDI_ORIGNAL_LD_LIBRARY_PATH=/opt/rh/devtoolset-9/root/usr/lib64:/opt/rh/devtoolset-9/root/usr/lib:/opt/rh/devtoolset-9/root/usr/lib64/dyninst:/opt/rh/devtoolset-9/root/usr/lib/dyninst:/opt/rh/devtoolset-9/root/usr/lib64:/opt/rh/devtoolset-9/root/usr/lib:/tools/OpenMPI/lib
-PRIMESIM_XA=/tools/Synopsys/PrimeSim_XA/U-2023.03-SP1
-ICV_HOME_DIR=/tools/Synopsys/ICValidator/V-2023.12-SP5-5
+MGC_HOME=/tools/Mentor/Calibre/aoj_cal_2019.1_52.37
+VERDI_ORIGNAL_LD_LIBRARY_PATH=/opt/rh/devtoolset-9/root/usr/lib64:/opt/rh/devtoolset-9/root/usr/lib:/opt/rh/devtoolset-9/root/usr/lib64/dyninst:/opt/rh/devtoolset-9/root/usr/lib/dyninst:/opt/rh/devtoolset-9/root/usr/lib64:/opt/rh/devtoolset-9/root/usr/lib:/opt/rh/devtoolset-9/root/usr/lib64:/opt/rh/devtoolset-9/root/usr/lib:/opt/rh/devtoolset-9/root/usr/lib64/dyninst:/opt/rh/devtoolset-9/root/usr/lib/dyninst:/opt/rh/devtoolset-9/root/usr/lib64:/opt/rh/devtoolset-9/root/usr/lib:/opt/rh/devtoolset-9/root/usr/lib64:/opt/rh/devtoolset-9/root/usr/lib:/opt/rh/devtoolset-9/root/usr/lib64/dyninst:/opt/rh/devtoolset-9/root/usr/lib/dyninst:/opt/rh/devtoolset-9/root/usr/lib64:/opt/rh/devtoolset-9/root/usr/lib:/tools/OpenMPI/lib:/tools/OpenMPI/lib:/tools/OpenMPI/lib
 CDS_AUTO_64BIT=ALL
+ICV_HOME_DIR=/tools/Synopsys/ICValidator/V-2023.12-SP5-5
+PRIMESIM_XA=/tools/Synopsys/PrimeSim_XA/U-2023.03-SP1
 PRIMELIB=/tools/Synopsys/PrimeLib/V-2023.12-SP5
-CONDA_PYTHON_EXE=/home/hotwater/anaconda3/bin/python
 LOGNAME=hotwater
-SALMD_LICENSE_FILE=9524@143.248.230.188
-MGLS_LICENSE_FILE=/tools/licensing/licFiles/License_Calibre_KAIST_202305.txt:1717@143.248.152.54:1717@143.248.96.104:1717@143.248.230.188:1717@143.248.230.169:1717@143.248.230.189:1717@inn.postech.ac.kr
-QTLIB=/usr/lib64/qt-3.3/lib
+CONDA_PYTHON_EXE=/home/hotwater/anaconda3/bin/python
 CVS_RSH=ssh
-STARRC=/tools/Synopsys/StarRC/V-2023.12-SP5
-Prime=/tools/Synopsys/Prime/V-2023.12-SP5
-CONFORMAL=/tools/Cadence/CONFRML241
-SPECTREHOME=/tools/Cadence/SPECTRE201
+QTLIB=/usr/lib64/qt-3.3/lib
+MGLS_LICENSE_FILE=/tools/licensing/licFiles/License_Calibre_KAIST_202305.txt:1717@143.248.152.54:1717@143.248.230.188:1717@143.248.230.169:1717@143.248.230.189:1717@inn.postech.ac.kr
+SALMD_LICENSE_FILE=9524@143.248.230.188
+VSCODE_GIT_IPC_HANDLE=/run/user/1011/vscode-git-f2a2f07c15.sock
+SSH_CONNECTION=143.248.152.31 53696 143.248.152.54 1222
 XDG_DATA_DIRS=/usr/local/share:/usr/share:/var/lib/snapd/desktop
-SSH_CONNECTION=172.25.15.12 56512 143.248.152.54 1222
+SPECTREHOME=/tools/Cadence/SPECTRE201
+CONFORMAL=/tools/Cadence/CONFRML241
+Prime=/tools/Synopsys/Prime/V-2023.12-SP5
+STARRC=/tools/Synopsys/StarRC/V-2023.12-SP5
 NOVASHLPPATH=/tools/Synopsys/Verdi/V-2023.12-SP2/doc
 SPS_RGB_PATH=/tools/Synopsys/Verdi/V-2023.12-SP2/etc/rgb
-MPI_HOME=/tools/OpenMPI
-CDS_LIC_FILE=/tools/licensing/licFiles/cadence_license.dat:5280@143.248.152.54:5280@143.248.96.104:5280@143.248.230.188:5280@143.248.230.169:5280@143.248.230.189
+VSCODE_IPC_HOOK_CLI=/run/user/1011/vscode-ipc-c805e82f-9e89-4254-9cc7-92f69f57c9f9.sock
 MODULESHOME=/usr/share/Modules
-CONDA_DEFAULT_ENV=base
-PKG_CONFIG_PATH=/usr/lib/pkgconfig:/opt/rh/devtoolset-9/root/usr/lib64/pkgconfig
+CDS_LIC_FILE=/tools/licensing/licFiles/cadence_license.dat:5280@143.248.152.54:5280@143.248.230.188:5280@143.248.230.169:5280@143.248.230.189
+MPI_HOME=/tools/OpenMPI
 LESSOPEN=||/usr/bin/lesspipe.sh %s
-INFOPATH=/opt/rh/devtoolset-9/root/usr/share/info
+PKG_CONFIG_PATH=/usr/lib/pkgconfig:/opt/rh/devtoolset-9/root/usr/lib64/pkgconfig:/usr/lib/pkgconfig:/opt/rh/devtoolset-9/root/usr/lib64/pkgconfig:/usr/lib/pkgconfig:/opt/rh/devtoolset-9/root/usr/lib64/pkgconfig
+CONDA_DEFAULT_ENV=base
+BROWSER=/home/hotwater/.vscode-server/cli/servers/Stable-6609ac3d66f4eade5cf376d1cb76f13985724bcb/server/bin/helpers/browser.sh
+VSCODE_GIT_ASKPASS_NODE=/home/hotwater/.vscode-server/cli/servers/Stable-6609ac3d66f4eade5cf376d1cb76f13985724bcb/server/node
+GIT_ASKPASS=/home/hotwater/.vscode-server/cli/servers/Stable-6609ac3d66f4eade5cf376d1cb76f13985724bcb/server/extensions/git/dist/askpass.sh
+INFOPATH=/opt/rh/devtoolset-9/root/usr/share/info:/opt/rh/devtoolset-9/root/usr/share/info:/opt/rh/devtoolset-9/root/usr/share/info
 LD_NOVERSION=1
-CUSTOMCOMPILER=/tools/Synopsys/CustomCompiler/Q-2020.03-SP1-3
-XCELIUMHOME=/tools/Cadence/XCELIUM2303
+DISPLAY=localhost:14.0
 XDG_RUNTIME_DIR=/run/user/1011
-DISPLAY=localhost:17.0
+XCELIUMHOME=/tools/Cadence/XCELIUM2303
+CUSTOMCOMPILER=/tools/Synopsys/CustomCompiler/Q-2020.03-SP1-3
 QT_PLUGIN_PATH=/tools/Synopsys/Verdi/V-2023.12-SP2/platform/LINUXAMD64/lib/Qt/plugins
 ICC=/tools/Synopsys/ICCompiler/U-2022.12-SP7-3
 SKILLCAD_PATH=/tools/Cadence/skillcad_v4.2S
 ASSURAHOME=/tools/Cadence/ASSURA41
+COLORTERM=truecolor
 CDS_INST_DIR=/tools/Cadence/IC618
 BASH_FUNC_module()=() {  eval `/usr/bin/modulecmd bash $*`
 }
@@ -319,487 +330,226 @@ argv[3]=-ucli2Proc
 argv[4]=-ucli
 argv[5]=-l
 argv[6]=/home/hotwater/ergene_coder/sim/verdiLog/sim.log
-320 profile - 100
-          CPU/Mem usage: 0.030 sys,  0.060 user,  267.17M mem
-321 Elapsed time:    0:00:03    Mon Mar  3 20:39:09 2025
-322 User CPU time used: 0 seconds
-323 System CPU time used: 0 seconds
-324 pliAppInit
-325 ndpGetenv(FSDB_FILE): /home/hotwater/ergene_coder/sim/inter.fsdb
-326 ndpGetenv(FSDB_SVA_STATUS): 1
-327 ndpGetenv(FSDB_VHDL_PROTECTED): 1
-328 [SC]Init: MemoryConsumed=0.00MB ElapsedTime=0hour 0min. 0sec.
-329 FSDB_GATE & FSDB_RTL is disabled.
-330 FSDB_PACKED_MODE is enabled.
-331 FSDB_GATE_PACKED is enabled.
-332 FSDB_ALIAS_ARRAY_ELEM is set to 4294967295.
-333 Enable Parallel Dumping.
-334 pliAppMiscSet: New Sim Round
-335 pliEntryInit
-336 LIBSSCORE=found /tools/Synopsys/Verdi/V-2023.12-SP2/share/PLI/lib/LINUXAMD64/libsscore_vcs202312.so through $NOVAS_HOME setting.
-337 FSDB Dumper for VCS, Release Verdi_V-2023.12-SP2, Linux x86_64/64bit, 05/26/2024
-338 (C) 1996 - 2024 by Synopsys, Inc.
-339 sps_tcl_fsdbDumpfile_main at 0
-340 argv[0]: /home/hotwater/ergene_coder/sim/inter.fsdb
-341 *Verdi* : Create FSDB file '/home/hotwater/ergene_coder/sim/inter.fsdb'
-342 [spi_vcs_vd_ppi_create_root]: no upf option
-343 compile option from '/home/hotwater/ergene_coder/sim/simv.daidir/vcs_rebuild'.
-344   "vcs '-full64' '-sverilog' '-debug_access' '-timescale=10ns/1ns' '-lca' '-kdb' '../rtl/priority_fsm.sv' './tb/priority_fsm_tb.sv' '-t' 'priority_fsm' '+define+SIM_TASKS' 2>&1"
-345 sps_tcl_fsdbDumpflush_vd_main at 0 : N/A(0)
-346 *Verdi* : Flush all FSDB Files at 0 ns.
-347 sps_tcl_fsdbDumpflush_vd_main at 0 : N/A(0)
-348 *Verdi* : Flush all FSDB Files at 0 ns.
-349 DVDI_is_vir_unload_enabled is enable
-350 FSDB_VCS_ENABLE_NATIVE_VC is enable
-351 sps_tcl_fsdbDumpvars_vd_main
-352 argv[0]: 0
-353 argv[1]: priority_fsm_tb.uut.clk_i
-354 argv[2]: +all
-355 argv[3]: +trace_process
-356 *Verdi* : Dumping the signal (priority_fsm_tb.uut.clk_i).
-357 pliAppHDL_DumpVarComplete traverse var: profile - 
-          CPU/Mem usage: 0.050 sys,  0.090 user,  365.20M mem
-                   incr: 0.000 sys,  0.000 user,  2.20M mem
-                   accu: 0.000 sys,  0.000 user,  2.20M mem
-              accu incr: 0.000 sys,  0.000 user,  2.20M mem
+331 profile - 100
+          CPU/Mem usage: 0.020 sys,  0.050 user,  267.15M mem
+332 Elapsed time:    0:00:00    Tue Mar 11 19:22:03 2025
+333 User CPU time used: 0 seconds
+334 System CPU time used: 0 seconds
+335 pliAppInit
+336 ndpGetenv(FSDB_FILE): /home/hotwater/ergene_coder/sim/inter.fsdb
+337 ndpGetenv(FSDB_SVA_STATUS): 1
+338 ndpGetenv(FSDB_VHDL_PROTECTED): 1
+339 [SC]Init: MemoryConsumed=0.00MB ElapsedTime=0hour 0min. 0sec.
+340 FSDB_GATE & FSDB_RTL is disabled.
+341 FSDB_PACKED_MODE is enabled.
+342 FSDB_GATE_PACKED is enabled.
+343 FSDB_ALIAS_ARRAY_ELEM is set to 4294967295.
+344 Enable Parallel Dumping.
+345 pliAppMiscSet: New Sim Round
+346 pliEntryInit
+347 LIBSSCORE=found /tools/Synopsys/Verdi/V-2023.12-SP2/share/PLI/lib/LINUXAMD64/libsscore_vcs202312.so through $NOVAS_HOME setting.
+348 FSDB Dumper for VCS, Release Verdi_V-2023.12-SP2, Linux x86_64/64bit, 05/26/2024
+349 (C) 1996 - 2024 by Synopsys, Inc.
+350 sps_tcl_fsdbDumpfile_main at 0
+351 argv[0]: /home/hotwater/ergene_coder/sim/inter.fsdb
+352 *Verdi* : Create FSDB file '/home/hotwater/ergene_coder/sim/inter.fsdb'
+353 [spi_vcs_vd_ppi_create_root]: no upf option
+354 compile option from '/home/hotwater/ergene_coder/sim/simv.daidir/vcs_rebuild'.
+355   "vcs '-full64' '-sverilog' '-debug_access' '-timescale=10ns/1ns' '-lca' '-kdb' '../rtl/encoder.sv' './tb/enc_tb.sv' '-t' 'encoder' '+define+SIM_TASKS' 2>&1"
+356 sps_tcl_fsdbDumpflush_vd_main at 0 : N/A(0)
+357 *Verdi* : Flush all FSDB Files at 0 ns.
+358 sps_tcl_fsdbDumpflush_vd_main at 0 : N/A(0)
+359 *Verdi* : Flush all FSDB Files at 0 ns.
+360 DVDI_is_vir_unload_enabled is enable
+361 FSDB_VCS_ENABLE_NATIVE_VC is enable
+362 sps_tcl_fsdbDumpvars_vd_main
+363 argv[0]: 0
+364 argv[1]: enc_tb.uut.ch_sel_i
+365 argv[2]: +all
+366 argv[3]: +trace_process
+367 *Verdi* : Dumping the signal (enc_tb.uut.ch_sel_i).
+368 pliAppHDL_DumpVarComplete traverse var: profile - 
+          CPU/Mem usage: 0.060 sys,  0.080 user,  366.24M mem
+                   incr: 0.010 sys,  0.000 user,  3.25M mem
+                   accu: 0.010 sys,  0.000 user,  3.25M mem
+              accu incr: 0.010 sys,  0.000 user,  3.25M mem
 
           Count usage: 0 var,  1 idcode,  1 callback
                  incr: 0 var,  1 idcode,  1 callback
                  accu: 0 var,  1 idcode,  1 callback
             accu incr: 0 var,  1 idcode,  1 callback
-358 Elapsed time:    0:02:05    Mon Mar  3 20:41:11 2025
-359 User CPU time used: 0 seconds
-360 System CPU time used: 0 seconds
-361 pliAppHDL_DumpVarComplete: profile - 
-          CPU/Mem usage: 0.050 sys,  0.090 user,  366.25M mem
+369 Elapsed time:    0:00:53    Tue Mar 11 19:22:56 2025
+370 User CPU time used: 0 seconds
+371 System CPU time used: 0 seconds
+372 pliAppHDL_DumpVarComplete: profile - 
+          CPU/Mem usage: 0.060 sys,  0.080 user,  367.29M mem
                    incr: 0.000 sys,  0.000 user,  1.05M mem
-                   accu: 0.000 sys,  0.000 user,  3.25M mem
+                   accu: 0.010 sys,  0.000 user,  4.30M mem
               accu incr: 0.000 sys,  0.000 user,  1.05M mem
 
           Count usage: 0 var,  1 idcode,  1 callback
                  incr: 0 var,  0 idcode,  0 callback
                  accu: 0 var,  1 idcode,  1 callback
             accu incr: 0 var,  0 idcode,  0 callback
-362 Elapsed time:    0:02:05    Mon Mar  3 20:41:11 2025
-363 User CPU time used: 0 seconds
-364 System CPU time used: 0 seconds
-365 sps_tcl_fsdbDumpvars_vd_main
-366 argv[0]: 0
-367 argv[1]: priority_fsm_tb.uut.resetn_i
-368 argv[2]: +all
-369 argv[3]: +trace_process
-370 *Verdi* : Dumping the signal (priority_fsm_tb.uut.resetn_i).
-371 pliAppHDL_DumpVarComplete traverse var: profile - 
-          CPU/Mem usage: 0.050 sys,  0.090 user,  366.25M mem
+373 Elapsed time:    0:00:53    Tue Mar 11 19:22:56 2025
+374 User CPU time used: 0 seconds
+375 System CPU time used: 0 seconds
+376 sps_tcl_fsdbDumpvars_vd_main
+377 argv[0]: 0
+378 argv[1]: enc_tb.uut.enable_i
+379 argv[2]: +all
+380 argv[3]: +trace_process
+381 *Verdi* : Dumping the signal (enc_tb.uut.enable_i).
+382 pliAppHDL_DumpVarComplete traverse var: profile - 
+          CPU/Mem usage: 0.060 sys,  0.080 user,  367.29M mem
                    incr: 0.000 sys,  0.000 user,  0.00M mem
                    accu: 0.000 sys,  0.000 user,  0.00M mem
               accu incr: 0.000 sys,  0.000 user,  0.00M mem
 
-          Count usage: 0 var,  2 idcode,  2 callback
+          Count usage: 0 var,  2 idcode,  1 callback
+                 incr: 0 var,  1 idcode,  0 callback
+                 accu: 0 var,  1 idcode,  0 callback
+            accu incr: 0 var,  1 idcode,  0 callback
+383 Elapsed time:    0:00:53    Tue Mar 11 19:22:56 2025
+384 User CPU time used: 0 seconds
+385 System CPU time used: 0 seconds
+386 pliAppHDL_DumpVarComplete: profile - 
+          CPU/Mem usage: 0.060 sys,  0.080 user,  367.29M mem
+                   incr: 0.000 sys,  0.000 user,  0.00M mem
+                   accu: 0.000 sys,  0.000 user,  0.00M mem
+              accu incr: 0.000 sys,  0.000 user,  0.00M mem
+
+          Count usage: 0 var,  2 idcode,  1 callback
+                 incr: 0 var,  0 idcode,  0 callback
+                 accu: 0 var,  1 idcode,  0 callback
+            accu incr: 0 var,  0 idcode,  0 callback
+387 Elapsed time:    0:00:53    Tue Mar 11 19:22:56 2025
+388 User CPU time used: 0 seconds
+389 System CPU time used: 0 seconds
+390 sps_tcl_fsdbDumpvars_vd_main
+391 argv[0]: 0
+392 argv[1]: enc_tb.uut.hot_one_o
+393 argv[2]: +all
+394 argv[3]: +trace_process
+395 *Verdi* : Dumping the signal (enc_tb.uut.hot_one_o).
+396 pliAppHDL_DumpVarComplete traverse var: profile - 
+          CPU/Mem usage: 0.060 sys,  0.080 user,  367.29M mem
+                   incr: 0.000 sys,  0.000 user,  0.00M mem
+                   accu: 0.000 sys,  0.000 user,  0.00M mem
+              accu incr: 0.000 sys,  0.000 user,  0.00M mem
+
+          Count usage: 0 var,  3 idcode,  2 callback
                  incr: 0 var,  1 idcode,  1 callback
                  accu: 0 var,  1 idcode,  1 callback
             accu incr: 0 var,  1 idcode,  1 callback
-372 Elapsed time:    0:02:05    Mon Mar  3 20:41:11 2025
-373 User CPU time used: 0 seconds
-374 System CPU time used: 0 seconds
-375 pliAppHDL_DumpVarComplete: profile - 
-          CPU/Mem usage: 0.050 sys,  0.090 user,  366.25M mem
+397 Elapsed time:    0:00:53    Tue Mar 11 19:22:56 2025
+398 User CPU time used: 0 seconds
+399 System CPU time used: 0 seconds
+400 pliAppHDL_DumpVarComplete: profile - 
+          CPU/Mem usage: 0.060 sys,  0.080 user,  367.29M mem
                    incr: 0.000 sys,  0.000 user,  0.00M mem
                    accu: 0.000 sys,  0.000 user,  0.00M mem
               accu incr: 0.000 sys,  0.000 user,  0.00M mem
 
-          Count usage: 0 var,  2 idcode,  2 callback
+          Count usage: 0 var,  3 idcode,  2 callback
                  incr: 0 var,  0 idcode,  0 callback
                  accu: 0 var,  1 idcode,  1 callback
             accu incr: 0 var,  0 idcode,  0 callback
-376 Elapsed time:    0:02:05    Mon Mar  3 20:41:11 2025
-377 User CPU time used: 0 seconds
-378 System CPU time used: 0 seconds
-379 sps_tcl_fsdbDumpvars_vd_main
-380 argv[0]: 0
-381 argv[1]: priority_fsm_tb.uut.ch_sel_i
-382 argv[2]: +all
-383 argv[3]: +trace_process
-384 *Verdi* : Dumping the signal (priority_fsm_tb.uut.ch_sel_i).
-385 pliAppHDL_DumpVarComplete traverse var: profile - 
-          CPU/Mem usage: 0.050 sys,  0.090 user,  367.30M mem
-                   incr: 0.000 sys,  0.000 user,  1.05M mem
-                   accu: 0.000 sys,  0.000 user,  1.05M mem
-              accu incr: 0.000 sys,  0.000 user,  1.05M mem
+401 Elapsed time:    0:00:53    Tue Mar 11 19:22:56 2025
+402 User CPU time used: 0 seconds
+403 System CPU time used: 0 seconds
+404 sps_tcl_fsdbDumpvars_vd_main
+405 argv[0]: 0
+406 argv[1]: enc_tb.uut.valid_o
+407 argv[2]: +all
+408 argv[3]: +trace_process
+409 *Verdi* : Dumping the signal (enc_tb.uut.valid_o).
+410 pliAppHDL_DumpVarComplete traverse var: profile - 
+          CPU/Mem usage: 0.060 sys,  0.080 user,  367.29M mem
+                   incr: 0.000 sys,  0.000 user,  0.00M mem
+                   accu: 0.000 sys,  0.000 user,  0.00M mem
+              accu incr: 0.000 sys,  0.000 user,  0.00M mem
 
-          Count usage: 0 var,  3 idcode,  3 callback
+          Count usage: 0 var,  4 idcode,  3 callback
                  incr: 0 var,  1 idcode,  1 callback
                  accu: 0 var,  1 idcode,  1 callback
             accu incr: 0 var,  1 idcode,  1 callback
-386 Elapsed time:    0:02:05    Mon Mar  3 20:41:11 2025
-387 User CPU time used: 0 seconds
-388 System CPU time used: 0 seconds
-389 pliAppHDL_DumpVarComplete: profile - 
-          CPU/Mem usage: 0.050 sys,  0.090 user,  367.30M mem
-                   incr: 0.000 sys,  0.000 user,  0.00M mem
-                   accu: 0.000 sys,  0.000 user,  1.05M mem
-              accu incr: 0.000 sys,  0.000 user,  0.00M mem
-
-          Count usage: 0 var,  3 idcode,  3 callback
-                 incr: 0 var,  0 idcode,  0 callback
-                 accu: 0 var,  1 idcode,  1 callback
-            accu incr: 0 var,  0 idcode,  0 callback
-390 Elapsed time:    0:02:05    Mon Mar  3 20:41:11 2025
-391 User CPU time used: 0 seconds
-392 System CPU time used: 0 seconds
-393 sps_tcl_fsdbDumpvars_vd_main
-394 argv[0]: 0
-395 argv[1]: priority_fsm_tb.uut.dump_i
-396 argv[2]: +all
-397 argv[3]: +trace_process
-398 *Verdi* : Dumping the signal (priority_fsm_tb.uut.dump_i).
-399 pliAppHDL_DumpVarComplete traverse var: profile - 
-          CPU/Mem usage: 0.050 sys,  0.090 user,  367.30M mem
+411 Elapsed time:    0:00:53    Tue Mar 11 19:22:56 2025
+412 User CPU time used: 0 seconds
+413 System CPU time used: 0 seconds
+414 pliAppHDL_DumpVarComplete: profile - 
+          CPU/Mem usage: 0.060 sys,  0.080 user,  367.29M mem
                    incr: 0.000 sys,  0.000 user,  0.00M mem
                    accu: 0.000 sys,  0.000 user,  0.00M mem
               accu incr: 0.000 sys,  0.000 user,  0.00M mem
 
-          Count usage: 0 var,  4 idcode,  4 callback
+          Count usage: 0 var,  4 idcode,  3 callback
+                 incr: 0 var,  0 idcode,  0 callback
+                 accu: 0 var,  1 idcode,  1 callback
+            accu incr: 0 var,  0 idcode,  0 callback
+415 Elapsed time:    0:00:53    Tue Mar 11 19:22:56 2025
+416 User CPU time used: 0 seconds
+417 System CPU time used: 0 seconds
+418 sps_tcl_fsdbDumpvars_vd_main
+419 argv[0]: 0
+420 argv[1]: enc_tb.uut.encode_ch
+421 argv[2]: +all
+422 argv[3]: +trace_process
+423 *Verdi* : Dumping the signal (enc_tb.uut.encode_ch).
+424 pliAppHDL_DumpVarComplete traverse var: profile - 
+          CPU/Mem usage: 0.060 sys,  0.080 user,  367.29M mem
+                   incr: 0.000 sys,  0.000 user,  0.00M mem
+                   accu: 0.000 sys,  0.000 user,  0.00M mem
+              accu incr: 0.000 sys,  0.000 user,  0.00M mem
+
+          Count usage: 0 var,  5 idcode,  4 callback
                  incr: 0 var,  1 idcode,  1 callback
                  accu: 0 var,  1 idcode,  1 callback
             accu incr: 0 var,  1 idcode,  1 callback
-400 Elapsed time:    0:02:05    Mon Mar  3 20:41:11 2025
-401 User CPU time used: 0 seconds
-402 System CPU time used: 0 seconds
-403 pliAppHDL_DumpVarComplete: profile - 
-          CPU/Mem usage: 0.050 sys,  0.090 user,  367.30M mem
+425 Elapsed time:    0:00:53    Tue Mar 11 19:22:56 2025
+426 User CPU time used: 0 seconds
+427 System CPU time used: 0 seconds
+428 pliAppHDL_DumpVarComplete: profile - 
+          CPU/Mem usage: 0.060 sys,  0.080 user,  367.29M mem
                    incr: 0.000 sys,  0.000 user,  0.00M mem
                    accu: 0.000 sys,  0.000 user,  0.00M mem
               accu incr: 0.000 sys,  0.000 user,  0.00M mem
 
-          Count usage: 0 var,  4 idcode,  4 callback
+          Count usage: 0 var,  5 idcode,  4 callback
                  incr: 0 var,  0 idcode,  0 callback
                  accu: 0 var,  1 idcode,  1 callback
             accu incr: 0 var,  0 idcode,  0 callback
-404 Elapsed time:    0:02:05    Mon Mar  3 20:41:11 2025
-405 User CPU time used: 0 seconds
-406 System CPU time used: 0 seconds
-407 sps_tcl_fsdbDumpvars_vd_main
-408 argv[0]: 0
-409 argv[1]: priority_fsm_tb.uut.arm_i
-410 argv[2]: +all
-411 argv[3]: +trace_process
-412 *Verdi* : Dumping the signal (priority_fsm_tb.uut.arm_i).
-413 pliAppHDL_DumpVarComplete traverse var: profile - 
-          CPU/Mem usage: 0.050 sys,  0.100 user,  367.30M mem
-                   incr: 0.000 sys,  0.010 user,  0.00M mem
-                   accu: 0.000 sys,  0.010 user,  0.00M mem
-              accu incr: 0.000 sys,  0.010 user,  0.00M mem
-
-          Count usage: 0 var,  5 idcode,  5 callback
-                 incr: 0 var,  1 idcode,  1 callback
-                 accu: 0 var,  1 idcode,  1 callback
-            accu incr: 0 var,  1 idcode,  1 callback
-414 Elapsed time:    0:02:05    Mon Mar  3 20:41:11 2025
-415 User CPU time used: 0 seconds
-416 System CPU time used: 0 seconds
-417 pliAppHDL_DumpVarComplete: profile - 
-          CPU/Mem usage: 0.050 sys,  0.100 user,  367.30M mem
-                   incr: 0.000 sys,  0.000 user,  0.00M mem
-                   accu: 0.000 sys,  0.010 user,  0.00M mem
-              accu incr: 0.000 sys,  0.000 user,  0.00M mem
-
-          Count usage: 0 var,  5 idcode,  5 callback
-                 incr: 0 var,  0 idcode,  0 callback
-                 accu: 0 var,  1 idcode,  1 callback
-            accu incr: 0 var,  0 idcode,  0 callback
-418 Elapsed time:    0:02:05    Mon Mar  3 20:41:11 2025
-419 User CPU time used: 0 seconds
-420 System CPU time used: 0 seconds
-421 sps_tcl_fsdbDumpvars_vd_main
-422 argv[0]: 0
-423 argv[1]: priority_fsm_tb.disable_i
-424 argv[2]: +all
-425 argv[3]: +trace_process
-426 *Verdi* : Dumping the signal (priority_fsm_tb.disable_i).
-427 pliAppHDL_DumpVarComplete traverse var: profile - 
-          CPU/Mem usage: 0.050 sys,  0.100 user,  367.30M mem
-                   incr: 0.000 sys,  0.000 user,  0.00M mem
-                   accu: 0.000 sys,  0.000 user,  0.00M mem
-              accu incr: 0.000 sys,  0.000 user,  0.00M mem
-
-          Count usage: 0 var,  6 idcode,  6 callback
-                 incr: 0 var,  1 idcode,  1 callback
-                 accu: 0 var,  1 idcode,  1 callback
-            accu incr: 0 var,  1 idcode,  1 callback
-428 Elapsed time:    0:02:05    Mon Mar  3 20:41:11 2025
-429 User CPU time used: 0 seconds
-430 System CPU time used: 0 seconds
-431 pliAppHDL_DumpVarComplete: profile - 
-          CPU/Mem usage: 0.050 sys,  0.100 user,  367.30M mem
-                   incr: 0.000 sys,  0.000 user,  0.00M mem
-                   accu: 0.000 sys,  0.000 user,  0.00M mem
-              accu incr: 0.000 sys,  0.000 user,  0.00M mem
-
-          Count usage: 0 var,  6 idcode,  6 callback
-                 incr: 0 var,  0 idcode,  0 callback
-                 accu: 0 var,  1 idcode,  1 callback
-            accu incr: 0 var,  0 idcode,  0 callback
-432 Elapsed time:    0:02:05    Mon Mar  3 20:41:11 2025
-433 User CPU time used: 0 seconds
-434 System CPU time used: 0 seconds
-435 sps_tcl_fsdbDumpvars_vd_main
-436 argv[0]: 0
-437 argv[1]: priority_fsm_tb.uut.last_o
-438 argv[2]: +all
-439 argv[3]: +trace_process
-440 *Verdi* : Dumping the signal (priority_fsm_tb.uut.last_o).
-441 pliAppHDL_DumpVarComplete traverse var: profile - 
-          CPU/Mem usage: 0.050 sys,  0.100 user,  367.30M mem
-                   incr: 0.000 sys,  0.000 user,  0.00M mem
-                   accu: 0.000 sys,  0.000 user,  0.00M mem
-              accu incr: 0.000 sys,  0.000 user,  0.00M mem
-
-          Count usage: 0 var,  7 idcode,  7 callback
-                 incr: 0 var,  1 idcode,  1 callback
-                 accu: 0 var,  1 idcode,  1 callback
-            accu incr: 0 var,  1 idcode,  1 callback
-442 Elapsed time:    0:02:05    Mon Mar  3 20:41:11 2025
-443 User CPU time used: 0 seconds
-444 System CPU time used: 0 seconds
-445 pliAppHDL_DumpVarComplete: profile - 
-          CPU/Mem usage: 0.050 sys,  0.100 user,  367.30M mem
-                   incr: 0.000 sys,  0.000 user,  0.00M mem
-                   accu: 0.000 sys,  0.000 user,  0.00M mem
-              accu incr: 0.000 sys,  0.000 user,  0.00M mem
-
-          Count usage: 0 var,  7 idcode,  7 callback
-                 incr: 0 var,  0 idcode,  0 callback
-                 accu: 0 var,  1 idcode,  1 callback
-            accu incr: 0 var,  0 idcode,  0 callback
-446 Elapsed time:    0:02:05    Mon Mar  3 20:41:11 2025
-447 User CPU time used: 0 seconds
-448 System CPU time used: 0 seconds
-449 sps_tcl_fsdbDumpvars_vd_main
-450 argv[0]: 0
-451 argv[1]: priority_fsm_tb.uut.ch_sel_o
-452 argv[2]: +all
-453 argv[3]: +trace_process
-454 *Verdi* : Dumping the signal (priority_fsm_tb.uut.ch_sel_o).
-455 pliAppHDL_DumpVarComplete traverse var: profile - 
-          CPU/Mem usage: 0.050 sys,  0.100 user,  367.30M mem
-                   incr: 0.000 sys,  0.000 user,  0.00M mem
-                   accu: 0.000 sys,  0.000 user,  0.00M mem
-              accu incr: 0.000 sys,  0.000 user,  0.00M mem
-
-          Count usage: 0 var,  8 idcode,  8 callback
-                 incr: 0 var,  1 idcode,  1 callback
-                 accu: 0 var,  1 idcode,  1 callback
-            accu incr: 0 var,  1 idcode,  1 callback
-456 Elapsed time:    0:02:05    Mon Mar  3 20:41:11 2025
-457 User CPU time used: 0 seconds
-458 System CPU time used: 0 seconds
-459 pliAppHDL_DumpVarComplete: profile - 
-          CPU/Mem usage: 0.060 sys,  0.100 user,  367.30M mem
-                   incr: 0.010 sys,  0.000 user,  0.00M mem
-                   accu: 0.010 sys,  0.000 user,  0.00M mem
-              accu incr: 0.010 sys,  0.000 user,  0.00M mem
-
-          Count usage: 0 var,  8 idcode,  8 callback
-                 incr: 0 var,  0 idcode,  0 callback
-                 accu: 0 var,  1 idcode,  1 callback
-            accu incr: 0 var,  0 idcode,  0 callback
-460 Elapsed time:    0:02:05    Mon Mar  3 20:41:11 2025
-461 User CPU time used: 0 seconds
-462 System CPU time used: 0 seconds
-463 sps_tcl_fsdbDumpvars_vd_main
-464 argv[0]: 0
-465 argv[1]: priority_fsm_tb.uut.state
-466 argv[2]: +all
-467 argv[3]: +trace_process
-468 *Verdi* : Dumping the signal (priority_fsm_tb.uut.state).
-469 pliAppHDL_DumpVarComplete traverse var: profile - 
-          CPU/Mem usage: 0.060 sys,  0.100 user,  367.30M mem
-                   incr: 0.000 sys,  0.000 user,  0.00M mem
-                   accu: 0.000 sys,  0.000 user,  0.00M mem
-              accu incr: 0.000 sys,  0.000 user,  0.00M mem
-
-          Count usage: 0 var,  9 idcode,  9 callback
-                 incr: 0 var,  1 idcode,  1 callback
-                 accu: 0 var,  1 idcode,  1 callback
-            accu incr: 0 var,  1 idcode,  1 callback
-470 Elapsed time:    0:02:05    Mon Mar  3 20:41:11 2025
-471 User CPU time used: 0 seconds
-472 System CPU time used: 0 seconds
-473 pliAppHDL_DumpVarComplete: profile - 
-          CPU/Mem usage: 0.060 sys,  0.100 user,  367.30M mem
-                   incr: 0.000 sys,  0.000 user,  0.00M mem
-                   accu: 0.000 sys,  0.000 user,  0.00M mem
-              accu incr: 0.000 sys,  0.000 user,  0.00M mem
-
-          Count usage: 0 var,  9 idcode,  9 callback
-                 incr: 0 var,  0 idcode,  0 callback
-                 accu: 0 var,  1 idcode,  1 callback
-            accu incr: 0 var,  0 idcode,  0 callback
-474 Elapsed time:    0:02:05    Mon Mar  3 20:41:11 2025
-475 User CPU time used: 0 seconds
-476 System CPU time used: 0 seconds
-477 sps_tcl_fsdbDumpvars_vd_main
-478 argv[0]: 0
-479 argv[1]: priority_fsm_tb.uut.next_state
-480 argv[2]: +all
-481 argv[3]: +trace_process
-482 *Verdi* : Dumping the signal (priority_fsm_tb.uut.next_state).
-483 pliAppHDL_DumpVarComplete traverse var: profile - 
-          CPU/Mem usage: 0.060 sys,  0.100 user,  367.30M mem
-                   incr: 0.000 sys,  0.000 user,  0.00M mem
-                   accu: 0.000 sys,  0.000 user,  0.00M mem
-              accu incr: 0.000 sys,  0.000 user,  0.00M mem
-
-          Count usage: 0 var,  10 idcode,  10 callback
-                 incr: 0 var,  1 idcode,  1 callback
-                 accu: 0 var,  1 idcode,  1 callback
-            accu incr: 0 var,  1 idcode,  1 callback
-484 Elapsed time:    0:02:05    Mon Mar  3 20:41:11 2025
-485 User CPU time used: 0 seconds
-486 System CPU time used: 0 seconds
-487 pliAppHDL_DumpVarComplete: profile - 
-          CPU/Mem usage: 0.060 sys,  0.100 user,  367.30M mem
-                   incr: 0.000 sys,  0.000 user,  0.00M mem
-                   accu: 0.000 sys,  0.000 user,  0.00M mem
-              accu incr: 0.000 sys,  0.000 user,  0.00M mem
-
-          Count usage: 0 var,  10 idcode,  10 callback
-                 incr: 0 var,  0 idcode,  0 callback
-                 accu: 0 var,  1 idcode,  1 callback
-            accu incr: 0 var,  0 idcode,  0 callback
-488 Elapsed time:    0:02:05    Mon Mar  3 20:41:11 2025
-489 User CPU time used: 0 seconds
-490 System CPU time used: 0 seconds
-491 sps_tcl_fsdbDumpvars_vd_main
-492 argv[0]: 0
-493 argv[1]: priority_fsm_tb.uut.encode_ch
-494 argv[2]: +all
-495 argv[3]: +trace_process
-496 *Verdi* : Dumping the signal (priority_fsm_tb.uut.encode_ch).
-497 pliAppHDL_DumpVarComplete traverse var: profile - 
-          CPU/Mem usage: 0.060 sys,  0.100 user,  367.30M mem
-                   incr: 0.000 sys,  0.000 user,  0.00M mem
-                   accu: 0.000 sys,  0.000 user,  0.00M mem
-              accu incr: 0.000 sys,  0.000 user,  0.00M mem
-
-          Count usage: 0 var,  11 idcode,  11 callback
-                 incr: 0 var,  1 idcode,  1 callback
-                 accu: 0 var,  1 idcode,  1 callback
-            accu incr: 0 var,  1 idcode,  1 callback
-498 Elapsed time:    0:02:05    Mon Mar  3 20:41:11 2025
-499 User CPU time used: 0 seconds
-500 System CPU time used: 0 seconds
-501 pliAppHDL_DumpVarComplete: profile - 
-          CPU/Mem usage: 0.060 sys,  0.100 user,  367.30M mem
-                   incr: 0.000 sys,  0.000 user,  0.00M mem
-                   accu: 0.000 sys,  0.000 user,  0.00M mem
-              accu incr: 0.000 sys,  0.000 user,  0.00M mem
-
-          Count usage: 0 var,  11 idcode,  11 callback
-                 incr: 0 var,  0 idcode,  0 callback
-                 accu: 0 var,  1 idcode,  1 callback
-            accu incr: 0 var,  0 idcode,  0 callback
-502 Elapsed time:    0:02:05    Mon Mar  3 20:41:11 2025
-503 User CPU time used: 0 seconds
-504 System CPU time used: 0 seconds
-505 sps_tcl_fsdbDumpvars_vd_main
-506 argv[0]: 0
-507 argv[1]: priority_fsm_tb.uut.valid
-508 argv[2]: +all
-509 argv[3]: +trace_process
-510 *Verdi* : Dumping the signal (priority_fsm_tb.uut.valid).
-511 pliAppHDL_DumpVarComplete traverse var: profile - 
-          CPU/Mem usage: 0.060 sys,  0.100 user,  367.30M mem
-                   incr: 0.000 sys,  0.000 user,  0.00M mem
-                   accu: 0.000 sys,  0.000 user,  0.00M mem
-              accu incr: 0.000 sys,  0.000 user,  0.00M mem
-
-          Count usage: 0 var,  12 idcode,  12 callback
-                 incr: 0 var,  1 idcode,  1 callback
-                 accu: 0 var,  1 idcode,  1 callback
-            accu incr: 0 var,  1 idcode,  1 callback
-512 Elapsed time:    0:02:05    Mon Mar  3 20:41:11 2025
-513 User CPU time used: 0 seconds
-514 System CPU time used: 0 seconds
-515 pliAppHDL_DumpVarComplete: profile - 
-          CPU/Mem usage: 0.060 sys,  0.100 user,  367.30M mem
-                   incr: 0.000 sys,  0.000 user,  0.00M mem
-                   accu: 0.000 sys,  0.000 user,  0.00M mem
-              accu incr: 0.000 sys,  0.000 user,  0.00M mem
-
-          Count usage: 0 var,  12 idcode,  12 callback
-                 incr: 0 var,  0 idcode,  0 callback
-                 accu: 0 var,  1 idcode,  1 callback
-            accu incr: 0 var,  0 idcode,  0 callback
-516 Elapsed time:    0:02:05    Mon Mar  3 20:41:11 2025
-517 User CPU time used: 0 seconds
-518 System CPU time used: 0 seconds
-519 sps_tcl_fsdbDumpvars_vd_main
-520 argv[0]: 0
-521 argv[1]: priority_fsm_tb.uut.ch_latch_q
-522 argv[2]: +all
-523 argv[3]: +trace_process
-524 *Verdi* : Dumping the signal (priority_fsm_tb.uut.ch_latch_q).
-525 pliAppHDL_DumpVarComplete traverse var: profile - 
-          CPU/Mem usage: 0.060 sys,  0.100 user,  367.30M mem
-                   incr: 0.000 sys,  0.000 user,  0.00M mem
-                   accu: 0.000 sys,  0.000 user,  0.00M mem
-              accu incr: 0.000 sys,  0.000 user,  0.00M mem
-
-          Count usage: 0 var,  13 idcode,  13 callback
-                 incr: 0 var,  1 idcode,  1 callback
-                 accu: 0 var,  1 idcode,  1 callback
-            accu incr: 0 var,  1 idcode,  1 callback
-526 Elapsed time:    0:02:05    Mon Mar  3 20:41:11 2025
-527 User CPU time used: 0 seconds
-528 System CPU time used: 0 seconds
-529 pliAppHDL_DumpVarComplete: profile - 
-          CPU/Mem usage: 0.060 sys,  0.100 user,  367.30M mem
-                   incr: 0.000 sys,  0.000 user,  0.00M mem
-                   accu: 0.000 sys,  0.000 user,  0.00M mem
-              accu incr: 0.000 sys,  0.000 user,  0.00M mem
-
-          Count usage: 0 var,  13 idcode,  13 callback
-                 incr: 0 var,  0 idcode,  0 callback
-                 accu: 0 var,  1 idcode,  1 callback
-            accu incr: 0 var,  0 idcode,  0 callback
-530 Elapsed time:    0:02:05    Mon Mar  3 20:41:11 2025
-531 User CPU time used: 0 seconds
-532 System CPU time used: 0 seconds
-533 sps_tcl_fsdbDumpvars_vd_main
-534 argv[0]: 0
-535 argv[1]: priority_fsm_tb.uut.ch_latch_res
-536 argv[2]: +all
-537 argv[3]: +trace_process
-538 *Verdi* : Dumping the signal (priority_fsm_tb.uut.ch_latch_res).
-539 pliAppHDL_DumpVarComplete traverse var: profile - 
-          CPU/Mem usage: 0.060 sys,  0.100 user,  367.30M mem
-                   incr: 0.000 sys,  0.000 user,  0.00M mem
-                   accu: 0.000 sys,  0.000 user,  0.00M mem
-              accu incr: 0.000 sys,  0.000 user,  0.00M mem
-
-          Count usage: 0 var,  14 idcode,  14 callback
-                 incr: 0 var,  1 idcode,  1 callback
-                 accu: 0 var,  1 idcode,  1 callback
-            accu incr: 0 var,  1 idcode,  1 callback
-540 Elapsed time:    0:02:05    Mon Mar  3 20:41:11 2025
-541 User CPU time used: 0 seconds
-542 System CPU time used: 0 seconds
-543 pliAppHDL_DumpVarComplete: profile - 
-          CPU/Mem usage: 0.060 sys,  0.100 user,  367.30M mem
-                   incr: 0.000 sys,  0.000 user,  0.00M mem
-                   accu: 0.000 sys,  0.000 user,  0.00M mem
-              accu incr: 0.000 sys,  0.000 user,  0.00M mem
-
-          Count usage: 0 var,  14 idcode,  14 callback
-                 incr: 0 var,  0 idcode,  0 callback
-                 accu: 0 var,  1 idcode,  1 callback
-            accu incr: 0 var,  0 idcode,  0 callback
-544 Elapsed time:    0:02:05    Mon Mar  3 20:41:11 2025
-545 User CPU time used: 0 seconds
-546 System CPU time used: 0 seconds
-547 sps_tcl_fsdbDumpflush_vd_main at 0 : N/A(0)
-548 *Verdi* : Flush all FSDB Files at 0 ns.
-549 sps_tcl_fsdbDumpflush_vd_main at 3000 : N/A(0)
-550 *Verdi* : Flush all FSDB Files at 3,000 ns.
+429 Elapsed time:    0:00:53    Tue Mar 11 19:22:56 2025
+430 User CPU time used: 0 seconds
+431 System CPU time used: 0 seconds
+432 sps_tcl_fsdbDumpflush_vd_main at 0 : N/A(0)
+433 *Verdi* : Flush all FSDB Files at 0 ns.
+434 sps_tcl_fsdbDumpflush_vd_main at 1800 : N/A(0)
+435 *Verdi* : Flush all FSDB Files at 1,800 ns.
+436 End of simulation at 1800
+437 Memory usage: 369.152 M
+438 Maximum resident set size: 143 MB
+439 Hard page faults: 2
+440 Soft page faults: 7927
+441 Elapsed time:    0:05:23    Tue Mar 11 19:27:26 2025
+442 User CPU time used: 0 seconds
+443 System CPU time used: 0 seconds
+444 Begin FSDB profile info:
+445 FSDB Writer : bc1(6) bcn(36) mtf/stf(0/4)
+FSDB Writer elapsed time : flush(0.045117) io wait(0.000000) theadpool wait(0.000000)
+FSDB Writer cpu time : MT Compression : 0
+446 End FSDB profile info
+447 FSDB closed. Name: /home/hotwater/ergene_coder/sim/inter.fsdb Size: 9358
+448 Parallel profile     - ProducerThread:1 ConsumerThread:1 Buffer:64MB
+449                      - BlockUsed:1 Acquire:0 BufferUsed:822
+450                      - Flush:11 Expand:0 ProducerWait:0 ConsumerWait:0
+451                      - MainProducerTime:0.170338037 TotalConsumerTime:0.000000000
+452                      - ElapsedTime:322.675180000
+453 Producer   0 profile - BlockUsed:3 Acquire:0 BufferUsed:822
+454 Consumer   0 profile - Affinity:-1 CPUTime:0.000000000 LifeTime:0.000000000 (-nan%)
+455                      - BlockUsed:3 Acquire:0 BufferUsed:822
+456 SimExit
+457 Elapsed time:    0:05:23    Tue Mar 11 19:27:26 2025
+458 User CPU time used: 0 seconds
+459 System CPU time used: 0 seconds
+460 Sim process exit

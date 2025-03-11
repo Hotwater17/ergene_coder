@@ -1,0 +1,6 @@
+{"vcs1":{"timestamp_begin":1741000800.735263032, "rt":0.31, "ut":0.16, "st":0.09}}
+{"SNPS_VCS_INTERNAL_ROOT_START_TIME": 1741000799.951780691}
+{"VCS_COMP_START_TIME": 1741000799.951780691}
+{"VCS_COMP_END_TIME": 1741000801.166910072}
+{"VCS_USER_OPTIONS": "-full64 -sverilog -debug_access -timescale=10ns/1ns -lca -kdb ../rtl/priority_fsm.sv ./tb/priority_fsm_tb.sv -t priority_fsm +define+SIM_TASKS"}
+{"vcs1": {"peak_mem": 390536}}

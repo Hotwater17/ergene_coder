@@ -16,16 +16,16 @@ signalSpacing 5
 
 ; windowTimeUnit is used for zoom, cursor & marker
 ; waveform viewport range
-zoom 0.000000 1111.000000
-cursor 700.000000
+zoom 0.000000 2222.000000
+cursor 300.000000
 marker 0.000000
 
 ; user define markers
 ; userMarker time_pos marker_name color linestyle
 ; visible top row signal index
-top 0
+top 3
 ; marker line index
-markerPos 7
+markerPos 18
 
 ; event list
 ; addEvent event_name event_expression
@@ -53,15 +53,19 @@ addSignal -h 15 -UNSIGNED -HEX /priority_fsm_tb/uut/ch_sel_i[15:0]
 addSignal -h 15 /priority_fsm_tb/uut/dump_i
 addSignal -h 15 /priority_fsm_tb/uut/arm_i
 addSignal -h 15 /priority_fsm_tb/disable_i
-addSignal -h 15 /priority_fsm_tb/uut/last_o
 addSignal -h 15 -UNSIGNED -HEX /priority_fsm_tb/uut/ch_sel_o[15:0]
-addSignal -h 15 -UNSIGNED -HEX /priority_fsm_tb/uut/state[4:0]
-addSignal -h 15 -UNSIGNED -HEX /priority_fsm_tb/uut/next_state[4:0]
+addSignal -h 15 /priority_fsm_tb/uut/inter_i
+addSignal -h 15 /priority_fsm_tb/uut/idle_sm_o
+addSignal -h 15 /priority_fsm_tb/uut/cycle_done_o
 addSignal -h 15 -UNSIGNED -HEX /priority_fsm_tb/uut/encode_ch[3:0]
 addSignal -h 15 /priority_fsm_tb/uut/valid
 addSignal -h 15 -UNSIGNED -HEX /priority_fsm_tb/uut/ch_latch_q[15:0]
 addSignal -h 15 -UNSIGNED -HEX /priority_fsm_tb/uut/ch_latch_res[15:0]
 addGroup "G2"
+addSignal -h 15 /priority_fsm_tb/uut/is_armed
+addSignal -h 15 /priority_fsm_tb/uut/is_dumping
+addSignal -h 15 /priority_fsm_tb/uut/is_last
+addGroup "G3"
 
 ; getSignalForm Scope Hierarchy Status
 ; active file of getSignalForm

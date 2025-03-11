@@ -1,0 +1,2 @@
+../rtl/encoder.sv
+./tb/enc_tb.sv

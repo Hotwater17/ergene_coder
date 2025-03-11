@@ -9,9 +9,11 @@ logic [15:0]    ch_sel_i;
 logic           arm_i;
 logic           dump_i;
 logic           disable_i;
+logic           inter_i;
 
 wire [15:0]     ch_sel_o;
-wire            last_o;
+wire            cycle_done_o;
+wire            idle_sm_o;
 
 
 priority_fsm uut(
@@ -20,8 +22,11 @@ priority_fsm uut(
     .ch_sel_i(ch_sel_i),
     .arm_i(arm_i),
     .dump_i(dump_i),
+    .inter_i(inter_i),
+    .disable_i(disable_i),
     .ch_sel_o(ch_sel_o),
-    .last_o(last_o)
+    .idle_sm_o(idle_sm_o),
+    .cycle_done_o(cycle_done_o)
 );
 
 
@@ -37,69 +42,61 @@ initial begin
     arm_i = 1'b0;
     dump_i = 1'b0;
     disable_i = 1'b0;
+    inter_i = 1'b0;
     
-    #10;
-    resetn_i = 1'b0;
-
-    #10 resetn_i = 1'b1;
-    #10;
+    do_reset();
     ch_sel_i = 16'b0000_0000_0010_0010;
-    arm_i = 1'b1;
+    do_arm();
+    do_arm();
 
-    #10;
-    arm_i = 1'b0;
-    #10;
-    dump_i = 1'b1;
-    #10;
-    dump_i = 1'b0;
-    #10;
-    dump_i = 1'b1;
-    #10;
-    dump_i = 1'b0;
-
-    #10;
-    dump_i = 1'b1;
-    #10;
-    dump_i = 1'b0;
-    #10;
+    do_dump();
+    do_dump();
+    do_dump();
 
     ch_sel_i = 16'b1111_0000_0100_0000;
-    arm_i = 1'b1;
-    #10;
-    arm_i = 1'b0;
-    
-    #10;
-    dump_i = 1'b1;
-    #10;
-    dump_i = 1'b0;
-    #10;
-    #10;
-    dump_i = 1'b1;
-    #10;
-    dump_i = 1'b0;
-    #10;
-    #10;
-    dump_i = 1'b1;
-    #10;
-    dump_i = 1'b0;
-    #10;
-    #10;
-    dump_i = 1'b1;
-    #10;
-    dump_i = 1'b0;
-    #10;
-    #10;
-    dump_i = 1'b1;
-    #10;
-    dump_i = 1'b0;
-    #10;
-    #10;
-    dump_i = 1'b1;
-    #10;
-    dump_i = 1'b0;
-    #10;
+    do_arm();
+    do_dump();
+    do_dump();
+    do_dump();
+    do_dump();
+    do_dump();
 
     $finish();
 end
 
+task do_reset ();
+    resetn_i = 1'b1;
+    #10;
+    resetn_i = 1'b0;
+    #10;
+    resetn_i = 1'b1;
+endtask
+
+task do_dump ();
+    dump_i = 1'b0;
+    #10;
+    dump_i = 1'b1;
+    #10;
+    dump_i = 1'b0;
+endtask
+
+task do_arm ();
+    arm_i = 1'b0;
+    #10;
+    arm_i = 1'b1;
+    #10;
+    arm_i = 1'b0;
+endtask
+
+task do_inter ();
+    inter_i = 1'b0;
+    #10;
+    inter_i = 1'b1;
+    #10;
+    inter_i = 1'b0;
+endtask
+
 endmodule
+
+
+

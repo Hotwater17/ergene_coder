@@ -1,0 +1,9 @@
+{"vcs1":{"timestamp_begin":1741170073.524237906, "rt":1.95, "ut":0.38, "st":0.45}}
+{"vcselab":{"timestamp_begin":1741170075.599347502, "rt":0.64, "ut":0.25, "st":0.09}}
+{"link":{"timestamp_begin":1741170076.336587170, "rt":0.94, "ut":0.36, "st":0.19}}
+{"SNPS_VCS_INTERNAL_ROOT_START_TIME": 1741170072.499535620}
+{"VCS_COMP_START_TIME": 1741170072.499535620}
+{"VCS_COMP_END_TIME": 1741170077.725692042}
+{"VCS_USER_OPTIONS": "-full64 -sverilog -debug_access -timescale=10ns/1ns -lca -kdb ../rtl/priority_fsm.sv ./tb/priority_fsm_tb.sv -t priority_fsm +define+SIM_TASKS"}
+{"vcs1": {"peak_mem": 522148}}
+{"vcselab": {"peak_mem": 224064}}

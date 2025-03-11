@@ -5,1168 +5,1177 @@ Report : timing
         -delay min
         -nworst 50
         -max_paths 50
-Design : priority_fsm
+Design : encoder
 Version: U-2022.12-SP7-3
-Date   : Mon Mar  3 20:46:58 2025
+Date   : Tue Mar 11 19:29:36 2025
 ****************************************
 
 Operating Conditions: NCCOM   Library: tcb018gbwp7ttc
 Wire Load Model Mode: segmented
 
-  Startpoint: ch_latch_q_reg[15]
-              (positive level-sensitive latch)
-  Endpoint: last_o (output port)
+  Startpoint: enable_i (input port)
+  Endpoint: valid_o (output port)
   Path Group: (none)
   Path Type: min
 
   Des/Clust/Port     Wire Load Model       Library
   ------------------------------------------------
-  priority_fsm       ZeroWireload          tcb018gbwp7ttc
+  encoder            ZeroWireload          tcb018gbwp7ttc
 
   Point                                    Incr       Path
   -----------------------------------------------------------
-  ch_latch_q_reg[15]/E (LHQD1BWP7T)        0.00       0.00 r
-  ch_latch_q_reg[15]/Q (LHQD1BWP7T)        0.22       0.22 r
-  U134/ZN (NR2XD0BWP7T)                    0.05       0.27 f
-  U131/ZN (CKND2D0BWP7T)                   0.08       0.35 r
-  U130/ZN (NR2XD0BWP7T)                    0.05       0.40 f
-  last_o (out)                             0.00       0.40 f
-  data arrival time                                   0.40
+  input external delay                     0.00       0.00 f
+  enable_i (in)                            0.00       0.00 f
+  U67/Z (OA21D0BWP7T)                      0.13       0.13 f
+  valid_o (out)                            0.00       0.13 f
+  data arrival time                                   0.13
   -----------------------------------------------------------
   (Path is unconstrained)
 
 
-  Startpoint: ch_latch_q_reg[14]
-              (positive level-sensitive latch)
-  Endpoint: last_o (output port)
+  Startpoint: enable_i (input port)
+  Endpoint: valid_o (output port)
   Path Group: (none)
   Path Type: min
 
   Des/Clust/Port     Wire Load Model       Library
   ------------------------------------------------
-  priority_fsm       ZeroWireload          tcb018gbwp7ttc
+  encoder            ZeroWireload          tcb018gbwp7ttc
 
   Point                                    Incr       Path
   -----------------------------------------------------------
-  ch_latch_q_reg[14]/E (LHQD1BWP7T)        0.00       0.00 r
-  ch_latch_q_reg[14]/Q (LHQD1BWP7T)        0.24       0.24 r
-  U134/ZN (NR2XD0BWP7T)                    0.06       0.30 f
-  U131/ZN (CKND2D0BWP7T)                   0.08       0.37 r
-  U130/ZN (NR2XD0BWP7T)                    0.05       0.43 f
-  last_o (out)                             0.00       0.43 f
-  data arrival time                                   0.43
+  input external delay                     0.00       0.00 f
+  enable_i (in)                            0.00       0.00 f
+  U67/Z (OA21D0BWP7T)                      0.13       0.13 f
+  valid_o (out)                            0.00       0.13 f
+  data arrival time                                   0.13
   -----------------------------------------------------------
   (Path is unconstrained)
 
 
-  Startpoint: ch_latch_q_reg[12]
-              (positive level-sensitive latch)
-  Endpoint: last_o (output port)
+  Startpoint: enable_i (input port)
+  Endpoint: valid_o (output port)
   Path Group: (none)
   Path Type: min
 
   Des/Clust/Port     Wire Load Model       Library
   ------------------------------------------------
-  priority_fsm       ZeroWireload          tcb018gbwp7ttc
+  encoder            ZeroWireload          tcb018gbwp7ttc
 
   Point                                    Incr       Path
   -----------------------------------------------------------
-  ch_latch_q_reg[12]/E (LHQD1BWP7T)        0.00       0.00 r
-  ch_latch_q_reg[12]/Q (LHQD1BWP7T)        0.24       0.24 r
-  U189/ZN (NR3D0BWP7T)                     0.07       0.30 f
-  U131/ZN (CKND2D0BWP7T)                   0.07       0.38 r
-  U130/ZN (NR2XD0BWP7T)                    0.05       0.43 f
-  last_o (out)                             0.00       0.43 f
-  data arrival time                                   0.43
+  input external delay                     0.00       0.00 f
+  enable_i (in)                            0.00       0.00 f
+  U67/Z (OA21D0BWP7T)                      0.13       0.13 f
+  valid_o (out)                            0.00       0.13 f
+  data arrival time                                   0.13
   -----------------------------------------------------------
   (Path is unconstrained)
 
 
-  Startpoint: ch_latch_q_reg[15]
-              (positive level-sensitive latch)
-  Endpoint: last_o (output port)
+  Startpoint: ch_sel_i[15]
+              (input port)
+  Endpoint: valid_o (output port)
   Path Group: (none)
   Path Type: min
 
   Des/Clust/Port     Wire Load Model       Library
   ------------------------------------------------
-  priority_fsm       ZeroWireload          tcb018gbwp7ttc
+  encoder            ZeroWireload          tcb018gbwp7ttc
 
   Point                                    Incr       Path
   -----------------------------------------------------------
-  ch_latch_q_reg[15]/E (LHQD1BWP7T)        0.00       0.00 r
-  ch_latch_q_reg[15]/Q (LHQD1BWP7T)        0.21       0.21 f
-  U134/ZN (NR2XD0BWP7T)                    0.08       0.28 r
-  U131/ZN (CKND2D0BWP7T)                   0.07       0.36 f
-  U130/ZN (NR2XD0BWP7T)                    0.07       0.43 r
-  last_o (out)                             0.00       0.43 r
-  data arrival time                                   0.43
+  input external delay                     0.00       0.00 r
+  ch_sel_i[15] (in)                        0.00       0.00 r
+  U67/Z (OA21D0BWP7T)                      0.13       0.13 r
+  valid_o (out)                            0.00       0.13 r
+  data arrival time                                   0.13
   -----------------------------------------------------------
   (Path is unconstrained)
 
 
-  Startpoint: state_reg[0]
-              (rising edge-triggered flip-flop)
-  Endpoint: ch_sel_o[9]
+  Startpoint: enable_i (input port)
+  Endpoint: valid_o (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  encoder            ZeroWireload          tcb018gbwp7ttc
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  enable_i (in)                            0.00       0.00 r
+  U67/Z (OA21D0BWP7T)                      0.14       0.14 r
+  valid_o (out)                            0.00       0.14 r
+  data arrival time                                   0.14
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: enable_i (input port)
+  Endpoint: valid_o (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  encoder            ZeroWireload          tcb018gbwp7ttc
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  enable_i (in)                            0.00       0.00 r
+  U67/Z (OA21D0BWP7T)                      0.15       0.15 r
+  valid_o (out)                            0.00       0.15 r
+  data arrival time                                   0.15
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: enable_i (input port)
+  Endpoint: valid_o (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  encoder            ZeroWireload          tcb018gbwp7ttc
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  enable_i (in)                            0.00       0.00 r
+  U67/Z (OA21D0BWP7T)                      0.16       0.16 r
+  valid_o (out)                            0.00       0.16 r
+  data arrival time                                   0.16
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: ch_sel_i[15]
+              (input port)
+  Endpoint: valid_o (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  encoder            ZeroWireload          tcb018gbwp7ttc
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 f
+  ch_sel_i[15] (in)                        0.00       0.00 f
+  U67/Z (OA21D0BWP7T)                      0.16       0.16 f
+  valid_o (out)                            0.00       0.16 f
+  data arrival time                                   0.16
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: ch_sel_i[0]
+              (input port)
+  Endpoint: hot_one_o[7]
             (output port)
   Path Group: (none)
   Path Type: min
 
   Des/Clust/Port     Wire Load Model       Library
   ------------------------------------------------
-  priority_fsm       ZeroWireload          tcb018gbwp7ttc
+  encoder            ZeroWireload          tcb018gbwp7ttc
 
   Point                                    Incr       Path
   -----------------------------------------------------------
-  state_reg[0]/CP (DFCNQD1BWP7T)           0.00       0.00 r
-  state_reg[0]/Q (DFCNQD1BWP7T)            0.26       0.26 f
-  U222/ZN (ND3D0BWP7T)                     0.14       0.39 r
-  U233/ZN (NR2XD0BWP7T)                    0.04       0.43 f
-  ch_sel_o[9] (out)                        0.00       0.43 f
-  data arrival time                                   0.43
+  input external delay                     0.00       0.00 r
+  ch_sel_i[0] (in)                         0.00       0.00 r
+  U98/ZN (OAI22D0BWP7T)                    0.04       0.04 f
+  U99/ZN (CKND2D0BWP7T)                    0.12       0.16 r
+  U100/ZN (NR2XD0BWP7T)                    0.05       0.21 f
+  hot_one_o[7] (out)                       0.00       0.21 f
+  data arrival time                                   0.21
   -----------------------------------------------------------
   (Path is unconstrained)
 
 
-  Startpoint: state_reg[0]
-              (rising edge-triggered flip-flop)
-  Endpoint: ch_sel_o[5]
+  Startpoint: ch_sel_i[0]
+              (input port)
+  Endpoint: hot_one_o[5]
             (output port)
   Path Group: (none)
   Path Type: min
 
   Des/Clust/Port     Wire Load Model       Library
   ------------------------------------------------
-  priority_fsm       ZeroWireload          tcb018gbwp7ttc
+  encoder            ZeroWireload          tcb018gbwp7ttc
 
   Point                                    Incr       Path
   -----------------------------------------------------------
-  state_reg[0]/CP (DFCNQD1BWP7T)           0.00       0.00 r
-  state_reg[0]/Q (DFCNQD1BWP7T)            0.26       0.26 f
-  U222/ZN (ND3D0BWP7T)                     0.14       0.39 r
-  U228/ZN (NR2XD0BWP7T)                    0.04       0.43 f
-  ch_sel_o[5] (out)                        0.00       0.43 f
-  data arrival time                                   0.43
+  input external delay                     0.00       0.00 r
+  ch_sel_i[0] (in)                         0.00       0.00 r
+  U98/ZN (OAI22D0BWP7T)                    0.04       0.04 f
+  U99/ZN (CKND2D0BWP7T)                    0.12       0.16 r
+  U104/ZN (NR2XD0BWP7T)                    0.05       0.21 f
+  hot_one_o[5] (out)                       0.00       0.21 f
+  data arrival time                                   0.21
   -----------------------------------------------------------
   (Path is unconstrained)
 
 
-  Startpoint: ch_latch_q_reg[6]
-              (positive level-sensitive latch)
-  Endpoint: last_o (output port)
-  Path Group: (none)
-  Path Type: min
-
-  Des/Clust/Port     Wire Load Model       Library
-  ------------------------------------------------
-  priority_fsm       ZeroWireload          tcb018gbwp7ttc
-
-  Point                                    Incr       Path
-  -----------------------------------------------------------
-  ch_latch_q_reg[6]/E (LHQD1BWP7T)         0.00       0.00 r
-  ch_latch_q_reg[6]/Q (LHQD1BWP7T)         0.22       0.22 r
-  U202/ZN (NR4D0BWP7T)                     0.06       0.29 f
-  U132/ZN (CKND2D0BWP7T)                   0.10       0.39 r
-  U130/ZN (NR2XD0BWP7T)                    0.05       0.44 f
-  last_o (out)                             0.00       0.44 f
-  data arrival time                                   0.44
-  -----------------------------------------------------------
-  (Path is unconstrained)
-
-
-  Startpoint: ch_latch_q_reg[7]
-              (positive level-sensitive latch)
-  Endpoint: last_o (output port)
-  Path Group: (none)
-  Path Type: min
-
-  Des/Clust/Port     Wire Load Model       Library
-  ------------------------------------------------
-  priority_fsm       ZeroWireload          tcb018gbwp7ttc
-
-  Point                                    Incr       Path
-  -----------------------------------------------------------
-  ch_latch_q_reg[7]/E (LHQD1BWP7T)         0.00       0.00 r
-  ch_latch_q_reg[7]/Q (LHQD1BWP7T)         0.23       0.23 r
-  U202/ZN (NR4D0BWP7T)                     0.06       0.29 f
-  U132/ZN (CKND2D0BWP7T)                   0.10       0.39 r
-  U130/ZN (NR2XD0BWP7T)                    0.05       0.44 f
-  last_o (out)                             0.00       0.44 f
-  data arrival time                                   0.44
-  -----------------------------------------------------------
-  (Path is unconstrained)
-
-
-  Startpoint: ch_latch_q_reg[4]
-              (positive level-sensitive latch)
-  Endpoint: last_o (output port)
-  Path Group: (none)
-  Path Type: min
-
-  Des/Clust/Port     Wire Load Model       Library
-  ------------------------------------------------
-  priority_fsm       ZeroWireload          tcb018gbwp7ttc
-
-  Point                                    Incr       Path
-  -----------------------------------------------------------
-  ch_latch_q_reg[4]/E (LHQD1BWP7T)         0.00       0.00 r
-  ch_latch_q_reg[4]/Q (LHQD1BWP7T)         0.24       0.24 r
-  U202/ZN (NR4D0BWP7T)                     0.05       0.29 f
-  U132/ZN (CKND2D0BWP7T)                   0.10       0.39 r
-  U130/ZN (NR2XD0BWP7T)                    0.05       0.44 f
-  last_o (out)                             0.00       0.44 f
-  data arrival time                                   0.44
-  -----------------------------------------------------------
-  (Path is unconstrained)
-
-
-  Startpoint: ch_latch_q_reg[13]
-              (positive level-sensitive latch)
-  Endpoint: last_o (output port)
-  Path Group: (none)
-  Path Type: min
-
-  Des/Clust/Port     Wire Load Model       Library
-  ------------------------------------------------
-  priority_fsm       ZeroWireload          tcb018gbwp7ttc
-
-  Point                                    Incr       Path
-  -----------------------------------------------------------
-  ch_latch_q_reg[13]/E (LHQD1BWP7T)        0.00       0.00 r
-  ch_latch_q_reg[13]/Q (LHQD1BWP7T)        0.24       0.24 r
-  U189/ZN (NR3D0BWP7T)                     0.08       0.31 f
-  U131/ZN (CKND2D0BWP7T)                   0.07       0.39 r
-  U130/ZN (NR2XD0BWP7T)                    0.05       0.44 f
-  last_o (out)                             0.00       0.44 f
-  data arrival time                                   0.44
-  -----------------------------------------------------------
-  (Path is unconstrained)
-
-
-  Startpoint: state_reg[0]
-              (rising edge-triggered flip-flop)
-  Endpoint: ch_sel_o[13]
+  Startpoint: ch_sel_i[0]
+              (input port)
+  Endpoint: hot_one_o[3]
             (output port)
   Path Group: (none)
   Path Type: min
 
   Des/Clust/Port     Wire Load Model       Library
   ------------------------------------------------
-  priority_fsm       ZeroWireload          tcb018gbwp7ttc
+  encoder            ZeroWireload          tcb018gbwp7ttc
 
   Point                                    Incr       Path
   -----------------------------------------------------------
-  state_reg[0]/CP (DFCNQD1BWP7T)           0.00       0.00 r
-  state_reg[0]/Q (DFCNQD1BWP7T)            0.26       0.26 f
-  U222/ZN (ND3D0BWP7T)                     0.14       0.39 r
-  U238/ZN (NR2XD0BWP7T)                    0.06       0.45 f
-  ch_sel_o[13] (out)                       0.00       0.45 f
-  data arrival time                                   0.45
+  input external delay                     0.00       0.00 r
+  ch_sel_i[0] (in)                         0.00       0.00 r
+  U98/ZN (OAI22D0BWP7T)                    0.04       0.04 f
+  U99/ZN (CKND2D0BWP7T)                    0.12       0.16 r
+  U106/ZN (NR2XD0BWP7T)                    0.05       0.21 f
+  hot_one_o[3] (out)                       0.00       0.21 f
+  data arrival time                                   0.21
   -----------------------------------------------------------
   (Path is unconstrained)
 
 
-  Startpoint: state_reg[0]
-              (rising edge-triggered flip-flop)
-  Endpoint: ch_sel_o[1]
+  Startpoint: ch_sel_i[0]
+              (input port)
+  Endpoint: hot_one_o[1]
             (output port)
   Path Group: (none)
   Path Type: min
 
   Des/Clust/Port     Wire Load Model       Library
   ------------------------------------------------
-  priority_fsm       ZeroWireload          tcb018gbwp7ttc
+  encoder            ZeroWireload          tcb018gbwp7ttc
 
   Point                                    Incr       Path
   -----------------------------------------------------------
-  state_reg[0]/CP (DFCNQD1BWP7T)           0.00       0.00 r
-  state_reg[0]/Q (DFCNQD1BWP7T)            0.26       0.26 f
-  U222/ZN (ND3D0BWP7T)                     0.14       0.39 r
-  U223/ZN (NR2XD0BWP7T)                    0.06       0.45 f
-  ch_sel_o[1] (out)                        0.00       0.45 f
-  data arrival time                                   0.45
+  input external delay                     0.00       0.00 r
+  ch_sel_i[0] (in)                         0.00       0.00 r
+  U98/ZN (OAI22D0BWP7T)                    0.04       0.04 f
+  U99/ZN (CKND2D0BWP7T)                    0.12       0.16 r
+  U108/ZN (NR2XD0BWP7T)                    0.05       0.21 f
+  hot_one_o[1] (out)                       0.00       0.21 f
+  data arrival time                                   0.21
   -----------------------------------------------------------
   (Path is unconstrained)
 
 
-  Startpoint: ch_latch_q_reg[5]
-              (positive level-sensitive latch)
-  Endpoint: last_o (output port)
-  Path Group: (none)
-  Path Type: min
-
-  Des/Clust/Port     Wire Load Model       Library
-  ------------------------------------------------
-  priority_fsm       ZeroWireload          tcb018gbwp7ttc
-
-  Point                                    Incr       Path
-  -----------------------------------------------------------
-  ch_latch_q_reg[5]/E (LHQD1BWP7T)         0.00       0.00 r
-  ch_latch_q_reg[5]/Q (LHQD1BWP7T)         0.24       0.24 r
-  U202/ZN (NR4D0BWP7T)                     0.06       0.30 f
-  U132/ZN (CKND2D0BWP7T)                   0.10       0.40 r
-  U130/ZN (NR2XD0BWP7T)                    0.05       0.45 f
-  last_o (out)                             0.00       0.45 f
-  data arrival time                                   0.45
-  -----------------------------------------------------------
-  (Path is unconstrained)
-
-
-  Startpoint: state_reg[0]
-              (rising edge-triggered flip-flop)
-  Endpoint: ch_sel_o[15]
+  Startpoint: ch_sel_i[3]
+              (input port)
+  Endpoint: hot_one_o[1]
             (output port)
   Path Group: (none)
   Path Type: min
 
   Des/Clust/Port     Wire Load Model       Library
   ------------------------------------------------
-  priority_fsm       ZeroWireload          tcb018gbwp7ttc
+  encoder            ZeroWireload          tcb018gbwp7ttc
 
   Point                                    Incr       Path
   -----------------------------------------------------------
-  state_reg[0]/CP (DFCNQD1BWP7T)           0.00       0.00 r
-  state_reg[0]/Q (DFCNQD1BWP7T)            0.26       0.26 f
-  U174/ZN (CKND2D0BWP7T)                   0.14       0.39 r
-  U240/ZN (NR2XD0BWP7T)                    0.06       0.45 f
-  ch_sel_o[15] (out)                       0.00       0.45 f
-  data arrival time                                   0.45
+  input external delay                     0.00       0.00 r
+  ch_sel_i[3] (in)                         0.00       0.00 r
+  U87/ZN (AOI21D0BWP7T)                    0.05       0.05 f
+  U91/ZN (IND2D0BWP7T)                     0.13       0.18 r
+  U108/ZN (NR2XD0BWP7T)                    0.04       0.22 f
+  hot_one_o[1] (out)                       0.00       0.22 f
+  data arrival time                                   0.22
   -----------------------------------------------------------
   (Path is unconstrained)
 
 
-  Startpoint: state_reg[0]
-              (rising edge-triggered flip-flop)
-  Endpoint: ch_sel_o[11]
+  Startpoint: ch_sel_i[3]
+              (input port)
+  Endpoint: hot_one_o[0]
             (output port)
   Path Group: (none)
   Path Type: min
 
   Des/Clust/Port     Wire Load Model       Library
   ------------------------------------------------
-  priority_fsm       ZeroWireload          tcb018gbwp7ttc
+  encoder            ZeroWireload          tcb018gbwp7ttc
 
   Point                                    Incr       Path
   -----------------------------------------------------------
-  state_reg[0]/CP (DFCNQD1BWP7T)           0.00       0.00 r
-  state_reg[0]/Q (DFCNQD1BWP7T)            0.26       0.26 f
-  U174/ZN (CKND2D0BWP7T)                   0.14       0.39 r
-  U235/ZN (NR2XD0BWP7T)                    0.06       0.45 f
-  ch_sel_o[11] (out)                       0.00       0.45 f
-  data arrival time                                   0.45
+  input external delay                     0.00       0.00 r
+  ch_sel_i[3] (in)                         0.00       0.00 r
+  U87/ZN (AOI21D0BWP7T)                    0.05       0.05 f
+  U91/ZN (IND2D0BWP7T)                     0.13       0.18 r
+  U109/ZN (NR2XD0BWP7T)                    0.04       0.22 f
+  hot_one_o[0] (out)                       0.00       0.22 f
+  data arrival time                                   0.22
   -----------------------------------------------------------
   (Path is unconstrained)
 
 
-  Startpoint: state_reg[0]
-              (rising edge-triggered flip-flop)
-  Endpoint: ch_sel_o[7]
+  Startpoint: ch_sel_i[0]
+              (input port)
+  Endpoint: hot_one_o[7]
             (output port)
   Path Group: (none)
   Path Type: min
 
   Des/Clust/Port     Wire Load Model       Library
   ------------------------------------------------
-  priority_fsm       ZeroWireload          tcb018gbwp7ttc
+  encoder            ZeroWireload          tcb018gbwp7ttc
 
   Point                                    Incr       Path
   -----------------------------------------------------------
-  state_reg[0]/CP (DFCNQD1BWP7T)           0.00       0.00 r
-  state_reg[0]/Q (DFCNQD1BWP7T)            0.26       0.26 f
-  U174/ZN (CKND2D0BWP7T)                   0.14       0.39 r
-  U230/ZN (NR2XD0BWP7T)                    0.06       0.45 f
-  ch_sel_o[7] (out)                        0.00       0.45 f
-  data arrival time                                   0.45
+  input external delay                     0.00       0.00 r
+  ch_sel_i[0] (in)                         0.00       0.00 r
+  U98/ZN (OAI22D0BWP7T)                    0.05       0.05 f
+  U99/ZN (CKND2D0BWP7T)                    0.12       0.17 r
+  U100/ZN (NR2XD0BWP7T)                    0.05       0.22 f
+  hot_one_o[7] (out)                       0.00       0.22 f
+  data arrival time                                   0.22
   -----------------------------------------------------------
   (Path is unconstrained)
 
 
-  Startpoint: state_reg[0]
-              (rising edge-triggered flip-flop)
-  Endpoint: ch_sel_o[3]
+  Startpoint: ch_sel_i[0]
+              (input port)
+  Endpoint: hot_one_o[5]
             (output port)
   Path Group: (none)
   Path Type: min
 
   Des/Clust/Port     Wire Load Model       Library
   ------------------------------------------------
-  priority_fsm       ZeroWireload          tcb018gbwp7ttc
+  encoder            ZeroWireload          tcb018gbwp7ttc
 
   Point                                    Incr       Path
   -----------------------------------------------------------
-  state_reg[0]/CP (DFCNQD1BWP7T)           0.00       0.00 r
-  state_reg[0]/Q (DFCNQD1BWP7T)            0.26       0.26 f
-  U174/ZN (CKND2D0BWP7T)                   0.14       0.39 r
-  U225/ZN (NR2XD0BWP7T)                    0.06       0.45 f
-  ch_sel_o[3] (out)                        0.00       0.45 f
-  data arrival time                                   0.45
+  input external delay                     0.00       0.00 r
+  ch_sel_i[0] (in)                         0.00       0.00 r
+  U98/ZN (OAI22D0BWP7T)                    0.05       0.05 f
+  U99/ZN (CKND2D0BWP7T)                    0.12       0.17 r
+  U104/ZN (NR2XD0BWP7T)                    0.05       0.22 f
+  hot_one_o[5] (out)                       0.00       0.22 f
+  data arrival time                                   0.22
   -----------------------------------------------------------
   (Path is unconstrained)
 
 
-  Startpoint: state_reg[1]
-              (rising edge-triggered flip-flop)
-  Endpoint: ch_sel_o[14]
+  Startpoint: ch_sel_i[0]
+              (input port)
+  Endpoint: hot_one_o[3]
             (output port)
   Path Group: (none)
   Path Type: min
 
   Des/Clust/Port     Wire Load Model       Library
   ------------------------------------------------
-  priority_fsm       ZeroWireload          tcb018gbwp7ttc
+  encoder            ZeroWireload          tcb018gbwp7ttc
 
   Point                                    Incr       Path
   -----------------------------------------------------------
-  state_reg[1]/CP (DFCNQD1BWP7T)           0.00       0.00 r
-  state_reg[1]/Q (DFCNQD1BWP7T)            0.26       0.26 f
-  U143/ZN (CKND2D0BWP7T)                   0.14       0.40 r
-  U239/ZN (NR2XD0BWP7T)                    0.06       0.45 f
-  ch_sel_o[14] (out)                       0.00       0.45 f
-  data arrival time                                   0.45
+  input external delay                     0.00       0.00 r
+  ch_sel_i[0] (in)                         0.00       0.00 r
+  U98/ZN (OAI22D0BWP7T)                    0.05       0.05 f
+  U99/ZN (CKND2D0BWP7T)                    0.12       0.17 r
+  U106/ZN (NR2XD0BWP7T)                    0.05       0.22 f
+  hot_one_o[3] (out)                       0.00       0.22 f
+  data arrival time                                   0.22
   -----------------------------------------------------------
   (Path is unconstrained)
 
 
-  Startpoint: state_reg[1]
-              (rising edge-triggered flip-flop)
-  Endpoint: ch_sel_o[10]
+  Startpoint: ch_sel_i[0]
+              (input port)
+  Endpoint: hot_one_o[1]
             (output port)
   Path Group: (none)
   Path Type: min
 
   Des/Clust/Port     Wire Load Model       Library
   ------------------------------------------------
-  priority_fsm       ZeroWireload          tcb018gbwp7ttc
+  encoder            ZeroWireload          tcb018gbwp7ttc
 
   Point                                    Incr       Path
   -----------------------------------------------------------
-  state_reg[1]/CP (DFCNQD1BWP7T)           0.00       0.00 r
-  state_reg[1]/Q (DFCNQD1BWP7T)            0.26       0.26 f
-  U143/ZN (CKND2D0BWP7T)                   0.14       0.40 r
-  U234/ZN (NR2XD0BWP7T)                    0.06       0.45 f
-  ch_sel_o[10] (out)                       0.00       0.45 f
-  data arrival time                                   0.45
+  input external delay                     0.00       0.00 r
+  ch_sel_i[0] (in)                         0.00       0.00 r
+  U98/ZN (OAI22D0BWP7T)                    0.05       0.05 f
+  U99/ZN (CKND2D0BWP7T)                    0.12       0.17 r
+  U108/ZN (NR2XD0BWP7T)                    0.05       0.22 f
+  hot_one_o[1] (out)                       0.00       0.22 f
+  data arrival time                                   0.22
   -----------------------------------------------------------
   (Path is unconstrained)
 
 
-  Startpoint: state_reg[1]
-              (rising edge-triggered flip-flop)
-  Endpoint: ch_sel_o[6]
+  Startpoint: ch_sel_i[8]
+              (input port)
+  Endpoint: hot_one_o[13]
             (output port)
   Path Group: (none)
   Path Type: min
 
   Des/Clust/Port     Wire Load Model       Library
   ------------------------------------------------
-  priority_fsm       ZeroWireload          tcb018gbwp7ttc
+  encoder            ZeroWireload          tcb018gbwp7ttc
 
   Point                                    Incr       Path
   -----------------------------------------------------------
-  state_reg[1]/CP (DFCNQD1BWP7T)           0.00       0.00 r
-  state_reg[1]/Q (DFCNQD1BWP7T)            0.26       0.26 f
-  U143/ZN (CKND2D0BWP7T)                   0.14       0.40 r
-  U229/ZN (NR2XD0BWP7T)                    0.06       0.45 f
-  ch_sel_o[6] (out)                        0.00       0.45 f
-  data arrival time                                   0.45
+  input external delay                     0.00       0.00 r
+  ch_sel_i[8] (in)                         0.00       0.00 r
+  U80/ZN (AOI31D0BWP7T)                    0.04       0.04 f
+  U83/ZN (ND3D0BWP7T)                      0.14       0.18 r
+  U85/ZN (NR2XD0BWP7T)                     0.04       0.22 f
+  hot_one_o[13] (out)                      0.00       0.22 f
+  data arrival time                                   0.22
   -----------------------------------------------------------
   (Path is unconstrained)
 
 
-  Startpoint: state_reg[1]
-              (rising edge-triggered flip-flop)
-  Endpoint: ch_sel_o[2]
+  Startpoint: ch_sel_i[8]
+              (input port)
+  Endpoint: hot_one_o[11]
             (output port)
   Path Group: (none)
   Path Type: min
 
   Des/Clust/Port     Wire Load Model       Library
   ------------------------------------------------
-  priority_fsm       ZeroWireload          tcb018gbwp7ttc
+  encoder            ZeroWireload          tcb018gbwp7ttc
 
   Point                                    Incr       Path
   -----------------------------------------------------------
-  state_reg[1]/CP (DFCNQD1BWP7T)           0.00       0.00 r
-  state_reg[1]/Q (DFCNQD1BWP7T)            0.26       0.26 f
-  U143/ZN (CKND2D0BWP7T)                   0.14       0.40 r
-  U224/ZN (NR2XD0BWP7T)                    0.06       0.45 f
-  ch_sel_o[2] (out)                        0.00       0.45 f
-  data arrival time                                   0.45
+  input external delay                     0.00       0.00 r
+  ch_sel_i[8] (in)                         0.00       0.00 r
+  U80/ZN (AOI31D0BWP7T)                    0.04       0.04 f
+  U83/ZN (ND3D0BWP7T)                      0.14       0.18 r
+  U89/ZN (NR2XD0BWP7T)                     0.04       0.22 f
+  hot_one_o[11] (out)                      0.00       0.22 f
+  data arrival time                                   0.22
   -----------------------------------------------------------
   (Path is unconstrained)
 
 
-  Startpoint: ch_latch_q_reg[14]
-              (positive level-sensitive latch)
-  Endpoint: last_o (output port)
-  Path Group: (none)
-  Path Type: min
-
-  Des/Clust/Port     Wire Load Model       Library
-  ------------------------------------------------
-  priority_fsm       ZeroWireload          tcb018gbwp7ttc
-
-  Point                                    Incr       Path
-  -----------------------------------------------------------
-  ch_latch_q_reg[14]/E (LHQD1BWP7T)        0.00       0.00 r
-  ch_latch_q_reg[14]/Q (LHQD1BWP7T)        0.22       0.22 f
-  U134/ZN (NR2XD0BWP7T)                    0.09       0.31 r
-  U131/ZN (CKND2D0BWP7T)                   0.07       0.38 f
-  U130/ZN (NR2XD0BWP7T)                    0.07       0.46 r
-  last_o (out)                             0.00       0.46 r
-  data arrival time                                   0.46
-  -----------------------------------------------------------
-  (Path is unconstrained)
-
-
-  Startpoint: state_reg[1]
-              (rising edge-triggered flip-flop)
-  Endpoint: ch_sel_o[15]
+  Startpoint: ch_sel_i[8]
+              (input port)
+  Endpoint: hot_one_o[9]
             (output port)
   Path Group: (none)
   Path Type: min
 
   Des/Clust/Port     Wire Load Model       Library
   ------------------------------------------------
-  priority_fsm       ZeroWireload          tcb018gbwp7ttc
+  encoder            ZeroWireload          tcb018gbwp7ttc
 
   Point                                    Incr       Path
   -----------------------------------------------------------
-  state_reg[1]/CP (DFCNQD1BWP7T)           0.00       0.00 r
-  state_reg[1]/Q (DFCNQD1BWP7T)            0.26       0.26 f
-  U174/ZN (CKND2D0BWP7T)                   0.14       0.40 r
-  U240/ZN (NR2XD0BWP7T)                    0.06       0.46 f
-  ch_sel_o[15] (out)                       0.00       0.46 f
-  data arrival time                                   0.46
+  input external delay                     0.00       0.00 r
+  ch_sel_i[8] (in)                         0.00       0.00 r
+  U80/ZN (AOI31D0BWP7T)                    0.04       0.04 f
+  U83/ZN (ND3D0BWP7T)                      0.14       0.18 r
+  U92/ZN (NR2XD0BWP7T)                     0.04       0.22 f
+  hot_one_o[9] (out)                       0.00       0.22 f
+  data arrival time                                   0.22
   -----------------------------------------------------------
   (Path is unconstrained)
 
 
-  Startpoint: state_reg[1]
-              (rising edge-triggered flip-flop)
-  Endpoint: ch_sel_o[11]
+  Startpoint: ch_sel_i[8]
+              (input port)
+  Endpoint: hot_one_o[13]
             (output port)
   Path Group: (none)
   Path Type: min
 
   Des/Clust/Port     Wire Load Model       Library
   ------------------------------------------------
-  priority_fsm       ZeroWireload          tcb018gbwp7ttc
+  encoder            ZeroWireload          tcb018gbwp7ttc
 
   Point                                    Incr       Path
   -----------------------------------------------------------
-  state_reg[1]/CP (DFCNQD1BWP7T)           0.00       0.00 r
-  state_reg[1]/Q (DFCNQD1BWP7T)            0.26       0.26 f
-  U174/ZN (CKND2D0BWP7T)                   0.14       0.40 r
-  U235/ZN (NR2XD0BWP7T)                    0.06       0.46 f
-  ch_sel_o[11] (out)                       0.00       0.46 f
-  data arrival time                                   0.46
+  input external delay                     0.00       0.00 r
+  ch_sel_i[8] (in)                         0.00       0.00 r
+  U80/ZN (AOI31D0BWP7T)                    0.04       0.04 f
+  U83/ZN (ND3D0BWP7T)                      0.14       0.18 r
+  U85/ZN (NR2XD0BWP7T)                     0.04       0.22 f
+  hot_one_o[13] (out)                      0.00       0.22 f
+  data arrival time                                   0.22
   -----------------------------------------------------------
   (Path is unconstrained)
 
 
-  Startpoint: state_reg[1]
-              (rising edge-triggered flip-flop)
-  Endpoint: ch_sel_o[7]
+  Startpoint: ch_sel_i[8]
+              (input port)
+  Endpoint: hot_one_o[11]
             (output port)
   Path Group: (none)
   Path Type: min
 
   Des/Clust/Port     Wire Load Model       Library
   ------------------------------------------------
-  priority_fsm       ZeroWireload          tcb018gbwp7ttc
+  encoder            ZeroWireload          tcb018gbwp7ttc
 
   Point                                    Incr       Path
   -----------------------------------------------------------
-  state_reg[1]/CP (DFCNQD1BWP7T)           0.00       0.00 r
-  state_reg[1]/Q (DFCNQD1BWP7T)            0.26       0.26 f
-  U174/ZN (CKND2D0BWP7T)                   0.14       0.40 r
-  U230/ZN (NR2XD0BWP7T)                    0.06       0.46 f
-  ch_sel_o[7] (out)                        0.00       0.46 f
-  data arrival time                                   0.46
+  input external delay                     0.00       0.00 r
+  ch_sel_i[8] (in)                         0.00       0.00 r
+  U80/ZN (AOI31D0BWP7T)                    0.04       0.04 f
+  U83/ZN (ND3D0BWP7T)                      0.14       0.18 r
+  U89/ZN (NR2XD0BWP7T)                     0.04       0.22 f
+  hot_one_o[11] (out)                      0.00       0.22 f
+  data arrival time                                   0.22
   -----------------------------------------------------------
   (Path is unconstrained)
 
 
-  Startpoint: state_reg[1]
-              (rising edge-triggered flip-flop)
-  Endpoint: ch_sel_o[3]
+  Startpoint: ch_sel_i[8]
+              (input port)
+  Endpoint: hot_one_o[9]
             (output port)
   Path Group: (none)
   Path Type: min
 
   Des/Clust/Port     Wire Load Model       Library
   ------------------------------------------------
-  priority_fsm       ZeroWireload          tcb018gbwp7ttc
+  encoder            ZeroWireload          tcb018gbwp7ttc
 
   Point                                    Incr       Path
   -----------------------------------------------------------
-  state_reg[1]/CP (DFCNQD1BWP7T)           0.00       0.00 r
-  state_reg[1]/Q (DFCNQD1BWP7T)            0.26       0.26 f
-  U174/ZN (CKND2D0BWP7T)                   0.14       0.40 r
-  U225/ZN (NR2XD0BWP7T)                    0.06       0.46 f
-  ch_sel_o[3] (out)                        0.00       0.46 f
-  data arrival time                                   0.46
+  input external delay                     0.00       0.00 r
+  ch_sel_i[8] (in)                         0.00       0.00 r
+  U80/ZN (AOI31D0BWP7T)                    0.04       0.04 f
+  U83/ZN (ND3D0BWP7T)                      0.14       0.18 r
+  U92/ZN (NR2XD0BWP7T)                     0.04       0.22 f
+  hot_one_o[9] (out)                       0.00       0.22 f
+  data arrival time                                   0.22
   -----------------------------------------------------------
   (Path is unconstrained)
 
 
-  Startpoint: ch_latch_q_reg[3]
-              (positive level-sensitive latch)
-  Endpoint: last_o (output port)
-  Path Group: (none)
-  Path Type: min
-
-  Des/Clust/Port     Wire Load Model       Library
-  ------------------------------------------------
-  priority_fsm       ZeroWireload          tcb018gbwp7ttc
-
-  Point                                    Incr       Path
-  -----------------------------------------------------------
-  ch_latch_q_reg[3]/E (LHQD1BWP7T)         0.00       0.00 r
-  ch_latch_q_reg[3]/Q (LHQD1BWP7T)         0.22       0.22 r
-  U184/ZN (NR4D0BWP7T)                     0.10       0.31 f
-  U132/ZN (CKND2D0BWP7T)                   0.11       0.42 r
-  U130/ZN (NR2XD0BWP7T)                    0.05       0.47 f
-  last_o (out)                             0.00       0.47 f
-  data arrival time                                   0.47
-  -----------------------------------------------------------
-  (Path is unconstrained)
-
-
-  Startpoint: ch_latch_q_reg[2]
-              (positive level-sensitive latch)
-  Endpoint: last_o (output port)
-  Path Group: (none)
-  Path Type: min
-
-  Des/Clust/Port     Wire Load Model       Library
-  ------------------------------------------------
-  priority_fsm       ZeroWireload          tcb018gbwp7ttc
-
-  Point                                    Incr       Path
-  -----------------------------------------------------------
-  ch_latch_q_reg[2]/E (LHQD1BWP7T)         0.00       0.00 r
-  ch_latch_q_reg[2]/Q (LHQD1BWP7T)         0.23       0.23 r
-  U184/ZN (NR4D0BWP7T)                     0.10       0.32 f
-  U132/ZN (CKND2D0BWP7T)                   0.11       0.44 r
-  U130/ZN (NR2XD0BWP7T)                    0.05       0.48 f
-  last_o (out)                             0.00       0.48 f
-  data arrival time                                   0.48
-  -----------------------------------------------------------
-  (Path is unconstrained)
-
-
-  Startpoint: ch_latch_q_reg[0]
-              (positive level-sensitive latch)
-  Endpoint: last_o (output port)
-  Path Group: (none)
-  Path Type: min
-
-  Des/Clust/Port     Wire Load Model       Library
-  ------------------------------------------------
-  priority_fsm       ZeroWireload          tcb018gbwp7ttc
-
-  Point                                    Incr       Path
-  -----------------------------------------------------------
-  ch_latch_q_reg[0]/E (LHQD1BWP7T)         0.00       0.00 r
-  ch_latch_q_reg[0]/Q (LHQD1BWP7T)         0.24       0.24 r
-  U184/ZN (NR4D0BWP7T)                     0.09       0.33 f
-  U132/ZN (CKND2D0BWP7T)                   0.11       0.44 r
-  U130/ZN (NR2XD0BWP7T)                    0.05       0.48 f
-  last_o (out)                             0.00       0.48 f
-  data arrival time                                   0.48
-  -----------------------------------------------------------
-  (Path is unconstrained)
-
-
-  Startpoint: ch_latch_q_reg[1]
-              (positive level-sensitive latch)
-  Endpoint: last_o (output port)
-  Path Group: (none)
-  Path Type: min
-
-  Des/Clust/Port     Wire Load Model       Library
-  ------------------------------------------------
-  priority_fsm       ZeroWireload          tcb018gbwp7ttc
-
-  Point                                    Incr       Path
-  -----------------------------------------------------------
-  ch_latch_q_reg[1]/E (LHQD1BWP7T)         0.00       0.00 r
-  ch_latch_q_reg[1]/Q (LHQD1BWP7T)         0.24       0.24 r
-  U184/ZN (NR4D0BWP7T)                     0.10       0.33 f
-  U132/ZN (CKND2D0BWP7T)                   0.11       0.44 r
-  U130/ZN (NR2XD0BWP7T)                    0.05       0.49 f
-  last_o (out)                             0.00       0.49 f
-  data arrival time                                   0.49
-  -----------------------------------------------------------
-  (Path is unconstrained)
-
-
-  Startpoint: state_reg[2]
-              (rising edge-triggered flip-flop)
-  Endpoint: ch_sel_o[3]
+  Startpoint: ch_sel_i[8]
+              (input port)
+  Endpoint: hot_one_o[13]
             (output port)
   Path Group: (none)
   Path Type: min
 
   Des/Clust/Port     Wire Load Model       Library
   ------------------------------------------------
-  priority_fsm       ZeroWireload          tcb018gbwp7ttc
+  encoder            ZeroWireload          tcb018gbwp7ttc
 
   Point                                    Incr       Path
   -----------------------------------------------------------
-  state_reg[2]/CP (DFCNQD1BWP7T)           0.00       0.00 r
-  state_reg[2]/Q (DFCNQD1BWP7T)            0.27       0.27 r
-  U137/ZN (INVD0BWP7T)                     0.06       0.33 f
-  U139/ZN (CKND2D0BWP7T)                   0.13       0.46 r
-  U225/ZN (NR2XD0BWP7T)                    0.04       0.50 f
-  ch_sel_o[3] (out)                        0.00       0.50 f
-  data arrival time                                   0.50
+  input external delay                     0.00       0.00 r
+  ch_sel_i[8] (in)                         0.00       0.00 r
+  U80/ZN (AOI31D0BWP7T)                    0.04       0.04 f
+  U83/ZN (ND3D0BWP7T)                      0.14       0.18 r
+  U85/ZN (NR2XD0BWP7T)                     0.04       0.22 f
+  hot_one_o[13] (out)                      0.00       0.22 f
+  data arrival time                                   0.22
   -----------------------------------------------------------
   (Path is unconstrained)
 
 
-  Startpoint: state_reg[2]
-              (rising edge-triggered flip-flop)
-  Endpoint: ch_sel_o[2]
+  Startpoint: ch_sel_i[8]
+              (input port)
+  Endpoint: hot_one_o[11]
             (output port)
   Path Group: (none)
   Path Type: min
 
   Des/Clust/Port     Wire Load Model       Library
   ------------------------------------------------
-  priority_fsm       ZeroWireload          tcb018gbwp7ttc
+  encoder            ZeroWireload          tcb018gbwp7ttc
 
   Point                                    Incr       Path
   -----------------------------------------------------------
-  state_reg[2]/CP (DFCNQD1BWP7T)           0.00       0.00 r
-  state_reg[2]/Q (DFCNQD1BWP7T)            0.27       0.27 r
-  U137/ZN (INVD0BWP7T)                     0.06       0.33 f
-  U139/ZN (CKND2D0BWP7T)                   0.13       0.46 r
-  U224/ZN (NR2XD0BWP7T)                    0.04       0.50 f
-  ch_sel_o[2] (out)                        0.00       0.50 f
-  data arrival time                                   0.50
+  input external delay                     0.00       0.00 r
+  ch_sel_i[8] (in)                         0.00       0.00 r
+  U80/ZN (AOI31D0BWP7T)                    0.04       0.04 f
+  U83/ZN (ND3D0BWP7T)                      0.14       0.18 r
+  U89/ZN (NR2XD0BWP7T)                     0.04       0.22 f
+  hot_one_o[11] (out)                      0.00       0.22 f
+  data arrival time                                   0.22
   -----------------------------------------------------------
   (Path is unconstrained)
 
 
-  Startpoint: state_reg[2]
-              (rising edge-triggered flip-flop)
-  Endpoint: ch_sel_o[1]
+  Startpoint: ch_sel_i[8]
+              (input port)
+  Endpoint: hot_one_o[9]
             (output port)
   Path Group: (none)
   Path Type: min
 
   Des/Clust/Port     Wire Load Model       Library
   ------------------------------------------------
-  priority_fsm       ZeroWireload          tcb018gbwp7ttc
+  encoder            ZeroWireload          tcb018gbwp7ttc
 
   Point                                    Incr       Path
   -----------------------------------------------------------
-  state_reg[2]/CP (DFCNQD1BWP7T)           0.00       0.00 r
-  state_reg[2]/Q (DFCNQD1BWP7T)            0.27       0.27 r
-  U137/ZN (INVD0BWP7T)                     0.06       0.33 f
-  U139/ZN (CKND2D0BWP7T)                   0.13       0.46 r
-  U223/ZN (NR2XD0BWP7T)                    0.04       0.50 f
-  ch_sel_o[1] (out)                        0.00       0.50 f
-  data arrival time                                   0.50
+  input external delay                     0.00       0.00 r
+  ch_sel_i[8] (in)                         0.00       0.00 r
+  U80/ZN (AOI31D0BWP7T)                    0.04       0.04 f
+  U83/ZN (ND3D0BWP7T)                      0.14       0.18 r
+  U92/ZN (NR2XD0BWP7T)                     0.04       0.22 f
+  hot_one_o[9] (out)                       0.00       0.22 f
+  data arrival time                                   0.22
   -----------------------------------------------------------
   (Path is unconstrained)
 
 
-  Startpoint: state_reg[2]
-              (rising edge-triggered flip-flop)
-  Endpoint: ch_sel_o[0]
+  Startpoint: ch_sel_i[8]
+              (input port)
+  Endpoint: hot_one_o[13]
             (output port)
   Path Group: (none)
   Path Type: min
 
   Des/Clust/Port     Wire Load Model       Library
   ------------------------------------------------
-  priority_fsm       ZeroWireload          tcb018gbwp7ttc
+  encoder            ZeroWireload          tcb018gbwp7ttc
 
   Point                                    Incr       Path
   -----------------------------------------------------------
-  state_reg[2]/CP (DFCNQD1BWP7T)           0.00       0.00 r
-  state_reg[2]/Q (DFCNQD1BWP7T)            0.27       0.27 r
-  U137/ZN (INVD0BWP7T)                     0.06       0.33 f
-  U139/ZN (CKND2D0BWP7T)                   0.13       0.46 r
-  U221/ZN (NR2XD0BWP7T)                    0.04       0.50 f
-  ch_sel_o[0] (out)                        0.00       0.50 f
-  data arrival time                                   0.50
+  input external delay                     0.00       0.00 r
+  ch_sel_i[8] (in)                         0.00       0.00 r
+  U80/ZN (AOI31D0BWP7T)                    0.05       0.05 f
+  U83/ZN (ND3D0BWP7T)                      0.14       0.19 r
+  U85/ZN (NR2XD0BWP7T)                     0.04       0.23 f
+  hot_one_o[13] (out)                      0.00       0.23 f
+  data arrival time                                   0.23
   -----------------------------------------------------------
   (Path is unconstrained)
 
 
-  Startpoint: state_reg[0]
-              (rising edge-triggered flip-flop)
-  Endpoint: ch_sel_o[9]
+  Startpoint: ch_sel_i[8]
+              (input port)
+  Endpoint: hot_one_o[11]
             (output port)
   Path Group: (none)
   Path Type: min
 
   Des/Clust/Port     Wire Load Model       Library
   ------------------------------------------------
-  priority_fsm       ZeroWireload          tcb018gbwp7ttc
+  encoder            ZeroWireload          tcb018gbwp7ttc
 
   Point                                    Incr       Path
   -----------------------------------------------------------
-  state_reg[0]/CP (DFCNQD1BWP7T)           0.00       0.00 r
-  state_reg[0]/Q (DFCNQD1BWP7T)            0.30       0.30 r
-  U222/ZN (ND3D0BWP7T)                     0.13       0.44 f
-  U233/ZN (NR2XD0BWP7T)                    0.07       0.50 r
-  ch_sel_o[9] (out)                        0.00       0.50 r
-  data arrival time                                   0.50
+  input external delay                     0.00       0.00 r
+  ch_sel_i[8] (in)                         0.00       0.00 r
+  U80/ZN (AOI31D0BWP7T)                    0.05       0.05 f
+  U83/ZN (ND3D0BWP7T)                      0.14       0.19 r
+  U89/ZN (NR2XD0BWP7T)                     0.04       0.23 f
+  hot_one_o[11] (out)                      0.00       0.23 f
+  data arrival time                                   0.23
   -----------------------------------------------------------
   (Path is unconstrained)
 
 
-  Startpoint: state_reg[0]
-              (rising edge-triggered flip-flop)
-  Endpoint: ch_sel_o[5]
+  Startpoint: ch_sel_i[8]
+              (input port)
+  Endpoint: hot_one_o[9]
             (output port)
   Path Group: (none)
   Path Type: min
 
   Des/Clust/Port     Wire Load Model       Library
   ------------------------------------------------
-  priority_fsm       ZeroWireload          tcb018gbwp7ttc
+  encoder            ZeroWireload          tcb018gbwp7ttc
 
   Point                                    Incr       Path
   -----------------------------------------------------------
-  state_reg[0]/CP (DFCNQD1BWP7T)           0.00       0.00 r
-  state_reg[0]/Q (DFCNQD1BWP7T)            0.30       0.30 r
-  U222/ZN (ND3D0BWP7T)                     0.13       0.44 f
-  U228/ZN (NR2XD0BWP7T)                    0.07       0.50 r
-  ch_sel_o[5] (out)                        0.00       0.50 r
-  data arrival time                                   0.50
+  input external delay                     0.00       0.00 r
+  ch_sel_i[8] (in)                         0.00       0.00 r
+  U80/ZN (AOI31D0BWP7T)                    0.05       0.05 f
+  U83/ZN (ND3D0BWP7T)                      0.14       0.19 r
+  U92/ZN (NR2XD0BWP7T)                     0.04       0.23 f
+  hot_one_o[9] (out)                       0.00       0.23 f
+  data arrival time                                   0.23
   -----------------------------------------------------------
   (Path is unconstrained)
 
 
-  Startpoint: state_reg[0]
-              (rising edge-triggered flip-flop)
-  Endpoint: ch_sel_o[13]
+  Startpoint: ch_sel_i[8]
+              (input port)
+  Endpoint: hot_one_o[13]
             (output port)
   Path Group: (none)
   Path Type: min
 
   Des/Clust/Port     Wire Load Model       Library
   ------------------------------------------------
-  priority_fsm       ZeroWireload          tcb018gbwp7ttc
+  encoder            ZeroWireload          tcb018gbwp7ttc
 
   Point                                    Incr       Path
   -----------------------------------------------------------
-  state_reg[0]/CP (DFCNQD1BWP7T)           0.00       0.00 r
-  state_reg[0]/Q (DFCNQD1BWP7T)            0.30       0.30 r
-  U222/ZN (ND3D0BWP7T)                     0.13       0.44 f
-  U238/ZN (NR2XD0BWP7T)                    0.07       0.50 r
-  ch_sel_o[13] (out)                       0.00       0.50 r
-  data arrival time                                   0.50
+  input external delay                     0.00       0.00 r
+  ch_sel_i[8] (in)                         0.00       0.00 r
+  U80/ZN (AOI31D0BWP7T)                    0.05       0.05 f
+  U83/ZN (ND3D0BWP7T)                      0.14       0.19 r
+  U85/ZN (NR2XD0BWP7T)                     0.04       0.23 f
+  hot_one_o[13] (out)                      0.00       0.23 f
+  data arrival time                                   0.23
   -----------------------------------------------------------
   (Path is unconstrained)
 
 
-  Startpoint: state_reg[0]
-              (rising edge-triggered flip-flop)
-  Endpoint: ch_sel_o[1]
+  Startpoint: ch_sel_i[8]
+              (input port)
+  Endpoint: hot_one_o[11]
             (output port)
   Path Group: (none)
   Path Type: min
 
   Des/Clust/Port     Wire Load Model       Library
   ------------------------------------------------
-  priority_fsm       ZeroWireload          tcb018gbwp7ttc
+  encoder            ZeroWireload          tcb018gbwp7ttc
 
   Point                                    Incr       Path
   -----------------------------------------------------------
-  state_reg[0]/CP (DFCNQD1BWP7T)           0.00       0.00 r
-  state_reg[0]/Q (DFCNQD1BWP7T)            0.30       0.30 r
-  U222/ZN (ND3D0BWP7T)                     0.13       0.44 f
-  U223/ZN (NR2XD0BWP7T)                    0.07       0.50 r
-  ch_sel_o[1] (out)                        0.00       0.50 r
-  data arrival time                                   0.50
+  input external delay                     0.00       0.00 r
+  ch_sel_i[8] (in)                         0.00       0.00 r
+  U80/ZN (AOI31D0BWP7T)                    0.05       0.05 f
+  U83/ZN (ND3D0BWP7T)                      0.14       0.19 r
+  U89/ZN (NR2XD0BWP7T)                     0.04       0.23 f
+  hot_one_o[11] (out)                      0.00       0.23 f
+  data arrival time                                   0.23
   -----------------------------------------------------------
   (Path is unconstrained)
 
 
-  Startpoint: state_reg[0]
-              (rising edge-triggered flip-flop)
-  Endpoint: ch_sel_o[15]
+  Startpoint: ch_sel_i[8]
+              (input port)
+  Endpoint: hot_one_o[9]
             (output port)
   Path Group: (none)
   Path Type: min
 
   Des/Clust/Port     Wire Load Model       Library
   ------------------------------------------------
-  priority_fsm       ZeroWireload          tcb018gbwp7ttc
+  encoder            ZeroWireload          tcb018gbwp7ttc
 
   Point                                    Incr       Path
   -----------------------------------------------------------
-  state_reg[0]/CP (DFCNQD1BWP7T)           0.00       0.00 r
-  state_reg[0]/Q (DFCNQD1BWP7T)            0.30       0.30 r
-  U174/ZN (CKND2D0BWP7T)                   0.14       0.44 f
-  U240/ZN (NR2XD0BWP7T)                    0.07       0.50 r
-  ch_sel_o[15] (out)                       0.00       0.50 r
-  data arrival time                                   0.50
+  input external delay                     0.00       0.00 r
+  ch_sel_i[8] (in)                         0.00       0.00 r
+  U80/ZN (AOI31D0BWP7T)                    0.05       0.05 f
+  U83/ZN (ND3D0BWP7T)                      0.14       0.19 r
+  U92/ZN (NR2XD0BWP7T)                     0.04       0.23 f
+  hot_one_o[9] (out)                       0.00       0.23 f
+  data arrival time                                   0.23
   -----------------------------------------------------------
   (Path is unconstrained)
 
 
-  Startpoint: state_reg[0]
-              (rising edge-triggered flip-flop)
-  Endpoint: ch_sel_o[11]
+  Startpoint: ch_sel_i[0]
+              (input port)
+  Endpoint: hot_one_o[7]
             (output port)
   Path Group: (none)
   Path Type: min
 
   Des/Clust/Port     Wire Load Model       Library
   ------------------------------------------------
-  priority_fsm       ZeroWireload          tcb018gbwp7ttc
+  encoder            ZeroWireload          tcb018gbwp7ttc
 
   Point                                    Incr       Path
   -----------------------------------------------------------
-  state_reg[0]/CP (DFCNQD1BWP7T)           0.00       0.00 r
-  state_reg[0]/Q (DFCNQD1BWP7T)            0.30       0.30 r
-  U174/ZN (CKND2D0BWP7T)                   0.14       0.44 f
-  U235/ZN (NR2XD0BWP7T)                    0.07       0.50 r
-  ch_sel_o[11] (out)                       0.00       0.50 r
-  data arrival time                                   0.50
+  input external delay                     0.00       0.00 r
+  ch_sel_i[0] (in)                         0.00       0.00 r
+  U98/ZN (OAI22D0BWP7T)                    0.05       0.05 f
+  U99/ZN (CKND2D0BWP7T)                    0.12       0.18 r
+  U100/ZN (NR2XD0BWP7T)                    0.05       0.23 f
+  hot_one_o[7] (out)                       0.00       0.23 f
+  data arrival time                                   0.23
   -----------------------------------------------------------
   (Path is unconstrained)
 
 
-  Startpoint: state_reg[0]
-              (rising edge-triggered flip-flop)
-  Endpoint: ch_sel_o[7]
+  Startpoint: ch_sel_i[0]
+              (input port)
+  Endpoint: hot_one_o[5]
             (output port)
   Path Group: (none)
   Path Type: min
 
   Des/Clust/Port     Wire Load Model       Library
   ------------------------------------------------
-  priority_fsm       ZeroWireload          tcb018gbwp7ttc
+  encoder            ZeroWireload          tcb018gbwp7ttc
 
   Point                                    Incr       Path
   -----------------------------------------------------------
-  state_reg[0]/CP (DFCNQD1BWP7T)           0.00       0.00 r
-  state_reg[0]/Q (DFCNQD1BWP7T)            0.30       0.30 r
-  U174/ZN (CKND2D0BWP7T)                   0.14       0.44 f
-  U230/ZN (NR2XD0BWP7T)                    0.07       0.50 r
-  ch_sel_o[7] (out)                        0.00       0.50 r
-  data arrival time                                   0.50
+  input external delay                     0.00       0.00 r
+  ch_sel_i[0] (in)                         0.00       0.00 r
+  U98/ZN (OAI22D0BWP7T)                    0.05       0.05 f
+  U99/ZN (CKND2D0BWP7T)                    0.12       0.18 r
+  U104/ZN (NR2XD0BWP7T)                    0.05       0.23 f
+  hot_one_o[5] (out)                       0.00       0.23 f
+  data arrival time                                   0.23
   -----------------------------------------------------------
   (Path is unconstrained)
 
 
-  Startpoint: state_reg[0]
-              (rising edge-triggered flip-flop)
-  Endpoint: ch_sel_o[3]
+  Startpoint: ch_sel_i[0]
+              (input port)
+  Endpoint: hot_one_o[3]
             (output port)
   Path Group: (none)
   Path Type: min
 
   Des/Clust/Port     Wire Load Model       Library
   ------------------------------------------------
-  priority_fsm       ZeroWireload          tcb018gbwp7ttc
+  encoder            ZeroWireload          tcb018gbwp7ttc
 
   Point                                    Incr       Path
   -----------------------------------------------------------
-  state_reg[0]/CP (DFCNQD1BWP7T)           0.00       0.00 r
-  state_reg[0]/Q (DFCNQD1BWP7T)            0.30       0.30 r
-  U174/ZN (CKND2D0BWP7T)                   0.14       0.44 f
-  U225/ZN (NR2XD0BWP7T)                    0.07       0.50 r
-  ch_sel_o[3] (out)                        0.00       0.50 r
-  data arrival time                                   0.50
+  input external delay                     0.00       0.00 r
+  ch_sel_i[0] (in)                         0.00       0.00 r
+  U98/ZN (OAI22D0BWP7T)                    0.05       0.05 f
+  U99/ZN (CKND2D0BWP7T)                    0.12       0.18 r
+  U106/ZN (NR2XD0BWP7T)                    0.05       0.23 f
+  hot_one_o[3] (out)                       0.00       0.23 f
+  data arrival time                                   0.23
   -----------------------------------------------------------
   (Path is unconstrained)
 
 
-  Startpoint: ch_latch_q_reg[4]
-              (positive level-sensitive latch)
-  Endpoint: last_o (output port)
-  Path Group: (none)
-  Path Type: min
-
-  Des/Clust/Port     Wire Load Model       Library
-  ------------------------------------------------
-  priority_fsm       ZeroWireload          tcb018gbwp7ttc
-
-  Point                                    Incr       Path
-  -----------------------------------------------------------
-  ch_latch_q_reg[4]/E (LHQD1BWP7T)         0.00       0.00 r
-  ch_latch_q_reg[4]/Q (LHQD1BWP7T)         0.22       0.22 f
-  U202/ZN (NR4D0BWP7T)                     0.11       0.32 r
-  U132/ZN (CKND2D0BWP7T)                   0.11       0.43 f
-  U130/ZN (NR2XD0BWP7T)                    0.07       0.51 r
-  last_o (out)                             0.00       0.51 r
-  data arrival time                                   0.51
-  -----------------------------------------------------------
-  (Path is unconstrained)
-
-
-  Startpoint: state_reg[3]
-              (rising edge-triggered flip-flop)
-  Endpoint: ch_sel_o[3]
+  Startpoint: ch_sel_i[0]
+              (input port)
+  Endpoint: hot_one_o[1]
             (output port)
   Path Group: (none)
   Path Type: min
 
   Des/Clust/Port     Wire Load Model       Library
   ------------------------------------------------
-  priority_fsm       ZeroWireload          tcb018gbwp7ttc
+  encoder            ZeroWireload          tcb018gbwp7ttc
 
   Point                                    Incr       Path
   -----------------------------------------------------------
-  state_reg[3]/CP (DFCNQD1BWP7T)           0.00       0.00 r
-  state_reg[3]/Q (DFCNQD1BWP7T)            0.27       0.27 r
-  U138/ZN (INVD0BWP7T)                     0.06       0.34 f
-  U139/ZN (CKND2D0BWP7T)                   0.13       0.47 r
-  U225/ZN (NR2XD0BWP7T)                    0.04       0.51 f
-  ch_sel_o[3] (out)                        0.00       0.51 f
-  data arrival time                                   0.51
+  input external delay                     0.00       0.00 r
+  ch_sel_i[0] (in)                         0.00       0.00 r
+  U98/ZN (OAI22D0BWP7T)                    0.05       0.05 f
+  U99/ZN (CKND2D0BWP7T)                    0.12       0.18 r
+  U108/ZN (NR2XD0BWP7T)                    0.05       0.23 f
+  hot_one_o[1] (out)                       0.00       0.23 f
+  data arrival time                                   0.23
   -----------------------------------------------------------
   (Path is unconstrained)
 
 
-  Startpoint: state_reg[3]
-              (rising edge-triggered flip-flop)
-  Endpoint: ch_sel_o[2]
+  Startpoint: ch_sel_i[8]
+              (input port)
+  Endpoint: hot_one_o[13]
             (output port)
   Path Group: (none)
   Path Type: min
 
   Des/Clust/Port     Wire Load Model       Library
   ------------------------------------------------
-  priority_fsm       ZeroWireload          tcb018gbwp7ttc
+  encoder            ZeroWireload          tcb018gbwp7ttc
 
   Point                                    Incr       Path
   -----------------------------------------------------------
-  state_reg[3]/CP (DFCNQD1BWP7T)           0.00       0.00 r
-  state_reg[3]/Q (DFCNQD1BWP7T)            0.27       0.27 r
-  U138/ZN (INVD0BWP7T)                     0.06       0.34 f
-  U139/ZN (CKND2D0BWP7T)                   0.13       0.47 r
-  U224/ZN (NR2XD0BWP7T)                    0.04       0.51 f
-  ch_sel_o[2] (out)                        0.00       0.51 f
-  data arrival time                                   0.51
+  input external delay                     0.00       0.00 r
+  ch_sel_i[8] (in)                         0.00       0.00 r
+  U80/ZN (AOI31D0BWP7T)                    0.05       0.05 f
+  U83/ZN (ND3D0BWP7T)                      0.14       0.19 r
+  U85/ZN (NR2XD0BWP7T)                     0.04       0.23 f
+  hot_one_o[13] (out)                      0.00       0.23 f
+  data arrival time                                   0.23
   -----------------------------------------------------------
   (Path is unconstrained)
 
 
-  Startpoint: state_reg[3]
-              (rising edge-triggered flip-flop)
-  Endpoint: ch_sel_o[1]
+  Startpoint: ch_sel_i[8]
+              (input port)
+  Endpoint: hot_one_o[11]
             (output port)
   Path Group: (none)
   Path Type: min
 
   Des/Clust/Port     Wire Load Model       Library
   ------------------------------------------------
-  priority_fsm       ZeroWireload          tcb018gbwp7ttc
+  encoder            ZeroWireload          tcb018gbwp7ttc
 
   Point                                    Incr       Path
   -----------------------------------------------------------
-  state_reg[3]/CP (DFCNQD1BWP7T)           0.00       0.00 r
-  state_reg[3]/Q (DFCNQD1BWP7T)            0.27       0.27 r
-  U138/ZN (INVD0BWP7T)                     0.06       0.34 f
-  U139/ZN (CKND2D0BWP7T)                   0.13       0.47 r
-  U223/ZN (NR2XD0BWP7T)                    0.04       0.51 f
-  ch_sel_o[1] (out)                        0.00       0.51 f
-  data arrival time                                   0.51
+  input external delay                     0.00       0.00 r
+  ch_sel_i[8] (in)                         0.00       0.00 r
+  U80/ZN (AOI31D0BWP7T)                    0.05       0.05 f
+  U83/ZN (ND3D0BWP7T)                      0.14       0.19 r
+  U89/ZN (NR2XD0BWP7T)                     0.04       0.23 f
+  hot_one_o[11] (out)                      0.00       0.23 f
+  data arrival time                                   0.23
   -----------------------------------------------------------
   (Path is unconstrained)
 
 
-  Startpoint: state_reg[3]
-              (rising edge-triggered flip-flop)
-  Endpoint: ch_sel_o[0]
+  Startpoint: ch_sel_i[8]
+              (input port)
+  Endpoint: hot_one_o[9]
             (output port)
   Path Group: (none)
   Path Type: min
 
   Des/Clust/Port     Wire Load Model       Library
   ------------------------------------------------
-  priority_fsm       ZeroWireload          tcb018gbwp7ttc
+  encoder            ZeroWireload          tcb018gbwp7ttc
 
   Point                                    Incr       Path
   -----------------------------------------------------------
-  state_reg[3]/CP (DFCNQD1BWP7T)           0.00       0.00 r
-  state_reg[3]/Q (DFCNQD1BWP7T)            0.27       0.27 r
-  U138/ZN (INVD0BWP7T)                     0.06       0.34 f
-  U139/ZN (CKND2D0BWP7T)                   0.13       0.47 r
-  U221/ZN (NR2XD0BWP7T)                    0.04       0.51 f
-  ch_sel_o[0] (out)                        0.00       0.51 f
-  data arrival time                                   0.51
+  input external delay                     0.00       0.00 r
+  ch_sel_i[8] (in)                         0.00       0.00 r
+  U80/ZN (AOI31D0BWP7T)                    0.05       0.05 f
+  U83/ZN (ND3D0BWP7T)                      0.14       0.19 r
+  U92/ZN (NR2XD0BWP7T)                     0.04       0.23 f
+  hot_one_o[9] (out)                       0.00       0.23 f
+  data arrival time                                   0.23
   -----------------------------------------------------------
   (Path is unconstrained)
 
 
-  Startpoint: state_reg[1]
-              (rising edge-triggered flip-flop)
-  Endpoint: ch_sel_o[15]
+  Startpoint: ch_sel_i[3]
+              (input port)
+  Endpoint: hot_one_o[9]
             (output port)
   Path Group: (none)
   Path Type: min
 
   Des/Clust/Port     Wire Load Model       Library
   ------------------------------------------------
-  priority_fsm       ZeroWireload          tcb018gbwp7ttc
+  encoder            ZeroWireload          tcb018gbwp7ttc
 
   Point                                    Incr       Path
   -----------------------------------------------------------
-  state_reg[1]/CP (DFCNQD1BWP7T)           0.00       0.00 r
-  state_reg[1]/Q (DFCNQD1BWP7T)            0.30       0.30 r
-  U174/ZN (CKND2D0BWP7T)                   0.14       0.44 f
-  U240/ZN (NR2XD0BWP7T)                    0.07       0.51 r
-  ch_sel_o[15] (out)                       0.00       0.51 r
-  data arrival time                                   0.51
+  input external delay                     0.00       0.00 r
+  ch_sel_i[3] (in)                         0.00       0.00 r
+  U87/ZN (AOI21D0BWP7T)                    0.05       0.05 f
+  U91/ZN (IND2D0BWP7T)                     0.13       0.18 r
+  U92/ZN (NR2XD0BWP7T)                     0.05       0.23 f
+  hot_one_o[9] (out)                       0.00       0.23 f
+  data arrival time                                   0.23
   -----------------------------------------------------------
   (Path is unconstrained)
 
 
-  Startpoint: state_reg[1]
-              (rising edge-triggered flip-flop)
-  Endpoint: ch_sel_o[11]
+  Startpoint: ch_sel_i[3]
+              (input port)
+  Endpoint: hot_one_o[8]
             (output port)
   Path Group: (none)
   Path Type: min
 
   Des/Clust/Port     Wire Load Model       Library
   ------------------------------------------------
-  priority_fsm       ZeroWireload          tcb018gbwp7ttc
+  encoder            ZeroWireload          tcb018gbwp7ttc
 
   Point                                    Incr       Path
   -----------------------------------------------------------
-  state_reg[1]/CP (DFCNQD1BWP7T)           0.00       0.00 r
-  state_reg[1]/Q (DFCNQD1BWP7T)            0.30       0.30 r
-  U174/ZN (CKND2D0BWP7T)                   0.14       0.44 f
-  U235/ZN (NR2XD0BWP7T)                    0.07       0.51 r
-  ch_sel_o[11] (out)                       0.00       0.51 r
-  data arrival time                                   0.51
+  input external delay                     0.00       0.00 r
+  ch_sel_i[3] (in)                         0.00       0.00 r
+  U87/ZN (AOI21D0BWP7T)                    0.05       0.05 f
+  U91/ZN (IND2D0BWP7T)                     0.13       0.18 r
+  U93/ZN (NR2XD0BWP7T)                     0.05       0.23 f
+  hot_one_o[8] (out)                       0.00       0.23 f
+  data arrival time                                   0.23
   -----------------------------------------------------------
   (Path is unconstrained)
 
 
-  Startpoint: state_reg[1]
-              (rising edge-triggered flip-flop)
-  Endpoint: ch_sel_o[7]
+  Startpoint: ch_sel_i[8]
+              (input port)
+  Endpoint: hot_one_o[15]
             (output port)
   Path Group: (none)
   Path Type: min
 
   Des/Clust/Port     Wire Load Model       Library
   ------------------------------------------------
-  priority_fsm       ZeroWireload          tcb018gbwp7ttc
+  encoder            ZeroWireload          tcb018gbwp7ttc
 
   Point                                    Incr       Path
   -----------------------------------------------------------
-  state_reg[1]/CP (DFCNQD1BWP7T)           0.00       0.00 r
-  state_reg[1]/Q (DFCNQD1BWP7T)            0.30       0.30 r
-  U174/ZN (CKND2D0BWP7T)                   0.14       0.44 f
-  U230/ZN (NR2XD0BWP7T)                    0.07       0.51 r
-  ch_sel_o[7] (out)                        0.00       0.51 r
-  data arrival time                                   0.51
+  input external delay                     0.00       0.00 r
+  ch_sel_i[8] (in)                         0.00       0.00 r
+  U80/ZN (AOI31D0BWP7T)                    0.04       0.04 f
+  U83/ZN (ND3D0BWP7T)                      0.14       0.18 r
+  U101/ZN (NR2XD0BWP7T)                    0.05       0.24 f
+  hot_one_o[15] (out)                      0.00       0.24 f
+  data arrival time                                   0.24
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: ch_sel_i[8]
+              (input port)
+  Endpoint: hot_one_o[15]
+            (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  encoder            ZeroWireload          tcb018gbwp7ttc
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  ch_sel_i[8] (in)                         0.00       0.00 r
+  U80/ZN (AOI31D0BWP7T)                    0.04       0.04 f
+  U83/ZN (ND3D0BWP7T)                      0.14       0.18 r
+  U101/ZN (NR2XD0BWP7T)                    0.05       0.24 f
+  hot_one_o[15] (out)                      0.00       0.24 f
+  data arrival time                                   0.24
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: ch_sel_i[8]
+              (input port)
+  Endpoint: hot_one_o[15]
+            (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  encoder            ZeroWireload          tcb018gbwp7ttc
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  ch_sel_i[8] (in)                         0.00       0.00 r
+  U80/ZN (AOI31D0BWP7T)                    0.04       0.04 f
+  U83/ZN (ND3D0BWP7T)                      0.14       0.18 r
+  U101/ZN (NR2XD0BWP7T)                    0.05       0.24 f
+  hot_one_o[15] (out)                      0.00       0.24 f
+  data arrival time                                   0.24
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: ch_sel_i[8]
+              (input port)
+  Endpoint: hot_one_o[15]
+            (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  encoder            ZeroWireload          tcb018gbwp7ttc
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  ch_sel_i[8] (in)                         0.00       0.00 r
+  U80/ZN (AOI31D0BWP7T)                    0.05       0.05 f
+  U83/ZN (ND3D0BWP7T)                      0.14       0.19 r
+  U101/ZN (NR2XD0BWP7T)                    0.05       0.24 f
+  hot_one_o[15] (out)                      0.00       0.24 f
+  data arrival time                                   0.24
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: ch_sel_i[8]
+              (input port)
+  Endpoint: hot_one_o[15]
+            (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  encoder            ZeroWireload          tcb018gbwp7ttc
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  ch_sel_i[8] (in)                         0.00       0.00 r
+  U80/ZN (AOI31D0BWP7T)                    0.05       0.05 f
+  U83/ZN (ND3D0BWP7T)                      0.14       0.19 r
+  U101/ZN (NR2XD0BWP7T)                    0.05       0.24 f
+  hot_one_o[15] (out)                      0.00       0.24 f
+  data arrival time                                   0.24
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: ch_sel_i[8]
+              (input port)
+  Endpoint: hot_one_o[15]
+            (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  encoder            ZeroWireload          tcb018gbwp7ttc
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  ch_sel_i[8] (in)                         0.00       0.00 r
+  U80/ZN (AOI31D0BWP7T)                    0.05       0.05 f
+  U83/ZN (ND3D0BWP7T)                      0.14       0.19 r
+  U101/ZN (NR2XD0BWP7T)                    0.05       0.25 f
+  hot_one_o[15] (out)                      0.00       0.25 f
+  data arrival time                                   0.25
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: ch_sel_i[14]
+              (input port)
+  Endpoint: valid_o (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  encoder            ZeroWireload          tcb018gbwp7ttc
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  ch_sel_i[14] (in)                        0.00       0.00 r
+  U57/ZN (IND2D0BWP7T)                     0.09       0.09 r
+  U67/Z (OA21D0BWP7T)                      0.16       0.25 r
+  valid_o (out)                            0.00       0.25 r
+  data arrival time                                   0.25
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: ch_sel_i[12]
+              (input port)
+  Endpoint: valid_o (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  encoder            ZeroWireload          tcb018gbwp7ttc
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  ch_sel_i[12] (in)                        0.00       0.00 r
+  U66/ZN (NR3D0BWP7T)                      0.03       0.03 f
+  U57/ZN (IND2D0BWP7T)                     0.07       0.09 r
+  U67/Z (OA21D0BWP7T)                      0.16       0.25 r
+  valid_o (out)                            0.00       0.25 r
+  data arrival time                                   0.25
   -----------------------------------------------------------
   (Path is unconstrained)
 
